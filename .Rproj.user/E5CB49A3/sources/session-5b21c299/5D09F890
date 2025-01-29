@@ -1,0 +1,31 @@
+{
+    "id": "5D09F890",
+    "path": "~/Jomaserver Blog/linux.qmd",
+    "project_path": "linux.qmd",
+    "type": "quarto_markdown",
+    "hash": "1144045330",
+    "contents": "",
+    "dirty": false,
+    "created": 1738181798846.0,
+    "source_on_save": false,
+    "relative_order": 12,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "11,22",
+        "scrollLine": "0",
+        "docOutlineVisible": "1",
+        "rmdVisualModeLocation": "63:0",
+        "rmdVisualCollapsedChunks": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1738181819,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1738181819938,
+    "read_only": false,
+    "read_only_alternatives": []
+}

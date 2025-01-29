@@ -1,0 +1,24 @@
+---
+title: "Primeiro Post do meu blog."
+author: "João Marcelo"
+date: "2025-01-26"
+categories: []
+---
+
+**Título: Uma Introdução ao Jomaserver Blog**
+
+Achei justo o primeiro post do blog ser uma introdução mais detalhada sobre mim, algo além do que está na aba "About".
+
+Sou o João, tenho 21 anos, e sou entusiasta em várias áreas que vocês vão ver ao longo do tempo por aqui. Algumas delas incluem:
+
+-   **Biologia Molecular**: Estudo dos processos biológicos no nível molecular.
+
+-   **Ecologia**: Funcionamento dos ecossistemas e sua dinâmica.
+
+-   **Computação**: Comecei recentemente o estudo e já me encontro viciado em descobrir novas ferramentas.
+
+-   **Jogos**: Sou apaixonado por jogos de computador, tanto como hobby quanto como forma de aprendizado. (speedruns, reviews, opiniões)
+
+O objetivo da criação deste site foi proporcionar um espaço onde eu possa flutuar entre esses diversos temas. Aqui, espero compartilhar não apenas o que estou estudando, mas também poder transformar este espaço em algo útil para quem quer aprender, reciclar ou se aprofundar em qualquer um desses assuntos. Este blog pode funcionar tanto como um caderno de anotações quanto como um ponto de aprendizado para outros.
+
+Espero que você aproveite o conteúdo que vou trazer por aqui, e estou aberto a sugestões e trocas de ideias!

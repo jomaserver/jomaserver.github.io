@@ -1,0 +1,16 @@
+---
+title: "biomol"
+format: html
+---
+{{< posts category="BioMol" >}}
+---
+
+## Bem-vindo ao Tema de BioMol
+
+Aqui você encontrará posts relacionados a Biologia Molecular. Este espaço é dedicado a anotações, estudos e reflexões sobre temas como:
+
+-   Estrutura de proteínas
+-   Replicação do DNA
+-   Expressão gênica
+-   Genômica
+-   Engenharia genética
