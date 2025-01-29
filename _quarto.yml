@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "Jomaserver Blog"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Início
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/juauzz/jomaserver.github.io
+       
+format:
+  html:
+    theme:
+      - cyborg
+      - brand
+    css: styles.css
+
+editor: visual
+

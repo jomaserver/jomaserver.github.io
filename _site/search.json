@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "programacao.html#bem-vindo-ao-tema-de-programação",
+    "href": "programacao.html#bem-vindo-ao-tema-de-programação",
+    "title": "programação",
+    "section": "Bem-vindo ao Tema de Programação",
+    "text": "Bem-vindo ao Tema de Programação\nAqui você encontrará posts relacionados a programação. Este espaço é dedicado a estudos, tutoriais e projetos sobre:\n\nLinguagem R\nPython\nLógica computacional\nComputadores (foge ao tema um pouco, mas tenho bastante interesse em hardwares)"
+  },
+  {
+    "objectID": "linux.html#bem-vindo-ao-tema-de-linux",
+    "href": "linux.html#bem-vindo-ao-tema-de-linux",
+    "title": "linux",
+    "section": "Bem-vindo ao Tema de Linux",
+    "text": "Bem-vindo ao Tema de Linux\nAqui você encontrará posts relacionados ao sistema operacional Linux. Este espaço é dedicado a estudos de:\n\nComandos do terminal\nFerramentas\nAutomação de tarefas"
+  },
+  {
+    "objectID": "jogos.html#bem-vindo-ao-tema-de-jogos-de-computador",
+    "href": "jogos.html#bem-vindo-ao-tema-de-jogos-de-computador",
+    "title": "jogos",
+    "section": "Bem-vindo ao Tema de Jogos de computador",
+    "text": "Bem-vindo ao Tema de Jogos de computador\nAqui você encontrará posts relacionados a jogos que eu tenho jogado, reviews, análises, opiniões etc."
+  },
+  {
+    "objectID": "posts/Primeiro Post/index.html",
+    "href": "posts/Primeiro Post/index.html",
+    "title": "Primeiro Post do meu blog.",
+    "section": "",
+    "text": "Título: Uma Introdução ao Jomaserver Blog\nAchei justo o primeiro post do blog ser uma introdução mais detalhada sobre mim, algo além do que está na aba “About”.\nSou o João, tenho 21 anos, e sou entusiasta em várias áreas que vocês vão ver ao longo do tempo por aqui. Algumas delas incluem:\n\nBiologia Molecular: Estudo dos processos biológicos no nível molecular.\nEcologia: Funcionamento dos ecossistemas e sua dinâmica.\nComputação: Comecei recentemente o estudo e já me encontro viciado em descobrir novas ferramentas.\nJogos: Sou apaixonado por jogos de computador, tanto como hobby quanto como forma de aprendizado. (speedruns, reviews, opiniões)\n\nO objetivo da criação deste site foi proporcionar um espaço onde eu possa flutuar entre esses diversos temas. Aqui, espero compartilhar não apenas o que estou estudando, mas também poder transformar este espaço em algo útil para quem quer aprender, reciclar ou se aprofundar em qualquer um desses assuntos. Este blog pode funcionar tanto como um caderno de anotações quanto como um ponto de aprendizado para outros.\nEspero que você aproveite o conteúdo que vou trazer por aqui, e estou aberto a sugestões e trocas de ideias!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jomaserver Blog",
+    "section": "",
+    "text": "Trabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Trabalho de microbio aplicada/index.html",
+    "href": "posts/Trabalho de microbio aplicada/index.html",
+    "title": "Trabalho de TE",
+    "section": "",
+    "text": "Título: Biotecnologia para Bioenergia: Produzindo Etanol de Segunda Geração com Sorgo e Engenharia Genética\nEste trabalho foi desenvolvido para a matéria de Tecnologia Enzimática, onde criamos uma empresa fictícia para explorar a produção de bioetanol de segunda geração a partir do bagaço de sorgo. O objetivo era unir conceitos de biotecnologia e engenharia genética para criar um processo sustentável de produção de biocombustíveis.\n\nPor que Sorgo?\nO sorgo foi escolhido por ser uma cultura resistente, adaptada a climas quentes e secos, e por ter um alto teor de celulose e hemicelulose, componentes essenciais para a produção de bioetanol.\n\n\nPré-tratamento da Biomassa\nO bagaço de sorgo passa por um pré-tratamento físico e químico para desestruturar a lignina e expor a celulose e hemicelulose. Isso inclui moagem, secagem, extrusão e tratamento com vapor, preparando a biomassa para a hidrólise enzimática. \n\n\nEngenharia Genética da Levedura\nA parte mais interessante do trabalho foi a engenharia genética de uma cepa da Saccharomyces cerevisiae. Utilizamos a tecnologia CRISPR/Cas9 para modificar geneticamente a levedura, inserindo genes que codificam enzimas capazes de quebrar a celulose e a hemicelulose (XYNF3_2, CEL6C_2) em açúcares fermentáveis.\n\n\n\nHidrólise Enzimática e Fermentação\nAs enzimas produzidas pela levedura geneticamente modificada, como a 1,4-beta-D-glucan cellobiohydrolase e a endo-1,4-beta-xilanase, atuam na quebra dos polissacarídeos, liberando açúcares simples que são fermentados em etanol.\nO Trabalho do meu grupo ta disponivel no link: Trabalho de TE"
+  },
+  {
+    "objectID": "posts/Kitty/index.html",
+    "href": "posts/Kitty/index.html",
+    "title": "Kitty",
+    "section": "",
+    "text": "Título: Terminal Kitty e suas possibilidades\nRecentemente fui indicado à conhecer o terminal “Kitty” e passei a ultima semana usando ele e decidi escrever um pouco sobre as vantagens e funcionalidades que aprendi até o momento:\n\nAceleração por GPU: Uma das grandes vantagens do Kitty é a utilização da GPU para renderizar tudo no terminal. Isso significa que, mesmo com um terminal cheio de gráficos ou muitas informações rolando na tela, o desempenho continua suave e rápido.\nSuporte a Imagens: Uma funcionalidade que me chamou atenção no Kitty foi o suporte a imagens. Isso mesmo! Você pode exibir imagens diretamente no terminal, o que pode ser muito útil para mostrar gráficos, capturas de tela ou até mesmo visualizar imagens de maneira rápida, sem sair do terminal.\nMultiplexação de Janela (Layouts): Se você é como eu e gosta de trabalhar com várias janelas ao mesmo tempo, vai adorar o sistema de layout de janelas do Kitty. Ele permite dividir a tela em múltiplos painéis, facilitando a multitarefa no terminal.\nSuporte a TrueColor: Para quem gosta de cores, o Kitty não decepciona. Ele oferece suporte a TrueColor, ou seja, você pode usar uma paleta de cores de 24 bits, tornando tudo mais vívido e preciso. Isso faz toda a diferença, especialmente para desenvolvedores e entusiastas de personalização.\nConfigurações por Arquivo de Configuração: O Kitty usa um arquivo de configuração chamado kitty.conf, onde você pode ajustar diversos parâmetros, como fontes, atalhos e temas. Isso permite que você personalize sua experiência ao máximo.\n\nAlém disso achei muito legal o papel da comunidade na construção desse terminal, encontrei GitHub varios temas para personalização: https://github.com/dexpota/kitty-themes/tree/master/themes. Parece uma besteira gigantesca, mas achei muito legal e fiquei um tempão navegando nos temas até decidir o meu. Vou mostrar minhas configurações:\n\nAlterei pelo vim basta usar o comando &gt; vim .config/kitty/kitty.conf\ncomo da ver na imagem também baixei uma fonte e escolhi o tamanho, mas isso é personalizavel. Se quiserem podem colocar qualquer fonte e alterar também configurações como o tamanho da janela etc. Bem legal essa serie de recursos"
+  },
+  {
+    "objectID": "biomol.html#bem-vindo-ao-tema-de-biomol",
+    "href": "biomol.html#bem-vindo-ao-tema-de-biomol",
+    "title": "biomol",
+    "section": "Bem-vindo ao Tema de BioMol",
+    "text": "Bem-vindo ao Tema de BioMol\nAqui você encontrará posts relacionados a Biologia Molecular. Este espaço é dedicado a anotações, estudos e reflexões sobre temas como:\n\nEstrutura de proteínas\nReplicação do DNA\nExpressão gênica\nGenômica\nEngenharia genética"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Sou estudante do curso de biotecnologia da Universidade de Brasília, esse blog tem o intuito de servir como um mapa de estudo e um caderno um pouco mais mordeno, no qual eu venho compartilhar um pouco da minha tragetoria na carreira academica."
+  },
+  {
+    "objectID": "about.html#oi-meu-nome-é-joão-marcelo",
+    "href": "about.html#oi-meu-nome-é-joão-marcelo",
+    "title": "About",
+    "section": "",
+    "text": "Sou estudante do curso de biotecnologia da Universidade de Brasília, esse blog tem o intuito de servir como um mapa de estudo e um caderno um pouco mais mordeno, no qual eu venho compartilhar um pouco da minha tragetoria na carreira academica."
+  }
+]
