@@ -1,0 +1,14 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: solana
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/juauzz/jomaserver.github.io
+---
+
+##Olá, meu nome é João Marcelo
+
+Sou estudante de Biotecnologia na Universidade de Brasília. Este blog tem o objetivo de ser um guia de estudos e um espaço mais moderno para registrar minha jornada acadêmica. Aqui, compartilho conhecimentos, desafios e aprendizados ao longo da minha trajetória na biotecnologia, com a intenção de organizar meu aprendizado e também contribuir com outros que possam se interessar pelos mesmos temas.
