@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="João Marcelo">
+<meta name="dcterms.date" content="2025-02-07">
 
-<title>About – Jomaserver Blog</title>
+<title>Resenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines – Jomaserver Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-70d28da97b638353218e31ba2b54e49e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-70d28da97b638353218e31ba2b54e49e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,17 +70,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Jomaserver Blog</span>
     </a>
   </div>
@@ -88,17 +91,17 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.qmd"> 
+    <a class="nav-link" href="../../index.qmd"> 
 <span class="menu-text">Início</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./curriculum.html"> 
+    <a class="nav-link" href="../../curriculum.html"> 
 <span class="menu-text">Currículo</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -114,7 +117,38 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Resenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Artigos</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>João Marcelo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 7, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
@@ -123,33 +157,27 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="https://github.com/juauzz/jomaserver.github.io" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>##Olá, meu nome é João Marcelo</p>
-<p>Sou estudante de Biotecnologia na Universidade de Brasília. Este blog tem o objetivo de ser um guia de estudos e um espaço mais moderno para registrar minha jornada acadêmica. Aqui, compartilho conhecimentos, desafios e aprendizados ao longo da minha trajetória na biotecnologia, com a intenção de organizar meu aprendizado e também contribuir com outros que possam se interessar pelos mesmos temas.</p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</main></div>
-    </div>
-    <img src="profile.jpg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
-</div>
- <!-- /main -->
+
+
+
+<p><img src="images/clipboard-1789682082.png" class="img-fluid"></p>
+<p><strong>Resenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines</strong></p>
+<p>A cada ano, a tecnologia de sequenciamento se torna mais impressionante. O artigo “Tecnologia de sequenciamento de RNA de célula única e pipelines de bioinformática” publicado na Nature abriu muito minha cabeça em relação as possibilidades. Ao contrário dos métodos tradicionais que analisam um tecido inteiro e fornecem expressão genética média, o scRNA-seq nos permite estudar cada célula individualmente, revelando detalhes nunca antes vistos. A possibilidade de mapear essas variações revoluciona a forma como entendemos os processos celulares e as doenças.</p>
+<p>Este artigo traz uma visão bem completa das tecnologias de sequenciamento e estratégias de processamento dos dados que elas geram (esta parte é a mais complexa!!!!) O verdadeiro desafio ocorre após a coleta, quando falamos sobre a parte de análise computacional.</p>
+<p>O maior mérito do scRNA-seq é que ele resolve um problema clássico da biologia molecular: a média de expressão gênica. Antes, quando analisavam RNA em uma amostra de tecido, o que viam era uma média da atividade de todas as células presentes ali. Isso mascarava diferenças fundamentais entre células de tipos distintos. Com o scRNA-seq, agora podemos conseguir capturar a identidade de cada célula, algo essencial para entender processos como a resposta imunológica, a progressão do câncer e a diferenciação celular.</p>
+<p>O artigo explica de forma bem didática as etapas desse sequenciamento, desde a captura das células até a obtenção dos dados brutos. Mas o que me interessou de verdade foi a parte sobre as análises no computador que foram capazes de transformar MUITO dado bruto em algo compreensivel.</p>
+<p>Primeiro, os pesquisadores precisam limpar os dados e remover o ruído porque, como eu disse antes, o sequenciamento produz muita informação bruta. Em seguida, é necessário organizar esses dados e identificar padrões para diminuir a complexidade das informações. Isso é feito por meio de métodos como PCA (Análise de Componentes Principais).</p>
+<p>PCA: Técnica estatística utilizada para reduzir a dimensionalidade de um conjunto de dados preservando ao máximo sua variabilidade original.</p>
+<p>O artigo também discute a importância de identificar tipos de células e inferir trajetórias, mas admito que esta parte me deixou confuso, mas vou estudar mais sobre isso pra entender melhor porque pareceu bem legal.</p>
+<p>O scRNA-seq é uma ferramenta poderosa, mas sem pipelines bioinformáticas bem estruturadas, seus dados seriam apenas um grande caos genético.</p>
+<p>Se você tem interesse em genômica, bioinformática ou apenas quer entender melhor como novas tecnologias estão transformando a ciência, esse artigo vale a pena. Ainda há muito para explorar, mas já ficou claro que a individualidade celular é um universo à parte, e tem muita coisa ainda por vir aparentemente</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -170,6 +198,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
