@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jomaserver Blog",
     "section": "",
-    "text": "Bem-vindo ao meu blog!\nAqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines\n\n\n\n\n\n\nArtigos\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMinhas primeiras experiencias no Linux\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de Microbio aplicada\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
+    "text": "Bem-vindo ao meu blog!\nAqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMeu tema CSS.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nFeb 28, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nResenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines\n\n\n\n\n\n\nArtigos\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMinhas primeiras experiencias no Linux\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de Microbio aplicada\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Minhas primeiras experiencias com Linux/index.html",
@@ -82,5 +82,33 @@
     "title": "Jomaserver Blog",
     "section": "Posts Recentes",
     "text": "Posts Recentes\n\nResenha: Single-cell RNA sequencing technologies and bioinformatics pipelines\nMinhas primeiras experiências no Linux\nTrabalho de TE\nTrabalho de Microbio aplicada\nKitty\nPrimeiro Post do meu blog"
+  },
+  {
+    "objectID": "posts/TEMA CSS/index.html",
+    "href": "posts/TEMA CSS/index.html",
+    "title": "Meu tema CSS.",
+    "section": "",
+    "text": "Criei um tema que vocês podem ver nesse link: TEMA, foi um processo divertido e cheio de etapas, no final disponibilizei o tema no open source do github, então se alguem tiver interesse em usar meu template sintam-se à vontade."
+  },
+  {
+    "objectID": "posts/TEMA CSS/index.html#por-que-usar-css-para-personalizar-slides",
+    "href": "posts/TEMA CSS/index.html#por-que-usar-css-para-personalizar-slides",
+    "title": "Meu tema CSS.",
+    "section": "Por que usar CSS para personalizar slides?",
+    "text": "Por que usar CSS para personalizar slides?\nO Quarto permite a criação de apresentações usando Reveal.js, um framework poderoso para slides em HTML. O diferencial é que ele permite estilizar os slides com CSS, dando liberdade para personalizar fontes, cores, espaçamentos e muito mais. Isso significa que podemos criar apresentações únicas sem depender dos templates padrões."
+  },
+  {
+    "objectID": "posts/TEMA CSS/index.html#como-criei-meu-tema-css",
+    "href": "posts/TEMA CSS/index.html#como-criei-meu-tema-css",
+    "title": "Meu tema CSS.",
+    "section": "Como criei meu tema CSS",
+    "text": "Como criei meu tema CSS\nPara modificar a aparência dos slides, criei um arquivo chamado custom.css e referenciei no YAML do meu arquivo .qmd:\nformat:\n  revealjs:\n    theme: custom.css\nDentro do custom.css, adicionei algumas customizações essenciais:\n/* Borda ao redor de toda a área do slide */\n.reveal {\n  border: 5px solid #333;  /* Borda externa ao redor do slide */\n  padding: 20px;  /* Espaçamento interno para a borda não ficar colada */\n  margin: 0 auto;  /* Centraliza os slides na tela */\n  box-sizing: border-box;  /* Inclui a borda no cálculo do tamanho total */\n}\n\n/* Ajuste para o slide e conteúdo */\n.reveal section {\n  font-size: 0.9em; /* Fonte pequena */\n  padding: 30px;\n  background-color: transparent;\n  color: #ddd;\n  border: none;  /* Remove qualquer borda extra do conteúdo */\n  margin-top: 20px; /* Margem superior reduzida */\n  margin-left: 10px; /* Adicionando margem à esquerda */\n}\n\n/* Adicionando borda no slide (caixa de conteúdo) */\n.reveal section {\n  border: 5px solid #333;  /* Borda fina em cada slide */\n  margin: 10px;\n  padding: 20px;\n}\n\n/* Ajuste para o título (###) */\n.reveal h3 {\n  font-size: 1.2em;\n  text-align: left;\n  padding: 20px;\n  background-color: #444;\n  color: white;\n  border-bottom: 3px solid #fff;\n  margin-top: 0;\n  margin-bottom: 20px;\n}\nCom essas configurações, consegui um visual mais limpo e moderno para os meus slides. Claro, é possível ir muito além, adicionando imagens de fundo e até interações avançadas. Mas confesso que é bem mais dificil do que parece."
+  },
+  {
+    "objectID": "posts/TEMA CSS/index.html#conclusão",
+    "href": "posts/TEMA CSS/index.html#conclusão",
+    "title": "Meu tema CSS.",
+    "section": "Conclusão",
+    "text": "Conclusão\nCriar um tema CSS personalizado para slides no Quarto foi uma experiência interessante e me permitiu deixar minhas apresentações mais alinhadas ao meu estilo. Se você também usa o Quarto para apresentações, recomendo experimentar a personalização via CSS. É simples e faz toda a diferença!"
   }
 ]
