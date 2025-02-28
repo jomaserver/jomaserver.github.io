@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Marcelo">
-<meta name="dcterms.date" content="2025-01-26">
+<meta name="dcterms.date" content="2025-02-04">
 
-<title>Kitty – Jomaserver Blog</title>
+<title>Minhas primeiras experiencias no Linux – Jomaserver Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,9 +120,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Kitty</h1>
+      <h1 class="title">Minhas primeiras experiencias no Linux</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Computação</div>
+                <div class="quarto-category">Linux</div>
               </div>
                   </div>
   </div>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 26, 2025</p>
+        <p class="date">February 4, 2025</p>
       </div>
     </div>
     
@@ -163,22 +163,43 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="images/kitty.png" class="img-fluid"></p>
-<p><strong>Título: Terminal Kitty e suas possibilidades</strong></p>
-<p>Recentemente fui indicado à conhecer o terminal “Kitty” e passei a ultima semana usando ele e decidi escrever um pouco sobre as vantagens e funcionalidades que aprendi até o momento:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3611987264.png" class="img-fluid figure-img"></p>
+<figcaption>Figura 1- Terminal Kitty rodando o comando htop.</figcaption>
+</figure>
+</div>
+<section id="explorando-o-linux-primeiras-impressões" class="level2">
+<h2 class="anchored" data-anchor-id="explorando-o-linux-primeiras-impressões">Explorando o Linux: Primeiras Impressões</h2>
+<p>Recentemente, comecei a usar Linux e escolhi o Ubuntu como minha primeira distribuição. Foi uma mudança empolgante! Desde a instalação até a configuração inicial, fiquei impressionado com a simplicidade e a flexibilidade do sistema. A interface é limpa, responsiva e, para quem vem do Windows, a adaptação foi bem tranquila.</p>
+<section id="o-poder-do-terminal-instalação-rápida-de-ferramentas" class="level3">
+<h3 class="anchored" data-anchor-id="o-poder-do-terminal-instalação-rápida-de-ferramentas">O Poder do Terminal: Instalação Rápida de Ferramentas</h3>
+<p>Algo que me chamou muito a atenção foi a praticidade de instalar pacotes e programas diretamente pelo terminal. Com poucos comandos, eu conseguia instalar e configurar o que precisava de maneira rápida e eficiente.</p>
+<p>Aqui estão algumas ferramentas que explorei:</p>
 <ul>
-<li><p><strong>Aceleração por GPU</strong>: Uma das grandes vantagens do Kitty é a utilização da GPU para renderizar tudo no terminal. Isso significa que, mesmo com um terminal cheio de gráficos ou muitas informações rolando na tela, o desempenho continua suave e rápido.</p></li>
-<li><p><strong>Suporte a Imagens</strong>: Uma funcionalidade que me chamou atenção no Kitty foi o suporte a imagens. Isso mesmo! Você pode exibir imagens diretamente no terminal, o que pode ser muito útil para mostrar gráficos, capturas de tela ou até mesmo visualizar imagens de maneira rápida, sem sair do terminal.</p></li>
-<li><p><strong>Multiplexação de Janela (Layouts)</strong>: Se você é como eu e gosta de trabalhar com várias janelas ao mesmo tempo, vai adorar o sistema de layout de janelas do Kitty. Ele permite dividir a tela em múltiplos painéis, facilitando a multitarefa no terminal.</p></li>
-<li><p><strong>Suporte a TrueColor</strong>: Para quem gosta de cores, o Kitty não decepciona. Ele oferece suporte a <strong>TrueColor</strong>, ou seja, você pode usar uma paleta de cores de 24 bits, tornando tudo mais vívido e preciso. Isso faz toda a diferença, especialmente para desenvolvedores e entusiastas de personalização.</p></li>
-<li><p><strong>Configurações por Arquivo de Configuração</strong>: O Kitty usa um arquivo de configuração chamado <code>kitty.conf</code>, onde você pode ajustar diversos parâmetros, como fontes, atalhos e temas. Isso permite que você personalize sua experiência ao máximo.</p></li>
+<li><p><strong>Docker</strong> 🐳: Facilita a criação e gerenciamento de containers, essencial para desenvolvimento e testes.</p></li>
+<li><p><strong>Conda</strong> 🐍: Um gerenciador de pacotes e ambientes que ajudou muito na organização dos meus projetos de bioinformática.</p></li>
+<li><p><strong>Git</strong> 🔧: Indispensável para controle de versão e gerenciamento dos meus repositórios.</p></li>
 </ul>
-<p>Além disso achei muito legal o papel da comunidade na construção desse terminal, encontrei GitHub varios temas para personalização: <a href="https://github.com/dexpota/kitty-themes/tree/master/themes" class="uri">https://github.com/dexpota/kitty-themes/tree/master/themes</a>. Parece uma besteira gigantesca, mas achei muito legal e fiquei um tempão navegando nos temas até decidir o meu. Vou mostrar minhas configurações:</p>
-<p><img src="images/Captura de tela de 2025-01-28 16-44-38.png" class="img-fluid"></p>
-<p>Alterei pelo vim basta usar o comando &gt; vim .config/kitty/kitty.conf</p>
-<p>como da ver na imagem também baixei uma fonte e escolhi o tamanho, mas isso é personalizavel. Se quiserem podem colocar qualquer fonte e alterar também configurações como o tamanho da janela etc. Bem legal essa serie de recursos</p>
+<p>A instalação foi bem simples:</p>
+<pre><code>sudo apt update &amp;&amp; sudo apt upgrade -y
+sudo apt install docker.io git</code></pre>
+<p>E para o Conda:</p>
+<pre><code>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh</code></pre>
+</section>
+<section id="customização-e-fluxo-de-trabalho" class="level3">
+<h3 class="anchored" data-anchor-id="customização-e-fluxo-de-trabalho">Customização e Fluxo de Trabalho</h3>
+<p>Outro ponto que me agradou bastante foi a possibilidade de personalizar o ambiente de acordo com as minhas necessidades. Comecei a usar o terminal <strong>Kitty</strong> (tem um post no blog que relata melhor minha experiencia até o momento com o terminal), que oferece uma interface mais rápida e personalizável. Além disso, pude ajustar algumas configurações no <strong>.bashrc</strong> para tornar minha experiência ainda melhor.</p>
+<p>post Kitty: <a href="https://juauzz.github.io/jomaserver.github.io/posts/Kitty/">Terminal Kitty e suas possibilidades</a></p>
+</section>
+<section id="conclusão" class="level3">
+<h3 class="anchored" data-anchor-id="conclusão">Conclusão</h3>
+<p>Explorar o Ubuntu tem sido uma experiência cheia de aprendizados. Cada novo comando e nova ferramenta que descubro torna o sistema ainda legal e adaptável às minhas necessidades. O que mais me surpreende é a sensação de controle e liberdade que o Linux proporciona. Saber que posso modificar praticamente qualquer aspecto do meu ambiente de trabalho deixa ainda mais empolgante.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

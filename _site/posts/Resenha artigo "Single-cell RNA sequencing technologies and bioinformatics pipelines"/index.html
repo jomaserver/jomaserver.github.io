@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Marcelo">
-<meta name="dcterms.date" content="2025-01-26">
+<meta name="dcterms.date" content="2025-02-07">
 
-<title>Kitty – Jomaserver Blog</title>
+<title>Resenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines – Jomaserver Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,9 +120,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Kitty</h1>
+      <h1 class="title">Resenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Computação</div>
+                <div class="quarto-category">Artigos</div>
               </div>
                   </div>
   </div>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 26, 2025</p>
+        <p class="date">February 7, 2025</p>
       </div>
     </div>
     
@@ -163,20 +163,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="images/kitty.png" class="img-fluid"></p>
-<p><strong>Título: Terminal Kitty e suas possibilidades</strong></p>
-<p>Recentemente fui indicado à conhecer o terminal “Kitty” e passei a ultima semana usando ele e decidi escrever um pouco sobre as vantagens e funcionalidades que aprendi até o momento:</p>
-<ul>
-<li><p><strong>Aceleração por GPU</strong>: Uma das grandes vantagens do Kitty é a utilização da GPU para renderizar tudo no terminal. Isso significa que, mesmo com um terminal cheio de gráficos ou muitas informações rolando na tela, o desempenho continua suave e rápido.</p></li>
-<li><p><strong>Suporte a Imagens</strong>: Uma funcionalidade que me chamou atenção no Kitty foi o suporte a imagens. Isso mesmo! Você pode exibir imagens diretamente no terminal, o que pode ser muito útil para mostrar gráficos, capturas de tela ou até mesmo visualizar imagens de maneira rápida, sem sair do terminal.</p></li>
-<li><p><strong>Multiplexação de Janela (Layouts)</strong>: Se você é como eu e gosta de trabalhar com várias janelas ao mesmo tempo, vai adorar o sistema de layout de janelas do Kitty. Ele permite dividir a tela em múltiplos painéis, facilitando a multitarefa no terminal.</p></li>
-<li><p><strong>Suporte a TrueColor</strong>: Para quem gosta de cores, o Kitty não decepciona. Ele oferece suporte a <strong>TrueColor</strong>, ou seja, você pode usar uma paleta de cores de 24 bits, tornando tudo mais vívido e preciso. Isso faz toda a diferença, especialmente para desenvolvedores e entusiastas de personalização.</p></li>
-<li><p><strong>Configurações por Arquivo de Configuração</strong>: O Kitty usa um arquivo de configuração chamado <code>kitty.conf</code>, onde você pode ajustar diversos parâmetros, como fontes, atalhos e temas. Isso permite que você personalize sua experiência ao máximo.</p></li>
-</ul>
-<p>Além disso achei muito legal o papel da comunidade na construção desse terminal, encontrei GitHub varios temas para personalização: <a href="https://github.com/dexpota/kitty-themes/tree/master/themes" class="uri">https://github.com/dexpota/kitty-themes/tree/master/themes</a>. Parece uma besteira gigantesca, mas achei muito legal e fiquei um tempão navegando nos temas até decidir o meu. Vou mostrar minhas configurações:</p>
-<p><img src="images/Captura de tela de 2025-01-28 16-44-38.png" class="img-fluid"></p>
-<p>Alterei pelo vim basta usar o comando &gt; vim .config/kitty/kitty.conf</p>
-<p>como da ver na imagem também baixei uma fonte e escolhi o tamanho, mas isso é personalizavel. Se quiserem podem colocar qualquer fonte e alterar também configurações como o tamanho da janela etc. Bem legal essa serie de recursos</p>
+<p><img src="images/clipboard-2456758526.png" class="img-fluid"></p>
+<p><strong>Resenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines</strong></p>
+<p>A cada ano, a tecnologia de sequenciamento se torna mais impressionante. O artigo “Tecnologia de sequenciamento de RNA de célula única e pipelines de bioinformática” publicado na Nature abriu muito minha cabeça em relação as possibilidades. Ao contrário dos métodos tradicionais que analisam um tecido inteiro e fornecem expressão genética média, o scRNA-seq nos permite estudar cada célula individualmente, revelando detalhes nunca antes vistos. A possibilidade de mapear essas variações revoluciona a forma como entendemos os processos celulares e as doenças.</p>
+<p>Este artigo traz uma visão bem completa das tecnologias de sequenciamento e estratégias de processamento dos dados que elas geram (esta parte é a mais complexa!!!!) O verdadeiro desafio ocorre após a coleta, quando falamos sobre a parte de análise computacional.</p>
+<p>O maior mérito do scRNA-seq é que ele resolve um problema clássico da biologia molecular: a média de expressão gênica. Antes, quando analisavam RNA em uma amostra de tecido, o que viam era uma média da atividade de todas as células presentes ali. Isso mascarava diferenças fundamentais entre células de tipos distintos. Com o scRNA-seq, agora podemos conseguir capturar a identidade de cada célula, algo essencial para entender processos como a resposta imunológica, a progressão do câncer e a diferenciação celular.</p>
+<p>O artigo explica de forma bem didática as etapas desse sequenciamento, desde a captura das células até a obtenção dos dados brutos. Mas o que me interessou de verdade foi a parte sobre as análises no computador que foram capazes de transformar MUITO dado bruto em algo compreensivel.</p>
+<p>Primeiro, os pesquisadores precisam limpar os dados e remover o ruído porque, como eu disse antes, o sequenciamento produz muita informação bruta. Em seguida, é necessário organizar esses dados e identificar padrões para diminuir a complexidade das informações. Isso é feito por meio de métodos como PCA (Análise de Componentes Principais).</p>
+<p>PCA: Técnica estatística utilizada para reduzir a dimensionalidade de um conjunto de dados preservando ao máximo sua variabilidade original.</p>
+<p>O artigo também discute a importância de identificar tipos de células e inferir trajetórias, mas admito que esta parte me deixou confuso, mas vou estudar mais sobre isso pra entender melhor porque pareceu bem legal.</p>
+<p>O scRNA-seq é uma ferramenta poderosa, mas sem pipelines bioinformáticas bem estruturadas, seus dados seriam apenas um grande caos genético.</p>
+<p>Se você tem interesse em genômica, bioinformática ou apenas quer entender melhor como novas tecnologias estão transformando a ciência, esse artigo vale a pena. Ainda há muito para explorar, mas já ficou claro que a individualidade celular é um universo à parte, e tem muita coisa ainda por vir aparentemente.</p>
+<p>Obrigado pela atenção!!!</p>
 
 
 

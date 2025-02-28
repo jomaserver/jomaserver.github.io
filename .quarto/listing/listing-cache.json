@@ -2,6 +2,9 @@
   "listingMap": {
     "index.qmd": [
       "posts"
+    ],
+    "jomaserver.github.io/index.qmd": [
+      "posts"
     ]
   }
 }

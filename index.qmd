@@ -1,12 +1,14 @@
 ---
 title: "Jomaserver Blog"
-listing:
+format: html
+listing: 
   contents: posts
   sort: "date desc"
-  type: default
   categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+  type: default
 ---
+
+Bem-vindo ao meu blog!
+
+Aqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.
+

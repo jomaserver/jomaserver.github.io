@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Marcelo">
-<meta name="dcterms.date" content="2025-01-26">
+<meta name="dcterms.date" content="2025-02-28">
 
-<title>Kitty – Jomaserver Blog</title>
+<title>Meu tema CSS. – Jomaserver Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Kitty</h1>
+      <h1 class="title">Meu tema CSS.</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Computação</div>
               </div>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 26, 2025</p>
+        <p class="date">February 28, 2025</p>
       </div>
     </div>
     
@@ -163,22 +163,64 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="images/kitty.png" class="img-fluid"></p>
-<p><strong>Título: Terminal Kitty e suas possibilidades</strong></p>
-<p>Recentemente fui indicado à conhecer o terminal “Kitty” e passei a ultima semana usando ele e decidi escrever um pouco sobre as vantagens e funcionalidades que aprendi até o momento:</p>
-<ul>
-<li><p><strong>Aceleração por GPU</strong>: Uma das grandes vantagens do Kitty é a utilização da GPU para renderizar tudo no terminal. Isso significa que, mesmo com um terminal cheio de gráficos ou muitas informações rolando na tela, o desempenho continua suave e rápido.</p></li>
-<li><p><strong>Suporte a Imagens</strong>: Uma funcionalidade que me chamou atenção no Kitty foi o suporte a imagens. Isso mesmo! Você pode exibir imagens diretamente no terminal, o que pode ser muito útil para mostrar gráficos, capturas de tela ou até mesmo visualizar imagens de maneira rápida, sem sair do terminal.</p></li>
-<li><p><strong>Multiplexação de Janela (Layouts)</strong>: Se você é como eu e gosta de trabalhar com várias janelas ao mesmo tempo, vai adorar o sistema de layout de janelas do Kitty. Ele permite dividir a tela em múltiplos painéis, facilitando a multitarefa no terminal.</p></li>
-<li><p><strong>Suporte a TrueColor</strong>: Para quem gosta de cores, o Kitty não decepciona. Ele oferece suporte a <strong>TrueColor</strong>, ou seja, você pode usar uma paleta de cores de 24 bits, tornando tudo mais vívido e preciso. Isso faz toda a diferença, especialmente para desenvolvedores e entusiastas de personalização.</p></li>
-<li><p><strong>Configurações por Arquivo de Configuração</strong>: O Kitty usa um arquivo de configuração chamado <code>kitty.conf</code>, onde você pode ajustar diversos parâmetros, como fontes, atalhos e temas. Isso permite que você personalize sua experiência ao máximo.</p></li>
-</ul>
-<p>Além disso achei muito legal o papel da comunidade na construção desse terminal, encontrei GitHub varios temas para personalização: <a href="https://github.com/dexpota/kitty-themes/tree/master/themes" class="uri">https://github.com/dexpota/kitty-themes/tree/master/themes</a>. Parece uma besteira gigantesca, mas achei muito legal e fiquei um tempão navegando nos temas até decidir o meu. Vou mostrar minhas configurações:</p>
-<p><img src="images/Captura de tela de 2025-01-28 16-44-38.png" class="img-fluid"></p>
-<p>Alterei pelo vim basta usar o comando &gt; vim .config/kitty/kitty.conf</p>
-<p>como da ver na imagem também baixei uma fonte e escolhi o tamanho, mas isso é personalizavel. Se quiserem podem colocar qualquer fonte e alterar também configurações como o tamanho da janela etc. Bem legal essa serie de recursos</p>
+<p>Criei um tema que vocês podem ver nesse link: <a href="https://juauzz.github.io/slidesquarto/SlidesQuarto.html#/title-slide">TEMA</a>, foi um processo divertido e cheio de etapas, no final disponibilizei o tema no open source do github, então se alguem tiver interesse em usar meu template sintam-se à vontade.</p>
+<p><img src="images/clipboard-1155711790.png" class="img-fluid"></p>
+<section id="por-que-usar-css-para-personalizar-slides" class="level2">
+<h2 class="anchored" data-anchor-id="por-que-usar-css-para-personalizar-slides">Por que usar CSS para personalizar slides?</h2>
+<p>O Quarto permite a criação de apresentações usando <strong>Reveal.js</strong>, um framework poderoso para slides em HTML. O diferencial é que ele permite estilizar os slides com <strong>CSS</strong>, dando liberdade para personalizar fontes, cores, espaçamentos e muito mais. Isso significa que podemos criar apresentações únicas sem depender dos templates padrões.</p>
+</section>
+<section id="como-criei-meu-tema-css" class="level2">
+<h2 class="anchored" data-anchor-id="como-criei-meu-tema-css">Como criei meu tema CSS</h2>
+<p>Para modificar a aparência dos slides, criei um arquivo chamado <code>custom.css</code> e referenciei no YAML do meu arquivo <code>.qmd</code>:</p>
+<pre><code>format:
+  revealjs:
+    theme: custom.css</code></pre>
+<p>Dentro do <code>custom.css</code>, adicionei algumas customizações essenciais:</p>
+<pre><code>/* Borda ao redor de toda a área do slide */
+.reveal {
+  border: 5px solid #333;  /* Borda externa ao redor do slide */
+  padding: 20px;  /* Espaçamento interno para a borda não ficar colada */
+  margin: 0 auto;  /* Centraliza os slides na tela */
+  box-sizing: border-box;  /* Inclui a borda no cálculo do tamanho total */
+}
+
+/* Ajuste para o slide e conteúdo */
+.reveal section {
+  font-size: 0.9em; /* Fonte pequena */
+  padding: 30px;
+  background-color: transparent;
+  color: #ddd;
+  border: none;  /* Remove qualquer borda extra do conteúdo */
+  margin-top: 20px; /* Margem superior reduzida */
+  margin-left: 10px; /* Adicionando margem à esquerda */
+}
+
+/* Adicionando borda no slide (caixa de conteúdo) */
+.reveal section {
+  border: 5px solid #333;  /* Borda fina em cada slide */
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Ajuste para o título (###) */
+.reveal h3 {
+  font-size: 1.2em;
+  text-align: left;
+  padding: 20px;
+  background-color: #444;
+  color: white;
+  border-bottom: 3px solid #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}</code></pre>
+<p>Com essas configurações, consegui um visual mais limpo e moderno para os meus slides. Claro, é possível ir muito além, adicionando imagens de fundo e até interações avançadas. Mas confesso que é bem mais dificil do que parece.</p>
+</section>
+<section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
+<p>Criar um tema CSS personalizado para slides no Quarto foi uma experiência interessante e me permitiu deixar minhas apresentações mais alinhadas ao meu estilo. Se você também usa o Quarto para apresentações, recomendo experimentar a personalização via CSS. É simples e faz toda a diferença!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -597,6 +639,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="juauzz/jomaserver.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 

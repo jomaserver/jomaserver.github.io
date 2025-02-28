@@ -2,11 +2,15 @@ project:
   type: website
 
 website:
+  margin-header: subscribe.html
+  
   title: "Jomaserver Blog"
   navbar:
     left:
       - href: index.qmd
         text: Início
+      - href: curriculum.qmd  
+        text: "Currículo"
     right:
       - about.qmd
       - icon: github
@@ -20,4 +24,7 @@ format:
     css: styles.css
 
 editor: visual
+comments:
+  utterances:
+    repo: juauzz/jomaserver.github.io
 
