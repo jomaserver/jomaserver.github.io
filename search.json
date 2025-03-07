@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jomaserver Blog",
     "section": "",
-    "text": "Bem-vindo ao meu blog!\nAqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMeu tema CSS.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nFeb 28, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nResenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines\n\n\n\n\n\n\nArtigos\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMinhas primeiras experiencias no Linux\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de Microbio aplicada\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
+    "text": "Bem-vindo ao meu blog!\nAqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtensão para gerar PDF ABNT.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nMar 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMeu tema CSS.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nFeb 28, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nResenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines\n\n\n\n\n\n\nArtigos\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMinhas primeiras experiencias no Linux\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de Microbio aplicada\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Minhas primeiras experiencias com Linux/index.html",
@@ -110,5 +110,68 @@
     "title": "Meu tema CSS.",
     "section": "Conclusão",
     "text": "Conclusão\nCriar um tema CSS personalizado para slides no Quarto foi uma experiência interessante e me permitiu deixar minhas apresentações mais alinhadas ao meu estilo. Se você também usa o Quarto para apresentações, recomendo experimentar a personalização via CSS. É simples e faz toda a diferença!"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "E aí, pessoal! Se você já passou horas (ou dias!) lutando com a formatação de um trabalho acadêmico seguindo as normas da ABNT, sabe como isso pode ser um verdadeiro pesadelo. Margens, fontes, citações, referências… Ufa! É tanta coisa que às vezes a gente até esquece do mais importante: o conteúdo do trabalho.\nPensando nisso, eu criei uma extensão para o Quarto que vai facilitar (e muito!) a sua vida na hora de formatar documentos acadêmicos. Quer saber como ela funciona e como você pode usá-la? Vem comigo que eu te explico tudo!\n\n\n\nImagine uma ferramenta que faz toda a formatação chata do seu trabalho automaticamente, enquanto você foca só em escrever. Pois é, essa extensão faz exatamente isso! Ela é como um “assistente pessoal” para quem precisa seguir as normas da ABNT.\nEla vem com:\n\nUm template LaTeX que já deixa tudo no jeito: margens certinhas, fontes adequadas, títulos e seções formatados.\nUm estilo de citação (CSL) que cuida das referências bibliográficas, seguindo direitinho as regras da ABNT.\nUm exemplo prático para você ver como funciona e já começar a usar sem enrolação.\n\nOu seja, é praticamente um “ctrl+c, ctrl+v” da formatação ABNT. 😉\n\n\n\n\nVou te dar alguns motivos para você ficar animado(a) com essa extensão:\n\nEconomiza Tempo:\n\nChega de perder horas ajustando margens e fontes. Com essa extensão, você clica em “renderizar” e voilà: seu documento está pronto!\n\nPadronização Garantida:\n\nSem mais preocupação com erros de formatação. A extensão cuida de tudo para você, seguindo as normas ABNT à risca.\n\nFácil de Usar:\n\nNão precisa ser expert em LaTeX ou Quarto. Basta seguir uns passinhos simples e pronto!\n\nPersonalizável:\n\nSe você quiser fazer ajustes no template, pode personalizar à vontade. É só abrir o arquivo e mudar o que precisar.\n\n\n\n\n\n\nVou te explicar direitinho como começar a usar essa extensão. É tão fácil que você vai se perguntar por que não fez isso antes!\n\n\n\nClone o Repositório:\nAbra o terminal e digite:\nbash\nCopy\ngit clone https://github.com/juauzz/extensionABNT.git\nCopie para o Seu Projeto:\n\nNo seu projeto Quarto, crie uma pasta chamada _extensions (se ainda não tiver).\nCopie a pasta extensionABNT para dentro de _extensions.\n\nA estrutura do seu projeto vai ficar assim:\nCopy\n/meu-projeto-quarto\n    /_extensions\n        /extensionABNT\n            /examples\n                - example.qmd\n            /templates\n                - abnt-templates.tex\n            - abnt.csl\n            - _extension.yml\n            - README.md\n    - meu-documento.qmd\n\n\n\n\nNo seu arquivo .qmd, adicione a extensão ao formato PDF:\nyaml\nCopy\n---\ntitle: \"Meu Documento ABNT\"\nauthor: \"Seu Nome\"\nformat:\n  pdf:\n    extensions: [extensionABNT]\n---\n\n\n\nAgora é só renderizar o documento. No terminal, digite:\nbash\nCopy\nquarto render meu-documento.qmd --to pdf\nE pronto! Seu documento vai sair formatadinho, seguindo todas as normas da ABNT. 😎\n\n\n\n\n\nSe você é do tipo que gosta de ver para crer, na pasta examples tem um arquivo example.qmd que já está pronto para usar. Para renderizá-lo, é só rodar:\nbash\nCopy\nquarto render examples/example.qmd --to pdf\nDepois é só abrir o PDF e ver como ficou. Spoiler: vai ficar show de bola! 😉\n\n\n\n\nSe você quiser fazer ajustes no template ou no estilo de citação, é super fácil:\n\nTemplate LaTeX: O arquivo templates/abnt-templates.tex pode ser editado para mudar margens, fontes, formatação de títulos, etc.\nEstilo de Citação: O arquivo abnt.csl define o estilo das referências. Se precisar de algo diferente, é só trocar por outro arquivo CSL.\n\n\n\n\n\nSe você gostou da extensão e quer ajudar a melhorá-la, fique à vontade para contribuir! Pode ser reportando um bug, sugerindo uma melhoria ou até enviando um código novo. É só abrir uma issue ou enviar um pull request. Todo mundo ganha quando a gente colabora, né?\n\n\n\n\nEssa extensão é open-source e está sob a MIT License. Isso significa que você pode usar, modificar e compartilhar à vontade. Só não esquece de dar os créditos, hein? 😉\n\n\n\n\nE aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\nSe você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n\n\n\nGitHub - Extensão ABNT para Quarto"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Imagine uma ferramenta que faz toda a formatação chata do seu trabalho automaticamente, enquanto você foca só em escrever. Pois é, essa extensão faz exatamente isso! Ela é como um “assistente pessoal” para quem precisa seguir as normas da ABNT.\nEla vem com:\n\nUm template LaTeX que já deixa tudo no jeito: margens certinhas, fontes adequadas, títulos e seções formatados.\nUm estilo de citação (CSL) que cuida das referências bibliográficas, seguindo direitinho as regras da ABNT.\nUm exemplo prático para você ver como funciona e já começar a usar sem enrolação.\n\nOu seja, é praticamente um “ctrl+c, ctrl+v” da formatação ABNT. 😉"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Vou te dar alguns motivos para você ficar animado(a) com essa extensão:\n\nEconomiza Tempo:\n\nChega de perder horas ajustando margens e fontes. Com essa extensão, você clica em “renderizar” e voilà: seu documento está pronto!\n\nPadronização Garantida:\n\nSem mais preocupação com erros de formatação. A extensão cuida de tudo para você, seguindo as normas ABNT à risca.\n\nFácil de Usar:\n\nNão precisa ser expert em LaTeX ou Quarto. Basta seguir uns passinhos simples e pronto!\n\nPersonalizável:\n\nSe você quiser fazer ajustes no template, pode personalizar à vontade. É só abrir o arquivo e mudar o que precisar."
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Vou te explicar direitinho como começar a usar essa extensão. É tão fácil que você vai se perguntar por que não fez isso antes!\n\n\n\nClone o Repositório:\nAbra o terminal e digite:\nbash\nCopy\ngit clone https://github.com/juauzz/extensionABNT.git\nCopie para o Seu Projeto:\n\nNo seu projeto Quarto, crie uma pasta chamada _extensions (se ainda não tiver).\nCopie a pasta extensionABNT para dentro de _extensions.\n\nA estrutura do seu projeto vai ficar assim:\nCopy\n/meu-projeto-quarto\n    /_extensions\n        /extensionABNT\n            /examples\n                - example.qmd\n            /templates\n                - abnt-templates.tex\n            - abnt.csl\n            - _extension.yml\n            - README.md\n    - meu-documento.qmd\n\n\n\n\nNo seu arquivo .qmd, adicione a extensão ao formato PDF:\nyaml\nCopy\n---\ntitle: \"Meu Documento ABNT\"\nauthor: \"Seu Nome\"\nformat:\n  pdf:\n    extensions: [extensionABNT]\n---\n\n\n\nAgora é só renderizar o documento. No terminal, digite:\nbash\nCopy\nquarto render meu-documento.qmd --to pdf\nE pronto! Seu documento vai sair formatadinho, seguindo todas as normas da ABNT. 😎"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#exemplo-prático",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#exemplo-prático",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Se você é do tipo que gosta de ver para crer, na pasta examples tem um arquivo example.qmd que já está pronto para usar. Para renderizá-lo, é só rodar:\nbash\nCopy\nquarto render examples/example.qmd --to pdf\nDepois é só abrir o PDF e ver como ficou. Spoiler: vai ficar show de bola! 😉"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Se você quiser fazer ajustes no template ou no estilo de citação, é super fácil:\n\nTemplate LaTeX: O arquivo templates/abnt-templates.tex pode ser editado para mudar margens, fontes, formatação de títulos, etc.\nEstilo de Citação: O arquivo abnt.csl define o estilo das referências. Se precisar de algo diferente, é só trocar por outro arquivo CSL."
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Se você gostou da extensão e quer ajudar a melhorá-la, fique à vontade para contribuir! Pode ser reportando um bug, sugerindo uma melhoria ou até enviando um código novo. É só abrir uma issue ou enviar um pull request. Todo mundo ganha quando a gente colabora, né?"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#licença",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#licença",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "Essa extensão é open-source e está sob a MIT License. Isso significa que você pode usar, modificar e compartilhar à vontade. Só não esquece de dar os créditos, hein? 😉"
+  },
+  {
+    "objectID": "posts/Extensão para gerar PDF com normas ABNT/index.html#conclusão",
+    "href": "posts/Extensão para gerar PDF com normas ABNT/index.html#conclusão",
+    "title": "Extensão para gerar PDF ABNT.",
+    "section": "",
+    "text": "E aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\nSe você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n\n\n\nGitHub - Extensão ABNT para Quarto"
   }
 ]
