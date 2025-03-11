@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jomaserver Blog",
     "section": "",
-    "text": "Bem-vindo ao meu blog!\nAqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtensão para gerar PDF ABNT.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nMar 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMeu tema CSS.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nFeb 28, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nResenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines\n\n\n\n\n\n\nArtigos\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMinhas primeiras experiencias no Linux\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de Microbio aplicada\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
+    "text": "Bem-vindo ao meu blog!\nAqui você encontrará posts sobre diversos tópicos, incluindo Biologia Molecular, Computação, Linux e muito mais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAstrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?\n\n\n\n\n\n\n\n\n\n\n\nMar 11, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nExtensão para gerar PDF ABNT.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nMar 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMeu tema CSS.\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nFeb 28, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nResenha do artigo Single-cell RNA sequencing technologies and bioinformatics pipelines\n\n\n\n\n\n\nArtigos\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nMinhas primeiras experiencias no Linux\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\nFeb 4, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de TE\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nPrimeiro Post do meu blog.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nTrabalho de Microbio aplicada\n\n\n\n\n\n\nBiologia Molecular\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\n\n\n\n\n\n\nKitty\n\n\n\n\n\n\nComputação\n\n\n\n\n\n\n\n\n\nJan 26, 2025\n\n\nJoão Marcelo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/Minhas primeiras experiencias com Linux/index.html",
@@ -173,5 +173,89 @@
     "title": "Extensão para gerar PDF ABNT.",
     "section": "",
     "text": "E aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\nSe você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n\n\n\nGitHub - Extensão ABNT para Quarto"
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "",
+    "text": "Antes de mergulharmos nos planetas de Outer Wilds, é importante entender o que é astrobiologia. Essa área da ciência estuda a origem, evolução e distribuição da vida no universo. Ela combina conhecimentos de biologia, química, física e astronomia para responder a uma das perguntas mais fascinantes da humanidade: estamos sozinhos no universo?\nA astrobiologia nos ajuda a imaginar como a vida poderia surgir e se adaptar em planetas com condições extremas, como os que encontramos em Outer Wilds. Vamos explorar cada um deles!"
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#o-que-é-astrobiologia",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#o-que-é-astrobiologia",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "",
+    "text": "Antes de mergulharmos nos planetas de Outer Wilds, é importante entender o que é astrobiologia. Essa área da ciência estuda a origem, evolução e distribuição da vida no universo. Ela combina conhecimentos de biologia, química, física e astronomia para responder a uma das perguntas mais fascinantes da humanidade: estamos sozinhos no universo?\nA astrobiologia nos ajuda a imaginar como a vida poderia surgir e se adaptar em planetas com condições extremas, como os que encontramos em Outer Wilds. Vamos explorar cada um deles!"
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#timber-hearth-um-lar-aconchegante-no-espaço",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#timber-hearth-um-lar-aconchegante-no-espaço",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Timber Hearth: Um Lar Aconchegante no Espaço",
+    "text": "Timber Hearth: Um Lar Aconchegante no Espaço\nTimber Hearth é o planeta natal dos Hearthians, uma raça de exploradores curiosos e resilientes. Com suas planícies gramadas, cavernas submersas e geysers, Timber Hearth oferece um ambiente estável e rico em recursos, ideal para o desenvolvimento da vida.\nAqui, encontramos varios seres que habitam o planeta. Esses seres são um exemplo fascinante de como a vida pode prosperar em ambientes equilibrados.\nCondições de Vida: - Temperatura estável. - Água abundante. - Atmosfera respirável.\nPossibilidade de Vida: - Alta. Timber Hearth é um exemplo de como a vida pode evoluir em ambientes estáveis e ricos em recursos."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#brittle-hollow-um-mundo-em-colapso",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#brittle-hollow-um-mundo-em-colapso",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Brittle Hollow: Um Mundo em Colapso",
+    "text": "Brittle Hollow: Um Mundo em Colapso\nBrittle Hollow é um planeta oco com um buraco negro no núcleo. Sua superfície frágil está em constante colapso, com pedaços do planeta caindo no buraco negro e reaparecendo em um buraco branco na periferia do sistema solar.\nApesar das condições extremas, a vida poderia existir nas cavernas internas do planeta, onde a gravidade é mais estável e há proteção contra os detritos espaciais. Organismos bioluminescentes, semelhantes aos encontrados nas profundezas dos oceanos da Terra, poderiam habitar essas regiões. Porém por ter um buraco negro… é já era esse planeta\nCondições de Vida: - Gravidade instável na superfície. - Proteção nas cavernas internas. - Pouca luz solar.\nPossibilidade de Vida: - NULA"
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#giants-deep-um-oceano-de-tempestades",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#giants-deep-um-oceano-de-tempestades",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Giant’s Deep: Um Oceano de Tempestades",
+    "text": "Giant’s Deep: Um Oceano de Tempestades\nGiant’s Deep é um planeta aquático com um oceano profundo e ciclones intensos. As ilhas flutuantes são constantemente lançadas em trajetórias suborbitais pelos ventos violentos.\nA vida aqui precisaria ser extremamente resistente a pressões altas e variações bruscas de temperatura. Formas de vida semelhantes a cefalópodes, capazes de se adaptar a ambientes dinâmicos, poderiam evoluir neste planeta.\nCondições de Vida: - Pressão extrema nas profundezas. - Temperaturas variáveis. - Ciclones constantes.\nPossibilidade de Vida: - Moderada. A vida precisaria ser resistente a condições extremamente dinâmicas."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#dark-bramble-o-pesadelo-congelado",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#dark-bramble-o-pesadelo-congelado",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Dark Bramble: O Pesadelo Congelado",
+    "text": "Dark Bramble: O Pesadelo Congelado\nDark Bramble é um planeta congelado e repleto de vinhas retorcidas que distorcem o espaço-tempo. Originalmente um planeta oceânico, Dark Bramble foi destruído por vinhas escuras que o transformaram em um labirinto mortal.\nA vida aqui seria altamente especializada, possivelmente dependente de energia química (quimiossíntese) em vez de luz solar. Os Anglerfish, predadores hostis que habitam Dark Bramble, são um exemplo de como a vida pode se adaptar a ambientes extremamente hostis.\nCondições de Vida: - Temperaturas congelantes. - Ambiente labiríntico e perigoso. - Pouca ou nenhuma luz solar.\nPossibilidade de Vida: - Baixa. A vida precisaria ser altamente especializada e resistente."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#o-modelo-matemático-entendendo-a-sobrevivência-em-condições-extremas",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#o-modelo-matemático-entendendo-a-sobrevivência-em-condições-extremas",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "O Modelo Matemático: Entendendo a Sobrevivência em Condições Extremas",
+    "text": "O Modelo Matemático: Entendendo a Sobrevivência em Condições Extremas\nPara entender como a vida poderia se adaptar a esses planetas, utilizei um modelo matemático que calcula a taxa de sobrevivência em função da temperatura e da energia disponível. A fórmula é a seguinte:\n\nOnde:\n- ( S ): Taxa de sobrevivência.\n- ( T ): Temperatura ambiente.\n- ( E ): Energia disponível.\n- ( α): Coeficiente de resistência térmica.\n- ( β ): Sensibilidade ao ambiente.\n- ( E0 ): Nível de energia ideal para a sobrevivência.\nEsse modelo combina dois conceitos importantes: 1. Decaimento Exponencial: Representa como a sobrevivência diminui com o aumento da temperatura. 2. Função Logística: Representa como a sobrevivência aumenta com a disponibilidade de energia."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#código-python-gerando-o-gráfico-de-sobrevivência",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#código-python-gerando-o-gráfico-de-sobrevivência",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Código Python: Gerando o Gráfico de Sobrevivência",
+    "text": "Código Python: Gerando o Gráfico de Sobrevivência\nAqui está o código Python que usei para gerar o gráfico da taxa de sobrevivência em função da temperatura:"
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#comentários-sobre-o-gráfico",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#comentários-sobre-o-gráfico",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Comentários sobre o Gráfico",
+    "text": "Comentários sobre o Gráfico\nO gráfico gerado mostra como a taxa de sobrevivência varia com a temperatura. Aqui estão algumas observações importantes:\n\nTemperaturas Extremas:\n\nEm temperaturas muito baixas ou muito altas, a taxa de sobrevivência cai drasticamente.\nIsso reflete a dificuldade da vida em se adaptar a condições extremas, como as encontradas em Dark Bramble.\n\nTemperaturas Moderadas:\n\nEm temperaturas próximas de 0°C, a taxa de sobrevivência é máxima, desde que haja energia suficiente.\nIsso se assemelha às condições de Timber Hearth, onde a vida prospera.\n\nEnergia Disponível:\n\nA energia disponível (( E )) também desempenha um papel crucial. Mesmo em temperaturas ideais, a falta de energia pode reduzir a taxa de sobrevivência."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#os-lambaris-e-a-resiliência-da-vida",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#os-lambaris-e-a-resiliência-da-vida",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Os Lambaris e a Resiliência da Vida",
+    "text": "Os Lambaris e a Resiliência da Vida\nOs Lambaris de Timber Hearth são um símbolo da adaptabilidade da vida. Esses pequenos peixes nos lembram de que, mesmo em um universo vasto e muitas vezes hostil, a vida encontra um caminho. Eles são um exemplo de como a vida pode prosperar em ambientes estáveis e ricos em recursos.\nMas e nos outros planetas? Em Brittle Hollow, Giant’s Deep e Dark Bramble, a vida precisaria ser muito mais resistente. Organismos extremófilos, como as bactérias termofílicas da Terra, nos mostram que a vida pode existir em condições que antes considerávamos impossíveis."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#conclusão-a-vida-encontra-um-caminho",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#conclusão-a-vida-encontra-um-caminho",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Conclusão: A Vida Encontra um Caminho",
+    "text": "Conclusão: A Vida Encontra um Caminho\nOuter Wilds nos convida a explorar não apenas um sistema solar, mas também as fronteiras da vida e da ciência. Através da astrobiologia, podemos refletir sobre como a vida poderia se adaptar a condições extremas, como as encontradas em Timber Hearth, Brittle Hollow, Giant’s Deep e Dark Bramble.\nOs Lambaris, e outras formas de vida do jogo nos mostram que a vida é incrivelmente resiliente. Eles nos inspiram a continuar explorando, questionando e sonhando com o que está além das estrelas.\nE você, o que acha? Como a vida poderia se adaptar a esses planetas? Deixe sua opinião nos comentários e vamos discutir!\n\n\n\nReferências\n\nMobius Digital. Outer Wilds. 2019.\nNASA Astrobiology Institute. What is Astrobiology? Disponível em: https://astrobiology.nasa.gov/.\nDartnell, L. Life in the Universe: A Beginner’s Guide. Oneworld Publications, 2007."
+  },
+  {
+    "objectID": "posts/Outer Wilds e a astrobiologia/index.html#os-anglerfish-e-a-resiliência-da-vida",
+    "href": "posts/Outer Wilds e a astrobiologia/index.html#os-anglerfish-e-a-resiliência-da-vida",
+    "title": "Astrobiologia em Outer Wilds: Como a Vida Poderia Sobreviver em Cada Planeta?",
+    "section": "Os Anglerfish e a Resiliência da Vida",
+    "text": "Os Anglerfish e a Resiliência da Vida\nOs Anglerfish de Timber Hearth são um símbolo da adaptabilidade da vida. Esses pequenos peixes nos lembram de que, mesmo em um universo vasto e muitas vezes hostil, a vida encontra um caminho. Eles são um exemplo de como a vida pode prosperar em ambientes estáveis e ricos em recursos.\nMas e nos outros planetas? Em Brittle Hollow, Giant’s Deep e Dark Bramble, a vida precisaria ser muito mais resistente. Organismos extremófilos, como as bactérias termofílicas da Terra, nos mostram que a vida pode existir em condições que antes considerávamos impossíveis."
   }
 ]
