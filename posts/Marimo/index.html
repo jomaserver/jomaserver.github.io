@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Marcelo">
-<meta name="dcterms.date" content="2025-06-16">
+<meta name="dcterms.date" content="2025-06-25">
 
-<title>Site NeuroTechXBsb – Jomaserver Blog</title>
+<title>Marimo – Jomaserver Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Site NeuroTechXBsb</h1>
+      <h1 class="title">Marimo</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Computação</div>
               </div>
@@ -141,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">June 16, 2025</p>
+        <p class="date">June 25, 2025</p>
       </div>
     </div>
     
@@ -164,27 +164,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="processo-de-criação" class="level2">
-<h2 class="anchored" data-anchor-id="processo-de-criação">Processo de criação</h2>
-<p>Basicamente, precisei estrutura um site institucional para meu projeto novo de extensão, pensei muito em como poderia fazer esse processo e escolhi fazer pelo QUARTO website, visando, facilitar o processo de manutenção para outros membros do projeto, posteriormente.</p>
+<p><img src="images/clipboard-4178710644.png" class="img-fluid"></p>
+<section id="marimo" class="level3">
+<h3 class="anchored" data-anchor-id="marimo">Marimo</h3>
+<p>Marimo, pra quem nunca ouviu falar, é o nome de uma alga japonesa redondinha e simpática. Mas aqui eu tô falando de outro tipo de marimo: um software que acabou virando meu jeito favorito de escrever código em Python.</p>
+<p>Sabe aquele momento em que você tá testando uma fórmula, mudando parâmetros, plotando gráfico… e tudo parece meio lento ou burocrático? O marimo resolve isso com um caderno interativo que roda direto no terminal, sem abrir navegador, sem bagunça.</p>
 </section>
-<section id="por-que-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="por-que-quarto">Por que QUARTO?</h2>
-<p>Então, escolhi usar porque ele é muito legal em facilitar a compreensão de processos HTML, porque ele transforma um .qmd em html, esse arquivo .qmd é bem simples de mexer por exemplo:</p>
-<p><img src="images/clipboard-4013434472.png" class="img-fluid"></p>
-<p>Esse é um arquivo .qmd que basicamente só precisa de um cabeçalho. E o resto parece bastante um editor de texto normal, claro que com algumas regrinhas a mais porém, simples e tranquilas de aprender.</p>
+<section id="por-que-o-marimo-é-top" class="level3">
+<h3 class="anchored" data-anchor-id="por-que-o-marimo-é-top">Por que o marimo é top?</h3>
+<ul>
+<li><p>Ele é reativo de verdade. Mudei uma variável? Todas as células que dependem dela atualizam automaticamente. Não preciso ficar apertando Shift+Enter igual doido.</p></li>
+<li><p>A interface é tipo zen. Tudo limpo, sem barra lateral, sem 20 botões. Só o que interessa: código, markdown, gráfico.</p></li>
+<li><p>Roda como um app local, rápido. Sem precisar abrir 15 abas no Chrome que vão travar tudo quando eu rodar um UMAP.</p></li>
+<li><p>O notebook é só um .py. Isso mesmo. Um arquivo Python, com blocos separados por comentários. Git-friendly, legível, fácil de versionar.</p></li>
+</ul>
 </section>
-<section id="estrutura-do-site" class="level2">
-<h2 class="anchored" data-anchor-id="estrutura-do-site">Estrutura do site</h2>
-<p>Agora para detalhes um poucos mais técnicos, estruturei o site, com um arquivo .yml que é como se fosse a raiz de tudo mostrando os caminhos e acessos que nosso site vai ter.</p>
-<p>Exemplo de arquivo .yml:</p>
-<p><img src="images/clipboard-3716136585.png" class="img-fluid"></p>
-<p>Além desse arquivo, tem um arquivo .qmd para cada um dos acessos, ou seja das paginas que vão estar no nosso menu. Também adicionei um .css externo que isso aí é um pouquinho mais dificil e exige um conhecimento de front-end. MAASSSS, isso é só um detalhe, tive que seguir fontes e cores que demandam a empresa.</p>
+<section id="o-que-eu-já-fiz-com-ele" class="level3">
+<h3 class="anchored" data-anchor-id="o-que-eu-já-fiz-com-ele">O que eu já fiz com ele?</h3>
+<p>Alguns usos bem práticos, que talvez ajudem você a imaginar se vale testar também: 1. Brincando com single-cell</p>
+<p>Tava rodando umas análises com o scanpy, e usei o marimo como meu caderno de experimentos. Criei sliders pra thresholds, vi os clusters mudando em tempo real, e não precisei refazer todos os plots manualmente cada vez que ajustava um valor. Foi meio viciante.</p>
+<ol start="2" type="1">
+<li>Modelos simples de vias metabólicas</li>
+</ol>
+<p>Monteiro de PHB. Sabe aqueles modelos com equações diferenciais que a gente faz pra ver como a produção varia com a concentração de enzimas? Coloquei no marimo com um gráfico interativo. Um painelzinho bioinformático caseiro, mas funcional.</p>
+<ol start="3" type="1">
+<li>Pequenos testes de script</li>
+</ol>
+<p>Coisa besta do dia a dia: testar uma função em biopython, brincar com leitura de FASTA, fazer um parser. Melhor do que rodar direto no terminal ou abrir um Jupyter só pra isso.</p>
 </section>
-<section id="conclusão" class="level2">
-<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
-<p>Foi tranquilo a construção e imagino que seja tranquilo para a manutenção futura também. Vão lá dar uma olhada no site e lembre que recomendações são sempre bem-vindas.</p>
-<p><a href="https://neurotechbsb.github.io/">Site NeuroTechBsb</a></p>
+<section id="conclusão" class="level3">
+<h3 class="anchored" data-anchor-id="conclusão">Conclusão</h3>
+<p>É isso gente, espero que possa ter ajudado com essa indicação, to me divertindo muito usando esse software, a instalação é bem simples pelo bash, então espero que consigam utilizar essa maravilha.</p>
 
 
 </section>
