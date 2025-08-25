@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Marcelo">
-<meta name="dcterms.date" content="2025-08-22">
+<meta name="dcterms.date" content="2025-08-25">
 
 <title>Como a bioinformática pode ajudar a entender o cérebro? – Jomaserver Blog</title>
 <style>
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 22, 2025</p>
+        <p class="date">August 25, 2025</p>
       </div>
     </div>
     
@@ -168,17 +168,22 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="recap" class="level2">
+<h2 class="anchored" data-anchor-id="recap">Recap</h2>
+<p>Recentemente fiz uma apresentação pra NeuroTechXBSB, com intuito de destrinchar o trabalho de bioinformatica na grande area da neurociencia, resolvi postar no meu blog. Porém todos esses contéudos serão disponibilizados no instagram @<a href="https://instagram.com/neurotechxbsb">neurotechbsb</a>, caso tenham interesse por esse tema, além de disponibilizarem contéudos que ligam a neurociência com varias outras areas.</p>
+</section>
 <section id="a-complexidade-do-cérebro" class="level2">
 <h2 class="anchored" data-anchor-id="a-complexidade-do-cérebro">A complexidade do cérebro</h2>
 <p>O cérebro é provavelmente o sistema mais complexo que a gente conhece.<br>
 Bilhões de células, trilhões de conexões, e ainda assim tentamos entender como isso tudo gera pensamento, memória, comportamento.</p>
 <p>Só que tem alguns problemas:</p>
 <ul>
-<li>Nem sempre as variantes genéticas explicam as doenças de forma direta.<br>
-</li>
-<li>O mesmo gene pode fazer coisas diferentes dependendo da célula.<br>
-</li>
-<li>E muitas vezes, alterações no DNA não aparecem claramente como sintomas.</li>
+<li><p>Nem sempre as variantes genéticas explicam as doenças de forma direta.<br>
+</p></li>
+<li><p>O mesmo gene pode fazer coisas diferentes dependendo da célula.<br>
+</p></li>
+<li><p>E muitas vezes, alterações no DNA não aparecem claramente como sintomas.</p>
+<p><img src="images/clipboard-1006107149.png" class="img-fluid"></p></li>
 </ul>
 <p>No fim, fica a pergunta que guia boa parte da pesquisa: <strong>como ligar genes, células e comportamento?</strong></p>
 <hr>
@@ -200,7 +205,7 @@ Bilhões de células, trilhões de conexões, e ainda assim tentamos entender co
 </section>
 <section id="mapeando-o-cérebro-em-escala-molecular" class="level2">
 <h2 class="anchored" data-anchor-id="mapeando-o-cérebro-em-escala-molecular">Mapeando o cérebro em escala molecular</h2>
-<p>Um trabalho gigante analisou <strong>1.866 cérebros humanos adultos</strong> para montar um atlas molecular.</p>
+<p>O artigo “<a href="https://www.science.org/doi/10.1126/science.aat8464">Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)</a>” analisou <strong>1.866 cérebros humanos adultos</strong> para montar um atlas molecular.</p>
 <p>Foram reunidos dados de:</p>
 <ul>
 <li>RNA (quais genes estão ativos)<br>
@@ -239,6 +244,7 @@ Bilhões de células, trilhões de conexões, e ainda assim tentamos entender co
 - Algumas doenças afetam só um subconjunto bem específico.</p>
 <p>No estudo, mais de <strong>32 mil células</strong> foram analisadas, e foi possível identificar perfis como neurônios excitatórios (Ex1–Ex9), inibitórios (In1–In8), astrócitos, microglia e por aí vai.</p>
 <p>Assim a gente consegue enxergar <strong>quem faz o quê no cérebro</strong>.</p>
+<p><img src="images/clipboard-4198628989.png" class="img-fluid"></p>
 <hr>
 </section>
 <section id="deconvolução-traduzindo-o-bulk" class="level2">
@@ -250,14 +256,16 @@ A saída é usar dados single-cell como referência para decompor os dados “bu
 - Oligodendrócitos e microglia diminuem.<br>
 - <strong>88% da variação da expressão gênica</strong> pode ser explicada só pela composição celular.</p>
 <p>Ou seja: às vezes o que parece uma “mudança genética” é, na verdade, uma mudança na proporção dos tipos de células.</p>
+<p><img src="images/clipboard-3901194799.png" class="img-fluid"></p>
 <hr>
 </section>
 <section id="esquizofrenia-como-exemplo" class="level2">
 <h2 class="anchored" data-anchor-id="esquizofrenia-como-exemplo">Esquizofrenia como exemplo</h2>
-<p>Um estudo sobre esquizofrenia analisou <strong>142 regiões do genoma (loci GWAS)</strong> e conseguiu identificar <strong>321 genes funcionais</strong> relacionados.</p>
+<p>O trabalho “<a href="https://www.science.org/doi/10.1126/science.aat8464">Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)</a>” analisou <strong>142 regiões do genoma (loci GWAS)</strong> e conseguiu identificar <strong>321 genes funcionais</strong> relacionados com esquizofrenia.</p>
 <p>Entre eles: <strong>CHRNA2, CACNA1C e GRIN1</strong>.</p>
 <p>O curioso é que <strong>67% desses genes estavam longe das variantes (SNPs) encontradas no DNA.</strong><br>
 Eles só apareceram porque a análise considerou o DNA em 3D e os mecanismos de regulação à distância.</p>
+<p><img src="images/clipboard-283073664.png" class="img-fluid"></p>
 <p>Sem bioinformática, isso passaria batido.</p>
 <hr>
 </section>
@@ -283,6 +291,17 @@ Eles só apareceram porque a análise considerou o DNA em 3D e os mecanismos de 
 <li>Dá base pra criar modelos que podem personalizar tratamentos.</li>
 </ul>
 <p>O futuro da neurociência computacional está justamente nessa mistura de <strong>Big Data + Biologia</strong> para decifrar a lógica molecular do cérebro.</p>
+<hr>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<ul>
+<li><a href="https://www.science.org/doi/10.1126/science.aat8464">Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)</a></li>
+</ul>
+<!-- -->
+<ul>
+<li><a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2019.00317/full">Single-Cell RNA-Seq Technologies and Related Computational Data Analysis (G, Chen)</a></li>
+</ul>
 
 
 </section>
