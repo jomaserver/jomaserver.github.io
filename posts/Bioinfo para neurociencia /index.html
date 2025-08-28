@@ -208,12 +208,9 @@ Bilhões de células, trilhões de conexões, e ainda assim tentamos entender co
 <p>O artigo “<a href="https://www.science.org/doi/10.1126/science.aat8464">Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)</a>” analisou <strong>1.866 cérebros humanos adultos</strong> para montar um atlas molecular.</p>
 <p>Foram reunidos dados de:</p>
 <ul>
-<li>RNA (quais genes estão ativos)<br>
-</li>
-<li>Estrutura 3D do DNA (Hi-C)<br>
-</li>
-<li>Variações genéticas (genótipo)<br>
-</li>
+<li>RNA (quais genes estão ativos)</li>
+<li>Estrutura 3D do DNA (Hi-C)</li>
+<li>Variações genéticas (genótipo)</li>
 <li>Marcas epigenéticas (regulação química)</li>
 </ul>
 <p>O resultado é um mapa de referência que ajuda a entender como diferentes doenças mexem com o cérebro.</p>
@@ -223,14 +220,10 @@ Bilhões de células, trilhões de conexões, e ainda assim tentamos entender co
 <h2 class="anchored" data-anchor-id="como-organizar-essa-bagunça-de-dados">Como organizar essa bagunça de dados?</h2>
 <p>Os pipelines de bioinformática geralmente seguem um caminho:</p>
 <ol type="1">
-<li>Limpeza e normalização dos dados brutos.<br>
-</li>
-<li>Identificação de genes mais ou menos ativos.<br>
-</li>
-<li>Separação de sinais de tipos celulares (deconvolução).<br>
-</li>
-<li>Descoberta de regiões do DNA ligadas à expressão (QTLs).<br>
-</li>
+<li>Limpeza e normalização dos dados brutos.</li>
+<li>Identificação de genes mais ou menos ativos.</li>
+<li>Separação de sinais de tipos celulares (deconvolução).</li>
+<li>Descoberta de regiões do DNA ligadas à expressão (QTLs).</li>
 <li>Criação de modelos preditivos.</li>
 </ol>
 <p>É basicamente transformar toneladas de dados em hipóteses biológicas que podem ser testadas no laboratório.</p>
@@ -239,9 +232,7 @@ Bilhões de células, trilhões de conexões, e ainda assim tentamos entender co
 <section id="o-poder-do-single-cell" class="level2">
 <h2 class="anchored" data-anchor-id="o-poder-do-single-cell">O poder do single-cell</h2>
 <p>Em vez de olhar o cérebro como um bolo inteiro, dá pra cortar em fatias muito finas e analisar célula por célula.</p>
-<p>Isso importa porque:<br>
-- O cérebro tem dezenas de tipos celulares diferentes.<br>
-- Algumas doenças afetam só um subconjunto bem específico.</p>
+<p>Isso importa porque: - O cérebro tem dezenas de tipos celulares diferentes. - Algumas doenças afetam só um subconjunto bem específico.</p>
 <p>No estudo, mais de <strong>32 mil células</strong> foram analisadas, e foi possível identificar perfis como neurônios excitatórios (Ex1–Ex9), inibitórios (In1–In8), astrócitos, microglia e por aí vai.</p>
 <p>Assim a gente consegue enxergar <strong>quem faz o quê no cérebro</strong>.</p>
 <p><img src="images/clipboard-4198628989.png" class="img-fluid"></p>
@@ -249,12 +240,8 @@ Bilhões de células, trilhões de conexões, e ainda assim tentamos entender co
 </section>
 <section id="deconvolução-traduzindo-o-bulk" class="level2">
 <h2 class="anchored" data-anchor-id="deconvolução-traduzindo-o-bulk">Deconvolução: traduzindo o “bulk”</h2>
-<p>Nem sempre dá pra analisar célula por célula.<br>
-A saída é usar dados single-cell como referência para decompor os dados “bulk”.</p>
-<p>Exemplo:<br>
-- Certos neurônios (Ex3, Ex4) aumentam com a idade.<br>
-- Oligodendrócitos e microglia diminuem.<br>
-- <strong>88% da variação da expressão gênica</strong> pode ser explicada só pela composição celular.</p>
+<p>Nem sempre dá pra analisar célula por célula. A saída é usar dados single-cell como referência para decompor os dados “bulk”.</p>
+<p>Exemplo: - Certos neurônios (Ex3, Ex4) aumentam com a idade. - Oligodendrócitos e microglia diminuem. - <strong>88% da variação da expressão gênica</strong> pode ser explicada só pela composição celular.</p>
 <p>Ou seja: às vezes o que parece uma “mudança genética” é, na verdade, uma mudança na proporção dos tipos de células.</p>
 <p><img src="images/clipboard-3901194799.png" class="img-fluid"></p>
 <hr>
@@ -272,22 +259,16 @@ Eles só apareceram porque a análise considerou o DNA em 3D e os mecanismos de 
 <section id="modelos-preditivos" class="level2">
 <h2 class="anchored" data-anchor-id="modelos-preditivos">Modelos preditivos</h2>
 <p>Com todos esses dados, dá pra ir além da descrição e partir pra predição.</p>
-<p>Exemplo: <strong>DSPN (Deep Structured Phenotype Network)</strong><br>
-- Integra genótipo, transcriptoma e QTLs.<br>
-- Consegue prever expressão gênica e risco de doenças.<br>
-- Já foi aplicado em esquizofrenia, autismo e bipolaridade.</p>
+<p>Exemplo: <strong>DSPN (Deep Structured Phenotype Network)</strong> - Integra genótipo, transcriptoma e QTLs. - Consegue prever expressão gênica e risco de doenças. - Já foi aplicado em esquizofrenia, autismo e bipolaridade.</p>
 <p>A ideia é transformar mapas moleculares em ferramentas úteis para diagnóstico e até terapias.</p>
 <hr>
 </section>
 <section id="conclusões" class="level2">
 <h2 class="anchored" data-anchor-id="conclusões">Conclusões</h2>
 <ul>
-<li>A bioinformática conecta DNA, células e doenças.<br>
-</li>
-<li>Mostra que contexto celular e regulatório importa — e muito.<br>
-</li>
-<li>Ajuda a revelar alvos terapêuticos que antes eram invisíveis.<br>
-</li>
+<li>A bioinformática conecta DNA, células e doenças.</li>
+<li>Mostra que contexto celular e regulatório importa.</li>
+<li>Ajuda a revelar alvos terapêuticos que antes eram invisíveis.</li>
 <li>Dá base pra criar modelos que podem personalizar tratamentos.</li>
 </ul>
 <p>O futuro da neurociência computacional está justamente nessa mistura de <strong>Big Data + Biologia</strong> para decifrar a lógica molecular do cérebro.</p>
