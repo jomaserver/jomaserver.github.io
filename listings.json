@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/PIBIC/metodologia_PIBIC.html",
       "/posts/Anotações Linux/index.html",
       "/posts/Ánalise de correlação em variavéis quantitativas /index.html",
       "/posts/Bioinfo para neurociencia /index.html",
@@ -13,7 +14,6 @@
       "/posts/Guia de estudo LaTex/index.html",
       "/posts/Extensão para gerar PDF com normas ABNT/index.html",
       "/posts/TEMA CSS/index.html",
-      "/posts/Resenha artigo \"Single-cell RNA sequencing technologies and bioinformatics pipelines\"/index.html",
       "/posts/Minhas primeiras experiencias com Linux/index.html",
       "/posts/Trabalho de TE/index.html",
       "/posts/Primeiro Post/index.html",
