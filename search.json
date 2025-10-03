@@ -802,6 +802,41 @@
     "href": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#hifiasm",
     "title": "Primeira Etapa da montagem do ANDROPOGON",
     "section": "HiFiasm",
-    "text": "HiFiasm\n#Linhas de comando:\n\nhifiasm -o andropogon.asmJM -t10 --telo-m TTTAGGG\\\n/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250523_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz\\\n/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250604_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz 2\\&gt; asm01.log\nOs parametros desse código dependem do servidor que você tiver trabalhando no meu caso usei -t10 (Usei 10 nucleos do processor da matriz do servidor). Outro parametro é o –telo-m TTTAGGG identificando meus telomeros (Extremidades do cromossomo). O andropogon.asmJM é o output que eu coloquei para meus arquivos resultantes do processo. O resto do codigo é apenas o caminho dos diretorios onde se encontram meus .fastq do sequenciamento. Posteriormente transformei esse código em um arquivo .sh (executável), para posteriormente passar ele pelo nohup. Bash\nnohup sh runMeHifiasm.sh &\nO nohup basicamente funciona como uma especie de host, faço uma maquina externa (no meu caso a maquina matriz), rodar o código, liberando meu terminal e fazendo com que a minha máquina de trabalho possa ser desligada, enquanto o código continua rodando na matriz. (obs: as vezes levam semanas pra software te entregar o resultado).\n##Genomescope2\nO genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade.\n##KMC\nO KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\nkmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/\n##Resultados do KMC\n\nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091\nGenomeScope2\nAgora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\ngenomescope.R -i reads.histo -o output -k 21\nResultados\nSobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+    "text": "HiFiasm"
+  },
+  {
+    "objectID": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "href": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "title": "Primeira Etapa da montagem do ANDROPOGON",
+    "section": "Genomescope2",
+    "text": "Genomescope2\nO genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
+  },
+  {
+    "objectID": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "href": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "title": "Primeira Etapa da montagem do ANDROPOGON",
+    "section": "KMC",
+    "text": "KMC\nO KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\nkmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
+  },
+  {
+    "objectID": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "href": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "title": "Primeira Etapa da montagem do ANDROPOGON",
+    "section": "Resultados do KMC",
+    "text": "Resultados do KMC\n\nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
+  },
+  {
+    "objectID": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "href": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "title": "Primeira Etapa da montagem do ANDROPOGON",
+    "section": "GenomeScope2",
+    "text": "GenomeScope2\nAgora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\ngenomescope.R -i reads.histo -o output -k 21"
+  },
+  {
+    "objectID": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "href": "posts/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "title": "Primeira Etapa da montagem do ANDROPOGON",
+    "section": "Resultados",
+    "text": "Resultados\nSobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
   }
 ]

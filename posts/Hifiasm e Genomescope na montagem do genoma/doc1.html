@@ -206,7 +206,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor.</p>
 <section id="hifiasm" class="level2">
 <h2 class="anchored" data-anchor-id="hifiasm">HiFiasm</h2>
-<p>#Linhas de comando:</p>
+</section>
+<section id="linhas-de-comando" class="level1">
+<h1>Linhas de comando:</h1>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">hifiasm</span> <span class="at">-o</span> andropogon.asmJM <span class="at">-t10</span> <span class="at">--telo-m</span> TTTAGGG<span class="dt">\</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250523_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz<span class="dt">\</span></span>
@@ -214,12 +216,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Os parametros desse código dependem do servidor que você tiver trabalhando no meu caso usei -t10 (Usei 10 nucleos do processor da matriz do servidor). Outro parametro é o –telo-m TTTAGGG identificando meus telomeros (Extremidades do cromossomo). O andropogon.asmJM é o output que eu coloquei para meus arquivos resultantes do processo. O resto do codigo é apenas o caminho dos diretorios onde se encontram meus .fastq do sequenciamento. Posteriormente transformei esse código em um arquivo .sh (executável), para posteriormente passar ele pelo nohup. Bash</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> sh runMeHifiasm.sh <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>O nohup basicamente funciona como uma especie de host, faço uma maquina externa (no meu caso a maquina matriz), rodar o código, liberando meu terminal e fazendo com que a minha máquina de trabalho possa ser desligada, enquanto o código continua rodando na matriz. (obs: as vezes levam semanas pra software te entregar o resultado).</p>
-<p>##Genomescope2</p>
+<section id="genomescope2" class="level2">
+<h2 class="anchored" data-anchor-id="genomescope2">Genomescope2</h2>
 <p>O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade.</p>
-<p>##KMC</p>
+</section>
+<section id="kmc" class="level2">
+<h2 class="anchored" data-anchor-id="kmc">KMC</h2>
 <p>O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">kmc</span> <span class="at">-k21</span> <span class="at">-t10</span> <span class="at">-m64</span> <span class="at">-ci1</span> <span class="at">-cs1000000</span> @lista_fastqsANDROPOGON.txt reads tmp/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>##Resultados do KMC</p>
+</section>
+<section id="resultados-do-kmc" class="level2">
+<h2 class="anchored" data-anchor-id="resultados-do-kmc">Resultados do KMC</h2>
 <pre class="text no-highlight"><code>
 Stage 1: 100%
 Stage 2: 100%
@@ -236,13 +243,18 @@ Stats:
     Total no. of k-mers                : 261304727485
     Total no. of reads                 :      11954295
     Total no. of super-k-mers          :  37576618091</code></pre>
-<p>GenomeScope2</p>
+</section>
+<section id="genomescope2-1" class="level2">
+<h2 class="anchored" data-anchor-id="genomescope2-1">GenomeScope2</h2>
 <p>Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">genomescope.R</span> <span class="at">-i</span> reads.histo <span class="at">-o</span> output <span class="at">-k</span> 21</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Resultados</p>
+</section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">Resultados</h2>
 <p>Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
