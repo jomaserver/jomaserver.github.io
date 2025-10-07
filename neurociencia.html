@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html><head>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c3c80eb2732ba8f9dc9867d0ac572f01.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+      "location": "sidebar",
+      "copy-button": false,
+      "collapse-after": 3,
+      "panel-placement": "start",
+      "type": "textbox",
+      "limit": 50,
+      "keyboard-shortcut": [
+        "f",
+        "/",
+        "s"
+      ],
+      "show-item-context": false,
+      "language": {
+        "search-no-results-text": "No results",
+        "search-matching-documents-text": "matching documents",
+        "search-copy-link-title": "Copy link to search",
+        "search-hide-matches-text": "Hide additional matches",
+        "search-more-match-text": "more match in this document",
+        "search-more-matches-text": "more matches in this document",
+        "search-clear-button-title": "Clear",
+        "search-text-placeholder": "",
+        "search-detached-cancel-button-title": "Cancel",
+        "search-submit-button-title": "Submit",
+        "search-label": "Search"
+      }
+    }</script><script>
+
+      window.document.addEventListener("DOMContentLoaded", function (_event) {
+        const listingTargetEl = window.document.querySelector('#listing-listing .list');
+        if (!listingTargetEl) {
+          // No listing discovered, do not attach.
+          return; 
+        }
+
+        const options = {
+          valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+          
+          searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+        };
+
+        window['quarto-listings'] = window['quarto-listings'] || {};
+        window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+        if (window['quarto-listing-loaded']) {
+          window['quarto-listing-loaded']();
+        }
+      });
+
+      window.addEventListener('hashchange',() => {
+        if (window['quarto-listing-loaded']) {
+          window['quarto-listing-loaded']();
+        }
+      })
+      </script><link rel="stylesheet" href="./cyanobacteria.css">
+    <title>Posts sobre Neurociência</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+<body class="fullcontent"> <nav class="category-nav">
+        <a href="./index.html">← Voltar para o Início</a>
+    </nav>
+
+    <main class="category-content"><header id="title-block-header" class="quarto-title-block"></header>
+        <section id="bem-vindo-à-categoria-neurociência" class="level2 bloco-neurociencia">
+        <h2 class="anchored" data-anchor-id="bem-vindo-à-categoria-neurociência">Bem-vindo à categoria Neurociência<img src="images/NeurocienciaB-01.png" width="193" height="141"></h2>
+        <hr>
+        <p>Participo de um projeto de extensão chamado <a href="https://www.instagram.com/neurotechxbsb/">NeuroTechXBsb</a>, por isso é comum de eu estar lendo um artigo de neurociência ou participando de hackatons. Por isso, decidi criar essa categoria! Se seu interesse for apenas nessa área, recomendo que siga o link e acompanhe o conteúdo da NeuroTechX.</p>
+        </section>
+        <style>
+        /* Bloco de Neurociência */
+        .bloco-neurociencia {
+          background-color: #0c0c1a; /* Azul muito escuro, quase preto */
+          color: #a0a0ff; /* Lilás suave para o texto */
+          padding: 2.5rem;
+          border-radius: 8px; /* Bordas levemente arredondadas */
+          margin: 2rem 0;
+          font-family: 'Roboto', sans-serif; /* Uma fonte limpa e moderna */
+          font-size: 1.1rem;
+          line-height: 1.8;
+          border: 1px solid #6a05ad; /* Borda roxa escura */
+          box-shadow: 0 0 15px rgba(106, 5, 173, 0.4), /* Brilho roxo */
+                      0 0 25px rgba(160, 160, 255, 0.2); /* Brilho azul/lilás sutil */
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease-in-out; /* Suaviza transições ao interagir */
+        }
+
+        /* Efeito de rede neural/conexões */
+        .bloco-neurociencia::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: 
+            radial-gradient(circle at top left, rgba(160, 160, 255, 0.1) 1px, transparent 1px),
+            radial-gradient(circle at bottom right, rgba(106, 5, 173, 0.1) 1px, transparent 1px);
+          background-size: 50px 50px; /* Tamanho dos "pontos de conexão" */
+          opacity: 0.3;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        /* Detalhe de "pulso" ou "onda cerebral" */
+        .bloco-neurociencia::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80%;
+          height: 2px;
+          background: linear-gradient(to right, transparent, #a0a0ff, transparent);
+          box-shadow: 0 0 8px rgba(160, 160, 255, 0.7);
+          opacity: 0.6;
+          animation: pulse-line 4s infinite ease-in-out; /* Animação opcional */
+        }
+
+        /* Animação para a linha de pulso */
+        @keyframes pulse-line {
+          0% { transform: translateX(-50%) scaleX(0.8); opacity: 0.4; }
+          50% { transform: translateX(-50%) scaleX(1); opacity: 0.8; }
+          100% { transform: translateX(-50%) scaleX(0.8); opacity: 0.4; }
+        }
+
+        /* Estilo para títulos dentro do bloco de Neurociência */
+        .bloco-neurociencia h2,
+        .bloco-neurociencia h3 {
+          color: #a0a0ff; /* Títulos em lilás */
+          border-bottom: 1px solid rgba(160, 160, 255, 0.3); /* Linha sutil */
+          padding-bottom: 8px;
+          margin-top: 1.8rem;
+          margin-bottom: 1.2rem;
+          position: relative;
+          z-index: 1; /* Garante que os títulos fiquem acima dos efeitos de fundo */
+        }
+
+        /* Efeito de hover (opcional) */
+        .bloco-neurociencia:hover {
+          border-color: #a0a0ff;
+          box-shadow: 0 0 20px rgba(160, 160, 255, 0.6), 
+                      0 0 30px rgba(106, 5, 173, 0.3);
+          transform: translateY(-3px); /* Leve levantamento */
+        }
+        </style>
+        
+        
+        
+    </main>
+
+    
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+        <div class="list grid quarto-listing-cols-2">
+        <div class="g-col-1" data-index="0" data-categories="TmV1cm9jaSVDMyVBQW5jaWElMkNDb21wdXRhJUMzJUE3JUMzJUEzbw==" data-listing-date-sort="1756090800000" data-listing-file-modified-sort="1759841972309" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="729">
+        <a href="./posts/neurociencia/Bioinfo para neurociencia /index.html" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+        <p class="card-img-top">
+        <img loading="lazy" src="./posts/neurociencia/Bioinfo para neurociencia /images/clipboard-3901194799.png" class="thumbnail-image card-img" style="height: 150px;">
+        </p>
+        <div class="card-body post-contents">
+        <h5 class="no-anchor card-title listing-title">
+        Como a bioinformática pode ajudar a entender o cérebro?
+        </h5>
+        <div class="card-attribution card-text-small justify">
+        <div class="listing-author">
+        João Marcelo
+        </div>
+        <div class="listing-date">
+        Aug 25, 2025
+        </div>
+        </div>
+        </div>
+        </div>
+        </a>
+        </div>
+        </div>
+        <div class="listing-no-matching d-none">
+        No matching items
+        </div>
+        </div></body></html>

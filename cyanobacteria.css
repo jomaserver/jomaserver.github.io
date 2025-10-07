@@ -1,0 +1,154 @@
+/*
+============================================================
+  ARQUIVO DE ESTILO DEFINITIVO FINAL (VERSÃO ESTÁVEL E LIMPA)
+  Foco: Estrutura (Caixa) e Legibilidade
+============================================================
+*/
+
+/* --- REGISTRO DAS FONTES CUSTOMIZADAS --- */
+@font-face { font-family: 'CyberHorizon'; src: url('fonts/CyberHorizon-ARAvL.ttf') format('truetype'); }
+@font-face { font-family: 'GlitchGoblin'; src: url('fonts/GlitchGoblin-2O87v.ttf') format('truetype'); }
+@font-face { font-family: 'Ryzes'; src: url('fonts/Ryzes-ax92x.ttf') format('truetype'); }
+@font-face { font-family: 'Bytalion'; src: url('fonts/BytalionRegular-1j62j.ttf') format('truetype'); }
+
+/* --- PALETA DE CORES E VARIÁVEIS GLOBAIS --- */
+:root {
+  --neon-green: #39ff14;
+  --neon-purple: #9d00ff;
+  --gray-dark: #0d1117;
+  --gray-medium: #21262d;
+  --gray-light: #c9d1d9;
+  --gray-border: #30363d;
+  --text: var(--gray-light);
+  --border: var(--gray-border);
+  --accent: var(--neon-green);
+  --bg: var(--gray-medium);
+  --gradientTop: var(--gray-dark);
+  --gradientBottom: var(--gray-medium);
+}
+
+/* --- ESTILOS GLOBAIS E RESET --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  padding: 10px;
+  font-family: 'Bytalion', sans-serif;
+  color: var(--text);
+  background-color: var(--gradientTop);
+  background-image: linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), 
+                    linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), 
+                    linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), 
+                    linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), 
+                    linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)), 
+                    linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg));
+  background-size: 20px 35px;
+  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+  background-attachment: fixed;
+}
+
+/* --- ESTRUTURA PRINCIPAL (CORREÇÃO DOS PARÂMETROS DA CAIXA) --- */
+.container {
+  max-width: 55rem;
+  margin: 5vw auto 12px auto;
+  border: 4px solid var(--border);
+  outline: 2px solid var(--neon-purple);
+  outline-offset: 4px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 5px;
+  background-color: rgba(13, 17, 23, 0.9);
+  backdrop-filter: blur(3px);
+  position: relative;
+}
+.small { flex: 1 1 15%; }
+.large { flex: 1 1 78%; }
+.full { flex: 1 1 100%; }
+.half { flex: 1 1 49%; }
+
+header {
+  background-image: url('images/banners/banner-principal.png');
+  background-size: cover; background-position: center; width: 100%; height: 120px;
+  border: 2px solid var(--border); border-radius: 5px; position: relative;
+  display: flex; justify-content: center; align-items: center;
+}
+header span {
+  font-family: 'CyberHorizon', sans-serif; color: var(--neon-purple); font-size: 4rem;
+  text-shadow: 1px 1px 0px var(--gray-dark), -1px -1px 0px var(--gray-dark), 1px -1px 0px var(--gray-dark), -1px 1px 0px var(--gray-dark), 0 0 10px var(--neon-purple);
+  position: static; font-weight: normal;
+}
+
+section { border: 2px solid var(--border); border-radius: 5px; background-color: var(--gray-medium); padding: 15px; }
+footer { text-align: center; margin-bottom: 5vw; font-size: 0.8rem; color: var(--gray-light); }
+
+
+/* --- TIPOGRAFIA, LINKS E LEGIBILIDADE GERAL --- */
+h1, h2, h3, h4, h5, h6, p { margin: 5px 5px 15px 5px; line-height: 1.4; }
+h1, .quarto-title-block .quarto-title { font-family: 'CyberHorizon', sans-serif; color: var(--neon-purple); font-size: 2.2rem; text-align: center; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+h2 { font-family: 'GlitchGoblin', sans-serif; color: var(--neon-green); font-size: 2rem; text-align: center; }
+h3 { font-family: 'Ryzes', sans-serif; color: var(--gray-light); font-size: 1.5rem; }
+
+/* ESTILO DE LINKS GLOBAIS: Roxo legível por padrão, Neon verde no hover */
+a { color: var(--neon-purple); text-decoration: none; transition: all 0.2s ease-in-out; }
+a:hover { color: var(--neon-green); text-shadow: 0 0 8px var(--neon-green); }
+
+/* --- NAVEGAÇÃO --- */
+nav { border: 2px solid var(--border); border-radius: 5px; padding: 5px; background-color: var(--gray-medium); }
+nav div { text-align: center; font-size: 1.25rem; margin: 5px 5px 10px 5px; color: var(--neon-purple); font-family: 'GlitchGoblin', sans-serif; }
+nav a { display: block; margin: 5px; border-radius: 5px; padding: 2px 7px; }
+nav a:hover { background: var(--gray-dark); }
+
+/* --- ESTILOS DE LISTAGEM DE POSTS (LIMPO E LEGÍVEL) --- */
+.quarto-listing-grid .list-card {
+  background-color: var(--gray-dark) !important;
+  border: 1px solid var(--gray-border);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.quarto-listing-grid .list-card:hover { border-color: var(--neon-purple); box-shadow: 0 0 10px var(--neon-purple); }
+
+/* Legibilidade do Título: Cor sólida para garantir a leitura */
+.quarto-listing-grid .list-card a,
+.quarto-listing-grid .list-card .list-card-title,
+.quarto-listing-grid .list-card a h5 {
+  color: var(--gray-light) !important; /* COR SÓLIDA LEGÍVEL POR PADRÃO */
+  font-family: 'GlitchGoblin', sans-serif;
+  text-decoration: none;
+  text-shadow: none !important;
+  font-size: 0.6rem; /* TAMANHO REDUZIDO AQUI */
+}
+/* EFEITO NEON VERDE APENAS NO HOVER */
+.quarto-listing-grid .list-card a:hover .list-card-title,
+.quarto-listing-grid .list-card a:hover h5 {
+  color: var(--neon-green) !important;
+  text-shadow: 0 0 8px var(--neon-green) !important;
+}
+.quarto-listing-grid .list-card-date { color: var(--gray-light) !important; opacity: 0.6; }
+
+
+/* --- ESTILOS PARA PÁGINA DE ÍCONES (posts.qmd) --- */
+.category-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; padding: 40px 20px; }
+.category-card { position: relative; display: inline-block; border: 2px solid var(--gray-border); border-radius: 10px; transition: all 0.3s ease-in-out; background-color: var(--gray-medium); }
+.category-card img { width: 150px; height: 150px; display: block; border-radius: 8px; transition: all 0.3s ease-in-out; }
+.category-card .caption { opacity: 0; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: var(--accent); color: var(--gray-dark); padding: 5px 15px; border-radius: 5px; font-size: 1rem; font-weight: bold; white-space: nowrap; transition: all 0.3s ease-in-out; }
+.category-card:hover { transform: scale(1.05); box-shadow: 0 0 15px var(--neon-green); }
+.category-card:hover img { filter: brightness(0.8) drop-shadow(0 0 10px var(--neon-purple)); }
+.category-card:hover .caption { opacity: 1; top: -45px; }
+
+/* --- IMAGENS DE LAYOUT (Página Inicial) --- */
+.robo-intro-overlay, .farmer-intro-overlay { position: absolute; left: 50%; transform: translateX(-50%); width: 400px; height: auto; z-index: 10; pointer-events: none; }
+.robo-intro-overlay { top: -100px; }
+.farmer-intro-overlay { top: 10px; width: 300px; z-index: 9; opacity: 0.8; }
+.posts-intro-banner { width: 100%; height: 200px; overflow: hidden; background-image: url('images/RoboB.png'); background-size: cover; background-position: center; border-radius: 8px; border: 2px solid var(--neon-green); margin-top: 30px; margin-bottom: 20px; display: flex; justify-content: center; align-items: center; font-family: 'GlitchGoblin', sans-serif; font-size: 2.5rem; color: var(--neon-purple); text-shadow: 0 0 10px var(--neon-purple); text-align: center; }
+
+/* --- OUTROS --- */
+/* Fix para que o conteúdo (imagens/gráficos) caiba na box (Corrigindo o overflow) */
+.container img, .container pre, .container .quarto-figure, .container .cell-output {
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    box-sizing: border-box;
+    height: auto;
+}

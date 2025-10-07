@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html><head>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c3c80eb2732ba8f9dc9867d0ac572f01.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+      "location": "sidebar",
+      "copy-button": false,
+      "collapse-after": 3,
+      "panel-placement": "start",
+      "type": "textbox",
+      "limit": 50,
+      "keyboard-shortcut": [
+        "f",
+        "/",
+        "s"
+      ],
+      "show-item-context": false,
+      "language": {
+        "search-no-results-text": "No results",
+        "search-matching-documents-text": "matching documents",
+        "search-copy-link-title": "Copy link to search",
+        "search-hide-matches-text": "Hide additional matches",
+        "search-more-match-text": "more match in this document",
+        "search-more-matches-text": "more matches in this document",
+        "search-clear-button-title": "Clear",
+        "search-text-placeholder": "",
+        "search-detached-cancel-button-title": "Cancel",
+        "search-submit-button-title": "Submit",
+        "search-label": "Search"
+      }
+    }</script><script>
+
+      window.document.addEventListener("DOMContentLoaded", function (_event) {
+        const listingTargetEl = window.document.querySelector('#listing-listing .list');
+        if (!listingTargetEl) {
+          // No listing discovered, do not attach.
+          return; 
+        }
+
+        const options = {
+          valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+          
+          searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+        };
+
+        window['quarto-listings'] = window['quarto-listings'] || {};
+        window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+        if (window['quarto-listing-loaded']) {
+          window['quarto-listing-loaded']();
+        }
+      });
+
+      window.addEventListener('hashchange',() => {
+        if (window['quarto-listing-loaded']) {
+          window['quarto-listing-loaded']();
+        }
+      })
+      </script><link rel="stylesheet" href="./cyanobacteria.css">
+    <title>Posts sobre Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+<body class="fullcontent"> <nav class="category-nav">
+        <a href="./index.html">← Voltar para o Início</a>
+    </nav>
+
+    <main class="category-content"><header id="title-block-header" class="quarto-title-block"></header>
+        <section id="bem-vindo-à-categoria-linux" class="level2 bloco-linux">
+        <h2 class="anchored" data-anchor-id="bem-vindo-à-categoria-linux">Bem-vindo à categoria Linux<img src="images/linuxB-01.png" class="img-fluid" width="95"></h2>
+        <p>Linux é o melhor sistema operacional e ponto (Tem que práticar óbvio). Recentemente, tenho usado cada vez mais. E meu ambiente de trabalho precisa ser Linux, então, foi bom ter um conhecimento prévio, mas sinto que avançarei bem mais agora nesse sistema operacional. Essa talvez seja a página mais parecida com um caderno de anotações. Mas caso tenha interesse fica à vontade para vasculhar informações!!!! Espero ajudar.</p>
+        </section>
+        <style>
+        /* Bloco de Linux - com paleta do Pinguim */
+        .bloco-linux {
+          background-color: #36454F; /* Cinza escuro do pinguim */
+          color: #F8F8F8; /* Branco do pinguim para o texto principal */
+          padding: 2rem;
+          border-radius: 4px; /* Mais arredondado que o anterior, lembrando o pinguim */
+          margin: 2rem 0;
+          font-family: 'Ubuntu Mono', monospace;
+          font-size: 1.05rem;
+          line-height: 1.6;
+          border: 1px solid #FFD700; /* Amarelo dourado do bico/pés */
+          box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Brilho amarelo */
+          position: relative;
+          overflow: hidden;
+        }
+
+        .bloco-linux::before {
+          content: 'Tux >'; /* Prompt modificado para Tux */
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          font-size: 1.2rem;
+          color: #FFD700; /* Amarelo para o prompt */
+          opacity: 0.8;
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        .bloco-linux::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background-image: 
+            linear-gradient(rgba(255, 215, 0, 0.1) 1px, transparent 1px); /* Linhas amareladas */
+          background-size: 100% 18px;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .bloco-linux h2,
+        .bloco-linux h3 {
+          color: #FFD700; /* Títulos em amarelo */
+          border-bottom: 1px solid rgba(255, 215, 0, 0.4); /* Linha amarela sutil */
+          padding-bottom: 5px;
+          margin-top: 1.5rem;
+          margin-bottom: 0.8rem;
+          position: relative;
+          z-index: 1;
+        }
+        </style>
+        
+        
+        
+    </main>
+
+    
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+        <div class="list grid quarto-listing-cols-2">
+        <div class="g-col-1" data-index="0" data-categories="UElCSUMlMkNMaW51eCUyQ0Jpb2xvZ2lhJTIwTW9sZWN1bGFy" data-listing-date-sort="1759460400000" data-listing-file-modified-sort="1759850278537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="692">
+        <a href="./posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+        <p class="card-img-top">
+        <img loading="lazy" src="./posts/linux/Hifiasm e Genomescope na montagem do genoma/images/genome.png" class="thumbnail-image card-img" style="height: 150px;">
+        </p>
+        <div class="card-body post-contents">
+        <h5 class="no-anchor card-title listing-title">
+        Primeiro passo na montagem
+        </h5>
+        <div class="card-attribution card-text-small justify">
+        <div class="listing-author">
+        João Marcelo Amaral
+        </div>
+        <div class="listing-date">
+        Oct 3, 2025
+        </div>
+        </div>
+        </div>
+        </div>
+        </a>
+        </div>
+        <div class="g-col-1" data-index="1" data-categories="Q29tcHV0YSVDMyVBNyVDMyVBM28lMkNMaW51eA==" data-listing-date-sort="1758596400000" data-listing-file-modified-sort="1759839074117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="360">
+        <a href="./posts/linux/Anotações Linux/index.html" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+        <p class="card-img-top">
+        <img loading="lazy" src="./posts/linux/Anotações Linux/images/grep-command-guide-in-terminal-1024x396.png" class="thumbnail-image card-img" style="height: 150px;">
+        </p>
+        <div class="card-body post-contents">
+        <h5 class="no-anchor card-title listing-title">
+        Anotações de uso do Bash
+        </h5>
+        <div class="card-attribution card-text-small justify">
+        <div class="listing-author">
+        João Marcelo
+        </div>
+        <div class="listing-date">
+        Sep 23, 2025
+        </div>
+        </div>
+        </div>
+        </div>
+        </a>
+        </div>
+        <div class="g-col-1" data-index="2" data-categories="TGludXg=" data-listing-date-sort="1738638000000" data-listing-file-modified-sort="1759840715940" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="322">
+        <a href="./posts/linux/Minhas primeiras experiencias com Linux/index.html" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+        <p class="card-img-top">
+        <img loading="lazy" src="./posts/linux/Minhas primeiras experiencias com Linux/images/clipboard-3611987264.png" class="thumbnail-image card-img" style="height: 150px;">
+        </p>
+        <div class="card-body post-contents">
+        <h5 class="no-anchor card-title listing-title">
+        Experiencias em Linux
+        </h5>
+        <div class="card-attribution card-text-small justify">
+        <div class="listing-author">
+        João Marcelo
+        </div>
+        <div class="listing-date">
+        Feb 4, 2025
+        </div>
+        </div>
+        </div>
+        </div>
+        </a>
+        </div>
+        </div>
+        <div class="listing-no-matching d-none">
+        No matching items
+        </div>
+        </div></body></html>
