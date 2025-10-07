@@ -1,46 +1,5 @@
 [
   {
-    "listing": "/pibic.html",
-    "items": [
-      "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/biologia-molecular/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/computacao/Anotações Linux/index.html",
-      "/posts/linux/Anotações Linux/index.html",
-      "/posts/estatistica/Ánalise de correlação em variavéis quantitativas /index.html",
-      "/posts/computacao/Bioinfo para neurociencia /index.html",
-      "/posts/neurociencia/Bioinfo para neurociencia /index.html",
-      "/posts/Filosofia/Filosofia e linguagem por trás de Chants of Sennaar/index.html",
-      "/posts/computacao/HiFiAdapterFilt and GenomeScope2/index.html",
-      "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html",
-      "/posts/computacao/Site NeuroTech/index.html",
-      "/posts/computacao/THErmodynamicS Calculator/index.html",
-      "/posts/computacao/Guia de estudo LaTex/index.html",
-      "/posts/computacao/Extensão para gerar PDF com normas ABNT/index.html",
-      "/posts/computacao/TEMA CSS/index.html",
-      "/posts/linux/Minhas primeiras experiencias com Linux/index.html",
-      "/posts/computacao/Kitty/index.html",
-      "/posts/biologia-molecular/Trabalho de TE/index.html",
-      "/posts/biologia-molecular/Trabalho de microbio aplicada1/index.html"
-    ]
-  },
-  {
-    "listing": "/linux.html",
-    "items": [
-      "/posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/linux/Anotações Linux/index.html",
-      "/posts/linux/Minhas primeiras experiencias com Linux/index.html"
-    ]
-  },
-  {
     "listing": "/computacao.html",
     "items": [
       "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
@@ -56,9 +15,11 @@
     ]
   },
   {
-    "listing": "/neurociencia.html",
+    "listing": "/biologia-molecular.html",
     "items": [
-      "/posts/neurociencia/Bioinfo para neurociencia /index.html"
+      "/posts/biologia-molecular/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+      "/posts/biologia-molecular/Trabalho de TE/index.html",
+      "/posts/biologia-molecular/Trabalho de microbio aplicada1/index.html"
     ]
   },
   {
@@ -68,11 +29,24 @@
     ]
   },
   {
-    "listing": "/biologia-molecular.html",
+    "listing": "/pibic.html",
     "items": [
-      "/posts/biologia-molecular/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-      "/posts/biologia-molecular/Trabalho de TE/index.html",
-      "/posts/biologia-molecular/Trabalho de microbio aplicada1/index.html"
+      "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+      "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html"
+    ]
+  },
+  {
+    "listing": "/linux.html",
+    "items": [
+      "/posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+      "/posts/linux/Anotações Linux/index.html",
+      "/posts/linux/Minhas primeiras experiencias com Linux/index.html"
+    ]
+  },
+  {
+    "listing": "/neurociencia.html",
+    "items": [
+      "/posts/neurociencia/Bioinfo para neurociencia /index.html"
     ]
   },
   {
@@ -82,109 +56,7 @@
     ]
   },
   {
-    "listing": "/posts/linux/Minhas primeiras experiencias com Linux/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/linux/Anotações Linux/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/linux/teste-linux/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/pibic/metodologia_PIBIC.html",
-    "items": [
-      "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html"
-    ]
-  },
-  {
-    "listing": "/posts/estatistica/Ánalise de correlação em variavéis quantitativas /index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/Filosofia/Filosofia e linguagem por trás de Chants of Sennaar/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/biologia-molecular/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/biologia-molecular/Trabalho de TE/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/Kitty/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/HiFiAdapterFilt and GenomeScope2/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/Site NeuroTech/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/THErmodynamicS Calculator/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/Guia de estudo LaTex/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/Bioinfo para neurociencia /index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/Anotações Linux/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/computacao/TEMA CSS/index.html",
-    "items": []
-  },
-  {
     "listing": "/posts/computacao/Extensão para gerar PDF com normas ABNT/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/biologia-molecular/Trabalho de microbio aplicada1/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/neurociencia/Bioinfo para neurociencia /index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/Filosofia/ Chants of Sennaar/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/filosofia/ Chants of Sennaar/index.html",
-    "items": []
-  },
-  {
-    "listing": "/posts/filosofia/Chants of Sennaar/index.html",
     "items": []
   }
 ]
