@@ -17,7 +17,6 @@
   {
     "listing": "/biologia-molecular.html",
     "items": [
-      "/posts/biologia-molecular/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/biologia-molecular/Trabalho de TE/index.html",
       "/posts/biologia-molecular/Trabalho de microbio aplicada1/index.html"
     ]
@@ -57,6 +56,10 @@
   },
   {
     "listing": "/posts/computacao/Extensão para gerar PDF com normas ABNT/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
     "items": []
   }
 ]

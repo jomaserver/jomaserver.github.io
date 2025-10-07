@@ -110,5 +110,54 @@
     "title": "Jomaserver",
     "section": "Conclusão",
     "text": "Conclusão\n            E aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\n            Se você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n            \n            \n            Link do Repositório:\n            GitHub - Extensão ABNT para Quarto"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#hifiasm",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#hifiasm",
+    "title": "Jomaserver",
+    "section": "HiFiasm",
+    "text": "HiFiasm"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "title": "Jomaserver",
+    "section": "Genomescope2",
+    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "title": "Jomaserver",
+    "section": "KMC",
+    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "title": "Jomaserver",
+    "section": "Resultados do KMC",
+    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "title": "Jomaserver",
+    "section": "GenomeScope2",
+    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "title": "Jomaserver",
+    "section": "Resuminho",
+    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
   }
 ]
