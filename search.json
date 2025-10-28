@@ -159,5 +159,159 @@
     "title": "Jomaserver",
     "section": "Resuminho",
     "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "title": "Jomaserver",
+    "section": "Resuminho",
+    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "title": "Jomaserver",
+    "section": "Genomescope2",
+    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "title": "Jomaserver",
+    "section": "KMC",
+    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "title": "Jomaserver",
+    "section": "Resultados do KMC",
+    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "title": "Jomaserver",
+    "section": "GenomeScope2",
+    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+  },
+  {
+    "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "href": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "title": "Jomaserver",
+    "section": "Resuminho",
+    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
+  },
+  {
+    "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "href": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "title": "Jomaserver",
+    "section": "Genomescope2",
+    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
+  },
+  {
+    "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "href": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "title": "Jomaserver",
+    "section": "KMC",
+    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
+  },
+  {
+    "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "href": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "title": "Jomaserver",
+    "section": "Resultados do KMC",
+    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
+  },
+  {
+    "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "href": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "title": "Jomaserver",
+    "section": "GenomeScope2",
+    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
+  },
+  {
+    "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "href": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+  },
+  {
+    "objectID": "posts/computacao/Purge_Dups/index.html#atualizações-da-montagem",
+    "href": "posts/computacao/Purge_Dups/index.html#atualizações-da-montagem",
+    "title": "Jomaserver",
+    "section": "Atualizações da montagem",
+    "text": "Atualizações da montagem\n            Gente, então minha montagem primária com o HIFIASM, não ficou tão contigua (Menos fragmentada) quando eu gostaria. Então decidi rodar outro software o Purge_Dups, esse software serve pra tirar regiões duplicadas pela montagem por haplotipos (as vezes, o software interpreta regiões iguais nos haplotipos como duas regiões, mas na verdade, se trata da mesma região). O hifiasm tem um propio mecanismo interno para lidar com isso, porém na minha montagem sobrou algumas dessas regiões por isso decidi passar por um software especilizado nisso para resolver esse problema.\n            \n            \n            \n            Página no GITHUB do Purge_dups"
+  },
+  {
+    "objectID": "posts/computacao/Purge_Dups/index.html#entendendo-o-purge_dups",
+    "href": "posts/computacao/Purge_Dups/index.html#entendendo-o-purge_dups",
+    "title": "Jomaserver",
+    "section": "Entendendo o purge_dups",
+    "text": "Entendendo o purge_dups\n            Então, meus dados de sequenciamento são PACBIO CCS. Então basicamente tentei começar só seguindo o passo a passo da pagina do purge_dups no github. Porém, a vida não é tão facil assim e enfrentei algumas dificuldades logo de cara, e demorei 2 semanas para conseguir terminar de dar purge nessas regiões do meu genoma. SIM! as vezes precisamos ter fé em Deus e toda vez que eu tentava rodar o minimap2 novamente, eu colocava toda minha esperança!!!!!!!!!!!!! No final, deu tudo certo, até contactei o dev do purge para indiciar um erro no README dele. Então é isso, as vezes precisamos ter fé! Vou discorrer sobre meu erro, caso alguém se encontre numa situação parecida!"
+  },
+  {
+    "objectID": "posts/computacao/Purge_Dups/index.html#minimap2",
+    "href": "posts/computacao/Purge_Dups/index.html#minimap2",
+    "title": "Jomaserver",
+    "section": "MiniMap2",
+    "text": "MiniMap2\n            Antes de rodar o purge_dups propiamente dito, precisamos alinhar nosso genoma, para gerar arquivos de análise *.paf. Esses arquivos são convertidos em um arquivo chamado PB.stat e precisamos calcular o histograma de profundidade de leitura e a profundidade de leitura no nível da base. Para isso o MiniMap2.\n            Esse software tirou meu sono… no purge_dups ele coloca essa etapa com um parametro -xasm20, que eu ja estranhei de cara, primeiro porque esse parametro é um parametro de montagem que ja tinha utilizado anteriormente no Hifiasm. Tentei utilizar esse parametro no meu loop umas 4 vezes antes de trocar. Imaginava que talvez, o motivo do minimap2 não estava gerando meus arquivos *.paf por algum outro erro no meu loop (Criei uma lista com dois arquivos de sequenciamento). Demorava uns 4 dias cada tentiva.\n            Depois de muito tempo, resolvi substituir esse parametro pra um parametro indicado no minimap2, -map-hifi. E enfim, rodou e gerou meus arquivos *.paf."
+  },
+  {
+    "objectID": "posts/computacao/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
+    "href": "posts/computacao/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
+    "title": "Jomaserver",
+    "section": "Pós PB.stat e cutoffs (self-alignment)",
+    "text": "Pós PB.stat e cutoffs (self-alignment)\n            Depois que eu consegui enfim gerar os arquivos, continuei o processo do purge_dups. Para isso tive que usar o MiniMap2 mais uma vez. Splitei meu arquivo fasta da minha montagem primaria e fiz um self-alignment, agora sim usando o parametro -xasm5, que permite uma certa divergencia entre os alinhamentos ~0,01% , claro que mais que isso o software vai reconhecer o erro, já que eu to alinhando minha montagem com ela mesma."
+  },
+  {
+    "objectID": "posts/computacao/Purge_Dups/index.html#passos-finais",
+    "href": "posts/computacao/Purge_Dups/index.html#passos-finais",
+    "title": "Jomaserver",
+    "section": "Passos finais",
+    "text": "Passos finais\n            Depois disso tudo e com os arquivos organizados, até que fim, rodei o purge dups completo, e consegui obter uma contiguidade maior, melhorando a qualidade da minha montagem. A palavra do dia é: Resiliencia. As vezes, vale a pena seguir sua intuição. Perdi um tempinho de trabalho, nada muito preocupante, no final deu tudo certo. Gostei muito do purge_dups e das modelagens que eles usam pra conseguir eliminar essas regiões. Estou esperando a resposta do dev até agora para conversarmos sobre aquele parametro inicial -xasm20 na etapa de mapeamento do nosso genoma."
+  },
+  {
+    "objectID": "posts/pibic/Purge_Dups/index.html#atualizações-da-montagem",
+    "href": "posts/pibic/Purge_Dups/index.html#atualizações-da-montagem",
+    "title": "Jomaserver",
+    "section": "Atualizações da montagem",
+    "text": "Atualizações da montagem\n            Gente, então minha montagem primária com o HIFIASM, não ficou tão contigua (Menos fragmentada) quando eu gostaria. Então decidi rodar outro software o Purge_Dups, esse software serve pra tirar regiões duplicadas pela montagem por haplotipos (as vezes, o software interpreta regiões iguais nos haplotipos como duas regiões, mas na verdade, se trata da mesma região). O hifiasm tem um propio mecanismo interno para lidar com isso, porém na minha montagem sobrou algumas dessas regiões por isso decidi passar por um software especilizado nisso para resolver esse problema.\n            \n            \n            \n            Página no GITHUB do Purge_dups"
+  },
+  {
+    "objectID": "posts/pibic/Purge_Dups/index.html#entendendo-o-purge_dups",
+    "href": "posts/pibic/Purge_Dups/index.html#entendendo-o-purge_dups",
+    "title": "Jomaserver",
+    "section": "Entendendo o purge_dups",
+    "text": "Entendendo o purge_dups\n            Então, meus dados de sequenciamento são PACBIO CCS. Então basicamente tentei começar só seguindo o passo a passo da pagina do purge_dups no github. Porém, a vida não é tão facil assim e enfrentei algumas dificuldades logo de cara, e demorei 2 semanas para conseguir terminar de dar purge nessas regiões do meu genoma. SIM! as vezes precisamos ter fé em Deus e toda vez que eu tentava rodar o minimap2 novamente, eu colocava toda minha esperança!!!!!!!!!!!!! No final, deu tudo certo, até contactei o dev do purge para indiciar um erro no README dele. Então é isso, as vezes precisamos ter fé! Vou discorrer sobre meu erro, caso alguém se encontre numa situação parecida!"
+  },
+  {
+    "objectID": "posts/pibic/Purge_Dups/index.html#minimap2",
+    "href": "posts/pibic/Purge_Dups/index.html#minimap2",
+    "title": "Jomaserver",
+    "section": "MiniMap2",
+    "text": "MiniMap2\n            Antes de rodar o purge_dups propiamente dito, precisamos alinhar nosso genoma, para gerar arquivos de análise *.paf. Esses arquivos são convertidos em um arquivo chamado PB.stat e precisamos calcular o histograma de profundidade de leitura e a profundidade de leitura no nível da base. Para isso o MiniMap2.\n            Esse software tirou meu sono… no purge_dups ele coloca essa etapa com um parametro -xasm20, que eu ja estranhei de cara, primeiro porque esse parametro é um parametro de montagem que ja tinha utilizado anteriormente no Hifiasm. Tentei utilizar esse parametro no meu loop umas 4 vezes antes de trocar. Imaginava que talvez, o motivo do minimap2 não estava gerando meus arquivos *.paf por algum outro erro no meu loop (Criei uma lista com dois arquivos de sequenciamento). Demorava uns 4 dias cada tentiva.\n            Depois de muito tempo, resolvi substituir esse parametro pra um parametro indicado no minimap2, -map-hifi. E enfim, rodou e gerou meus arquivos *.paf."
+  },
+  {
+    "objectID": "posts/pibic/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
+    "href": "posts/pibic/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
+    "title": "Jomaserver",
+    "section": "Pós PB.stat e cutoffs (self-alignment)",
+    "text": "Pós PB.stat e cutoffs (self-alignment)\n            Depois que eu consegui enfim gerar os arquivos, continuei o processo do purge_dups. Para isso tive que usar o MiniMap2 mais uma vez. Splitei meu arquivo fasta da minha montagem primaria e fiz um self-alignment, agora sim usando o parametro -xasm5, que permite uma certa divergencia entre os alinhamentos ~0,01% , claro que mais que isso o software vai reconhecer o erro, já que eu to alinhando minha montagem com ela mesma."
+  },
+  {
+    "objectID": "posts/pibic/Purge_Dups/index.html#passos-finais",
+    "href": "posts/pibic/Purge_Dups/index.html#passos-finais",
+    "title": "Jomaserver",
+    "section": "Passos finais",
+    "text": "Passos finais\n            Depois disso tudo e com os arquivos organizados, até que fim, rodei o purge dups completo, e consegui obter uma contiguidade maior, melhorando a qualidade da minha montagem. A palavra do dia é: Resiliencia. As vezes, vale a pena seguir sua intuição. Perdi um tempinho de trabalho, nada muito preocupante, no final deu tudo certo. Gostei muito do purge_dups e das modelagens que eles usam pra conseguir eliminar essas regiões. Estou esperando a resposta do dev até agora para conversarmos sobre aquele parametro inicial -xasm20 na etapa de mapeamento do nosso genoma."
   }
 ]

@@ -6,7 +6,7 @@
 <script src="../../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../../">
-<link href="../../../favicon.png" rel="icon" type="image/png">
+<link href="../../../icon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-listing/list.min.js"></script>
 <script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../../site_libs/quarto-html/quarto.js"></script>
@@ -259,10 +259,11 @@
             </nav>
         </div>
         <section class="large">
-            <p>Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor.</p>
-            <p><img src="images/genome.png" class="img-fluid"></p>
-            <section id="hifiasm" class="level2">
-            <h2 data-anchor-id="hifiasm">HiFiasm</h2>
+            <hr>
+            <hr>
+            <section id="resuminho" class="level2">
+            <h2 data-anchor-id="resuminho">Resuminho</h2>
+            <p>Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor.<img src="images/clipboard-3157264726.png" class="img-fluid" width="342"></p>
             </section>
             <section id="linhas-de-comando" class="level1">
             <h1>Linhas de comando:</h1>
@@ -310,29 +311,6 @@ Stats:
             <h2 data-anchor-id="resultados">Resultados</h2>
             <p>Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios.</p>
             <hr>
-            <div class="sourceCode" id="cb6"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">/* --- OVERRIDE FINAL E BRUTAL (SÓ PARA ESTE POST) --- */</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">/* Ataca todos os possíveis wrappers de saída de código (divs, figures, etc.) */</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">.cell-output</span><span class="op">,</span> </span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">.cell-output</span> <span class="op">&gt;</span> div<span class="op">,</span> </span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">.quarto-figure</span> {</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">%</span> <span class="at">!important</span><span class="op">;</span> <span class="co">/* Máxima prioridade para caber */</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">overflow-x</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span> <span class="co">/* Adiciona rolagem se a largura for muito grande */</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">box-sizing</span><span class="ch">:</span> <span class="dv">border-box</span> <span class="at">!important</span><span class="op">;</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">padding</span><span class="ch">:</span> <span class="dv">0</span> <span class="at">!important</span><span class="op">;</span> <span class="co">/* Remove qualquer padding que esteja forçando o estouro */</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">/* Ataca a imagem, o SVG, e o Canvas que o R gera */</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="fu">.cell-output</span> img<span class="op">,</span> </span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="fu">.cell-output</span> svg<span class="op">,</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="fu">.cell-output</span> canvas {</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">%</span> <span class="at">!important</span><span class="op">;</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">height</span><span class="ch">:</span> <span class="bu">auto</span><span class="op">;</span> </span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span><span class="ch">:</span> <span class="dv">block</span><span class="op">;</span> </span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin</span><span class="ch">:</span> <span class="dv">0</span> <span class="bu">auto</span><span class="op">;</span> <span class="co">/* Centraliza a imagem/gráfico */</span></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
             
             
             
@@ -341,7 +319,7 @@ Stats:
         </section>
     </div>
     <footer>
-        <span>cyanobacteria.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></span>
+        <span>Jomaserver Blog by <a href="https://jomaserver.github.io/posts.html">João Marcelo</a></span>
     </footer>
     
 

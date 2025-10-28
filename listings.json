@@ -2,6 +2,7 @@
   {
     "listing": "/computacao.html",
     "items": [
+      "/posts/computacao/Purge_Dups/index.html",
       "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/computacao/Anotações Linux/index.html",
       "/posts/computacao/Bioinfo para neurociencia /index.html",
@@ -30,6 +31,7 @@
   {
     "listing": "/pibic.html",
     "items": [
+      "/posts/pibic/Purge_Dups/index.html",
       "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html"
     ]
@@ -60,6 +62,22 @@
   },
   {
     "listing": "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/Purge_Dups/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/pibic/Purge_Dups/index.html",
     "items": []
   }
 ]
