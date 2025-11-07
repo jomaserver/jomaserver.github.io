@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/posts.html</loc>
-    <lastmod>2025-10-28T18:36:59.813Z</lastmod>
+    <lastmod>2025-11-05T18:06:27.491Z</lastmod>
   </url>
   <url>
     <loc>/index.html</loc>
-    <lastmod>2025-10-28T18:36:02.385Z</lastmod>
+    <lastmod>2025-10-28T14:36:02.000Z</lastmod>
   </url>
   <url>
     <loc>/computacao.html</loc>
-    <lastmod>2025-10-07T15:03:46.789Z</lastmod>
+    <lastmod>2025-10-07T11:03:46.000Z</lastmod>
   </url>
   <url>
     <loc>/about.html</loc>
@@ -18,23 +18,23 @@
   </url>
   <url>
     <loc>/biologia-molecular.html</loc>
-    <lastmod>2025-10-07T15:27:04.098Z</lastmod>
+    <lastmod>2025-10-07T11:27:04.000Z</lastmod>
   </url>
   <url>
     <loc>/estatistica.html</loc>
-    <lastmod>2025-10-07T15:52:30.525Z</lastmod>
+    <lastmod>2025-10-07T11:52:30.000Z</lastmod>
   </url>
   <url>
     <loc>/pibic.html</loc>
-    <lastmod>2025-10-07T16:27:06.574Z</lastmod>
+    <lastmod>2025-10-07T12:27:06.000Z</lastmod>
   </url>
   <url>
     <loc>/linux.html</loc>
-    <lastmod>2025-10-07T15:14:57.896Z</lastmod>
+    <lastmod>2025-10-07T11:14:56.000Z</lastmod>
   </url>
   <url>
     <loc>/neurociencia.html</loc>
-    <lastmod>2025-10-07T15:23:27.992Z</lastmod>
+    <lastmod>2025-10-07T11:23:26.000Z</lastmod>
   </url>
   <url>
     <loc>/curriculum.html</loc>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>/filosofia.html</loc>
-    <lastmod>2025-10-07T15:49:31.869Z</lastmod>
+    <lastmod>2025-10-07T11:49:30.000Z</lastmod>
   </url>
   <url>
     <loc>/posts/computacao/Extensão para gerar PDF com normas ABNT/index.html</loc>
@@ -67,5 +67,13 @@
   <url>
     <loc>/posts/pibic/Purge_Dups/index.html</loc>
     <lastmod>2025-10-28T17:57:59.367Z</lastmod>
+  </url>
+  <url>
+    <loc>/posts/Genômica/Grafo de String e desafios na montagem/index.html</loc>
+    <lastmod>2025-11-05T17:43:37.675Z</lastmod>
+  </url>
+  <url>
+    <loc>/genomic.html</loc>
+    <lastmod>2025-11-05T17:55:19.115Z</lastmod>
   </url>
 </urlset>

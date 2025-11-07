@@ -2,15 +2,15 @@
   {
     "listing": "/computacao.html",
     "items": [
-      "/posts/computacao/Purge_Dups/index.html",
+      "/posts/computacao/Grafo de String e desafios na montagem/index.html",
       "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/computacao/Anotações Linux/index.html",
-      "/posts/computacao/Bioinfo para neurociencia /index.html",
+      "/posts/computacao/Bioinfo para neurociencia/index.html",
       "/posts/computacao/HiFiAdapterFilt and GenomeScope2/index.html",
       "/posts/computacao/Site NeuroTech/index.html",
       "/posts/computacao/THErmodynamicS Calculator/index.html",
       "/posts/computacao/Guia de estudo LaTex/index.html",
-      "/posts/computacao/Extensão para gerar PDF com normas ABNT/index.html",
+      "/posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html",
       "/posts/computacao/TEMA CSS/index.html",
       "/posts/computacao/Kitty/index.html"
     ]
@@ -24,14 +24,12 @@
   },
   {
     "listing": "/estatistica.html",
-    "items": [
-      "/posts/estatistica/Ánalise de correlação em variavéis quantitativas /index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/pibic.html",
     "items": [
-      "/posts/pibic/Purge_Dups/index.html",
+      "/posts/pibic/Grafo de String e desafios na montagem/index.html",
       "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html"
     ]
@@ -47,7 +45,7 @@
   {
     "listing": "/neurociencia.html",
     "items": [
-      "/posts/neurociencia/Bioinfo para neurociencia /index.html"
+      "/posts/neurociencia/Bioinfo para neurociencia/index.html"
     ]
   },
   {
@@ -79,5 +77,17 @@
   {
     "listing": "/posts/pibic/Purge_Dups/index.html",
     "items": []
+  },
+  {
+    "listing": "/posts/Genômica/Grafo de String e desafios na montagem/index.html",
+    "items": []
+  },
+  {
+    "listing": "/genomic.html",
+    "items": [
+      "/posts/Genômica/Grafo de String e desafios na montagem/index.html",
+      "/posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+      "/posts/Genômica/HiFiAdapterFilt and GenomeScope2/index.html"
+    ]
   }
 ]

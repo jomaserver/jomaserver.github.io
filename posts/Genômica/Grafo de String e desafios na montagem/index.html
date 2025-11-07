@@ -9,15 +9,16 @@
 <link href="../../../icon.png" rel="icon" type="image/png">
 <script src="../../../site_libs/quarto-listing/list.min.js"></script>
 <script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-c3c80eb2732ba8f9dc9867d0ac572f01.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-82b1a03c67a08b47b550cf05f64695ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
       "location": "sidebar",
       "copy-button": false,
       "collapse-after": 3,
@@ -240,14 +241,14 @@
         }
       })
       </script><link rel="stylesheet" href="../../../cyanobacteria.css">
-    <title>Primeira passo na montagem</title>
+    <title>Odeio regiões duplicadas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 </head>
-<body class="fullcontent">
+<body class="fullcontent quarto-light">
     <div class="container">
         <header>
-            <span>Primeira passo na montagem</span>
+            <span>Odeio regiões duplicadas</span>
         </header>
         <div class="small">
             <nav>
@@ -259,63 +260,44 @@
             </nav>
         </div>
         <section class="large">
+            <p><strong>Introdução</strong></p>
+            <p>Recentemente, comecei a ter alguns problemas na minha montagem, por se tratar de um genoma complexo (tetraploíde), ou seja, varias regiões repetitivas e heterozigotas. Quando terminei minha montagem primária pelo Hifiasm, notei que o tamanho do arquivo estava bem maior do que o esperado (Resultados de citometro mostrando o tamanho do gênoma). O esperado era ~1,4 Gb, porém, o Hifiasm me devolveu um resultado de 2,4 Gb. Quase 1 Gb do que o esperado. Mas o que é essa informação? Como saber qual região foi processada errado.</p>
             <hr>
+            <p><strong>Purge</strong></p>
+            <p>Vamos elucidar essas problemáticas.</p>
+            <p>Primeiro ponto é a montagem do Hifiasm é feita de maneira linear em regiões homozigotas, ou seja, ele colapsa as regiões cromossomicas dos haplotipos, quando a informação contida neles é a mesma. O problema está justamente nas regiões não homozigotas. Na qual o software cria o que chamamos de “bolha”, explico um pouco melhor no post do Hifiasm.</p>
+            <p>Como devem imaginar isso faz surgir algumas problemáticas, a principal dessa problemáticas é duplicação de regiões que teoricamente seriam do mesmo haplotipo, e o software interpreta como duas regiões diferentes. Isso explica o motivo do arquivo ser bem maior do que o esperado. O hifiasm tem um mecanismo de purge nativo capaz de lidar com esse tipo de duplicação.</p>
+            <p>Mas em casos de genomas mais complexos como o meu, esse mecanismo pode não ser tão eficiente assim, já que o software é modelado para organismos diplóides. Então para sanar essa problemática, utilizei outro software especializado em Purges. (Purge_dups).</p>
             <hr>
-            <section id="resuminho" class="level2">
-            <h2 data-anchor-id="resuminho">Resuminho</h2>
-            <p>Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor.<img src="images/clipboard-3157264726.png" class="img-fluid" width="342"></p>
-            </section>
-            <section id="linhas-de-comando" class="level1">
-            <h1>Linhas de comando:</h1>
-            <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">hifiasm</span> <span class="at">-o</span> andropogon.asmJM <span class="at">-t10</span> <span class="at">--telo-m</span> TTTAGGG<span class="dt">\</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250523_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz<span class="dt">\</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250604_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz 2<span class="dt">\&gt;</span> asm01.log</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-            <p>Os parametros desse código dependem do servidor que você tiver trabalhando no meu caso usei -t10 (Usei 10 nucleos do processor da matriz do servidor). Outro parametro é o –telo-m TTTAGGG identificando meus telomeros (Extremidades do cromossomo). O andropogon.asmJM é o output que eu coloquei para meus arquivos resultantes do processo. O resto do codigo é apenas o caminho dos diretorios onde se encontram meus .fastq do sequenciamento. Posteriormente transformei esse código em um arquivo .sh (executável), para posteriormente passar ele pelo nohup. Bash</p>
-            <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> sh runMeHifiasm.sh <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-            <p>O nohup basicamente funciona como uma especie de host, faço uma maquina externa (no meu caso a maquina matriz), rodar o código, liberando meu terminal e fazendo com que a minha máquina de trabalho possa ser desligada, enquanto o código continua rodando na matriz. (obs: as vezes levam semanas pra software te entregar o resultado).</p>
-            <section id="genomescope2" class="level2">
-            <h2 data-anchor-id="genomescope2">Genomescope2</h2>
-            <p>O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade.</p>
-            </section>
-            <section id="kmc" class="level2">
-            <h2 data-anchor-id="kmc">KMC</h2>
-            <p>O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash</p>
-            <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">kmc</span> <span class="at">-k21</span> <span class="at">-t10</span> <span class="at">-m64</span> <span class="at">-ci1</span> <span class="at">-cs1000000</span> @lista_fastqsANDROPOGON.txt reads tmp/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-            </section>
-            <section id="resultados-do-kmc" class="level2">
-            <h2 data-anchor-id="resultados-do-kmc">Resultados do KMC</h2>
-            <pre class="text no-highlight"><code>
-Stage 1: 100%
-Stage 2: 100%
-1st stage: 640.204s
-2nd stage: 784.064s
-Total     : 1424.27s
-Tmp size  : 310806MB
-
-Stats:
-    No. of k-mers below min. threshold :           0
-    No. of k-mers above max. threshold :           0
-    No. of unique k-mers               :  3943444853
-    No. of unique counted k-mers       :  3943444853
-    Total no. of k-mers                : 261304727485
-    Total no. of reads                 :      11954295
-    Total no. of super-k-mers          :  37576618091</code></pre>
-            </section>
-            <section id="genomescope2-1" class="level2">
-            <h2 data-anchor-id="genomescope2-1">GenomeScope2</h2>
-            <p>Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.</p>
-            <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">genomescope.R</span> <span class="at">-i</span> reads.histo <span class="at">-o</span> output <span class="at">-k</span> 21</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-            </section>
-            <section id="resultados" class="level2">
-            <h2 data-anchor-id="resultados">Resultados</h2>
-            <p>Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios.</p>
+            <p><strong>Purge_dups</strong></p>
+            <p>Beleza, então conseguimos aumentar a qualidade da nossa montagem?</p>
+            <p>O purge_dups deu muito trabalho, primeiramente na primeira parte que temos que alinhar nossa sequencia (com alguma outra de referencia ou contra o própio resultado do sequenciamento bruto) usando um software chamado (Minimap2).</p>
+            <p>Porém essa simples etapa levou cerca de duas semanas, não estava conseguindo gerar os outputs necessarios para seguir com o purged_dups, revi 1 milhão de vezes o README do purge_dups, revisei todos os passos varias vezes, e ainda sim, só consegui achar a resposta quando fui entender o minimap2 a fundo. Percebi que o uso de um dos parametros que o purge_dups indicava para essa etapa de alinhamento estava incorreto, fazendo o minimap2 não funcionar da maneira esperada. Contactei o dev para relatar o problema, após utilizar outro parametro e conseguir seguir com o purge.</p>
+            <p><img src="images/clipboard-3800598797.png" class="img-fluid" width="783"></p>
+            <p>A resposta foi quase imediata, e logo após isso o dev consertou o parametro para outros usuarios não terem o mesmo problema que eu tive. Após conseguir rodar gerei um arquivo output sem essas sequencias duplicadas. Mas o problema não acabou ai, o arquivo (purged.fa) que é esse arquivo de saída comentado acima, veio com um tamanho de ~1,1Gb. Cerca de 400Mb abaixo do que eu esperava, ou seja, o purge_dups funcionou, mas cortou regiões que não era pra ter cortado. E agora?</p>
+            <p><strong>Continuação purge_dups</strong></p>
+            <p>Então, foi bem frustante a principio quando notei que o software tinha rodado errado. Mas de certo modo, desafiador também. Comecei a rever todos os parametros e outputs, analisando todas as contigs que foram removidas tentando achar esses fragmentos de sequencia que foram retirados erroneamente. Meu orientador deu a ideia de rodarmos o purge para cada um dos haplotipos gerados na montagem do Hifiasm, inves de rodar a montagem primaria completa. Começamos fazendo isso, e o arquivo gerado no hap1 teve o mesmo problema do corte excessivo. Então decidi, rever e procurar papers que poderiam me ajudar a entender como rodar o software melhor para um genoma complexo como o meu.</p>
+            <p>Foi quando eu percebi que se eu ajustasse o arquivo de cutoffs eu iria estar manualmente forçando o software a interpretar apenas a região de cobertura que eu quisesse, então eu e meu orientador partimos nessa jornada de luta contra a maquina.</p>
+            <p>Primeira coisa que percebemos foi que no histograma inicial, ele interpretava os picos de uma maneira estranha, dando valores númericos não tão condizentes com a região analisada. Percebemos que o problema era exatamente nesse parametro que trata dos picos (mid-coverage).</p>
+            <p>Então decidimos ir ajustando até acharmos a região que nos retornaria um arquivo com aproximadamente o tamanho esperado (~1,4Gb). Isso foi um processo longo também, cada tentativa demandava ~30 minutos e não sabiamos se o resultado iria ser o favoravel.</p>
+            <p>Para isso, jogamos alguns valores para entender melhor como funcionava o comportamento da reta.</p>
+            <p>Percebemos que a inclinação da reta era oposta ao valor numerico que colocavamos. Ou seja, quanto maior o valor numérico maior a area que o software vai interpretar que pode haver duplicações, logo, o tamanho do nosso arquivo era menor. Achamos o valor ideal ajustando o parametro no 77 para mid-coverage.</p>
             <hr>
+            <p><strong>Resultados</strong></p>
+            <p>Então depois de todas essas problematicas sanadas, conseguimos elevar a qualidade da montagem, e gerar os arquivos que vão dar sequencia a nossa montagem.</p>
+            <p><img src="images/clipboard-3350166681.png" class="img-fluid"></p>
+            <p><strong>Histograma</strong></p>
+            <p><img src="images/clipboard-2151146867.png" class="img-fluid"></p>
+            <p>Podemos notar no grafíco três linhas que representam os três parametros utilizados no cutoff para o purge.</p>
+            <p>5 (low-coverage): Tudo que tem uma cobertura menor que 5 é definido com Junk e essa sequencia é discartada. 77 (mid-coverage): Gera esse intervalo entre picos, que representam a área que deve ser ánalisada para buscar sequencias repetitivas. 338 (high-coverage): Regiões extremamentes repetitivas, podem ser regiões centromericas ou regiões proximas ao telomero (extremidade cromossomal).</p>
+            <hr>
+            <p><strong>Next caps</strong></p>
+            <p>Partimos para os proximos softwares (BUSCO, KRAKEN2)! e trarei atualizações no Jomaserver!</p>
+            <p>BUSCO: Fará um mapa de genes tornando ainda mais lúcida a avalição da montagem. KRAKEN2: Fará uma ánalise metagenomica encontrando contaminantes (Sequencias de outros organismos) que estão presentes no meus dados de sequenciamento.</p>
+            <p>Abraço.</p>
             
             
             
-            </section>
-            </section>
         </section>
     </div>
     <footer>
@@ -327,49 +309,35 @@ Stats:
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div><div class="quarto-listing quarto-listing-container-default" id="listing-posts-linux">
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div><div class="quarto-listing quarto-listing-container-default" id="listing-posts-computacao">
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div><div class="quarto-listing quarto-listing-container-default" id="listing-posts-biomol">
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div><div class="quarto-listing quarto-listing-container-default" id="listing-posts-estatistica">
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div><div class="quarto-listing quarto-listing-container-default" id="listing-posts-filosofia">
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div><div class="quarto-listing quarto-listing-container-default" id="listing-posts-neurociencia">
             <div class="list quarto-listing-default">
 
             </div>
-            <div class="listing-no-matching d-none">
-            No matching items
-            </div>
+            <div class="listing-no-matching d-none">No matching items</div>
             </div></body></html>
