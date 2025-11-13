@@ -2,6 +2,7 @@
   {
     "listing": "/computacao.html",
     "items": [
+      "/posts/computacao/BUSCO/index.html",
       "/posts/computacao/Grafo de String e desafios na montagem/index.html",
       "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/computacao/Anotações Linux/index.html",
@@ -29,6 +30,7 @@
   {
     "listing": "/pibic.html",
     "items": [
+      "/posts/pibic/BUSCO/index.html",
       "/posts/pibic/Grafo de String e desafios na montagem/index.html",
       "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/pibic/HiFiAdapterFilt and GenomeScope2/index.html"
@@ -85,9 +87,18 @@
   {
     "listing": "/genomic.html",
     "items": [
+      "/posts/Genômica/BUSCO/index.html",
       "/posts/Genômica/Grafo de String e desafios na montagem/index.html",
       "/posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/Genômica/HiFiAdapterFilt and GenomeScope2/index.html"
     ]
+  },
+  {
+    "listing": "/posts/Genômica/HiFiAdapterFilt and GenomeScope2/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Genômica/BUSCO/index.html",
+    "items": []
   }
 ]

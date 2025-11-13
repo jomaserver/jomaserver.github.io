@@ -320,5 +320,61 @@
     "title": "Jomaserver",
     "section": "Bem-vindo à categoria Gênomica ",
     "text": "Bem-vindo à categoria Gênomica \n        Cada vez me apaixonando mais pela gênomica (pode ser vicio em dopamina, toda vez que o software roda da maneira esperada). Acredito que a genômica é uma maneira de tentar entender como a vida funciona de maneira minunciosa. Analisando não só o que difere todo individuo mas também o que une todos os seres. DNA é a molécula da informação, e destrinchar como essa informação é com certeza, muito esplêndido."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#o-que-é-o-busco",
+    "href": "posts/Genômica/BUSCO/index.html#o-que-é-o-busco",
+    "title": "Jomaserver",
+    "section": "O que é o BUSCO:",
+    "text": "O que é o BUSCO:\n            BUSCO é um software que utiliza de bancos de dados contendo genes comuns do seu organismo de interesse de montagem com a família taxonomica que ele se encontra ou ordem etc. No nosso caso utilziamos o banco de dados : embryophyta_odb10. Pensamos em utilizar poales.odb porém BUSCO encontra-se fora do ar no momento, então tivemos que utilizar um banco que estava previamente instalado no nosso servidor."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-prímaria-sem-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-prímaria-sem-purge",
+    "title": "Jomaserver",
+    "section": "Montagem prímaria sem purge:",
+    "text": "Montagem prímaria sem purge:\n            Results:\n            C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%\n            1604 Complete BUSCOs (C) (of which 15 contain internal stop codons)\n            36 Complete and single-copy BUSCOs (S)\n            1568 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            5 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-primaria-com-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-primaria-com-purge",
+    "title": "Jomaserver",
+    "section": "Montagem primaria com purge:",
+    "text": "Montagem primaria com purge:\n            Results:\n            C:97.1%[S:23.2%,D:73.9%],F:0.5%,M:2.4%,n:1614,E:1.8%\n            1568 Complete BUSCOs (C) (of which 28 contain internal stop codons)\n            375 Complete and single-copy BUSCOs (S)\n            1193 Complete and duplicated BUSCOs (D)\n            8 Fragmented BUSCOs (F)\n            38 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Aqui podemos ver a primeira problemática, notem que a região duplicada pós-purge sofreu com uma diminuição notória nas regiões duplicadas. E como sabemos nossa montagem é uma representão 2n de um genoma 4n ou seja o esperado era um número ~100%, ou seja por mais que o arquivo tenha ficado compativel no tamanho o purge retirou regiões que não eram para terem sido retiradas. Portanto, adaptando essa ideia decidimos continuar com nossa montagem pré-purge porém a mesma estava com um número muito alto de contigs (fragmentos de sequencias) ~1800 contigs. Pra diminuir isso, rodei o purge com uma nova estrátegia, no caso utilizar somente do mecanismo de identificação de JUNK, já que grande parte dos contigs são fragmentos pequenos. Ele reconheceu e cortou esses contigs então decidi continuar com essa montagem que passa pelo purge mas não de regiões duplicadas e sim de JUNKS. O resultado foi o esperado, e o BUSCO mostrou um gráfico identico ao pré-purge, porém não temos mais esse número de contigs na nossa montagem."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap1-com-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap1-com-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap1 com purge:",
+    "text": "Montagem Hap1 com purge:\n            Results:\n            C:98.6%[S:20.0%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%\n            1592 Complete BUSCOs (C) (of which 16 contain internal stop codons)\n            323 Complete and single-copy BUSCOs (S)\n            1269 Complete and duplicated BUSCOs (D)\n            6 Fragmented BUSCOs (F)\n            16 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap1-sem-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap1-sem-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap1 sem purge:",
+    "text": "Montagem Hap1 sem purge:\n            Results:\n            C:98.6%[S:20.1%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%\n            1592 Complete BUSCOs (C) (of which 16 contain internal stop codons)\n            324 Complete and single-copy BUSCOs (S)\n            1268 Complete and duplicated BUSCOs (D)\n            6 Fragmented BUSCOs (F)\n            16 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Podemos notar que a diferença foi minima, porém nossa montagem estava bem menor e escolhemos seguir com a pré-purge, mantive a estrategia para diminuir contigs e manter a quantidade das regiões duplicadas, foi um sucesso e escolhemos essa montagem para continuar."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap2-sem-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap2-sem-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap2 sem purge:",
+    "text": "Montagem Hap2 sem purge:\n            Results:\n            C:99.1%[S:19.8%,D:79.2%],F:0.3%,M:0.6%,n:1614,E:1.6%\n            1599 Complete BUSCOs (C) (of which 25 contain internal stop codons)\n            320 Complete and single-copy BUSCOs (S)\n            1279 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            10 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap2-com-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap2-com-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap2 com purge:",
+    "text": "Montagem Hap2 com purge:\n            Results:\n            C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%\n            1604 Complete BUSCOs (C) (of which 15 contain internal stop codons)\n            36 Complete and single-copy BUSCOs (S)\n            1568 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            5 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Notem que a qualidade foi a mesma, essa montagem está execelente, baixo numero de contigs, alta região duplicada, essa montagem advem do HIFIASM diretamente, e não passou por nem um tipo de melhora na qualidade de montagem. Seguimos com ela!"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#conclusões",
+    "href": "posts/Genômica/BUSCO/index.html#conclusões",
+    "title": "Jomaserver",
+    "section": "Conclusões:",
+    "text": "Conclusões:\n            Percebemos que nossa montagem primária pós-purge sofreu uma queda significativa em regiões duplicadas, o esperado era algo próximo do total, já que nossa montagem é uma representação diploíde de um genoma tetraplóide, ou seja, todas as regiões genômicas estão duplicadas, o percentual de 73,9 não condiz com o resultado esperado. Portanto, decidimos continuar com a montagem primária apenas sem os junks identificados no purge e seguir também com as montagens hap1 e hap2. (sem junks)."
   }
 ]
