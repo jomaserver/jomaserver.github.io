@@ -2,6 +2,7 @@
   {
     "listing": "/computacao.html",
     "items": [
+      "/posts/computacao/BlobToolsKit/index.html",
       "/posts/computacao/Grafo de String e desafios na montagem/index.html",
       "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
       "/posts/computacao/Anotações Linux/index.html",
@@ -29,6 +30,7 @@
   {
     "listing": "/pibic.html",
     "items": [
+      "/posts/pibic/BlobToolsKit/index.html",
       "/posts/pibic/BUSCO/index.html",
       "/posts/pibic/Grafo de String e desafios na montagem/index.html",
       "/posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html",
@@ -103,6 +105,10 @@
   },
   {
     "listing": "/posts/Genômica/MitoHifi/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/BlobToolsKit/index.html",
     "items": []
   }
 ]
