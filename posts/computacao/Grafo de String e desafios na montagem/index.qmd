@@ -1,0 +1,84 @@
+---
+title: "Odeio regiões duplicadas"
+author: "João Marcelo"
+date: "2025-11-05"
+categories: [Gênomica, PIBIC]
+image: images/clipboard-2151146867.png
+---
+
+**Introdução**
+
+Recentemente, comecei a ter alguns problemas na minha montagem, por se tratar de um genoma complexo (tetraploíde), ou seja, varias regiões repetitivas e heterozigotas. Quando terminei minha montagem primária pelo Hifiasm, notei que o tamanho do arquivo estava bem maior do que o esperado (Resultados de citometro mostrando o tamanho do gênoma). O esperado era \~1,4 Gb, porém, o Hifiasm me devolveu um resultado de 2,4 Gb. Quase 1 Gb do que o esperado. Mas o que é essa informação? Como saber qual região foi processada errado.
+
+------------------------------------------------------------------------
+
+**Purge**
+
+Vamos elucidar essas problemáticas.
+
+Primeiro ponto é a montagem do Hifiasm é feita de maneira linear em regiões homozigotas, ou seja, ele colapsa as regiões cromossomicas dos haplotipos, quando a informação contida neles é a mesma. O problema está justamente nas regiões não homozigotas. Na qual o software cria o que chamamos de "bolha", explico um pouco melhor no post do Hifiasm.
+
+Como devem imaginar isso faz surgir algumas problemáticas, a principal dessa problemáticas é duplicação de regiões que teoricamente seriam do mesmo haplotipo, e o software interpreta como duas regiões diferentes. Isso explica o motivo do arquivo ser bem maior do que o esperado. O hifiasm tem um mecanismo de purge nativo capaz de lidar com esse tipo de duplicação.
+
+Mas em casos de genomas mais complexos como o meu, esse mecanismo pode não ser tão eficiente assim, já que o software é modelado para organismos diplóides. Então para sanar essa problemática, utilizei outro software especializado em Purges. (Purge_dups).
+
+------------------------------------------------------------------------
+
+**Purge_dups**
+
+Beleza, então conseguimos aumentar a qualidade da nossa montagem?
+
+O purge_dups deu muito trabalho, primeiramente na primeira parte que temos que alinhar nossa sequencia (com alguma outra de referencia ou contra o própio resultado do sequenciamento bruto) usando um software chamado (Minimap2).
+
+Porém essa simples etapa levou cerca de duas semanas, não estava conseguindo gerar os outputs necessarios para seguir com o purged_dups, revi 1 milhão de vezes o README do purge_dups, revisei todos os passos varias vezes, e ainda sim, só consegui achar a resposta quando fui entender o minimap2 a fundo. Percebi que o uso de um dos parametros que o purge_dups indicava para essa etapa de alinhamento estava incorreto, fazendo o minimap2 não funcionar da maneira esperada. Contactei o dev para relatar o problema, após utilizar outro parametro e conseguir seguir com o purge.
+
+![](images/clipboard-3800598797.png){width="783"}
+
+A resposta foi quase imediata, e logo após isso o dev consertou o parametro para outros usuarios não terem o mesmo problema que eu tive. Após conseguir rodar gerei um arquivo output sem essas sequencias duplicadas. Mas o problema não acabou ai, o arquivo (purged.fa) que é esse arquivo de saída comentado acima, veio com um tamanho de \~1,1Gb. Cerca de 400Mb abaixo do que eu esperava, ou seja, o purge_dups funcionou, mas cortou regiões que não era pra ter cortado. E agora?
+
+**Continuação purge_dups**
+
+Então, foi bem frustante a principio quando notei que o software tinha rodado errado. Mas de certo modo, desafiador também. Comecei a rever todos os parametros e outputs, analisando todas as contigs que foram removidas tentando achar esses fragmentos de sequencia que foram retirados erroneamente. Meu orientador deu a ideia de rodarmos o purge para cada um dos haplotipos gerados na montagem do Hifiasm, inves de rodar a montagem primaria completa. Começamos fazendo isso, e o arquivo gerado no hap1 teve o mesmo problema do corte excessivo. Então decidi, rever e procurar papers que poderiam me ajudar a entender como rodar o software melhor para um genoma complexo como o meu.
+
+Foi quando eu percebi que se eu ajustasse o arquivo de cutoffs eu iria estar manualmente forçando o software a interpretar apenas a região de cobertura que eu quisesse, então eu e meu orientador partimos nessa jornada de luta contra a maquina.
+
+Primeira coisa que percebemos foi que no histograma inicial, ele interpretava os picos de uma maneira estranha, dando valores númericos não tão condizentes com a região analisada. Percebemos que o problema era exatamente nesse parametro que trata dos picos (mid-coverage).
+
+Então decidimos ir ajustando até acharmos a região que nos retornaria um arquivo com aproximadamente o tamanho esperado (\~1,4Gb). Isso foi um processo longo também, cada tentativa demandava \~30 minutos e não sabiamos se o resultado iria ser o favoravel.
+
+Para isso, jogamos alguns valores para entender melhor como funcionava o comportamento da reta.
+
+Percebemos que a inclinação da reta era oposta ao valor numerico que colocavamos. Ou seja, quanto maior o valor numérico maior a area que o software vai interpretar que pode haver duplicações, logo, o tamanho do nosso arquivo era menor. Achamos o valor ideal ajustando o parametro no 77 para mid-coverage.
+
+------------------------------------------------------------------------
+
+**Resultados**
+
+Então depois de todas essas problematicas sanadas, conseguimos elevar a qualidade da montagem, e gerar os arquivos que vão dar sequencia a nossa montagem.
+
+![](images/clipboard-3350166681.png)
+
+**Histograma**
+
+![](images/clipboard-2151146867.png)
+
+
+Podemos notar no grafíco três linhas que representam os três parametros utilizados no cutoff para o purge.
+
+5 (low-coverage): Tudo que tem uma cobertura menor que 5 é definido com Junk e essa sequencia é discartada.
+77 (mid-coverage): Gera esse intervalo entre picos, que representam a área que deve ser ánalisada para buscar sequencias repetitivas.
+338 (high-coverage): Regiões extremamentes repetitivas, podem ser regiões centromericas ou regiões proximas ao telomero (extremidade cromossomal).
+
+
+----
+
+**Next caps**
+
+Partimos para os proximos softwares (BUSCO, KRAKEN2)! e trarei atualizações no Jomaserver!
+
+BUSCO: Fará um mapa de genes tornando ainda mais lúcida a avalição da montagem.
+KRAKEN2: Fará uma ánalise metagenomica encontrando contaminantes (Sequencias de outros organismos) que estão presentes no meus dados de sequenciamento.
+
+
+Abraço.
+

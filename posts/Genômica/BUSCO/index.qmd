@@ -1,0 +1,104 @@
+---
+title: "Pós-BUSCO"
+author: "João Marcelo"
+date: "2025-11-05"
+categories: [Gênomica, PIBIC]
+image: images/clipboard-2341822293.png
+---
+
+O último post do meu blog, aponta para a utilização do BUSCO, eu consegui rodar o BUSCO e percebi alguma coisas, mas primeiro vou colocar os dados que eu retirei do BUSCO das minhas diferentes montagens (representações do meu genoma)
+
+## O que é o BUSCO:
+
+BUSCO é um software que utiliza de bancos de dados contendo genes comuns do seu organismo de interesse de montagem com a família taxonomica que ele se encontra ou ordem etc. No nosso caso utilziamos o banco de dados : embryophyta_odb10. Pensamos em utilizar poales.odb porém BUSCO encontra-se fora do ar no momento, então tivemos que utilizar um banco que estava previamente instalado no nosso servidor.
+
+## Montagem prímaria sem purge:
+
+**Results:**
+
+C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%    
+1604    Complete BUSCOs (C) (of which 15 contain internal stop codons)         
+36  Complete and single-copy BUSCOs (S)    
+1568    Complete and duplicated BUSCOs (D)     
+5   Fragmented BUSCOs (F)              
+5   Missing BUSCOs (M)             
+1614    Total BUSCO groups searched 
+
+
+## Montagem primaria com purge:
+
+**Results:**
+
+C:97.1%[S:23.2%,D:73.9%],F:0.5%,M:2.4%,n:1614,E:1.8%       
+1568    Complete BUSCOs (C) (of which 28 contain internal stop codons)         
+375 Complete and single-copy BUSCOs (S)    
+1193    Complete and duplicated BUSCOs (D)     
+8   Fragmented BUSCOs (F)              
+38  Missing BUSCOs (M)             
+1614    Total BUSCO groups searched 
+
+Aqui podemos ver a primeira problemática, notem que a região duplicada pós-purge sofreu com uma diminuição notória nas regiões duplicadas. E como sabemos nossa montagem é uma representão 2n de um genoma 4n ou seja o esperado era um número \~100%, ou seja por mais que o arquivo tenha ficado compativel no tamanho o purge retirou regiões que não eram para terem sido retiradas. Portanto, adaptando essa ideia decidimos continuar com nossa montagem pré-purge porém a mesma estava com um número muito alto de contigs (fragmentos de sequencias) \~1800 contigs. Pra diminuir isso, rodei o purge com uma nova estrátegia, no caso utilizar somente do mecanismo de identificação de JUNK, já que grande parte dos contigs são fragmentos pequenos. Ele reconheceu e cortou esses contigs então decidi continuar com essa montagem que passa pelo purge mas não de regiões duplicadas e sim de JUNKS. O resultado foi o esperado, e o BUSCO mostrou um gráfico identico ao pré-purge, porém não temos mais esse número de contigs na nossa montagem.
+
+## Montagem Hap1 com purge:
+
+**Results:**
+
+C:98.6%[S:20.0%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%       
+1592    Complete BUSCOs (C) (of which 16 contain internal stop codons)         
+323 Complete and single-copy BUSCOs (S)    
+1269    Complete and duplicated BUSCOs (D)     
+6   Fragmented BUSCOs (F)              
+16  Missing BUSCOs (M)             
+1614    Total BUSCO groups searched     
+
+
+## Montagem Hap1 sem purge:
+
+     
+**Results:**
+
+C:98.6%[S:20.1%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%       
+1592    Complete BUSCOs (C) (of which 16 contain internal stop codons)         
+324 Complete and single-copy BUSCOs (S)    
+1268    Complete and duplicated BUSCOs (D)     
+6   Fragmented BUSCOs (F)              
+16  Missing BUSCOs (M)             
+1614    Total BUSCO groups searched     
+
+
+Podemos notar que a diferença foi minima, porém nossa montagem estava bem menor e escolhemos seguir com a pré-purge, mantive a estrategia para diminuir contigs e manter a quantidade das regiões duplicadas, foi um sucesso e escolhemos essa montagem para continuar.
+
+## Montagem Hap2 sem purge:
+
+**Results:**
+
+       
+C:99.1%[S:19.8%,D:79.2%],F:0.3%,M:0.6%,n:1614,E:1.6%       
+1599    Complete BUSCOs (C) (of which 25 contain internal stop codons)         
+320 Complete and single-copy BUSCOs (S)    
+1279    Complete and duplicated BUSCOs (D)     
+5   Fragmented BUSCOs (F)              
+10  Missing BUSCOs (M)             
+1614    Total BUSCO groups searched        
+
+
+## Montagem Hap2 com purge:
+
+      
+**Results:**
+
+C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%    
+1604    Complete BUSCOs (C) (of which 15 contain internal stop codons)         
+36  Complete and single-copy BUSCOs (S)    
+1568    Complete and duplicated BUSCOs (D)     
+5   Fragmented BUSCOs (F)              
+5   Missing BUSCOs (M)             
+1614    Total BUSCO groups searched 
+
+Notem que a qualidade foi a mesma, essa montagem está execelente, baixo numero de contigs, alta região duplicada, essa montagem advem do HIFIASM diretamente, e não passou por nem um tipo de melhora na qualidade de montagem. Seguimos com ela!
+
+## Conclusões:
+
+Percebemos que nossa montagem primária pós-purge sofreu uma queda significativa em regiões duplicadas, o esperado era algo próximo do total, já que nossa montagem é uma representação diploíde de um genoma tetraplóide, ou seja, todas as regiões genômicas estão duplicadas, o percentual de 73,9 não condiz com o resultado esperado. Portanto, decidimos continuar com a montagem primária apenas sem os junks identificados no purge e seguir também com as montagens hap1 e hap2. (sem junks).
+
+![](images/clipboard-2341822293.png)
