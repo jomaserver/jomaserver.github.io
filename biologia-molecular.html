@@ -1,187 +1,222 @@
 <!DOCTYPE html>
-<html><head>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./icon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-82b1a03c67a08b47b550cf05f64695ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
-      "location": "sidebar",
-      "copy-button": false,
-      "collapse-after": 3,
-      "panel-placement": "start",
-      "type": "textbox",
-      "limit": 50,
-      "keyboard-shortcut": [
-        "f",
-        "/",
-        "s"
-      ],
-      "show-item-context": false,
-      "language": {
-        "search-no-results-text": "No results",
-        "search-matching-documents-text": "matching documents",
-        "search-copy-link-title": "Copy link to search",
-        "search-hide-matches-text": "Hide additional matches",
-        "search-more-match-text": "more match in this document",
-        "search-more-matches-text": "more matches in this document",
-        "search-clear-button-title": "Clear",
-        "search-text-placeholder": "",
-        "search-detached-cancel-button-title": "Cancel",
-        "search-submit-button-title": "Submit",
-        "search-label": "Search"
-      }
-    }</script><script>
-
-      window.document.addEventListener("DOMContentLoaded", function (_event) {
-        const listingTargetEl = window.document.querySelector('#listing-listing .list');
-        if (!listingTargetEl) {
-          // No listing discovered, do not attach.
-          return; 
+<html>
+<head>
+    <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+    <script src="site_libs/clipboard/clipboard.min.js"></script>
+    <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+    <script src="site_libs/quarto-search/fuse.min.js"></script>
+    <script src="site_libs/quarto-search/quarto-search.js"></script>
+    <meta name="quarto:offset" content="./">
+    <link href="./icon.png" rel="icon" type="image/png">
+    <script src="site_libs/quarto-listing/list.min.js"></script>
+    <script src="site_libs/quarto-listing/quarto-listing.js"></script>
+    <script src="site_libs/quarto-html/quarto.js" type="module"></script>
+    <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+    <script src="site_libs/quarto-html/popper.min.js"></script>
+    <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+    <script src="site_libs/quarto-html/anchor.min.js"></script>
+    <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+    <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+    <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+    <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+    <link href="site_libs/bootstrap/bootstrap-82b1a03c67a08b47b550cf05f64695ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+    <script id="quarto-search-options" type="application/json">{
+        "location": "sidebar",
+        "copy-button": false,
+        "collapse-after": 3,
+        "panel-placement": "start",
+        "type": "textbox",
+        "limit": 50,
+        "keyboard-shortcut": [
+            "f",
+            "/",
+            "s"
+        ],
+        "show-item-context": false,
+        "language": {
+            "search-no-results-text": "No results",
+            "search-matching-documents-text": "matching documents",
+            "search-copy-link-title": "Copy link to search",
+            "search-hide-matches-text": "Hide additional matches",
+            "search-more-match-text": "more match in this document",
+            "search-more-matches-text": "more matches in this document",
+            "search-clear-button-title": "Clear",
+            "search-text-placeholder": "",
+            "search-detached-cancel-button-title": "Cancel",
+            "search-submit-button-title": "Submit",
+            "search-label": "Search"
         }
+    }</script>
+    <script>
+        window.document.addEventListener("DOMContentLoaded", function (_event) {
+            const listingTargetEl = window.document.querySelector('#listing-listing .list');
+            if (!listingTargetEl) {
+                // No listing discovered, do not attach.
+                return; 
+            }
 
-        const options = {
-          valueNames: ['listing-title','listing-author','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-          
-          searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-        };
+            const options = {
+                valueNames: ['listing-title', 'listing-author', 'listing-date', 'listing-image', { data: ['index'] }, { data: ['categories'] }, { data: ['listing-date-sort'] }, { data: ['listing-file-modified-sort'] }],
+                
+                searchColumns: ["listing-title", "listing-author", "listing-date", "listing-image", "listing-description"],
+            };
 
-        window['quarto-listings'] = window['quarto-listings'] || {};
-        window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+            window['quarto-listings'] = window['quarto-listings'] || {};
+            window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
-        if (window['quarto-listing-loaded']) {
-          window['quarto-listing-loaded']();
-        }
-      });
+            if (window['quarto-listing-loaded']) {
+                window['quarto-listing-loaded']();
+            }
+        });
 
-      window.addEventListener('hashchange',() => {
-        if (window['quarto-listing-loaded']) {
-          window['quarto-listing-loaded']();
-        }
-      })
-      </script><link rel="stylesheet" href="./cyanobacteria.css">
+        window.addEventListener('hashchange', () => {
+            if (window['quarto-listing-loaded']) {
+                window['quarto-listing-loaded']();
+            }
+        })
+    </script>
+    <link rel="stylesheet" href="./cyanobacteria.css">
     <title>Posts sobre Biologia Molecular</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 </head>
-<body class="fullcontent quarto-light"> <nav class="category-nav">
+<body class="fullcontent quarto-light">
+    <nav class="category-nav">
         <a href="./index.html">← Voltar para o Início</a>
     </nav>
 
-    <main class="category-content"><header id="title-block-header" class="quarto-title-block"></header>
+    <main class="category-content">
+        <header id="title-block-header" class="quarto-title-block"></header>
         <section id="bem-vindo-à-categoria-biologia-molecular" class="level2 bloco-biomol">
-        <h2 class="anchored" data-anchor-id="bem-vindo-à-categoria-biologia-molecular">Bem-vindo à categoria Biologia Molecular<img src="images/BioMolB-01.png" class="img-fluid" width="99"></h2>
-        <hr>
-        <p>Sou estudante de biotecnologia, então a biologia molecular é uma área bem explorada, me deparo com ela em diversas materias ao longo da minha graduação, então essa página geralmente vai ter avanços nos resultados do meu projeto e trabalhos que foram feitos ao longo da graduação e que eu achei relevante.</p>
+            <h2 class="anchored" data-anchor-id="bem-vindo-à-categoria-biologia-molecular">Bem-vindo à categoria Biologia Molecular<img src="images/BioMolB-01.png" class="img-fluid" width="99"></h2>
+            <hr>
+            <p>Sou estudante de biotecnologia, então a biologia molecular é uma área bem explorada, me deparo com ela em diversas materias ao longo da minha graduação, então essa página geralmente vai ter avanços nos resultados do meu projeto e trabalhos que foram feitos ao longo da graduação e que eu achei relevante.</p>
         </section>
         <style>
-        /* Bloco de Biologia Molecular - estilo biotecnológico */
-        .bloco-biomol {
-          background-color: #0d0221; /* Fundo roxo profundo */
-          color: #e0e0ff; /* Texto lilás claro */
-          padding: 2rem;
-          border-radius: 4px;
-          margin: 2rem 0;
-          font-family: 'Ubuntu Mono', monospace;
-          font-size: 1.05rem;
-          line-height: 1.6;
-          border: 1px solid #00ffff; /* Ciano neon */
-          box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-          position: relative;
-          overflow: hidden;
-        }
+            /* Bloco de Biologia Molecular - estilo biotecnológico */
+            .bloco-biomol {
+                background-color: #0d0221; /* Fundo roxo profundo */
+                color: #e0e0ff; /* Texto lilás claro */
+                padding: 2rem;
+                border-radius: 4px;
+                margin: 2rem 0;
+                font-family: 'Ubuntu Mono', monospace;
+                font-size: 1.05rem;
+                line-height: 1.6;
+                border: 1px solid #00ffff; /* Ciano neon */
+                box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+                position: relative;
+                overflow: hidden;
+            }
 
 
-        .bloco-biomol::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 100%;
-          height: 100%;
-          background-image:
-            linear-gradient(rgba(0, 255, 255, 0.08) 1px, transparent 1px);
-          background-size: 100% 18px;
-          pointer-events: none;
-          z-index: 0;
-        }
+            .bloco-biomol::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-image:
+                    linear-gradient(rgba(0, 255, 255, 0.08) 1px, transparent 1px);
+                background-size: 100% 18px;
+                pointer-events: none;
+                z-index: 0;
+            }
 
-        .bloco-biomol h2,
-        .bloco-biomol h3 {
-          color: #b76cff; /* Roxo neon para títulos */
-          border-bottom: 1px solid rgba(183, 108, 255, 0.4);
-          padding-bottom: 5px;
-          margin-top: 1.5rem;
-          margin-bottom: 0.8rem;
-          position: relative;
-          z-index: 1;
-        }
+            .bloco-biomol h2,
+            .bloco-biomol h3 {
+                color: #b76cff; /* Roxo neon para títulos */
+                border-bottom: 1px solid rgba(183, 108, 255, 0.4);
+                padding-bottom: 5px;
+                margin-top: 1.5rem;
+                margin-bottom: 0.8rem;
+                position: relative;
+                z-index: 1;
+            }
         </style>
-        
-        
-        
+
+
+
     </main>
 
-    
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+
+    <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
         <div class="list grid quarto-listing-cols-2">
-        <div class="g-col-1" data-index="0" data-categories="QmlvbG9naWElMjBNb2xlY3VsYXI=" data-listing-date-sort="1737860400000" data-listing-file-modified-sort="1759827500000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
-        <a href="./posts/biologia-molecular/Trabalho de TE/index.html" class="quarto-grid-link">
-        <div class="quarto-grid-item card h-100 card-left">
-        <p class="card-img-top">
-        <img loading="lazy" src="./posts/biologia-molecular/Trabalho de TE/images/clipboard-2003411843.png" class="thumbnail-image card-img" style="height: 150px;">
-        </p>
-        <div class="card-body post-contents">
-        <h5 class="no-anchor card-title listing-title">
-        Trabalho de TE
-        </h5>
-        <div class="card-attribution card-text-small justify">
-        <div class="listing-author">
-        João Marcelo
-        </div>
-        <div class="listing-date">
-        Jan 26, 2025
-        </div>
-        </div>
-        </div>
-        </div></a>
-        </div>
-        <div class="g-col-1" data-index="1" data-categories="QmlvbG9naWElMjBNb2xlY3VsYXI=" data-listing-date-sort="1737860400000" data-listing-file-modified-sort="1759827484000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
-        <a href="./posts/biologia-molecular/Trabalho de microbio aplicada1/index.html" class="quarto-grid-link">
-        <div class="quarto-grid-item card h-100 card-left">
-        <p class="card-img-top">
-        <img loading="lazy" src="./posts/biologia-molecular/Trabalho de microbio aplicada1/images/levedura.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-        </p>
-        <div class="card-body post-contents">
-        <h5 class="no-anchor card-title listing-title">
-        Trabalho de Microbio aplicada
-        </h5>
-        <div class="card-attribution card-text-small justify">
-        <div class="listing-author">
-        João Marcelo
-        </div>
-        <div class="listing-date">
-        Jan 26, 2025
-        </div>
-        </div>
-        </div>
-        </div></a>
-        </div>
+            
+            <div class="g-col-1" data-index="0" data-categories="QmlvbG9naWElMjBNb2xlY3VsYXI=" data-listing-date-sort="1737860400000" data-listing-file-modified-sort="1759827500000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="210">
+                <a href="./posts/biologia-molecular/Trabalho de TE/index.html" class="quarto-grid-link">
+                    <div class="quarto-grid-item card h-100 card-left">
+                        <p class="card-img-top">
+                            <img loading="lazy" src="./posts/biologia-molecular/Trabalho de TE/images/clipboard-2003411843.png" class="thumbnail-image card-img" style="height: 150px;">
+                        </p>
+                        <div class="card-body post-contents">
+                            <h5 class="no-anchor card-title listing-title">
+                                Trabalho de TE
+                            </h5>
+                            <div class="card-attribution card-text-small justify">
+                                <div class="listing-author">
+                                    João Marcelo
+                                </div>
+                                <div class="listing-date">
+                                    Jan 26, 2025
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="g-col-1" data-index="1" data-categories="QmlvbG9naWElMjBNb2xlY3VsYXI=" data-listing-date-sort="1737860400000" data-listing-file-modified-sort="1759827484000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
+                <a href="./posts/biologia-molecular/Trabalho de microbio aplicada1/index.html" class="quarto-grid-link">
+                    <div class="quarto-grid-item card h-100 card-left">
+                        <p class="card-img-top">
+                            <img loading="lazy" src="./posts/biologia-molecular/Trabalho de microbio aplicada1/images/levedura.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+                        </p>
+                        <div class="card-body post-contents">
+                            <h5 class="no-anchor card-title listing-title">
+                                Trabalho de Microbio aplicada
+                            </h5>
+                            <div class="card-attribution card-text-small justify">
+                                <div class="listing-author">
+                                    João Marcelo
+                                </div>
+                                <div class="listing-date">
+                                    Jan 26, 2025
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="g-col-1" data-index="2" data-categories="QmlvbG9naWElMjBNb2xlY3VsYXI=" data-listing-date-sort="1737860400000">
+                <a href="./posts/biologia-molecular/EDTA e LAI/index.html" class="quarto-grid-link">
+                    <div class="quarto-grid-item card h-100 card-left">
+                        <p class="card-img-top">
+                            <img loading="lazy" src="./posts/biologia-molecular/EDTA e LAI/images/edta.jpg" class="thumbnail-image card-img" style="height: 150px;">
+                        </p>
+                        <div class="card-body post-contents">
+                            <h5 class="no-anchor card-title listing-title">
+                                EDTA e LAI
+                            </h5>
+                            <div class="card-attribution card-text-small justify">
+                                <div class="listing-author">
+                                    João Marcelo
+                                </div>
+                                <div class="listing-date">
+                                    Jan 21, 2026
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
         </div>
         <div class="listing-no-matching d-none">No matching items</div>
-        </div></body></html>
+    </div>
+</body>
+</html>
