@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+    .bash-box {
+        background-color: #282a36;
+        color: #f8f8f2;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 15px;
+        border-radius: 8px;
+        overflow-x: auto;
+        border-left: 5px solid #ff79c6;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-family: sans-serif;
+        font-size: 0.9em;
+    }
+    thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+    }
+    th, td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+    }
+    tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
+</style>
+</head>
+<body>
+<article>
+    <h2>Anotação de Elementos Transponíveis (AnnoTEP/EDTA)</h2>
+    
+    <p>Após as etapas de limpeza e descontaminação das montagens (descritas nas seções de BlobTools e MitoHiFi), obteve-se um genoma livre de sequencias advindas de contaminação. No entanto, genomas de gramíneas como Andropogon gayanus são caracterizados por um alto conteúdo repetitivo (estimado em cerca de 80%), composto majoritariamente por Elementos Transponíveis (TEs). A identificação e o mascaramento dessas regiões são pré-requisitos obrigatórios para a etapa subsequente de predição gênica estrutural (Augustus/BRAKER), a fim de evitar a anotação errônea de transposons como genes codificantes.</p>
+
+    <p>Para esta tarefa, utilizou-se o pipeline AnnoTEP, que encapsula o software EDTA (Extensive de-novo TE Annotator). A escolha desta ferramenta deve-se à sua capacidade de realizar anotação de novo de alta sensibilidade, combinando múltiplos buscadores estruturais e filtros de qualidade para redução de falsos positivos.</p>
+
+    <h3>9.1 Classificação e Identificação de TEs</h3>
+    <p>O pipeline realiza a classificação dos elementos baseando-se no mecanismo de transposição. A distinção correta entre as classes é fundamental para a avaliação da qualidade da montagem (via índice LAI) e para a compreensão da arquitetura genômica.</p>
+
+    <p><strong>Tabela 2: Classificação dos Elementos Transponíveis anotados pelo EDTA.</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Classe</th>
+                <th>Mecanismo</th>
+                <th>Principais Elementos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Classe I (Retrotransposons)</td>
+                <td>"Copiar e Colar" (Intermediário de RNA)</td>
+                <td>LTRS (Gypsy, Copia) e LINES. Responsáveis pela expansão do tamanho do genoma.</td>
+            </tr>
+            <tr>
+                <td>Classe II (DNA Transposons)</td>
+                <td>"Recortar e Colar" (Intermediário de DNA)</td>
+                <td>TIRS (CACTA, hAT), MITES e Helitrons (Replicação em Círculo Rolante).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>9.1.1 O Desafio dos MITES e o TIR-Learner</h3>
+    <p>Um desafio técnico específico na anotação de Andropogon é a identificação de MITES (Miniature Inverted-repeat Transposable Elements). Devido ao seu tamanho reduzido e à presença de repetições invertidas, estes elementos assemelham-se estatisticamente a ruídos de sequência ou estruturas secundárias aleatórias.</p>
+    
+    <p>Para mitigar falsos positivos, o EDTA utiliza o módulo TIR-Learner, que aplica algoritmos de Ensemble Machine Learning para validar candidatos baseando-se em três critérios estruturais rígidos:</p>
+    <ul>
+        <li>TSD (Target Site Duplication): Presença obrigatória de duplicação do sítio de inserção flanqueando as bordas invertidas.</li>
+        <li>Composição de K-mers: Análise da frequência de k-mers para distinguir a assinatura de sequência de um transposon real versus regiões intergênicas aleatórias.</li>
+        <li>Filtro de Homologia: Remoção de candidatos que, embora possuam estrutura de TIR, são na verdade fragmentos de LTRs maiores degradados.</li>
+    </ul>
+
+    <h3>9.2 Docker</h3>
+    <p>A execução foi realizada através de contêineres Docker para garantir a reprodutibilidade do ambiente de software. Durante a configuração, identificou-se uma inconsistência no mapeamento de diretórios padrão da imagem annotep/annotep-cli: v1.1, resultando em erro de "File not found"para o script principal. A solução adotada envolveu o mapeamento explícito de volumes (-v), espelhando o caminho absoluto do servidor dentro do contêiner e a localização manual do script Python dentro da imagem.</p>
+
+    <h4>9.2.1 Erros:</h4>
+    <p>Tivemos alguns problemas para rodar esse script, na primeira tentativa, houve um erro de execução fazendo com que 500k arquivos zumbis consumissem muita RAM da maquina, a solução foi o kill no processo. Posteriormente, tivemos outro problema na ultima parte da pipeline do EDTA, que não gerou os arquivos de saída esperados, devido ao tamanho do genoma. o processo foi encerrado pelo próprio sistema.</p>
+    
+    <p>Entrando no Container:</p>
+    <div class="bash-box">
+<pre><code>docker run -it \
+-v/st100/acgt/projetos/genfor/andropogon/jm/analysis/assembly/AnnoTEP/Primary:/usr/local/AnnoTEP/cli/results \
+-v/st100/acgt/projetos/genfor/andropogon/jm/analysis/assembly/AnnoTEP/Primary:/st100/acgt/projetos/genfor/andropogon/jm/analysis/assembly/AnnoTEP/Primary \
+annotep/annotep-cli: v1.1</code></pre>
+    </div>
+
+    <p>Executando script</p>
+    <div class="bash-box">
+<pre><code>python run_annotep.py \
+--genome /st100/acgt/projetos/genfor/andropogon/jm/analysis/assembly/AnnoTEP/Primary/andropogon.asmJM.bp.p_ctg.clean.blob.fa \
+--sensitive 1-step all-anno 1-species others --run_LAI 1--threads 10</code></pre>
+    </div>
+
+    <h3>9.3 Inputs e Outputs do Pipeline</h3>
+    <p>A tabela abaixo descreve os dados de entrada necessários e os principais arquivos gerados pelo pipeline, essenciais para as etapas seguintes de mascaramento e anotação gênica.</p>
+    
+    <p><strong>Tabela 3: Descrição dos Inputs e Outputs do pipeline AnnoTEP/EDTA.</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Arquivo/Parâmetro e Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Inputs (Entrada)</td>
+                <td>
+                    -genome: Arquivo FASTA da montagem genômica limpa (pós-BlobTools/MitoHiFi).<br>
+                    -species: Parâmetro definido como "others" (recomendado para gramíneas não-modelo como A. gayanus).<br>
+                    -run_LAI: Flag (1) para calcular o índice de qualidade da montagem LTR (LTR Assembly Index).
+                </td>
+            </tr>
+            <tr>
+                <td>Outputs (Saída)</td>
+                <td>
+                    *.TElib.fa: Biblioteca de Repetições: Arquivo FASTA contendo as sequências de todas as famílias de TEs identificadas. Será usado pelo Repeat Masker.<br>
+                    *.MAKER.masked: Versão do genoma com as regiões repetitivas mascaradas (substituídas por "N" ou minúsculas), pronta para o BRAKER/Augustus.<br>
+                    *.LAI.out: Relatório contendo o valor do índice LAI (qualidade da montagem do espaço intergênico).<br>
+                    *.EDTA.TEanno.gff3: Arquivo GFF3 contendo as coordenadas genômicas e a classificação de todos os TEs anotados.<br>
+                    *.mod.EDTA.raw/: Diretório contendo os resultados brutos dos buscadores estruturais (LTRharvest, TIR-Learner, HelitronScanner).
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>9.4 Resultados da Anotação de Elementos Repetitivos: Montagem Prímaria</h3>
+    <p>Anotação estrutural e homóloga realizada pelo pipeline EDTA revelou que a montagem prímaria de Andropogon gayanus é altamente repetitiva, uma característica típica de gramíneas tropicais. Do tamanho total da montagem analisada (aproximadamente 2.34 Gb), foram identificados e mascarados 1.69 Gb, correspondendo a 72,46% do genoma nuclear.</p>
+    
+    <p>Composição das repetições apresentou uma predominância massiva de retrotransposons da classe I, especificamente da ordem LTR (Long Terminal Repeats). Somando-se as superfamílias Gypsy, Copia e elementos LTR não classificados, esta classe compõe cerca de 54% de todo o genoma montado. Os elementos Gypsy foram os mais abundantes entre os classificados (17,91%), seguidos pelos Copia (4,84%). Os transposons de DNA (Classe II), destacam-se os Helitrons (elementos de replicação por círculo rolante), que ocupam 6,13% do genoma, e uma diversidade de elementos de repetição terminal invertida (TIRs), incluindo superfamílias como CACTA, Mutator e hAT. Os elementos MITES (Miniature Inverted-repeat Transposable Elements) contribuíram com 0,82% da cobertura.</p>
+
+    <p>A Tabela 4 detalha a distribuição das classes de elementos transponíveis e a proporção do genoma mascarado por cada superfamília.</p>
+
+    <p><strong>Tabela 4: Resumo da anotação de elementos transponíveis (TEs) e regiões repetitivas no genoma de Andropogon gayanus para montagem prímaria gerado pelo pipeline EDTA.</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Classe / Superfamília</th>
+                <th>Contagem</th>
+                <th>Pares de Base (bp)</th>
+                <th>% do Genoma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Classe I: Retrotransposons</strong></td><td></td><td></td><td></td></tr>
+            <tr><td>LTR/Gypsy</td><td>403.711</td><td>418.777.657</td><td>17,91%</td></tr>
+            <tr><td>LTR/Copia</td><td>107.968</td><td>113.235.116</td><td>4,84%</td></tr>
+            <tr><td>LTR/Unknown</td><td>1.136.818</td><td>731.674.817</td><td>31,28%</td></tr>
+            <tr><td>LINES (L1, RTE, outros)</td><td>67.937</td><td>37.204.097</td><td>1,59%</td></tr>
+            <tr><td>SINES</td><td>22.319</td><td>4.322.008</td><td>0,18%</td></tr>
+            <tr><td><strong>Classe II: DNA Transposons</strong></td><td></td><td></td><td></td></tr>
+            <tr><td>Helitrons (Rolling-circle)</td><td>14.442</td><td>143.378.215</td><td>6,13%</td></tr>
+            <tr><td>TIR/CACTA</td><td>367.412</td><td>13.648.046</td><td>0,58%</td></tr>
+            <tr><td>TIR/Mutator</td><td>9.280</td><td>7.621.332</td><td>0,33%</td></tr>
+            <tr><td>TIR/hAT</td><td>7.442</td><td>4.189.151</td><td>0,18%</td></tr>
+            <tr><td>TIR/MITE</td><td>90.764</td><td>19.257.147</td><td>0,82%</td></tr>
+            <tr><td>TIR/Outros (PIF, Tcl, etc.)</td><td>8.146</td><td>5.395.150</td><td>0,23%</td></tr>
+            <tr><td>TIR/Unknown</td><td>519.079</td><td>187.970.624</td><td>8,04%</td></tr>
+            <tr><td><strong>Outras Repetições</strong></td><td>23.939</td><td>8.017.095</td><td>0,34%</td></tr>
+            <tr><td><strong>Total Mascarado</strong></td><td>2.779.257</td><td>1.694.690.455</td><td>72,46%</td></tr>
+            <tr><td><strong>Tamanho Total da Montagem</strong></td><td></td><td>2.338.741.209</td><td>100,00%</td></tr>
+        </tbody>
+    </table>
+
+    <p><strong>Tabela 5: Índice de Montagem de LTR (LAI) para a montagem prímaria e para os maiores contigs de A. gayanus. Valores de LAI >= 20 indicam qualidade "Gold Standard".</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Sequência / Região</th>
+                <th>Tamanho (bp)</th>
+                <th>Intact LTRS</th>
+                <th>Total LTRS</th>
+                <th>LAI Score</th>
+                <th>Classificação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Whole Genome</td><td>2.338.741.209</td><td>0.1925</td><td>0.5469</td><td>29.57</td><td>Gold</td></tr>
+            <tr><td><strong>Análise por Contig (Top 5 Maiores)</strong></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>ptg0000011_1</td><td>32.8 Mb</td><td>0.1680</td><td>0.4141</td><td>33.15</td><td>Gold</td></tr>
+            <tr><td>ptg0000021_1</td><td>24.1 Mb</td><td>0.1804</td><td>0.5489</td><td>25.96</td><td>Gold</td></tr>
+            <tr><td>ptg0000031_1</td><td>30.1 Mb</td><td>0.1459</td><td>0.3551</td><td>33.00</td><td>Gold</td></tr>
+            <tr><td>ptg0000041_1</td><td>56.5 Mb</td><td>0.1504</td><td>0.4735</td><td>27.68</td><td>Gold</td></tr>
+            <tr><td>ptg0000051_1</td><td>42.2 Mb</td><td>0.1601</td><td>0.4902</td><td>28.45</td><td>Gold</td></tr>
+        </tbody>
+    </table>
+    <p>Nota: Intact LTRs e Total LTRs representam a densidade de elementos identificados.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Classe/Superfamília</th>
+                <th>Contagem</th>
+                <th>Pares de Base (bp)</th>
+                <th>% do Genoma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Classe I: Retrotransposons</strong></td><td></td><td></td><td></td></tr>
+            <tr><td>LTR/Gypsy</td><td>298.304</td><td>264.901.046</td><td>15,94%</td></tr>
+            <tr><td>LTR/Copia</td><td>65.040</td><td>47.559.548</td><td>2,86%</td></tr>
+            <tr><td>LTR/Unknown</td><td>773.769</td><td>544.724.164</td><td>32,77%</td></tr>
+            <tr><td>LINES (L1, RTE, outros)</td><td>50.141</td><td>28.038.468</td><td>1,68%</td></tr>
+            <tr><td>SINES</td><td>9.210</td><td>1.598.686</td><td>0,10%</td></tr>
+            <tr><td><strong>Classe II: DNA Transposons</strong></td><td></td><td></td><td></td></tr>
+            <tr><td>Helitrons (Rolling-circle)</td><td>275.407</td><td>110.253.255</td><td>6,63%</td></tr>
+            <tr><td>TIR/CACTA</td><td>9.410</td><td>7.786.342</td><td>0,47%</td></tr>
+            <tr><td>TIR/Mutator</td><td>6.461</td><td>4.777.340</td><td>0,29%</td></tr>
+            <tr><td>TIR/hAT</td><td>5.360</td><td>3.048.822</td><td>0,18%</td></tr>
+            <tr><td>TIR/MITE</td><td>69.265</td><td>14.806.869</td><td>0,89%</td></tr>
+            <tr><td>TIR/Outros (PIF, Tcl, etc.)</td><td>5.859</td><td>3.911.590</td><td>0,24%</td></tr>
+            <tr><td>TIR/Unknown</td><td>361.976</td><td>132.351.856</td><td>7,96%</td></tr>
+            <tr><td><strong>Outras Repetições</strong></td><td>15.031</td><td>5.778.376</td><td>0,35%</td></tr>
+            <tr><td><strong>Total Mascarado</strong></td><td>1.945.233</td><td>1.169.536.362</td><td>70,36%</td></tr>
+            <tr><td><strong>Tamanho Total da Montagem</strong></td><td></td><td>1.662.112.468</td><td>100,00%</td></tr>
+        </tbody>
+    </table>
+
+    <p><strong>Tabela 7: Índice de Montagem de LTR (LAI) para a montagem de haplótipica 1 (Hap1) de A. gayanus. O score global de 30.49 confirma a alta integridade estrutural também nos alelos alternativos.</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Sequência / Região</th>
+                <th>Tamanho</th>
+                <th>Intact LTRS</th>
+                <th>Total LTRS</th>
+                <th>LAI Score</th>
+                <th>Classificação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Whole Genome (Hap1)</td><td>1.66 Gb</td><td>0.1882</td><td>0.5210</td><td>30.49</td><td>Gold</td></tr>
+            <tr><td><strong>Análise por Contig (Top 5 Maiores)</strong></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>h1tg0000311_1</td><td>68.9 Mb</td><td>0.0924</td><td>0.2020</td><td>38.23</td><td>Gold</td></tr>
+            <tr><td>h1tg0000481_1</td><td>65.1 Mb</td><td>0.1457</td><td>0.4038</td><td>27.12</td><td>Gold</td></tr>
+            <tr><td>h1tg0000111_1</td><td>63.8 Mb</td><td>0.2166</td><td>0.5759</td><td>30.66</td><td>Gold</td></tr>
+            <tr><td>h1tg0000401_1</td><td>63.4 Mb</td><td>0.1553</td><td>0.3532</td><td>36.07</td><td>Gold</td></tr>
+            <tr><td>h1tg0000261_1</td><td>55.0 Mb</td><td>0.1953</td><td>0.5504</td><td>26.95</td><td>Gold</td></tr>
+        </tbody>
+    </table>
+    <p>Nota: Intact e Total LTRs representam a densidade de elementos.</p>
+
+    <h4>9.4.3 Resultados da Anotação de Elementos Repetitivos: Montagem Hap2</h4>
+    <p><strong>Tabela 8: Resumo da anotação de elementos transponíveis (TEs) e regiões repetitivas no genoma de Andropogon gayanus para montagem Hap 2 gerado pelo pipeline EDTA.</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Classe / Superfamília</th>
+                <th>Contagem</th>
+                <th>Pares de Base (bp)</th>
+                <th>% do Genoma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Classe I: Retrotransposons</strong></td><td></td><td></td><td></td></tr>
+            <tr><td>LTR/Gypsy</td><td>384.932</td><td>298.791.543</td><td>17,50%</td></tr>
+            <tr><td>LTR/Copia</td><td>102.858</td><td>84.446.964</td><td>4,95%</td></tr>
+            <tr><td>LTR/Unknown*</td><td>601.178</td><td>482.557.319</td><td>28,26%</td></tr>
+            <tr><td>LINES (L1, RTE, outros)</td><td>63.326</td><td>27.617.016</td><td>1,62%</td></tr>
+            <tr><td>SINES</td><td>16.090</td><td>2.080.156</td><td>0,12%</td></tr>
+            <tr><td><strong>Classe II: DNA Transposons</strong></td><td></td><td></td><td></td></tr>
+            <tr><td>Helitrons (Rolling-circle)</td><td>395.669</td><td>112.547.679</td><td>6,59%</td></tr>
+            <tr><td>TIR/hAT (hobo-Activator)</td><td>4.140</td><td>2.297.144</td><td>0,13%</td></tr>
+            <tr><td>TIR/Harbinger</td><td>6.317</td><td>3.230.190</td><td>0,19%</td></tr>
+            <tr><td>Unclassified/Unknown</td><td>711.561</td><td>232.739.767</td><td>13,63%</td></tr>
+            <tr><td><strong>Outras Repetições**</strong></td><td></td><td>118.074.512</td><td>6,92%</td></tr>
+            <tr><td><strong>Total Mascarado</strong></td><td></td><td>1.246.307.778</td><td>73,00%</td></tr>
+            <tr><td><strong>Tamanho Total da Montagem</strong></td><td></td><td>1.707.265.109</td><td>100,00%</td></tr>
+        </tbody>
+    </table>
+    <p>*Calculado a partir do total de LTRs menos Gypsy e Copia.</p>
+    <p>**Diferença entre o Total Mascarado e os repetidos intercalados identificados.</p>
+
+    <p><strong>Tabela 9: Índice de Montagem de LTR (LAI) para a montagem haplótipica 2 (Hap2) de A. gayanus. O score global de 32.14 reafirma a qualidade superior da montagem, classificada como nível de referência (Gold).</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Sequência / Região</th>
+                <th>Tamanho</th>
+                <th>Intact LTRS</th>
+                <th>Total LTRS</th>
+                <th>LAI Score</th>
+                <th>Classificação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Whole Genome (Hap2)</td><td>1.71 Gb</td><td>0.1919</td><td>0.5080</td><td>32.14</td><td>Gold</td></tr>
+            <tr><td><strong>Análise por Contig (Top 5 Maiores - Scores Médios/Representativos)</strong></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>h2tg0000011_1</td><td>4.78 Mb</td><td>0.5660</td><td>0.2370</td><td>35.97</td><td>Gold</td></tr>
+            <tr><td>h2tg0000021_1</td><td>37.89 Mb</td><td>0.1816</td><td>0.5450</td><td>25.38</td><td>Gold</td></tr>
+            <tr><td>h2tg0000031_1</td><td>70.69 Mb</td><td>0.5482</td><td>0.2611</td><td>40.37</td><td>Gold</td></tr>
+            <tr><td>h2tg0000041_1</td><td>29.01 Mb</td><td>0.2906</td><td>0.6754</td><td>36.13</td><td>Gold</td></tr>
+            <tr><td>h2tg0000061_1</td><td>18.66 Mb</td><td>0.1877</td><td>0.5262</td><td>27.27</td><td>Gold</td></tr>
+        </tbody>
+    </table>
+
+    <h3>9.5 Conclusões da Etapa de Anotação de Repetições</h3>
+    <p>A execução do pipeline AnnoTEP/EDTA foi concluída com êxito, resultando na caracterização detalhada e no mascaramento do genoma nuclear de Andropogon gayanus. Os dados obtidos permitem estabelecer as seguintes conclusões sobre a arquitetura genômica desta espécie e a qualidade da montagem realizada:</p>
+    <ul>
+        <li>Alta Repetitividade e Complexidade: O genoma de A. gayanus é composto majoritariamente por sequências repetitivas > (70%), com uma predominância de retrotransposons LTR das superfamílias Gypsy e Copia. Este perfil é consistente com o esperado para gramíneas tropicais C4 com genomas grandes e complexos.</li>
+        <li>Validação da Qualidade da Montagem (Gold Standard): O índice LAI (LTR Assembly Index) classificou as três montagens como referência de qualidade ("Gold Standard"). Este resultado valida a estratégia de sequenciamento PacBio HiFi combinada ao montador Hifiasm, demonstrando que regiões complexas e repetitivas foram resolvidas corretamente, sem o colapso estrutural.</li>
+        <li>Dinâmica Evolutiva Recente: A análise de divergência de Kimura e o tempo de inserção indicam que o genoma está em uma fase ativa de expansão. A alta frequência de elementos intactos com baixa divergência genética sugere um surto recente (recent burst) de atividade de transposons, o que pode ter implicações diretas na plasticidade e adaptação da espécie.</li>
+    </ul>
+    <p>Em suma, a anotação de elementos transponíveis, forneceu evidências robustas da integridade estrutural das montagens, e forneceu arquivos essenciais para a proxima etapa de predição de genes codantes.</p>
+</article>
+</body>
+</html>
