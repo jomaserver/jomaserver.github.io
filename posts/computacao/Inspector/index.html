@@ -241,14 +241,14 @@
         }
       })
       </script><link rel="stylesheet" href="../../../cyanobacteria.css">
-    <title>Inspector</title>
+    <title>Correção de Erros (Inspector)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 </head>
 <body class="fullcontent quarto-light">
     <div class="container">
         <header>
-            <span>Inspector</span>
+            <span>Correção de Erros (Inspector)</span>
         </header>
         <div class="small">
             <nav>
@@ -260,27 +260,46 @@
             </nav>
         </div>
         <section class="large">
-            <hr>
-            <section id="introdução" class="level3">
-            <h3 data-anchor-id="introdução">Introdução</h3>
-            <p>O Inspector é uma ferramenta bioinformática projetada para identificar erros estruturais e de pequena escala em montagens genômicas. Através do alinhamento de reads brutos (PacBio HiFi) contra a montagem tratada, o software detecta divergências e avalia a acurácia da sequência de consenso. As inconsistências são classificadas em:</p>
+            <section id="disclaimer" class="level2">
+            <h2 data-anchor-id="disclaimer">Disclaimer</h2>
+            <p>Antes de passarmos a montagem do Andropogon gayanus para a proxima etapa, precisávamos garantir que a sequência base estivesse o mais polida possível. Por mais que o Hifiasm seja um montador excelente e que já tivéssemos limpado contaminantes e genomas de organelas, o genoma nuclear bruto ainda possui ruídos. É aqui que entra a nossa etapa de avaliação e correção estrutural com o Inspector. A teoria baseada em pesquisa nos mostra que ignorar esse polimento afeta diretamente a anotação lá na frente.</p>
             </section>
-            <section id="erros-estruturais-50-bp" class="level2">
-            <h2 data-anchor-id="erros-estruturais-50-bp">Erros estruturais (≥ 50 bp):</h2>
+            <section id="introdução" class="level2">
+            <h2 data-anchor-id="introdução">Introdução</h2>
+            <p>O Inspector é uma ferramenta bioinformática projetada especificamente para identificar erros estruturais e de pequena escala em montagens genômicas. A lógica por trás dele é muito sólida: o software faz o alinhamento dos nossos reads brutos (PacBio HiFi) diretamente contra a montagem tratada.</p>
+            <p>Ao mapear as leituras originais de volta na sequência consenso, o Inspector consegue detectar divergências e avaliar a acurácia real da montagem. Se a montagem tomou uma decisão que não tem suporte nos reads originais, o algoritmo aponta a inconsistência e a classifica.</p>
+            </section>
+            <section id="anatomia-dos-erros-genômicos" class="level2">
+            <h2 data-anchor-id="anatomia-dos-erros-genômicos">Anatomia dos Erros Genômicos</h2>
+            <p>O software classifica as inconsistências em duas categorias principais de tamanho.</p>
+            <p>Erros estruturais (&gt; 50 bp):</p>
             <ul>
-            <li><strong>Expansão:</strong> Inserção de sequências na montagem que não possuem suporte nas leituras originais.</li>
-            <li><strong>Colapso:</strong> Omissão ou compressão de regiões genômicas (comumente repetitivas) na montagem.</li>
-            <li><strong>Haplotype Switch:</strong> Alternância indevida entre alelos de diferentes haplótipos durante a montagem.</li>
-            <li><strong>Inversão:</strong> Segmento montado na orientação oposta à evidenciada pelos reads.</li>
+            <li><p>Expansão: Trata-se da inserção de sequências na montagem que não possuem suporte nas leituras originais do sequenciador.</p></li>
+            <li><p>Colapso: É a omissão ou compressão de regiões genômicas na montagem (um erro comumente associado a regiões repetitivas).</p></li>
+            <li><p>Haplotype Switch: Consiste na alternância indevida entre alelos de diferentes haplótipos durante a formação da sequência.</p></li>
+            <li><p>Inversão: Ocorre quando um segmento é montado na orientação oposta à evidenciada pelos reads.</p></li>
+            </ul>
+            <p>Erros de pequena escala (&lt; 50 bp):</p>
+            <ul>
+            <li><p>Base Substitution: É a troca incorreta de um nucleotídeo (mismatch).</p></li>
+            <li><p>Small Collapse: São as pequenas deleções presentes na montagem em relação às leituras.</p></li>
+            <li><p>Small Expansion: Representam pequenas inserções indevidas na sequência montada.</p></li>
             </ul>
             </section>
-            <section id="erros-de-pequena-escala-50-bp" class="level2">
-            <h2 data-anchor-id="erros-de-pequena-escala-50-bp">Erros de pequena escala (&lt; 50 bp):</h2>
-            <ul>
-            <li><strong>Base Substitution:</strong> Troca incorreta de um nucleotídeo (mismatch).</li>
-            <li><strong>Small Collapse:</strong> Pequenas deleções na montagem em relação às leituras.</li>
-            <li><strong>Small Expansion:</strong> Pequenas inserções indevidas na sequência montada.</li>
-            </ul>
+            <section id="pipeline-no-terminal" class="level2">
+            <h2 data-anchor-id="pipeline-no-terminal">Pipeline no Terminal</h2>
+            <p>Rodando direto no meu ambiente Linux, a execução do Inspector foi dividida em três etapas vitais de auditoria e edição.</p>
+            <p>Fase 1: Inspeção e Mapeamento primario, fornecemos ao software o nosso arquivo fasta da montagem primária limpa e as leituras originais PacBio HiFi para o alinhamento:</p>
+            <p><img src="images/clipboard-3439643068.png" class="img-fluid"></p>
+            <p>Fase 2: Correção Automática (Inspector correct) O Inspector não apenas levanta os problemas, ele também resolve. Com a função “correct”, utilizamos o output da análise anterior para que o software corrija as contigs que apresentaram erros. O resultado é um arquivo fasta com essas mudanças corrigidas:</p>
+            <p><img src="images/clipboard-2612065902.png" class="img-fluid"></p>
+            <p><img src="images/clipboard-3689468744.png" class="img-fluid"></p>
+            <p>Fase 3: Avaliação Pós-correção Como boas práticas exigem validação, pegamos o arquivo já corrigido gerado na fase 2 (“contig_corrected.fa”) e passamos pelo script do Inspector novamente. O objetivo é avaliar a montagem e recalcular os índices de qualidade (QV) posteriormente à correção dos erros:</p>
+            <p><img src="images/clipboard-1045856181.png" class="img-fluid"></p>
+            </section>
+            <section id="conclusão" class="level2">
+            <h2 data-anchor-id="conclusão">Conclusão</h2>
+            <p>Esse ciclo de detectar as falhas estruturais, corrigi-las matematicamente e auditar o resultado novamente é o que garante a robustez do nosso Andropogon gayanus. Foram exatamente esses arquivos corrigidos (pri_corrigida.fa, hap1_corrigido.fa, hap2_corrigido.fa) que serviram de entrada para a avaliação definitiva no Merqury. Ao resolver os erros de expansão e colapso, garantimos que nossa montagem reflita o organismo biológico real e evitamos a propagação de artefatos pelas próximas fases do projeto.</p>
             
             
             
