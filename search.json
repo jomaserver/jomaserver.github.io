@@ -887,5 +887,124 @@
     "title": "Jomaserver",
     "section": "Conclusões:",
     "text": "Conclusões:\n            Percebemos que nossa montagem primária pós-purge sofreu uma queda significativa em regiões duplicadas, o esperado era algo próximo do total, já que nossa montagem é uma representação diploíde de um genoma tetraplóide, ou seja, todas as regiões genômicas estão duplicadas, o percentual de 73,9 não condiz com o resultado esperado. Portanto, decidimos continuar com a montagem primária apenas sem os junks identificados no purge e seguir também com as montagens hap1 e hap2. (sem junks)."
+  },
+  {
+    "objectID": "posts/Genômica/Merqury/index.html#section",
+    "href": "posts/Genômica/Merqury/index.html#section",
+    "title": "Jomaserver",
+    "section": "",
+    "text": "Dissecando os Gráficos: Arquitetura do Andropogon\n            O legal do Merqury é a análise visual. Avaliando os espectros de multiplicidade (Número de Cópias e Origem de Montagem), a estratégia do Hifiasm fica clara.\n            Primária vs Alelos (Hap1 e Hap2) Analisando a sobreposição da Primária com o Haplótipo 1, a completude vai para 93.30%. A Primária carrega o consenso majoritário (90.05%), e o Hap1 entra com 3.25% de informação exclusiva (pura heterozigose alelo-específica). Ao olhar a Primária com o Hap2, a completude sobe para 95.79%, indicando que o segundo haplótipo agregou um pouco mais de diversidade. Essa simetria mostra que o particionamento da heterozigose foi muito equilibrado bidirecionalmente.\n            O Teste de Redundância (Hap1 x Hap2) Quando cruzei apenas os haplótipos (sem a Primária), chegamos à completude máxima teórica de 98.66%. Porém, o gráfico de Origem da Montagem relevou uma enorme massa de regiões compartilhadas (sobreposição verde) no pico de múltiplas cópias (~180x). O que isso significa na prática? Que o Hifiasm teve que replicar quase todo o arcabouço estrutural conservado da planta dentro de cada haplótipo só para manter a contiguidade dos cromossomos."
+  },
+  {
+    "objectID": "posts/Genômica/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
+    "href": "posts/Genômica/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
+    "title": "Jomaserver",
+    "section": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st",
+    "text": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st"
+  },
+  {
+    "objectID": "posts/Genômica/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
+    "href": "posts/Genômica/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
+    "title": "Jomaserver",
+    "section": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st",
+    "text": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st"
+  },
+  {
+    "objectID": "posts/Genômica/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
+    "href": "posts/Genômica/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
+    "title": "Jomaserver",
+    "section": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st",
+    "text": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st"
+  },
+  {
+    "objectID": "posts/Genômica/Merqury/index.html#section-1",
+    "href": "posts/Genômica/Merqury/index.html#section-1",
+    "title": "Jomaserver",
+    "section": "",
+    "text": "Conclusão\n            Esse comportamento reduntante atesta e valida perfeitamente o papel central da nossa Montagem Primária. Ela atua como o molde que unifica e colapsa essa redundância em um genoma de referência coeso e limpo. Anatomicamente falando, o genoma gerado é sólido, representativo e totalmente apto para ancorar os processos de mapeamento de marcas moleculares e a etapa de anotação estrutural."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#disclaimer",
+    "href": "posts/Genômica/Inspector/index.html#disclaimer",
+    "title": "Jomaserver",
+    "section": "Disclaimer",
+    "text": "Disclaimer\n            Antes de passarmos a montagem do Andropogon gayanus para a proxima etapa, precisávamos garantir que a sequência base estivesse o mais polida possível. Por mais que o Hifiasm seja um montador excelente e que já tivéssemos limpado contaminantes e genomas de organelas, o genoma nuclear bruto ainda possui ruídos. É aqui que entra a nossa etapa de avaliação e correção estrutural com o Inspector. A teoria baseada em pesquisa nos mostra que ignorar esse polimento afeta diretamente a anotação lá na frente."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#introdução",
+    "href": "posts/Genômica/Inspector/index.html#introdução",
+    "title": "Jomaserver",
+    "section": "Introdução",
+    "text": "Introdução\n            O Inspector é uma ferramenta bioinformática projetada especificamente para identificar erros estruturais e de pequena escala em montagens genômicas. A lógica por trás dele é muito sólida: o software faz o alinhamento dos nossos reads brutos (PacBio HiFi) diretamente contra a montagem tratada.\n            Ao mapear as leituras originais de volta na sequência consenso, o Inspector consegue detectar divergências e avaliar a acurácia real da montagem. Se a montagem tomou uma decisão que não tem suporte nos reads originais, o algoritmo aponta a inconsistência e a classifica."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "href": "posts/Genômica/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "title": "Jomaserver",
+    "section": "Anatomia dos Erros Genômicos",
+    "text": "Anatomia dos Erros Genômicos\n            O software classifica as inconsistências em duas categorias principais de tamanho.\n            Erros estruturais (&gt; 50 bp):\n            \n            Expansão: Trata-se da inserção de sequências na montagem que não possuem suporte nas leituras originais do sequenciador.\n            Colapso: É a omissão ou compressão de regiões genômicas na montagem (um erro comumente associado a regiões repetitivas).\n            Haplotype Switch: Consiste na alternância indevida entre alelos de diferentes haplótipos durante a formação da sequência.\n            Inversão: Ocorre quando um segmento é montado na orientação oposta à evidenciada pelos reads.\n            \n            Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: É a troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: São as pequenas deleções presentes na montagem em relação às leituras.\n            Small Expansion: Representam pequenas inserções indevidas na sequência montada."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Inspector/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando direto no meu ambiente Linux, a execução do Inspector foi dividida em três etapas vitais de auditoria e edição.\n            Fase 1: Inspeção e Mapeamento primario, fornecemos ao software o nosso arquivo fasta da montagem primária limpa e as leituras originais PacBio HiFi para o alinhamento:\n            \n            Fase 2: Correção Automática (Inspector correct) O Inspector não apenas levanta os problemas, ele também resolve. Com a função “correct”, utilizamos o output da análise anterior para que o software corrija as contigs que apresentaram erros. O resultado é um arquivo fasta com essas mudanças corrigidas:\n            \n            \n            Fase 3: Avaliação Pós-correção Como boas práticas exigem validação, pegamos o arquivo já corrigido gerado na fase 2 (“contig_corrected.fa”) e passamos pelo script do Inspector novamente. O objetivo é avaliar a montagem e recalcular os índices de qualidade (QV) posteriormente à correção dos erros:"
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#conclusão",
+    "href": "posts/Genômica/Inspector/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Esse ciclo de detectar as falhas estruturais, corrigi-las matematicamente e auditar o resultado novamente é o que garante a robustez do nosso Andropogon gayanus. Foram exatamente esses arquivos corrigidos (pri_corrigida.fa, hap1_corrigido.fa, hap2_corrigido.fa) que serviram de entrada para a avaliação definitiva no Merqury. Ao resolver os erros de expansão e colapso, garantimos que nossa montagem reflita o organismo biológico real e evitamos a propagação de artefatos pelas próximas fases do projeto."
+  },
+  {
+    "objectID": "posts/computacao/Merqury/index.html#section",
+    "href": "posts/computacao/Merqury/index.html#section",
+    "title": "Jomaserver",
+    "section": "",
+    "text": "Dissecando os Gráficos: Arquitetura do Andropogon\n            O legal do Merqury é a análise visual. Avaliando os espectros de multiplicidade (Número de Cópias e Origem de Montagem), a estratégia do Hifiasm fica clara.\n            Primária vs Alelos (Hap1 e Hap2) Analisando a sobreposição da Primária com o Haplótipo 1, a completude vai para 93.30%. A Primária carrega o consenso majoritário (90.05%), e o Hap1 entra com 3.25% de informação exclusiva (pura heterozigose alelo-específica). Ao olhar a Primária com o Hap2, a completude sobe para 95.79%, indicando que o segundo haplótipo agregou um pouco mais de diversidade. Essa simetria mostra que o particionamento da heterozigose foi muito equilibrado bidirecionalmente.\n            O Teste de Redundância (Hap1 x Hap2) Quando cruzei apenas os haplótipos (sem a Primária), chegamos à completude máxima teórica de 98.66%. Porém, o gráfico de Origem da Montagem relevou uma enorme massa de regiões compartilhadas (sobreposição verde) no pico de múltiplas cópias (~180x). O que isso significa na prática? Que o Hifiasm teve que replicar quase todo o arcabouço estrutural conservado da planta dentro de cada haplótipo só para manter a contiguidade dos cromossomos."
+  },
+  {
+    "objectID": "posts/computacao/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
+    "href": "posts/computacao/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
+    "title": "Jomaserver",
+    "section": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st",
+    "text": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st"
+  },
+  {
+    "objectID": "posts/computacao/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
+    "href": "posts/computacao/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
+    "title": "Jomaserver",
+    "section": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st",
+    "text": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st"
+  },
+  {
+    "objectID": "posts/computacao/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
+    "href": "posts/computacao/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
+    "title": "Jomaserver",
+    "section": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st",
+    "text": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st"
+  },
+  {
+    "objectID": "posts/computacao/Merqury/index.html#section-1",
+    "href": "posts/computacao/Merqury/index.html#section-1",
+    "title": "Jomaserver",
+    "section": "",
+    "text": "Conclusão\n            Esse comportamento reduntante atesta e valida perfeitamente o papel central da nossa Montagem Primária. Ela atua como o molde que unifica e colapsa essa redundância em um genoma de referência coeso e limpo. Anatomicamente falando, o genoma gerado é sólido, representativo e totalmente apto para ancorar os processos de mapeamento de marcas moleculares e a etapa de anotação estrutural."
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#erros-estruturais-50-bp",
+    "href": "posts/computacao/Inspector/index.html#erros-estruturais-50-bp",
+    "title": "Jomaserver",
+    "section": "Erros estruturais (≥ 50 bp):",
+    "text": "Erros estruturais (≥ 50 bp):\n            \n            Expansão: Inserção de sequências na montagem que não possuem suporte nas leituras originais.\n            Colapso: Omissão ou compressão de regiões genômicas (comumente repetitivas) na montagem.\n            Haplotype Switch: Alternância indevida entre alelos de diferentes haplótipos durante a montagem.\n            Inversão: Segmento montado na orientação oposta à evidenciada pelos reads."
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#erros-de-pequena-escala-50-bp",
+    "href": "posts/computacao/Inspector/index.html#erros-de-pequena-escala-50-bp",
+    "title": "Jomaserver",
+    "section": "Erros de pequena escala (< 50 bp):",
+    "text": "Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: Troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: Pequenas deleções na montagem em relação às leituras.\n            Small Expansion: Pequenas inserções indevidas na sequência montada."
   }
 ]
