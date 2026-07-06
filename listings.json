@@ -2,6 +2,7 @@
   {
     "listing": "/computacao.html",
     "items": [
+      "/posts/computacao/Miniprot/index.html",
       "/posts/computacao/Merqury/index.html",
       "/posts/computacao/Inspector/index.html",
       "/posts/computacao/BlobToolsKit/index.html",
@@ -90,6 +91,8 @@
   {
     "listing": "/genomic.html",
     "items": [
+      "/posts/Genômica/Miniprot/index.html",
+      "/posts/Genômica/Repeat Masker/index.html",
       "/posts/Genômica/Merqury/index.html",
       "/posts/Genômica/Inspector/index.html",
       "/posts/Genômica/BlobToolsKit/index.html",
@@ -217,6 +220,14 @@
   },
   {
     "listing": "/posts/computacao/Inspector/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Genômica/Miniprot/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/Miniprot/index.html",
     "items": []
   }
 ]
