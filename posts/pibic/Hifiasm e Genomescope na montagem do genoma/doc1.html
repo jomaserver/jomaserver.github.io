@@ -242,11 +242,17 @@
       })
       </script><link rel="stylesheet" href="./cyanobacteria.css">
     <link rel="stylesheet" href="./genome-rain.css">
+    
+    <link rel="stylesheet" href="../../../cyanobacteria.css">
+    
     <title>Primeira passo na montagem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 </head>
 <body class="fullcontent quarto-light">
+    <!-- ESTA É A CORREÇÃO NO HTML: o canvas fica aqui, fora do .container -->
+    <canvas id="genome-rain"></canvas>
+
     <div class="container">
         <div class="termbar">
             <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
@@ -327,7 +333,9 @@ Stats:
     </div>
     <footer class="site">Jomaserver Blog by <a href="https://jomaserver.github.io/posts.html">João Marcelo</a></footer>
     
-
+    
+    
+    <script src="../../../genome-rain.js" defer=""></script>
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-posts-pibic">
             <div class="list quarto-listing-default">
