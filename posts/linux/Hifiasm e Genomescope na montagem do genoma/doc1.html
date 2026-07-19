@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html lang="pt-br"><head>
 <script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -15,10 +15,10 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-82b1a03c67a08b47b550cf05f64695ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../../site_libs/bootstrap/bootstrap-0a69234a842f19187890bcee668158d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
       "location": "sidebar",
       "copy-button": false,
       "collapse-after": 3,
@@ -240,23 +240,28 @@
           window['quarto-listing-loaded']();
         }
       })
-      </script><link rel="stylesheet" href="../../../cyanobacteria.css">
+      </script><link rel="stylesheet" href="./cyanobacteria.css">
+    <link rel="stylesheet" href="./genome-rain.css">
     <title>Primeira passo na montagem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
 </head>
 <body class="fullcontent quarto-light">
     <div class="container">
+        <div class="termbar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="path">jomas@server:~/jomaserver_blog$</span>
+        </div>
         <header>
-            <span>Primeira passo na montagem</span>
+            <span>Jomaserver Blog</span>
         </header>
         <div class="small">
             <nav>
                 <div>Navegação</div>
-                <a href="../../../index.html">Início</a>
-                <a href="../../../posts.html">Posts</a>
-                <a href="../../../curriculum.html">Currículo</a>
-                <a href="../../../about.html">Sobre</a>
+                <a href="../../../index.html">inicio</a>
+                <a href="../../../posts.html">posts</a>
+                <a href="../../../curriculum.html">curriculo</a>
+                <a href="../../../about.html">sobre</a>
             </nav>
         </div>
         <section class="large">
@@ -268,12 +273,12 @@
             </section>
             <section id="linhas-de-comando" class="level1">
             <h1>Linhas de comando:</h1>
-            <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">hifiasm</span> <span class="at">-o</span> andropogon.asmJM <span class="at">-t10</span> <span class="at">--telo-m</span> TTTAGGG<span class="dt">\</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250523_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz<span class="dt">\</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250604_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz 2<span class="dt">\&gt;</span> asm01.log</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>/st100/acgt/projetos/genfor/andropogon/in_data/pacbio/BRS_Sarandi_1/PACBIO_DATA/fastq/XMPBA_20250604_R84050_PL21312-001_1-1-B01.hifi_reads.filt.fastq.gz 2<span class="dt">\&gt;</span> asm01.log</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
             <p>Os parametros desse código dependem do servidor que você tiver trabalhando no meu caso usei -t10 (Usei 10 nucleos do processor da matriz do servidor). Outro parametro é o –telo-m TTTAGGG identificando meus telomeros (Extremidades do cromossomo). O andropogon.asmJM é o output que eu coloquei para meus arquivos resultantes do processo. O resto do codigo é apenas o caminho dos diretorios onde se encontram meus .fastq do sequenciamento. Posteriormente transformei esse código em um arquivo .sh (executável), para posteriormente passar ele pelo nohup. Bash</p>
-            <div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> sh runMeHifiasm.sh <span class="kw">&amp;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nohup</span> sh runMeHifiasm.sh <span class="kw">&amp;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
             <p>O nohup basicamente funciona como uma especie de host, faço uma maquina externa (no meu caso a maquina matriz), rodar o código, liberando meu terminal e fazendo com que a minha máquina de trabalho possa ser desligada, enquanto o código continua rodando na matriz. (obs: as vezes levam semanas pra software te entregar o resultado).</p>
             <section id="genomescope2" class="level2">
             <h2 data-anchor-id="genomescope2">Genomescope2</h2>
@@ -282,7 +287,7 @@
             <section id="kmc" class="level2">
             <h2 data-anchor-id="kmc">KMC</h2>
             <p>O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash</p>
-            <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">kmc</span> <span class="at">-k21</span> <span class="at">-t10</span> <span class="at">-m64</span> <span class="at">-ci1</span> <span class="at">-cs1000000</span> @lista_fastqsANDROPOGON.txt reads tmp/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">kmc</span> <span class="at">-k21</span> <span class="at">-t10</span> <span class="at">-m64</span> <span class="at">-ci1</span> <span class="at">-cs1000000</span> @lista_fastqsANDROPOGON.txt reads tmp/</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
             </section>
             <section id="resultados-do-kmc" class="level2">
             <h2 data-anchor-id="resultados-do-kmc">Resultados do KMC</h2>
@@ -306,7 +311,7 @@ Stats:
             <section id="genomescope2-1" class="level2">
             <h2 data-anchor-id="genomescope2-1">GenomeScope2</h2>
             <p>Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.</p>
-            <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">genomescope.R</span> <span class="at">-i</span> reads.histo <span class="at">-o</span> output <span class="at">-k</span> 21</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">genomescope.R</span> <span class="at">-i</span> reads.histo <span class="at">-o</span> output <span class="at">-k</span> 21</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
             </section>
             <section id="resultados" class="level2">
             <h2 data-anchor-id="resultados">Resultados</h2>
@@ -318,11 +323,11 @@ Stats:
             </section>
             </section>
         </section>
+        <footer class="box-footer">SYSTEM_LOG::ROOT/Primeira passo na montagem.md</footer>
     </div>
-    <footer>
-        <span>Jomaserver Blog by <a href="https://jomaserver.github.io/posts.html">João Marcelo</a></span>
-    </footer>
+    <footer class="site">Jomaserver Blog by <a href="https://jomaserver.github.io/posts.html">João Marcelo</a></footer>
     
+
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-posts-pibic">
             <div class="list quarto-listing-default">

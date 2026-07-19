@@ -1,0 +1,65 @@
+/*
+============================================================
+  genome-rain.css
+  Camada ADITIVA. Não substitui o cyanobacteria.css — só
+  soma os efeitos novos (chuva de fundo, scanline, boot,
+  glitch hover). Reaproveita as variáveis de :root já
+  definidas no cyanobacteria.css (--matrix-green, --bg-void).
+============================================================
+*/
+
+#genome-rain {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  opacity: .35;
+  pointer-events: none;
+}
+
+#genome-scan {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 2px, rgba(0,0,0,.10) 3px);
+  mix-blend-mode: overlay;
+  opacity: .5;
+}
+
+/* ---------- boot sequence (só aparece na home, ver genome-rain.js) ---------- */
+#boot-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: var(--bg-void, #060a09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .6s ease;
+}
+#boot-overlay pre {
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
+  color: var(--matrix-green, #3ddc84);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  max-width: 600px;
+  padding: 0 20px;
+  text-shadow: 0 0 6px rgba(61,220,132,.5);
+}
+
+/* garante que o conteúdo real fique acima da chuva/scanline */
+.container, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* foco visível no teclado (acessibilidade) */
+a:focus-visible, .category-card:focus-visible {
+  outline: 2px solid var(--matrix-green, #3ddc84);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #genome-rain, #genome-scan { display: none; }
+}

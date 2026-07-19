@@ -1,206 +1,10 @@
 [
   {
-    "objectID": "computacao.html#bem-vindo-à-categoria-computação",
-    "href": "computacao.html#bem-vindo-à-categoria-computação",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Computação",
-    "text": "Bem-vindo à categoria Computação\n        Talvez uma das categorias mais óbvias devido ao lugar que você está! Tenho aprendido um pouco de lógica computacional e tenho aplicado isso em diversas áreas que me interesso (Jogos, Trabalho, Graduação etc) Então, esse deve ser um bloco de posts diversificado, espero que goste dos conteúdos!"
-  },
-  {
-    "objectID": "about.html#oi-eu-sou-o-jomas",
-    "href": "about.html#oi-eu-sou-o-jomas",
-    "title": "Jomaserver",
-    "section": "Oi, eu sou o Jomas ",
-    "text": "Oi, eu sou o Jomas \n            \n            Sou estudante de Biotecnologia na Universidade de Brasília, ao longo da minha tragetória, trabalhei com drosofílas como medidores de invasões biologicas, com um enfoque para Bioestatistica, analisando amplitude nicho e distribuição geografica por meio de dados populacionais coletados em reservas ecológicas.\n            \n            \n            \n            \n            \n            Por me interessar por essa área e unindo os conhecimentos em biologia molecular que é o enfoque maior do meu curso, me interessei por Bioinformática e genômica, comecei um projeto na EMBRAPA, afim de montar o genoma rascunho de uma éspecie de campim.\n            \n            Por isso criei esse blog, a ideia é que ele funcione tanto como um guia de estudos pessoal quanto como um lugar para compartilhar conhecimentos, desafios e aprendizados que vou adquirindo ao longo do caminho. Além de organizar meu próprio processo de aprendizado, também quero que este espaço sirva como referência e inspiração para quem se interessa pelos mesmos temas que eu."
-  },
-  {
-    "objectID": "biologia-molecular.html#bem-vindo-à-categoria-biologia-molecular",
-    "href": "biologia-molecular.html#bem-vindo-à-categoria-biologia-molecular",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Biologia Molecular",
-    "text": "Bem-vindo à categoria Biologia Molecular\n        \n        Sou estudante de biotecnologia, então a biologia molecular é uma área bem explorada, me deparo com ela em diversas materias ao longo da minha graduação, então essa página geralmente vai ter avanços nos resultados do meu projeto e trabalhos que foram feitos ao longo da graduação e que eu achei relevante."
-  },
-  {
-    "objectID": "estatistica.html#bem-vindo-à-categoria-estatística",
-    "href": "estatistica.html#bem-vindo-à-categoria-estatística",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Estatística",
-    "text": "Bem-vindo à categoria Estatística\n        \n        Outra coisa que está presente em todas as áreas da minha vida!! Os posts que estão nessa página, provavelmente estarão em outras páginas também. Mas fique a vontade para procurar algo mais específico!"
-  },
-  {
-    "objectID": "pibic.html#bem-vindo-à-categoria-pibic",
-    "href": "pibic.html#bem-vindo-à-categoria-pibic",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria PIBIC",
-    "text": "Bem-vindo à categoria PIBIC\n        \n        Você encontrá nessa página dados e avanços no meu projeto PIBIC 25/26. Meu pibic é montagem do genoma rascunho do capim-andropogon, espécie graminea muito utilizada em pastos. Então, basicamente espere conteúdos de genômica vegetal, uso de softwares e análises estatístiscas)."
-  },
-  {
     "objectID": "linux.html#bem-vindo-à-categoria-linux",
     "href": "linux.html#bem-vindo-à-categoria-linux",
     "title": "Jomaserver",
     "section": "Bem-vindo à categoria Linux",
-    "text": "Bem-vindo à categoria Linux\n        Linux é o melhor sistema operacional e ponto (Tem que práticar óbvio). Recentemente, tenho usado cada vez mais. E meu ambiente de trabalho precisa ser Linux, então, foi bom ter um conhecimento prévio, mas sinto que avançarei bem mais agora nesse sistema operacional. Essa talvez seja a página mais parecida com um caderno de anotações. Mas caso tenha interesse fica à vontade para vasculhar informações!!!! Espero ajudar."
-  },
-  {
-    "objectID": "neurociencia.html#bem-vindo-à-categoria-neurociência",
-    "href": "neurociencia.html#bem-vindo-à-categoria-neurociência",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Neurociência",
-    "text": "Bem-vindo à categoria Neurociência\n        \n        Participo de um projeto de extensão chamado NeuroTechXBsb, por isso é comum de eu estar lendo um artigo de neurociência ou participando de hackatons. Por isso, decidi criar essa categoria! Se seu interesse for apenas nessa área, recomendo que siga o link e acompanhe o conteúdo da NeuroTechX."
-  },
-  {
-    "objectID": "filosofia.html#bem-vindo-à-categoria-filosofia",
-    "href": "filosofia.html#bem-vindo-à-categoria-filosofia",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Filosofia ",
-    "text": "Bem-vindo à categoria Filosofia \n        \n        Sabe aquela conversa no bar, ou quando zera um jogo? Aquele assunto que pega e não sai da cabeça? É aqui que eu formalizo eles.\n        Esta categoria é o meu espaço para pegar essas ideias que surgem do nada, que me agarram, e transformá-las em algo mais sólido. Com pelo menos algum embasamento real… diferentes das vozes da minha cabeça\n        Se você se interessou por algo dessa página, adoraria conversar sobre com você!!!"
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
-    "title": "Jomaserver",
-    "section": "O que é a Extensão ABNT para Quarto?",
-    "text": "O que é a Extensão ABNT para Quarto?\n            Imagine uma ferramenta que faz toda a formatação chata do seu trabalho automaticamente, enquanto você foca só em escrever. Pois é, essa extensão faz exatamente isso! Ela é como um “assistente pessoal” para quem precisa seguir as normas da ABNT.\n            Ela vem com:\n            \n            Um template LaTeX que já deixa tudo no jeito: margens certinhas, fontes adequadas, títulos e seções formatados.\n            Um estilo de citação (CSL) que cuida das referências bibliográficas, seguindo direitinho as regras da ABNT.\n            Um exemplo prático para você ver como funciona e já começar a usar sem enrolação.\n            \n            Ou seja, é praticamente um “ctrl+c, ctrl+v” da formatação ABNT. 😉"
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
-    "title": "Jomaserver",
-    "section": "Por que Você Vai Adorar Essa Extensão?",
-    "text": "Por que Você Vai Adorar Essa Extensão?\n            Vou te dar alguns motivos para você ficar animado(a) com essa extensão:\n            \n            Economiza Tempo:\n            \n            Chega de perder horas ajustando margens e fontes. Com essa extensão, você clica em “renderizar” e voilà: seu documento está pronto!\n            \n            Padronização Garantida:\n            \n            Sem mais preocupação com erros de formatação. A extensão cuida de tudo para você, seguindo as normas ABNT à risca.\n            \n            Fácil de Usar:\n            \n            Não precisa ser expert em LaTeX ou Quarto. Basta seguir uns passinhos simples e pronto!\n            \n            Personalizável:\n            \n            Se você quiser fazer ajustes no template, pode personalizar à vontade. É só abrir o arquivo e mudar o que precisar."
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
-    "title": "Jomaserver",
-    "section": "Como Usar a Extensão? (Passo a Passo)",
-    "text": "Como Usar a Extensão? (Passo a Passo)\n            Vou te explicar direitinho como começar a usar essa extensão. É tão fácil que você vai se perguntar por que não fez isso antes!\n            \n            Passo 1: Baixar a Extensão\n            \n            Clone o Repositório:\n            Abra o terminal e digite:\n            bash\n            Copy\n            git clone https://github.com/juauzz/extensionABNT.git\n            Copie para o Seu Projeto:\n            \n            No seu projeto Quarto, crie uma pasta chamada _extensions (se ainda não tiver).\n            Copie a pasta extensionABNT para dentro de _extensions.\n            \n            A estrutura do seu projeto vai ficar assim:\n            Copy\n            /meu-projeto-quarto\n    /_extensions\n        /extensionABNT\n            /examples\n                - example.qmd\n            /templates\n                - abnt-templates.tex\n            - abnt.csl\n            - _extension.yml\n            - README.md\n    - meu-documento.qmd\n            \n            \n            \n            Passo 2: Configurar o Arquivo\n            No seu arquivo .qmd, adicione a extensão ao formato PDF:\n            yaml\n            Copy\n            ---\ntitle: \"Meu Documento ABNT\"\nauthor: \"Seu Nome\"\nformat:\n  pdf:\n    extensions: [extensionABNT]\n---\n            \n            \n            Passo 3: Renderizar o Documento\n            Agora é só renderizar o documento. No terminal, digite:\n            bash\n            Copy\n            quarto render meu-documento.qmd --to pdf\n            E pronto! Seu documento vai sair formatadinho, seguindo todas as normas da ABNT. 😎"
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#exemplo-prático",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#exemplo-prático",
-    "title": "Jomaserver",
-    "section": "Exemplo Prático",
-    "text": "Exemplo Prático\n            Se você é do tipo que gosta de ver para crer, na pasta examples tem um arquivo example.qmd que já está pronto para usar. Para renderizá-lo, é só rodar:\n            bash\n            Copy\n            quarto render examples/example.qmd --to pdf\n            Depois é só abrir o PDF e ver como ficou. Spoiler: vai ficar show de bola! 😉"
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
-    "title": "Jomaserver",
-    "section": "Quer Personalizar? Sem Problema!",
-    "text": "Quer Personalizar? Sem Problema!\n            Se você quiser fazer ajustes no template ou no estilo de citação, é super fácil:\n            \n            Template LaTeX: O arquivo templates/abnt-templates.tex pode ser editado para mudar margens, fontes, formatação de títulos, etc.\n            Estilo de Citação: O arquivo abnt.csl define o estilo das referências. Se precisar de algo diferente, é só trocar por outro arquivo CSL."
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
-    "title": "Jomaserver",
-    "section": "Contribuições São Bem-Vindas!",
-    "text": "Contribuições São Bem-Vindas!\n            Se você gostou da extensão e quer ajudar a melhorá-la, fique à vontade para contribuir! Pode ser reportando um bug, sugerindo uma melhoria ou até enviando um código novo. É só abrir uma issue ou enviar um pull request. Todo mundo ganha quando a gente colabora, né?"
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#licença",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#licença",
-    "title": "Jomaserver",
-    "section": "Licença",
-    "text": "Licença\n            Essa extensão é open-source e está sob a MIT License. Isso significa que você pode usar, modificar e compartilhar à vontade. Só não esquece de dar os créditos, hein? 😉"
-  },
-  {
-    "objectID": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#conclusão",
-    "href": "posts/computacao/Extensão para gerar PDF com normas ABNT/index.html#conclusão",
-    "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            E aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\n            Se você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n            \n            \n            Link do Repositório:\n            GitHub - Extensão ABNT para Quarto"
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#hifiasm",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#hifiasm",
-    "title": "Jomaserver",
-    "section": "HiFiasm",
-    "text": "HiFiasm"
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
-    "title": "Jomaserver",
-    "section": "Genomescope2",
-    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
-    "title": "Jomaserver",
-    "section": "KMC",
-    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
-    "title": "Jomaserver",
-    "section": "Resultados do KMC",
-    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
-    "title": "Jomaserver",
-    "section": "GenomeScope2",
-    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
-    "title": "Jomaserver",
-    "section": "Resultados",
-    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
-  },
-  {
-    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
-    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
-    "title": "Jomaserver",
-    "section": "Resuminho",
-    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
-  },
-  {
-    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
-    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
-    "title": "Jomaserver",
-    "section": "Resuminho",
-    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
-  },
-  {
-    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
-    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
-    "title": "Jomaserver",
-    "section": "Genomescope2",
-    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
-  },
-  {
-    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
-    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
-    "title": "Jomaserver",
-    "section": "KMC",
-    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
-  },
-  {
-    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
-    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
-    "title": "Jomaserver",
-    "section": "Resultados do KMC",
-    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
-  },
-  {
-    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
-    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
-    "title": "Jomaserver",
-    "section": "GenomeScope2",
-    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
-  },
-  {
-    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
-    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
-    "title": "Jomaserver",
-    "section": "Resultados",
-    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+    "text": "Bem-vindo à categoria Linux\n            Linux é o melhor sistema operacional e ponto (Tem que práticar óbvio). Recentemente, tenho usado cada vez mais. E meu ambiente de trabalho precisa ser Linux, então, foi bom ter um conhecimento prévio, mas sinto que avançarei bem mais agora nesse sistema operacional. Essa talvez seja a página mais parecida com um caderno de anotações. Mas caso tenha interesse fica à vontade para vasculhar informações!!!! Espero ajudar."
   },
   {
     "objectID": "posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
@@ -245,139 +49,6 @@
     "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
   },
   {
-    "objectID": "posts/computacao/Purge_Dups/index.html#atualizações-da-montagem",
-    "href": "posts/computacao/Purge_Dups/index.html#atualizações-da-montagem",
-    "title": "Jomaserver",
-    "section": "Atualizações da montagem",
-    "text": "Atualizações da montagem\n            Gente, então minha montagem primária com o HIFIASM, não ficou tão contigua (Menos fragmentada) quando eu gostaria. Então decidi rodar outro software o Purge_Dups, esse software serve pra tirar regiões duplicadas pela montagem por haplotipos (as vezes, o software interpreta regiões iguais nos haplotipos como duas regiões, mas na verdade, se trata da mesma região). O hifiasm tem um propio mecanismo interno para lidar com isso, porém na minha montagem sobrou algumas dessas regiões por isso decidi passar por um software especilizado nisso para resolver esse problema.\n            \n            \n            \n            Página no GITHUB do Purge_dups"
-  },
-  {
-    "objectID": "posts/computacao/Purge_Dups/index.html#entendendo-o-purge_dups",
-    "href": "posts/computacao/Purge_Dups/index.html#entendendo-o-purge_dups",
-    "title": "Jomaserver",
-    "section": "Entendendo o purge_dups",
-    "text": "Entendendo o purge_dups\n            Então, meus dados de sequenciamento são PACBIO CCS. Então basicamente tentei começar só seguindo o passo a passo da pagina do purge_dups no github. Porém, a vida não é tão facil assim e enfrentei algumas dificuldades logo de cara, e demorei 2 semanas para conseguir terminar de dar purge nessas regiões do meu genoma. SIM! as vezes precisamos ter fé em Deus e toda vez que eu tentava rodar o minimap2 novamente, eu colocava toda minha esperança!!!!!!!!!!!!! No final, deu tudo certo, até contactei o dev do purge para indiciar um erro no README dele. Então é isso, as vezes precisamos ter fé! Vou discorrer sobre meu erro, caso alguém se encontre numa situação parecida!"
-  },
-  {
-    "objectID": "posts/computacao/Purge_Dups/index.html#minimap2",
-    "href": "posts/computacao/Purge_Dups/index.html#minimap2",
-    "title": "Jomaserver",
-    "section": "MiniMap2",
-    "text": "MiniMap2\n            Antes de rodar o purge_dups propiamente dito, precisamos alinhar nosso genoma, para gerar arquivos de análise *.paf. Esses arquivos são convertidos em um arquivo chamado PB.stat e precisamos calcular o histograma de profundidade de leitura e a profundidade de leitura no nível da base. Para isso o MiniMap2.\n            Esse software tirou meu sono… no purge_dups ele coloca essa etapa com um parametro -xasm20, que eu ja estranhei de cara, primeiro porque esse parametro é um parametro de montagem que ja tinha utilizado anteriormente no Hifiasm. Tentei utilizar esse parametro no meu loop umas 4 vezes antes de trocar. Imaginava que talvez, o motivo do minimap2 não estava gerando meus arquivos *.paf por algum outro erro no meu loop (Criei uma lista com dois arquivos de sequenciamento). Demorava uns 4 dias cada tentiva.\n            Depois de muito tempo, resolvi substituir esse parametro pra um parametro indicado no minimap2, -map-hifi. E enfim, rodou e gerou meus arquivos *.paf."
-  },
-  {
-    "objectID": "posts/computacao/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
-    "href": "posts/computacao/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
-    "title": "Jomaserver",
-    "section": "Pós PB.stat e cutoffs (self-alignment)",
-    "text": "Pós PB.stat e cutoffs (self-alignment)\n            Depois que eu consegui enfim gerar os arquivos, continuei o processo do purge_dups. Para isso tive que usar o MiniMap2 mais uma vez. Splitei meu arquivo fasta da minha montagem primaria e fiz um self-alignment, agora sim usando o parametro -xasm5, que permite uma certa divergencia entre os alinhamentos ~0,01% , claro que mais que isso o software vai reconhecer o erro, já que eu to alinhando minha montagem com ela mesma."
-  },
-  {
-    "objectID": "posts/computacao/Purge_Dups/index.html#passos-finais",
-    "href": "posts/computacao/Purge_Dups/index.html#passos-finais",
-    "title": "Jomaserver",
-    "section": "Passos finais",
-    "text": "Passos finais\n            Depois disso tudo e com os arquivos organizados, até que fim, rodei o purge dups completo, e consegui obter uma contiguidade maior, melhorando a qualidade da minha montagem. A palavra do dia é: Resiliencia. As vezes, vale a pena seguir sua intuição. Perdi um tempinho de trabalho, nada muito preocupante, no final deu tudo certo. Gostei muito do purge_dups e das modelagens que eles usam pra conseguir eliminar essas regiões. Estou esperando a resposta do dev até agora para conversarmos sobre aquele parametro inicial -xasm20 na etapa de mapeamento do nosso genoma."
-  },
-  {
-    "objectID": "posts/pibic/Purge_Dups/index.html#atualizações-da-montagem",
-    "href": "posts/pibic/Purge_Dups/index.html#atualizações-da-montagem",
-    "title": "Jomaserver",
-    "section": "Atualizações da montagem",
-    "text": "Atualizações da montagem\n            Gente, então minha montagem primária com o HIFIASM, não ficou tão contigua (Menos fragmentada) quando eu gostaria. Então decidi rodar outro software o Purge_Dups, esse software serve pra tirar regiões duplicadas pela montagem por haplotipos (as vezes, o software interpreta regiões iguais nos haplotipos como duas regiões, mas na verdade, se trata da mesma região). O hifiasm tem um propio mecanismo interno para lidar com isso, porém na minha montagem sobrou algumas dessas regiões por isso decidi passar por um software especilizado nisso para resolver esse problema.\n            \n            \n            \n            Página no GITHUB do Purge_dups"
-  },
-  {
-    "objectID": "posts/pibic/Purge_Dups/index.html#entendendo-o-purge_dups",
-    "href": "posts/pibic/Purge_Dups/index.html#entendendo-o-purge_dups",
-    "title": "Jomaserver",
-    "section": "Entendendo o purge_dups",
-    "text": "Entendendo o purge_dups\n            Então, meus dados de sequenciamento são PACBIO CCS. Então basicamente tentei começar só seguindo o passo a passo da pagina do purge_dups no github. Porém, a vida não é tão facil assim e enfrentei algumas dificuldades logo de cara, e demorei 2 semanas para conseguir terminar de dar purge nessas regiões do meu genoma. SIM! as vezes precisamos ter fé em Deus e toda vez que eu tentava rodar o minimap2 novamente, eu colocava toda minha esperança!!!!!!!!!!!!! No final, deu tudo certo, até contactei o dev do purge para indiciar um erro no README dele. Então é isso, as vezes precisamos ter fé! Vou discorrer sobre meu erro, caso alguém se encontre numa situação parecida!"
-  },
-  {
-    "objectID": "posts/pibic/Purge_Dups/index.html#minimap2",
-    "href": "posts/pibic/Purge_Dups/index.html#minimap2",
-    "title": "Jomaserver",
-    "section": "MiniMap2",
-    "text": "MiniMap2\n            Antes de rodar o purge_dups propiamente dito, precisamos alinhar nosso genoma, para gerar arquivos de análise *.paf. Esses arquivos são convertidos em um arquivo chamado PB.stat e precisamos calcular o histograma de profundidade de leitura e a profundidade de leitura no nível da base. Para isso o MiniMap2.\n            Esse software tirou meu sono… no purge_dups ele coloca essa etapa com um parametro -xasm20, que eu ja estranhei de cara, primeiro porque esse parametro é um parametro de montagem que ja tinha utilizado anteriormente no Hifiasm. Tentei utilizar esse parametro no meu loop umas 4 vezes antes de trocar. Imaginava que talvez, o motivo do minimap2 não estava gerando meus arquivos *.paf por algum outro erro no meu loop (Criei uma lista com dois arquivos de sequenciamento). Demorava uns 4 dias cada tentiva.\n            Depois de muito tempo, resolvi substituir esse parametro pra um parametro indicado no minimap2, -map-hifi. E enfim, rodou e gerou meus arquivos *.paf."
-  },
-  {
-    "objectID": "posts/pibic/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
-    "href": "posts/pibic/Purge_Dups/index.html#pós-pb.stat-e-cutoffs-self-alignment",
-    "title": "Jomaserver",
-    "section": "Pós PB.stat e cutoffs (self-alignment)",
-    "text": "Pós PB.stat e cutoffs (self-alignment)\n            Depois que eu consegui enfim gerar os arquivos, continuei o processo do purge_dups. Para isso tive que usar o MiniMap2 mais uma vez. Splitei meu arquivo fasta da minha montagem primaria e fiz um self-alignment, agora sim usando o parametro -xasm5, que permite uma certa divergencia entre os alinhamentos ~0,01% , claro que mais que isso o software vai reconhecer o erro, já que eu to alinhando minha montagem com ela mesma."
-  },
-  {
-    "objectID": "posts/pibic/Purge_Dups/index.html#passos-finais",
-    "href": "posts/pibic/Purge_Dups/index.html#passos-finais",
-    "title": "Jomaserver",
-    "section": "Passos finais",
-    "text": "Passos finais\n            Depois disso tudo e com os arquivos organizados, até que fim, rodei o purge dups completo, e consegui obter uma contiguidade maior, melhorando a qualidade da minha montagem. A palavra do dia é: Resiliencia. As vezes, vale a pena seguir sua intuição. Perdi um tempinho de trabalho, nada muito preocupante, no final deu tudo certo. Gostei muito do purge_dups e das modelagens que eles usam pra conseguir eliminar essas regiões. Estou esperando a resposta do dev até agora para conversarmos sobre aquele parametro inicial -xasm20 na etapa de mapeamento do nosso genoma."
-  },
-  {
-    "objectID": "genomic.html#bem-vindo-à-categoria-gênomica",
-    "href": "genomic.html#bem-vindo-à-categoria-gênomica",
-    "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Gênomica ",
-    "text": "Bem-vindo à categoria Gênomica \n        Cada vez me apaixonando mais pela gênomica (pode ser vicio em dopamina, toda vez que o software roda da maneira esperada). Acredito que a genômica é uma maneira de tentar entender como a vida funciona de maneira minunciosa. Analisando não só o que difere todo individuo mas também o que une todos os seres. DNA é a molécula da informação, e destrinchar como essa informação é com certeza, muito esplêndido."
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#o-que-é-o-busco",
-    "href": "posts/Genômica/BUSCO/index.html#o-que-é-o-busco",
-    "title": "Jomaserver",
-    "section": "O que é o BUSCO:",
-    "text": "O que é o BUSCO:\n            BUSCO é um software que utiliza de bancos de dados contendo genes comuns do seu organismo de interesse de montagem com a família taxonomica que ele se encontra ou ordem etc. No nosso caso utilziamos o banco de dados : embryophyta_odb10. Pensamos em utilizar poales.odb porém BUSCO encontra-se fora do ar no momento, então tivemos que utilizar um banco que estava previamente instalado no nosso servidor."
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#montagem-prímaria-sem-purge",
-    "href": "posts/Genômica/BUSCO/index.html#montagem-prímaria-sem-purge",
-    "title": "Jomaserver",
-    "section": "Montagem prímaria sem purge:",
-    "text": "Montagem prímaria sem purge:\n            Results:\n            C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%\n            1604 Complete BUSCOs (C) (of which 15 contain internal stop codons)\n            36 Complete and single-copy BUSCOs (S)\n            1568 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            5 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#montagem-primaria-com-purge",
-    "href": "posts/Genômica/BUSCO/index.html#montagem-primaria-com-purge",
-    "title": "Jomaserver",
-    "section": "Montagem primaria com purge:",
-    "text": "Montagem primaria com purge:\n            Results:\n            C:97.1%[S:23.2%,D:73.9%],F:0.5%,M:2.4%,n:1614,E:1.8%\n            1568 Complete BUSCOs (C) (of which 28 contain internal stop codons)\n            375 Complete and single-copy BUSCOs (S)\n            1193 Complete and duplicated BUSCOs (D)\n            8 Fragmented BUSCOs (F)\n            38 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Aqui podemos ver a primeira problemática, notem que a região duplicada pós-purge sofreu com uma diminuição notória nas regiões duplicadas. E como sabemos nossa montagem é uma representão 2n de um genoma 4n ou seja o esperado era um número ~100%, ou seja por mais que o arquivo tenha ficado compativel no tamanho o purge retirou regiões que não eram para terem sido retiradas. Portanto, adaptando essa ideia decidimos continuar com nossa montagem pré-purge porém a mesma estava com um número muito alto de contigs (fragmentos de sequencias) ~1800 contigs. Pra diminuir isso, rodei o purge com uma nova estrátegia, no caso utilizar somente do mecanismo de identificação de JUNK, já que grande parte dos contigs são fragmentos pequenos. Ele reconheceu e cortou esses contigs então decidi continuar com essa montagem que passa pelo purge mas não de regiões duplicadas e sim de JUNKS. O resultado foi o esperado, e o BUSCO mostrou um gráfico identico ao pré-purge, porém não temos mais esse número de contigs na nossa montagem."
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap1-com-purge",
-    "href": "posts/Genômica/BUSCO/index.html#montagem-hap1-com-purge",
-    "title": "Jomaserver",
-    "section": "Montagem Hap1 com purge:",
-    "text": "Montagem Hap1 com purge:\n            Results:\n            C:98.6%[S:20.0%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%\n            1592 Complete BUSCOs (C) (of which 16 contain internal stop codons)\n            323 Complete and single-copy BUSCOs (S)\n            1269 Complete and duplicated BUSCOs (D)\n            6 Fragmented BUSCOs (F)\n            16 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap1-sem-purge",
-    "href": "posts/Genômica/BUSCO/index.html#montagem-hap1-sem-purge",
-    "title": "Jomaserver",
-    "section": "Montagem Hap1 sem purge:",
-    "text": "Montagem Hap1 sem purge:\n            Results:\n            C:98.6%[S:20.1%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%\n            1592 Complete BUSCOs (C) (of which 16 contain internal stop codons)\n            324 Complete and single-copy BUSCOs (S)\n            1268 Complete and duplicated BUSCOs (D)\n            6 Fragmented BUSCOs (F)\n            16 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Podemos notar que a diferença foi minima, porém nossa montagem estava bem menor e escolhemos seguir com a pré-purge, mantive a estrategia para diminuir contigs e manter a quantidade das regiões duplicadas, foi um sucesso e escolhemos essa montagem para continuar."
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap2-sem-purge",
-    "href": "posts/Genômica/BUSCO/index.html#montagem-hap2-sem-purge",
-    "title": "Jomaserver",
-    "section": "Montagem Hap2 sem purge:",
-    "text": "Montagem Hap2 sem purge:\n            Results:\n            C:99.1%[S:19.8%,D:79.2%],F:0.3%,M:0.6%,n:1614,E:1.6%\n            1599 Complete BUSCOs (C) (of which 25 contain internal stop codons)\n            320 Complete and single-copy BUSCOs (S)\n            1279 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            10 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap2-com-purge",
-    "href": "posts/Genômica/BUSCO/index.html#montagem-hap2-com-purge",
-    "title": "Jomaserver",
-    "section": "Montagem Hap2 com purge:",
-    "text": "Montagem Hap2 com purge:\n            Results:\n            C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%\n            1604 Complete BUSCOs (C) (of which 15 contain internal stop codons)\n            36 Complete and single-copy BUSCOs (S)\n            1568 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            5 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Notem que a qualidade foi a mesma, essa montagem está execelente, baixo numero de contigs, alta região duplicada, essa montagem advem do HIFIASM diretamente, e não passou por nem um tipo de melhora na qualidade de montagem. Seguimos com ela!"
-  },
-  {
-    "objectID": "posts/Genômica/BUSCO/index.html#conclusões",
-    "href": "posts/Genômica/BUSCO/index.html#conclusões",
-    "title": "Jomaserver",
-    "section": "Conclusões:",
-    "text": "Conclusões:\n            Percebemos que nossa montagem primária pós-purge sofreu uma queda significativa em regiões duplicadas, o esperado era algo próximo do total, já que nossa montagem é uma representação diploíde de um genoma tetraplóide, ou seja, todas as regiões genômicas estão duplicadas, o percentual de 73,9 não condiz com o resultado esperado. Portanto, decidimos continuar com a montagem primária apenas sem os junks identificados no purge e seguir também com as montagens hap1 e hap2. (sem junks)."
-  },
-  {
     "objectID": "posts/Genômica/MitoHifi/index.html#mitohifi",
     "href": "posts/Genômica/MitoHifi/index.html#mitohifi",
     "title": "Jomaserver",
@@ -392,368 +63,81 @@
     "text": "Conclusões\n            Deixamos nossa montagem mais limpa e filtrada, seguimos para o proximo software que é o BlobTools, ele utiliza o arquivo BAM resultante de mapeamento, arquivos .tsv do alinhamento Diamond Blast e nossa sequencia .fasta que já está filtrada sem contaminantes. O BlobTools é uma ótima ferramenta pra vizualição de contaminantes, ainda estamos nessa fase de eliminar as contigs contaminantes sem perder nenhuma informação genômica importante. Depois de cada analise passo o arquivo ouput pelo BUSCO, além de gerar um arquivo .stat usando o Bbmap, avaliando o numero de contigs e a porcentagem de regiões duplicadas (no nosso caso todas)"
   },
   {
-    "objectID": "posts/computacao/Anotações Linux/index.html#introdução",
-    "href": "posts/computacao/Anotações Linux/index.html#introdução",
+    "objectID": "posts/Genômica/Miniprot/index.html#contextualização",
+    "href": "posts/Genômica/Miniprot/index.html#contextualização",
     "title": "Jomaserver",
-    "section": "Introdução",
-    "text": "Introdução\n            Recentemente me foi passado uma serie de exercícios, para aumentar minha afinidade com o bash do linux. Nesses exercicios, tive que ter noções basicas de grep, ls, cd além de rodar executaveis .sh, para comandos como blastp, blastn. Afim de fazer alinhamentos e comparações de proximidade entre a sequencia observada com o banco de dados."
+    "section": "Contextualização",
+    "text": "Contextualização\n            A precisão da predição gênica preditiva (ab initio) depende da qualidade das evidências biológicas fornecidas aos softwares. Porém, como devem imaginar não existem de dados de transcritos (RNA-seq) de A. gayanus, então resolvi adotar uma estratégia focada em homologia\n            Usei o proteoma de uma espécie parente próxima, o Andropogon gerardii (hexaploide), para ancorar essas evidências. Para realizar este mapeamento, a ferramenta utilizada foi Miniprot, desenhado para alinhar estruturalmente proteínas contra genomas.\n            Esse software tem à capacidade de lidar nativamente com a ocorrência de íntrons e de ignorar as regiões não codificantes com base em modelos de k-mers."
   },
   {
-    "objectID": "posts/computacao/Anotações Linux/index.html#nohup",
-    "href": "posts/computacao/Anotações Linux/index.html#nohup",
+    "objectID": "posts/Genômica/Miniprot/index.html#preparação-e-execução",
+    "href": "posts/Genômica/Miniprot/index.html#preparação-e-execução",
     "title": "Jomaserver",
-    "section": "-nohup:",
-    "text": "-nohup:\n            Faz com que o executavel seja rodado pela rede local, caso tenha algum problema com a máquina o executavel ainda vai ser rodado e entregará resultados."
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            O arquivo alvo foi a montagem primária submetida ao soft-masking.\n            Como evidência de homologia, utilizamos as sequências proteicas do genoma do A. gerardii, construídas e validadas a partir de dados de RNA-seq publicadas pelo JGI.\n            Estrategicamente, escolhemos o arquivo da isoforma principal de cada gene (primaryTranscriptOnly).\n            Esse controle evita que o mapeamento simultâneo de múltiplas isoformas alternativas de um único gene gere uma redundância matemática desnecessária.\n            Essa redundância poderia enviesar o treinamento do modelo preditor da próxima etapa."
   },
   {
-    "objectID": "posts/computacao/Anotações Linux/index.html#sh",
-    "href": "posts/computacao/Anotações Linux/index.html#sh",
+    "objectID": "posts/Genômica/Miniprot/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Miniprot/index.html#pipeline-no-terminal",
     "title": "Jomaserver",
-    "section": ".sh:",
-    "text": ".sh:\n            Esse sh faz com que seja possível, outras pessoas executarem seu codigo, geralmente aqui no LBI (Laboratório de Bioinformática) as pessoas usam o RunMe. Facilitando a reprodução do seu código, o .sh no final demonstra que é um codígo de bash. A presença desse arquivo nos diretorios torna possivel, a reanalise dos dados."
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando no servidor, o comando do Miniprot foi disparado para mapear o proteoma contra a montagem:\n            nohup miniprot -t 16 -gff pri_corrigida.fa.masked \\\n  AgerardiHAP1_783_v1.1.protein_primaryTranscriptOnly.fa \\\n  &gt; evidencias_Agerardii_miniprot.gff 2&gt; miniprot.log &"
   },
   {
-    "objectID": "posts/computacao/Anotações Linux/index.html#awk",
-    "href": "posts/computacao/Anotações Linux/index.html#awk",
+    "objectID": "posts/Genômica/Miniprot/index.html#resultados-e-poliploidia",
+    "href": "posts/Genômica/Miniprot/index.html#resultados-e-poliploidia",
     "title": "Jomaserver",
-    "section": "awk",
-    "text": "awk\n            Awk foi o comando mais utilitario que eu conheci hoje ele funciona para listar dados, podendo ser representado pela preferencia do usuario, posso olhar só os querys com mais de 80% de semelhança advindos do resultado do meu blast. No awk você pode analisar cada coluna separadamente além de poder ordenar da maneira que você quiser. Além de remover duplicatas e poder contar os resultados."
+    "section": "Resultados e Poliploidia",
+    "text": "Resultados e Poliploidia\n            O sucesso e a robustez do mapeamento foram avaliados quantificando a proporção do proteoma de entrada que obteve sucesso na ancoragem homóloga contra o capim-andropogon.\n            Os dados extraídos revelam que, a partir das 89.426 isoformas únicas fornecidas (A. gerardii), o Miniprot construiu 197.414 modelos de mapeamento de mRNA estruturados no genoma-alvo.\n            A proporção matemática de saída versus entrada (~2,2 vezes) evidencia a biologia de A. gayanus por ser tetraploide.\n            O arquivo proteico utilizado (Haplótipo 1 do A. gerardii) constitui uma referência representativa colapsada, enquanto a montagem de A. gayanus preserva a natureza estrutural tetraploide.\n            A obtenção de mais de 197 mil ocorrências demonstra que, em média, o algoritmo detectou a retenção de dois a três parálogos ou alelos subgenômicos distribuídos pelos cromossomos da planta para cada gene ancestral pesquisado."
   },
   {
-    "objectID": "posts/computacao/Anotações Linux/index.html#grep",
-    "href": "posts/computacao/Anotações Linux/index.html#grep",
+    "objectID": "posts/Genômica/Miniprot/index.html#conservação-evolutiva",
+    "href": "posts/Genômica/Miniprot/index.html#conservação-evolutiva",
     "title": "Jomaserver",
-    "section": "grep",
-    "text": "grep\n            grep eu já conhecia, mas aprendi algumas funcionalidades novas, grep basicamente é um finder eu procuro no meu arquivo, podendo remover algo da lista, por exemplo tem uma proteína X que eu to interessado posso mapear aonde ela aparece na sequencia, e se eu usar grep -v posso retirar coisas dessa lista também."
+    "section": "Conservação Evolutiva",
+    "text": "Conservação Evolutiva\n            Além da quantidade alta de alinhamentos, métricas de identidade interna extraídas do GFF demonstraram altos índices de conversão.\n            \n            Como podemos ver na distribuição acima, a identidade dos alinhamentos a média gira em torno de 92% de identidade.\n            Isso indica que os splice sites (junções de éxon/intron) estão altamente preservados ao longo da família Andropogoneae. A obtenção destas coordenadas serve como base para guiar a predição definitiva por ferramentas ab initio e modelagem estatística"
   },
   {
-    "objectID": "posts/computacao/Anotações Linux/index.html#conclusão",
-    "href": "posts/computacao/Anotações Linux/index.html#conclusão",
+    "objectID": "posts/Genômica/Miniprot/index.html#número-de-cópias-por-gene",
+    "href": "posts/Genômica/Miniprot/index.html#número-de-cópias-por-gene",
     "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            Então gente, esses comandos foram os que eu mais utilizei até o momento, sinto que tenho muita coisa pra aprender em noções de terminal. Mas to animado, sinto que já me familiarizei bastante nos meus 1 ano de uso do sistema operacional. E quando converso com pessoas que utilizam a muitos anos, vejo que é sempre possivel facilitar os processos tornando eles mais rapidos, tudo é uma questão de prática. Ao longo do meu projeto vou atualizando coisas que vou aprendendo e como a bioinformática ajuda nesses processos.\n            Obrigado gente!"
+    "section": "Número de cópias por gene",
+    "text": "Número de cópias por gene"
   },
   {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#recap",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#recap",
+    "objectID": "posts/Genômica/Merqury/index.html#section",
+    "href": "posts/Genômica/Merqury/index.html#section",
     "title": "Jomaserver",
-    "section": "Recap",
-    "text": "Recap\n            Recentemente fiz uma apresentação pra NeuroTechXBSB, com intuito de destrinchar o trabalho de bioinformatica na grande area da neurociencia, resolvi postar no meu blog. Porém todos esses contéudos serão disponibilizados no instagram @neurotechbsb, caso tenham interesse por esse tema, além de disponibilizarem contéudos que ligam a neurociência com varias outras areas."
+    "section": "",
+    "text": "Dissecando os Gráficos: Arquitetura do Andropogon\n            O legal do Merqury é a análise visual. Avaliando os espectros de multiplicidade (Número de Cópias e Origem de Montagem), a estratégia do Hifiasm fica clara.\n            Primária vs Alelos (Hap1 e Hap2) Analisando a sobreposição da Primária com o Haplótipo 1, a completude vai para 93.30%. A Primária carrega o consenso majoritário (90.05%), e o Hap1 entra com 3.25% de informação exclusiva (pura heterozigose alelo-específica). Ao olhar a Primária com o Hap2, a completude sobe para 95.79%, indicando que o segundo haplótipo agregou um pouco mais de diversidade. Essa simetria mostra que o particionamento da heterozigose foi muito equilibrado bidirecionalmente.\n            O Teste de Redundância (Hap1 x Hap2) Quando cruzei apenas os haplótipos (sem a Primária), chegamos à completude máxima teórica de 98.66%. Porém, o gráfico de Origem da Montagem relevou uma enorme massa de regiões compartilhadas (sobreposição verde) no pico de múltiplas cópias (~180x). O que isso significa na prática? Que o Hifiasm teve que replicar quase todo o arcabouço estrutural conservado da planta dentro de cada haplótipo só para manter a contiguidade dos cromossomos."
   },
   {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#a-complexidade-do-cérebro",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#a-complexidade-do-cérebro",
+    "objectID": "posts/Genômica/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
+    "href": "posts/Genômica/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
     "title": "Jomaserver",
-    "section": "A complexidade do cérebro",
-    "text": "A complexidade do cérebro\n            O cérebro é provavelmente o sistema mais complexo que a gente conhece.\n            Bilhões de células, trilhões de conexões, e ainda assim tentamos entender como isso tudo gera pensamento, memória, comportamento.\n            Só que tem alguns problemas:\n            \n            Nem sempre as variantes genéticas explicam as doenças de forma direta.\n            \n            O mesmo gene pode fazer coisas diferentes dependendo da célula.\n            \n            E muitas vezes, alterações no DNA não aparecem claramente como sintomas.\n            \n            \n            No fim, fica a pergunta que guia boa parte da pesquisa: como ligar genes, células e comportamento?"
+    "section": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st",
+    "text": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st"
   },
   {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#onde-entram-os-dados",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#onde-entram-os-dados",
+    "objectID": "posts/Genômica/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
+    "href": "posts/Genômica/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
     "title": "Jomaserver",
-    "section": "Onde entram os dados?",
-    "text": "Onde entram os dados?\n            É aqui que a bioinformática entra como cola entre diferentes tipos de informação.\n            \n            Genômica (GWAS, SNPs): procura variações genéticas ligadas a doenças.\n            \n            Transcriptômica (RNA-seq bulk e single-cell): mostra quais genes estão ativos.\n            \n            Epigenômica (ChIP-seq, ATAC-seq, Hi-C): revela como o DNA é regulado e dobrado em 3D.\n            \n            Bancos populacionais (GTEx, ENCODE, PsychENCODE): comparam perfis entre indivíduos.\n            \n            Cada camada sozinha dá uma pista. Juntas, elas contam uma história muito mais completa."
+    "section": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st",
+    "text": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st"
   },
   {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#mapeando-o-cérebro-em-escala-molecular",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#mapeando-o-cérebro-em-escala-molecular",
+    "objectID": "posts/Genômica/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
+    "href": "posts/Genômica/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
     "title": "Jomaserver",
-    "section": "Mapeando o cérebro em escala molecular",
-    "text": "Mapeando o cérebro em escala molecular\n            O artigo “Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)” analisou 1.866 cérebros humanos adultos para montar um atlas molecular.\n            Foram reunidos dados de:\n            \n            RNA (quais genes estão ativos)\n            Estrutura 3D do DNA (Hi-C)\n            Variações genéticas (genótipo)\n            Marcas epigenéticas (regulação química)\n            \n            O resultado é um mapa de referência que ajuda a entender como diferentes doenças mexem com o cérebro."
+    "section": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st",
+    "text": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st"
   },
   {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#como-organizar-essa-bagunça-de-dados",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#como-organizar-essa-bagunça-de-dados",
+    "objectID": "posts/Genômica/Merqury/index.html#section-1",
+    "href": "posts/Genômica/Merqury/index.html#section-1",
     "title": "Jomaserver",
-    "section": "Como organizar essa bagunça de dados?",
-    "text": "Como organizar essa bagunça de dados?\n            Os pipelines de bioinformática geralmente seguem um caminho:\n            \n            Limpeza e normalização dos dados brutos.\n            Identificação de genes mais ou menos ativos.\n            Separação de sinais de tipos celulares (deconvolução).\n            Descoberta de regiões do DNA ligadas à expressão (QTLs).\n            Criação de modelos preditivos.\n            \n            É basicamente transformar toneladas de dados em hipóteses biológicas que podem ser testadas no laboratório."
-  },
-  {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#o-poder-do-single-cell",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#o-poder-do-single-cell",
-    "title": "Jomaserver",
-    "section": "O poder do single-cell",
-    "text": "O poder do single-cell\n            Em vez de olhar o cérebro como um bolo inteiro, dá pra cortar em fatias muito finas e analisar célula por célula.\n            Isso importa porque: - O cérebro tem dezenas de tipos celulares diferentes. - Algumas doenças afetam só um subconjunto bem específico.\n            No estudo, mais de 32 mil células foram analisadas, e foi possível identificar perfis como neurônios excitatórios (Ex1–Ex9), inibitórios (In1–In8), astrócitos, microglia e por aí vai.\n            Assim a gente consegue enxergar quem faz o quê no cérebro."
-  },
-  {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#deconvolução-traduzindo-o-bulk",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#deconvolução-traduzindo-o-bulk",
-    "title": "Jomaserver",
-    "section": "Deconvolução: traduzindo o “bulk”",
-    "text": "Deconvolução: traduzindo o “bulk”\n            Nem sempre dá pra analisar célula por célula. A saída é usar dados single-cell como referência para decompor os dados “bulk”.\n            Exemplo: - Certos neurônios (Ex3, Ex4) aumentam com a idade. - Oligodendrócitos e microglia diminuem. - 88% da variação da expressão gênica pode ser explicada só pela composição celular.\n            Ou seja: às vezes o que parece uma “mudança genética” é, na verdade, uma mudança na proporção dos tipos de células."
-  },
-  {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#esquizofrenia-como-exemplo",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#esquizofrenia-como-exemplo",
-    "title": "Jomaserver",
-    "section": "Esquizofrenia como exemplo",
-    "text": "Esquizofrenia como exemplo\n            O trabalho “Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)” analisou 142 regiões do genoma (loci GWAS) e conseguiu identificar 321 genes funcionais relacionados com esquizofrenia.\n            Entre eles: CHRNA2, CACNA1C e GRIN1.\n            O curioso é que 67% desses genes estavam longe das variantes (SNPs) encontradas no DNA.\n            Eles só apareceram porque a análise considerou o DNA em 3D e os mecanismos de regulação à distância.\n            \n            Sem bioinformática, isso passaria batido."
-  },
-  {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#modelos-preditivos",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#modelos-preditivos",
-    "title": "Jomaserver",
-    "section": "Modelos preditivos",
-    "text": "Modelos preditivos\n            Com todos esses dados, dá pra ir além da descrição e partir pra predição.\n            Exemplo: DSPN (Deep Structured Phenotype Network) - Integra genótipo, transcriptoma e QTLs. - Consegue prever expressão gênica e risco de doenças. - Já foi aplicado em esquizofrenia, autismo e bipolaridade.\n            A ideia é transformar mapas moleculares em ferramentas úteis para diagnóstico e até terapias."
-  },
-  {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#conclusões",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#conclusões",
-    "title": "Jomaserver",
-    "section": "Conclusões",
-    "text": "Conclusões\n            \n            A bioinformática conecta DNA, células e doenças.\n            Mostra que contexto celular e regulatório importa.\n            Ajuda a revelar alvos terapêuticos que antes eram invisíveis.\n            Dá base pra criar modelos que podem personalizar tratamentos.\n            \n            O futuro da neurociência computacional está justamente nessa mistura de Big Data + Biologia para decifrar a lógica molecular do cérebro."
-  },
-  {
-    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#referencias",
-    "href": "posts/computacao/Bioinfo para neurociencia/index.html#referencias",
-    "title": "Jomaserver",
-    "section": "Referencias",
-    "text": "Referencias\n            \n            Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)\n            \n            \n            \n            Single-Cell RNA-Seq Technologies and Related Computational Data Analysis (G, Chen)"
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
-    "title": "Jomaserver",
-    "section": "O que é a Extensão ABNT para Quarto?",
-    "text": "O que é a Extensão ABNT para Quarto?\n            Imagine uma ferramenta que faz toda a formatação chata do seu trabalho automaticamente, enquanto você foca só em escrever. Pois é, essa extensão faz exatamente isso! Ela é como um “assistente pessoal” para quem precisa seguir as normas da ABNT.\n            Ela vem com:\n            \n            Um template LaTeX que já deixa tudo no jeito: margens certinhas, fontes adequadas, títulos e seções formatados.\n            Um estilo de citação (CSL) que cuida das referências bibliográficas, seguindo direitinho as regras da ABNT.\n            Um exemplo prático para você ver como funciona e já começar a usar sem enrolação.\n            \n            Ou seja, é praticamente um “ctrl+c, ctrl+v” da formatação ABNT. 😉"
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
-    "title": "Jomaserver",
-    "section": "Por que Você Vai Adorar Essa Extensão?",
-    "text": "Por que Você Vai Adorar Essa Extensão?\n            Vou te dar alguns motivos para você ficar animado(a) com essa extensão:\n            \n            Economiza Tempo:\n            \n            Chega de perder horas ajustando margens e fontes. Com essa extensão, você clica em “renderizar” e voilà: seu documento está pronto!\n            \n            Padronização Garantida:\n            \n            Sem mais preocupação com erros de formatação. A extensão cuida de tudo para você, seguindo as normas ABNT à risca.\n            \n            Fácil de Usar:\n            \n            Não precisa ser expert em LaTeX ou Quarto. Basta seguir uns passinhos simples e pronto!\n            \n            Personalizável:\n            \n            Se você quiser fazer ajustes no template, pode personalizar à vontade. É só abrir o arquivo e mudar o que precisar."
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
-    "title": "Jomaserver",
-    "section": "Como Usar a Extensão? (Passo a Passo)",
-    "text": "Como Usar a Extensão? (Passo a Passo)\n            Vou te explicar direitinho como começar a usar essa extensão. É tão fácil que você vai se perguntar por que não fez isso antes!\n            \n            Passo 1: Baixar a Extensão\n            \n            Clone o Repositório:\n            Abra o terminal e digite:\n            bash\n            Copy\n            git clone https://github.com/juauzz/extensionABNT.git\n            Copie para o Seu Projeto:\n            \n            No seu projeto Quarto, crie uma pasta chamada _extensions (se ainda não tiver).\n            Copie a pasta extensionABNT para dentro de _extensions.\n            \n            A estrutura do seu projeto vai ficar assim:\n            Copy\n            /meu-projeto-quarto\n    /_extensions\n        /extensionABNT\n            /examples\n                - example.qmd\n            /templates\n                - abnt-templates.tex\n            - abnt.csl\n            - _extension.yml\n            - README.md\n    - meu-documento.qmd\n            \n            \n            \n            Passo 2: Configurar o Arquivo\n            No seu arquivo .qmd, adicione a extensão ao formato PDF:\n            yaml\n            Copy\n            ---\ntitle: \"Meu Documento ABNT\"\nauthor: \"Seu Nome\"\nformat:\n  pdf:\n    extensions: [extensionABNT]\n---\n            \n            \n            Passo 3: Renderizar o Documento\n            Agora é só renderizar o documento. No terminal, digite:\n            bash\n            Copy\n            quarto render meu-documento.qmd --to pdf\n            E pronto! Seu documento vai sair formatadinho, seguindo todas as normas da ABNT. 😎"
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#exemplo-prático",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#exemplo-prático",
-    "title": "Jomaserver",
-    "section": "Exemplo Prático",
-    "text": "Exemplo Prático\n            Se você é do tipo que gosta de ver para crer, na pasta examples tem um arquivo example.qmd que já está pronto para usar. Para renderizá-lo, é só rodar:\n            bash\n            Copy\n            quarto render examples/example.qmd --to pdf\n            Depois é só abrir o PDF e ver como ficou. Spoiler: vai ficar show de bola! 😉"
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
-    "title": "Jomaserver",
-    "section": "Quer Personalizar? Sem Problema!",
-    "text": "Quer Personalizar? Sem Problema!\n            Se você quiser fazer ajustes no template ou no estilo de citação, é super fácil:\n            \n            Template LaTeX: O arquivo templates/abnt-templates.tex pode ser editado para mudar margens, fontes, formatação de títulos, etc.\n            Estilo de Citação: O arquivo abnt.csl define o estilo das referências. Se precisar de algo diferente, é só trocar por outro arquivo CSL."
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
-    "title": "Jomaserver",
-    "section": "Contribuições São Bem-Vindas!",
-    "text": "Contribuições São Bem-Vindas!\n            Se você gostou da extensão e quer ajudar a melhorá-la, fique à vontade para contribuir! Pode ser reportando um bug, sugerindo uma melhoria ou até enviando um código novo. É só abrir uma issue ou enviar um pull request. Todo mundo ganha quando a gente colabora, né?"
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#licença",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#licença",
-    "title": "Jomaserver",
-    "section": "Licença",
-    "text": "Licença\n            Essa extensão é open-source e está sob a MIT License. Isso significa que você pode usar, modificar e compartilhar à vontade. Só não esquece de dar os créditos, hein? 😉"
-  },
-  {
-    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#conclusão",
-    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#conclusão",
-    "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            E aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\n            Se você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n            \n            \n            Link do Repositório:\n            GitHub - Extensão ABNT para Quarto"
-  },
-  {
-    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#o-que-é-latex",
-    "href": "posts/computacao/Guia de estudo LaTex/index.html#o-que-é-latex",
-    "title": "Jomaserver",
-    "section": "O que é LaTex?",
-    "text": "O que é LaTex?\n            Basicamente é um software de edição de texto, muito utilizado para desenvolvimento de textos cientificos e matemáticos, no linux você pode usar o latex em qualquer editor de texto. Porém recentemente eu conheci o OverLeaf que é basicamente um lugar onde você pode escrever seu texto LaTex pelo source, e ir configurando pelo visual ou pelo propio codigo, deixando o processo bem tranquilinho."
-  },
-  {
-    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#overleaf",
-    "href": "posts/computacao/Guia de estudo LaTex/index.html#overleaf",
-    "title": "Jomaserver",
-    "section": "Overleaf",
-    "text": "Overleaf\n            \n            Então basicamente o overleaf é uma plataforma de navegador, que permite que você crie projetos LaTex, seja ele BEAMER, REPORT, ARTICLE ou BOOK. que são formatações do propio LaTex. (calma que já já tudo vai fazer sentido) Se você já acompanha meu blog e se interessou pelo Quarto no rstudio, vai se interessar pelo OverLeaf também, basicamente tem uma estrutura bem parecida com um markdown, para montagem do projeto. Também temos o recompilar, que funciona mais ou menos como um render do Quarto, facilitando muito a montagem do codigo source, já que tem como você ir acompanhando as mudanças no documento, desde o inicio. O diferencial é a possibilidade de adição de pacotes, já que funciona tudo por meio de nuvém e você pode ter acesso a varias bibliotecas sem gastar memoria do seu computador. Isso é algo bem legal no OverLeaf."
-  },
-  {
-    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#montagem-do-guia",
-    "href": "posts/computacao/Guia de estudo LaTex/index.html#montagem-do-guia",
-    "title": "Jomaserver",
-    "section": "Montagem do Guia",
-    "text": "Montagem do Guia\n            Então vamos pra parte mais interessante e direto ao ponto, primeiramente construi um projeto no formato de apresentações beamer, basicamente foi um PDF sobre o assunto do post passado Outer Wilds e a astrobiologia por trás do jogo, vou deixar a apresentação beamer em link aqui, para quem tiver interesse em ver como fica esse formato, já que o guia de estudo, possui outra formatação.\n            Outer Wilds BEAMER\n            Porém continuei estudando o LaTex por meio de cursos no youtube e outros conteudos disponiveis na internet, e resolvi montar um guia um pouco mais detalhado que vai servir pra me ajudar no desenvolvimento dos meus projetos, e pode ajudar quem se interessar pelo software. Acredito que muito dos meus amigos vão se interessar já que estamos inseridos nessa aréa cientifica e de produção textual.\n            Guia de estudos para produçao textual usando o LaTex"
-  },
-  {
-    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#considerações-finais",
-    "href": "posts/computacao/Guia de estudo LaTex/index.html#considerações-finais",
-    "title": "Jomaserver",
-    "section": "Considerações finais",
-    "text": "Considerações finais\n            Basicamente foi um processo muito divertido aprender a usar o LaTex, principalmente pelas opções do OverLeaf e por ser bem didatico as ferramentas disponiveis. Também é um software bem poderoso pela sua utilidade na carreira acadêmica e tenho certeza que vou continuar usando bastante esse software até o final da minha graduação e em um possivel mestrado também com certeza. Do mais, gostei muito de produzir o documento GUIA para os estudos e espero que possa ser proveitoso para quem for usar também."
-  },
-  {
-    "objectID": "posts/computacao/Site NeuroTech/index.html#processo-de-criação",
-    "href": "posts/computacao/Site NeuroTech/index.html#processo-de-criação",
-    "title": "Jomaserver",
-    "section": "Processo de criação",
-    "text": "Processo de criação\n            Basicamente, precisei estrutura um site institucional para meu projeto novo de extensão, pensei muito em como poderia fazer esse processo e escolhi fazer pelo QUARTO website, visando, facilitar o processo de manutenção para outros membros do projeto, posteriormente."
-  },
-  {
-    "objectID": "posts/computacao/Site NeuroTech/index.html#por-que-quarto",
-    "href": "posts/computacao/Site NeuroTech/index.html#por-que-quarto",
-    "title": "Jomaserver",
-    "section": "Por que QUARTO?",
-    "text": "Por que QUARTO?\n            Então, escolhi usar porque ele é muito legal em facilitar a compreensão de processos HTML, porque ele transforma um .qmd em html, esse arquivo .qmd é bem simples de mexer por exemplo:\n            \n            Esse é um arquivo .qmd que basicamente só precisa de um cabeçalho. E o resto parece bastante um editor de texto normal, claro que com algumas regrinhas a mais porém, simples e tranquilas de aprender."
-  },
-  {
-    "objectID": "posts/computacao/Site NeuroTech/index.html#estrutura-do-site",
-    "href": "posts/computacao/Site NeuroTech/index.html#estrutura-do-site",
-    "title": "Jomaserver",
-    "section": "Estrutura do site",
-    "text": "Estrutura do site\n            Agora para detalhes um poucos mais técnicos, estruturei o site, com um arquivo .yml que é como se fosse a raiz de tudo mostrando os caminhos e acessos que nosso site vai ter.\n            Exemplo de arquivo .yml:\n            \n            Além desse arquivo, tem um arquivo .qmd para cada um dos acessos, ou seja das paginas que vão estar no nosso menu. Também adicionei um .css externo que isso aí é um pouquinho mais dificil e exige um conhecimento de front-end. MAASSSS, isso é só um detalhe, tive que seguir fontes e cores que demandam a empresa."
-  },
-  {
-    "objectID": "posts/computacao/Site NeuroTech/index.html#conclusão",
-    "href": "posts/computacao/Site NeuroTech/index.html#conclusão",
-    "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            Foi tranquilo a construção e imagino que seja tranquilo para a manutenção futura também. Vão lá dar uma olhada no site e lembre que recomendações são sempre bem-vindas.\n            Site NeuroTechBsb"
-  },
-  {
-    "objectID": "posts/computacao/TEMA CSS/index.html#por-que-usar-css-para-personalizar-slides",
-    "href": "posts/computacao/TEMA CSS/index.html#por-que-usar-css-para-personalizar-slides",
-    "title": "Jomaserver",
-    "section": "Por que usar CSS para personalizar slides?",
-    "text": "Por que usar CSS para personalizar slides?\n            O Quarto permite a criação de apresentações usando Reveal.js, um framework poderoso para slides em HTML. O diferencial é que ele permite estilizar os slides com CSS, dando liberdade para personalizar fontes, cores, espaçamentos e muito mais. Isso significa que podemos criar apresentações únicas sem depender dos templates padrões."
-  },
-  {
-    "objectID": "posts/computacao/TEMA CSS/index.html#como-criei-meu-tema-css",
-    "href": "posts/computacao/TEMA CSS/index.html#como-criei-meu-tema-css",
-    "title": "Jomaserver",
-    "section": "Como criei meu tema CSS",
-    "text": "Como criei meu tema CSS\n            Para modificar a aparência dos slides, criei um arquivo chamado custom.css e referenciei no YAML do meu arquivo .qmd:\n            format:\n  revealjs:\n    theme: custom.css\n            Dentro do custom.css, adicionei algumas customizações essenciais:\n            /* Borda ao redor de toda a área do slide */\n.reveal {\n  border: 5px solid #333;  /* Borda externa ao redor do slide */\n  padding: 20px;  /* Espaçamento interno para a borda não ficar colada */\n  margin: 0 auto;  /* Centraliza os slides na tela */\n  box-sizing: border-box;  /* Inclui a borda no cálculo do tamanho total */\n}\n\n/* Ajuste para o slide e conteúdo */\n.reveal section {\n  font-size: 0.9em; /* Fonte pequena */\n  padding: 30px;\n  background-color: transparent;\n  color: #ddd;\n  border: none;  /* Remove qualquer borda extra do conteúdo */\n  margin-top: 20px; /* Margem superior reduzida */\n  margin-left: 10px; /* Adicionando margem à esquerda */\n}\n\n/* Adicionando borda no slide (caixa de conteúdo) */\n.reveal section {\n  border: 5px solid #333;  /* Borda fina em cada slide */\n  margin: 10px;\n  padding: 20px;\n}\n\n/* Ajuste para o título (###) */\n.reveal h3 {\n  font-size: 1.2em;\n  text-align: left;\n  padding: 20px;\n  background-color: #444;\n  color: white;\n  border-bottom: 3px solid #fff;\n  margin-top: 0;\n  margin-bottom: 20px;\n}\n            Com essas configurações, consegui um visual mais limpo e moderno para os meus slides. Claro, é possível ir muito além, adicionando imagens de fundo e até interações avançadas. Mas confesso que é bem mais dificil do que parece."
-  },
-  {
-    "objectID": "posts/computacao/TEMA CSS/index.html#conclusão",
-    "href": "posts/computacao/TEMA CSS/index.html#conclusão",
-    "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            Criar um tema CSS personalizado para slides no Quarto foi uma experiência interessante e me permitiu deixar minhas apresentações mais alinhadas ao meu estilo. Se você também usa o Quarto para apresentações, recomendo experimentar a personalização via CSS. É simples e faz toda a diferença!"
-  },
-  {
-    "objectID": "posts/filosofia/Chants of Sennaar/index.html#chants-of-sennaar",
-    "href": "posts/filosofia/Chants of Sennaar/index.html#chants-of-sennaar",
-    "title": "Jomaserver",
-    "section": "Chants of Sennaar",
-    "text": "Chants of Sennaar\n            O jogo nasce do mito da Torre de Babel: a humanidade, antes unida, é fragmentada pela diversidade de línguas. Em Chants of Sennaar, isso não é só pano de fundo: é o próprio motor da história. O jogador é um viajante anônimo que percorre uma torre, onde cada andar é habitado por um povo diferente, com cultura, estética, arquitetura e língua própria.\n            A jogabilidade é um espelho da temática:\n            Você observa pictogramas e símbolos, tenta decifrar contextos e significados. Tudo é construído por inferência, tentativa e erro, associação visual e contexto social. O jogo não coloca o jogador como herói bélico ou político, mas como mediador linguístico. O poder não vem da espada, mas da palavra. (Uma proposta bem diferente em jogos de puzzle)\n            A torre funciona em vários níveis: Histórico: Cada andar pode ser visto como um estágio cultural de sociedades com papeis e pensamentos diferentes. Político: Cada povo é fechado em si, e a linguagem funciona como barreira. Filosófico: Múltiplas visões de mundo coexistindo sem diálogo."
-  },
-  {
-    "objectID": "posts/filosofia/Chants of Sennaar/index.html#filosofia-por-trás",
-    "href": "posts/filosofia/Chants of Sennaar/index.html#filosofia-por-trás",
-    "title": "Jomaserver",
-    "section": "Filosofia por trás",
-    "text": "Filosofia por trás\n            Jogar Chants of Sennaar foi, pra mim, quase como cair num espiral de filosofia da linguagem, lugar que eu até que to um pouco acostumado. (Lógica computacional, o filme A chegada, minha amiga antropologa Theodora Santana). Não é só sobre decifrar símbolos bonitinhos em paredes, é sobre entender como a linguagem estrutura a vida em sociedade. Vou te contar como eu vi isso na prática, e depois que eu estudei alguns reviews desse jogo, separei alguns filosofos que falam um pouco sobre a filosofia da linguagem que foi aplicada nesse jogo.\n            \n            Wittgenstein\n            Em Chants of Sennaar, não existe um dicionário mágico que traduz tudo. Você aprende na marra: observando como as palavras são usadas em conversações específicas. Aí que entra Wittgenstein: “O significado de uma palavra é o seu uso na linguagem.” No jogo, você só entende que aquele símbolo significa “porta” quando alguém aponta pra porta e usa o termo. É puro jogo de linguagem regras sociais que só fazem sentido quando você entra no rolê.\n            Review do jogador tefinha gamer:\n             Sim tefinha, eu concordo!\n            Sapir-Whorf:\n            A cada andar da torre eu pensava: Essa galera vive num mundo completamente diferente só por causa da língua. E não é exagero: as crenças, os rituais, até a rigidez social de cada grupo parecem refletir diretamente na gramática e nos símbolos deles. Nesse ponto entra a hipótese Sapir-Whorf: a ideia de que a língua molda a forma como você percebe o mundo.\n            \n            De fato, é incrível os devs pensaram em toda uma lógica linguistica, embora as comunicações não se aprofundem tanto, a ponto de tratar coisas mais complexas e definições mais minunciosas. No que o jogo se propõe é de fato uma arquitutura morfólogica incrível!!!\n            Bakhtin\n            O mais louco é perceber que você nunca traduz só uma palavrinha isolada. Quando eu descobria um termo, ele vinha carregado com toda a visão de mundo daquela comunidade. É bem Bakhtin: as palavras são sempre vozes coletivas, nunca neutras. Eu não estava só montando um dicionário, estava traduzindo cosmovisões inteiras. (Isso é bizarro quando estamos na sociedade militar)"
-  },
-  {
-    "objectID": "posts/filosofia/Chants of Sennaar/index.html#conclusões",
-    "href": "posts/filosofia/Chants of Sennaar/index.html#conclusões",
-    "title": "Jomaserver",
-    "section": "Conclusões",
-    "text": "Conclusões\n            No fim das contas, Chants of Sennaar não foi só um puzzle de linguagens. Foi quase um curso intensivo de filosofia disfarçado de videogame. A cada novo símbolo decifrado, eu sentia que não estava só aprendendo palavras eu estava aprendendo também como aquela sociedade ficticia pensa e como isso é um reflexo da cultura e ações.\n            Teve também aquela sensação meio Bakhtin: nenhuma palavra que eu traduzia era neutra. Elas vinham carregadas de história, de valores, de vozes de um povo inteiro. E quando eu conseguia conectar dois grupos que antes nem se olhavam, era quase um ato político: traduzir virou resistência, virou ponte num mundo fragmentado.\n            E talvez o mais forte foi perceber que, no jogo, a verdadeira missão não era ser herói ou vilão. Era ser aquele que abre espaço pra fala, pra escuta, pra troca. No fundo, era pura racionalidade comunicativa: sem diálogo, não tem cooperação; sem cooperação, não tem futuro.\n            No fim, o jogo me deixou com essa certeza:\n            Aprender a língua do outro é, no fundo, um ato de amor. É dizer: “eu quero te entender do jeito que você é”.\n            E isso, num mundo cada vez mais polarizado e barulhento, é quase revolucionário."
-  },
-  {
-    "objectID": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
-    "href": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
-    "title": "Jomaserver",
-    "section": "Resuminho",
-    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
-  },
-  {
-    "objectID": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
-    "href": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
-    "title": "Jomaserver",
-    "section": "Genomescope2",
-    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
-  },
-  {
-    "objectID": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
-    "href": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
-    "title": "Jomaserver",
-    "section": "KMC",
-    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
-  },
-  {
-    "objectID": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
-    "href": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
-    "title": "Jomaserver",
-    "section": "Resultados do KMC",
-    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
-  },
-  {
-    "objectID": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
-    "href": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
-    "title": "Jomaserver",
-    "section": "GenomeScope2",
-    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
-  },
-  {
-    "objectID": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
-    "href": "posts/Genômica/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
-    "title": "Jomaserver",
-    "section": "Resultados",
-    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
-  },
-  {
-    "objectID": "posts/linux/Anotações Linux/index.html#introdução",
-    "href": "posts/linux/Anotações Linux/index.html#introdução",
-    "title": "Jomaserver",
-    "section": "Introdução",
-    "text": "Introdução\n            Recentemente me foi passado uma serie de exercícios, para aumentar minha afinidade com o bash do linux. Nesses exercicios, tive que ter noções basicas de grep, ls, cd além de rodar executaveis .sh, para comandos como blastp, blastn. Afim de fazer alinhamentos e comparações de proximidade entre a sequencia observada com o banco de dados."
-  },
-  {
-    "objectID": "posts/linux/Anotações Linux/index.html#nohup",
-    "href": "posts/linux/Anotações Linux/index.html#nohup",
-    "title": "Jomaserver",
-    "section": "-nohup:",
-    "text": "-nohup:\n            Faz com que o executavel seja rodado pela rede local, caso tenha algum problema com a máquina o executavel ainda vai ser rodado e entregará resultados."
-  },
-  {
-    "objectID": "posts/linux/Anotações Linux/index.html#sh",
-    "href": "posts/linux/Anotações Linux/index.html#sh",
-    "title": "Jomaserver",
-    "section": ".sh:",
-    "text": ".sh:\n            Esse sh faz com que seja possível, outras pessoas executarem seu codigo, geralmente aqui no LBI (Laboratório de Bioinformática) as pessoas usam o RunMe. Facilitando a reprodução do seu código, o .sh no final demonstra que é um codígo de bash. A presença desse arquivo nos diretorios torna possivel, a reanalise dos dados."
-  },
-  {
-    "objectID": "posts/linux/Anotações Linux/index.html#awk",
-    "href": "posts/linux/Anotações Linux/index.html#awk",
-    "title": "Jomaserver",
-    "section": "awk",
-    "text": "awk\n            Awk foi o comando mais utilitario que eu conheci hoje ele funciona para listar dados, podendo ser representado pela preferencia do usuario, posso olhar só os querys com mais de 80% de semelhança advindos do resultado do meu blast. No awk você pode analisar cada coluna separadamente além de poder ordenar da maneira que você quiser. Além de remover duplicatas e poder contar os resultados."
-  },
-  {
-    "objectID": "posts/linux/Anotações Linux/index.html#grep",
-    "href": "posts/linux/Anotações Linux/index.html#grep",
-    "title": "Jomaserver",
-    "section": "grep",
-    "text": "grep\n            grep eu já conhecia, mas aprendi algumas funcionalidades novas, grep basicamente é um finder eu procuro no meu arquivo, podendo remover algo da lista, por exemplo tem uma proteína X que eu to interessado posso mapear aonde ela aparece na sequencia, e se eu usar grep -v posso retirar coisas dessa lista também."
-  },
-  {
-    "objectID": "posts/linux/Anotações Linux/index.html#conclusão",
-    "href": "posts/linux/Anotações Linux/index.html#conclusão",
-    "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            Então gente, esses comandos foram os que eu mais utilizei até o momento, sinto que tenho muita coisa pra aprender em noções de terminal. Mas to animado, sinto que já me familiarizei bastante nos meus 1 ano de uso do sistema operacional. E quando converso com pessoas que utilizam a muitos anos, vejo que é sempre possivel facilitar os processos tornando eles mais rapidos, tudo é uma questão de prática. Ao longo do meu projeto vou atualizando coisas que vou aprendendo e como a bioinformática ajuda nesses processos.\n            Obrigado gente!"
-  },
-  {
-    "objectID": "posts/linux/Minhas primeiras experiencias com Linux/index.html#explorando-o-linux-primeiras-impressões",
-    "href": "posts/linux/Minhas primeiras experiencias com Linux/index.html#explorando-o-linux-primeiras-impressões",
-    "title": "Jomaserver",
-    "section": "Explorando o Linux: Primeiras Impressões",
-    "text": "Explorando o Linux: Primeiras Impressões\n            Recentemente, comecei a usar Linux e escolhi o Ubuntu como minha primeira distribuição. Foi uma mudança empolgante! Desde a instalação até a configuração inicial, fiquei impressionado com a simplicidade e a flexibilidade do sistema. A interface é limpa, responsiva e, para quem vem do Windows, a adaptação foi bem tranquila.\n            \n            O Poder do Terminal: Instalação Rápida de Ferramentas\n            Algo que me chamou muito a atenção foi a praticidade de instalar pacotes e programas diretamente pelo terminal. Com poucos comandos, eu conseguia instalar e configurar o que precisava de maneira rápida e eficiente.\n            Aqui estão algumas ferramentas que explorei:\n            \n            Docker 🐳: Facilita a criação e gerenciamento de containers, essencial para desenvolvimento e testes.\n            Conda 🐍: Um gerenciador de pacotes e ambientes que ajudou muito na organização dos meus projetos de bioinformática.\n            Git 🔧: Indispensável para controle de versão e gerenciamento dos meus repositórios.\n            \n            A instalação foi bem simples:\n            sudo apt update && sudo apt upgrade -y\nsudo apt install docker.io git\n            E para o Conda:\n            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\nbash Miniconda3-latest-Linux-x86_64.sh\n            \n            \n            Fluxo de Trabalho\n            Outro ponto que me agradou bastante foi a possibilidade de personalizar o ambiente de acordo com as minhas necessidades. Comecei a usar o terminal Kitty (tem um post no blog que relata melhor minha experiencia até o momento com o terminal), que oferece uma interface mais rápida e personalizável. Além disso, pude ajustar algumas configurações no .bashrc para tornar minha experiência ainda melhor.\n            post Kitty: Terminal Kitty e suas possibilidades\n            \n            \n            Conclusão\n            Explorar o Ubuntu tem sido uma experiência cheia de aprendizados. Cada novo comando e nova ferramenta que descubro torna o sistema ainda legal e adaptável às minhas necessidades. O que mais me surpreende é a sensação de controle e liberdade que o Linux proporciona. Saber que posso modificar praticamente qualquer aspecto do meu ambiente de trabalho deixa ainda mais empolgante."
+    "section": "",
+    "text": "Conclusão\n            Esse comportamento reduntante atesta e valida perfeitamente o papel central da nossa Montagem Primária. Ela atua como o molde que unifica e colapsa essa redundância em um genoma de referência coeso e limpo. Anatomicamente falando, o genoma gerado é sólido, representativo e totalmente apto para ancorar os processos de mapeamento de marcas moleculares e a etapa de anotação estrutural."
   },
   {
     "objectID": "posts/neurociencia/Bioinfo para neurociencia/index.html#recap",
@@ -833,6 +217,328 @@
     "text": "Referencias\n            \n            Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)\n            \n            \n            \n            Single-Cell RNA-Seq Technologies and Related Computational Data Analysis (G, Chen)"
   },
   {
+    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#o-que-é-latex",
+    "href": "posts/computacao/Guia de estudo LaTex/index.html#o-que-é-latex",
+    "title": "Jomaserver",
+    "section": "O que é LaTex?",
+    "text": "O que é LaTex?\n            Basicamente é um software de edição de texto, muito utilizado para desenvolvimento de textos cientificos e matemáticos, no linux você pode usar o latex em qualquer editor de texto. Porém recentemente eu conheci o OverLeaf que é basicamente um lugar onde você pode escrever seu texto LaTex pelo source, e ir configurando pelo visual ou pelo propio codigo, deixando o processo bem tranquilinho."
+  },
+  {
+    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#overleaf",
+    "href": "posts/computacao/Guia de estudo LaTex/index.html#overleaf",
+    "title": "Jomaserver",
+    "section": "Overleaf",
+    "text": "Overleaf\n            \n            Então basicamente o overleaf é uma plataforma de navegador, que permite que você crie projetos LaTex, seja ele BEAMER, REPORT, ARTICLE ou BOOK. que são formatações do propio LaTex. (calma que já já tudo vai fazer sentido) Se você já acompanha meu blog e se interessou pelo Quarto no rstudio, vai se interessar pelo OverLeaf também, basicamente tem uma estrutura bem parecida com um markdown, para montagem do projeto. Também temos o recompilar, que funciona mais ou menos como um render do Quarto, facilitando muito a montagem do codigo source, já que tem como você ir acompanhando as mudanças no documento, desde o inicio. O diferencial é a possibilidade de adição de pacotes, já que funciona tudo por meio de nuvém e você pode ter acesso a varias bibliotecas sem gastar memoria do seu computador. Isso é algo bem legal no OverLeaf."
+  },
+  {
+    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#montagem-do-guia",
+    "href": "posts/computacao/Guia de estudo LaTex/index.html#montagem-do-guia",
+    "title": "Jomaserver",
+    "section": "Montagem do Guia",
+    "text": "Montagem do Guia\n            Então vamos pra parte mais interessante e direto ao ponto, primeiramente construi um projeto no formato de apresentações beamer, basicamente foi um PDF sobre o assunto do post passado Outer Wilds e a astrobiologia por trás do jogo, vou deixar a apresentação beamer em link aqui, para quem tiver interesse em ver como fica esse formato, já que o guia de estudo, possui outra formatação.\n            Outer Wilds BEAMER\n            Porém continuei estudando o LaTex por meio de cursos no youtube e outros conteudos disponiveis na internet, e resolvi montar um guia um pouco mais detalhado que vai servir pra me ajudar no desenvolvimento dos meus projetos, e pode ajudar quem se interessar pelo software. Acredito que muito dos meus amigos vão se interessar já que estamos inseridos nessa aréa cientifica e de produção textual.\n            Guia de estudos para produçao textual usando o LaTex"
+  },
+  {
+    "objectID": "posts/computacao/Guia de estudo LaTex/index.html#considerações-finais",
+    "href": "posts/computacao/Guia de estudo LaTex/index.html#considerações-finais",
+    "title": "Jomaserver",
+    "section": "Considerações finais",
+    "text": "Considerações finais\n            Basicamente foi um processo muito divertido aprender a usar o LaTex, principalmente pelas opções do OverLeaf e por ser bem didatico as ferramentas disponiveis. Também é um software bem poderoso pela sua utilidade na carreira acadêmica e tenho certeza que vou continuar usando bastante esse software até o final da minha graduação e em um possivel mestrado também com certeza. Do mais, gostei muito de produzir o documento GUIA para os estudos e espero que possa ser proveitoso para quem for usar também."
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#disclaimer",
+    "href": "posts/computacao/Inspector/index.html#disclaimer",
+    "title": "Jomaserver",
+    "section": "Disclaimer",
+    "text": "Disclaimer\n            Antes de passarmos a montagem do Andropogon gayanus para a proxima etapa, precisávamos garantir que a sequência base estivesse o mais polida possível. Por mais que o Hifiasm seja um montador excelente e que já tivéssemos limpado contaminantes e genomas de organelas, o genoma nuclear bruto ainda possui ruídos. É aqui que entra a nossa etapa de avaliação e correção estrutural com o Inspector. A teoria baseada em pesquisa nos mostra que ignorar esse polimento afeta diretamente a anotação lá na frente."
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#introdução",
+    "href": "posts/computacao/Inspector/index.html#introdução",
+    "title": "Jomaserver",
+    "section": "Introdução",
+    "text": "Introdução\n            O Inspector é uma ferramenta bioinformática projetada especificamente para identificar erros estruturais e de pequena escala em montagens genômicas. A lógica por trás dele é muito sólida: o software faz o alinhamento dos nossos reads brutos (PacBio HiFi) diretamente contra a montagem tratada.\n            Ao mapear as leituras originais de volta na sequência consenso, o Inspector consegue detectar divergências e avaliar a acurácia real da montagem. Se a montagem tomou uma decisão que não tem suporte nos reads originais, o algoritmo aponta a inconsistência e a classifica."
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "href": "posts/computacao/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "title": "Jomaserver",
+    "section": "Anatomia dos Erros Genômicos",
+    "text": "Anatomia dos Erros Genômicos\n            O software classifica as inconsistências em duas categorias principais de tamanho.\n            Erros estruturais (&gt; 50 bp):\n            \n            Expansão: Trata-se da inserção de sequências na montagem que não possuem suporte nas leituras originais do sequenciador.\n            Colapso: É a omissão ou compressão de regiões genômicas na montagem (um erro comumente associado a regiões repetitivas).\n            Haplotype Switch: Consiste na alternância indevida entre alelos de diferentes haplótipos durante a formação da sequência.\n            Inversão: Ocorre quando um segmento é montado na orientação oposta à evidenciada pelos reads.\n            \n            Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: É a troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: São as pequenas deleções presentes na montagem em relação às leituras.\n            Small Expansion: Representam pequenas inserções indevidas na sequência montada."
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#pipeline-no-terminal",
+    "href": "posts/computacao/Inspector/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando direto no meu ambiente Linux, a execução do Inspector foi dividida em três etapas vitais de auditoria e edição.\n            Fase 1: Inspeção e Mapeamento primario, fornecemos ao software o nosso arquivo fasta da montagem primária limpa e as leituras originais PacBio HiFi para o alinhamento:\n            \n            Fase 2: Correção Automática (Inspector correct) O Inspector não apenas levanta os problemas, ele também resolve. Com a função “correct”, utilizamos o output da análise anterior para que o software corrija as contigs que apresentaram erros. O resultado é um arquivo fasta com essas mudanças corrigidas:\n            \n            \n            Fase 3: Avaliação Pós-correção Como boas práticas exigem validação, pegamos o arquivo já corrigido gerado na fase 2 (“contig_corrected.fa”) e passamos pelo script do Inspector novamente. O objetivo é avaliar a montagem e recalcular os índices de qualidade (QV) posteriormente à correção dos erros:"
+  },
+  {
+    "objectID": "posts/computacao/Inspector/index.html#conclusão",
+    "href": "posts/computacao/Inspector/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Esse ciclo de detectar as falhas estruturais, corrigi-las matematicamente e auditar o resultado novamente é o que garante a robustez do nosso Andropogon gayanus. Foram exatamente esses arquivos corrigidos (pri_corrigida.fa, hap1_corrigido.fa, hap2_corrigido.fa) que serviram de entrada para a avaliação definitiva no Merqury. Ao resolver os erros de expansão e colapso, garantimos que nossa montagem reflita o organismo biológico real e evitamos a propagação de artefatos pelas próximas fases do projeto."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#recap",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#recap",
+    "title": "Jomaserver",
+    "section": "Recap",
+    "text": "Recap\n            Recentemente fiz uma apresentação pra NeuroTechXBSB, com intuito de destrinchar o trabalho de bioinformatica na grande area da neurociencia, resolvi postar no meu blog. Porém todos esses contéudos serão disponibilizados no instagram @neurotechbsb, caso tenham interesse por esse tema, além de disponibilizarem contéudos que ligam a neurociência com varias outras areas."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#a-complexidade-do-cérebro",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#a-complexidade-do-cérebro",
+    "title": "Jomaserver",
+    "section": "A complexidade do cérebro",
+    "text": "A complexidade do cérebro\n            O cérebro é provavelmente o sistema mais complexo que a gente conhece.\n            Bilhões de células, trilhões de conexões, e ainda assim tentamos entender como isso tudo gera pensamento, memória, comportamento.\n            Só que tem alguns problemas:\n            \n            Nem sempre as variantes genéticas explicam as doenças de forma direta.\n            \n            O mesmo gene pode fazer coisas diferentes dependendo da célula.\n            \n            E muitas vezes, alterações no DNA não aparecem claramente como sintomas.\n            \n            \n            No fim, fica a pergunta que guia boa parte da pesquisa: como ligar genes, células e comportamento?"
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#onde-entram-os-dados",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#onde-entram-os-dados",
+    "title": "Jomaserver",
+    "section": "Onde entram os dados?",
+    "text": "Onde entram os dados?\n            É aqui que a bioinformática entra como cola entre diferentes tipos de informação.\n            \n            Genômica (GWAS, SNPs): procura variações genéticas ligadas a doenças.\n            \n            Transcriptômica (RNA-seq bulk e single-cell): mostra quais genes estão ativos.\n            \n            Epigenômica (ChIP-seq, ATAC-seq, Hi-C): revela como o DNA é regulado e dobrado em 3D.\n            \n            Bancos populacionais (GTEx, ENCODE, PsychENCODE): comparam perfis entre indivíduos.\n            \n            Cada camada sozinha dá uma pista. Juntas, elas contam uma história muito mais completa."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#mapeando-o-cérebro-em-escala-molecular",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#mapeando-o-cérebro-em-escala-molecular",
+    "title": "Jomaserver",
+    "section": "Mapeando o cérebro em escala molecular",
+    "text": "Mapeando o cérebro em escala molecular\n            O artigo “Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)” analisou 1.866 cérebros humanos adultos para montar um atlas molecular.\n            Foram reunidos dados de:\n            \n            RNA (quais genes estão ativos)\n            Estrutura 3D do DNA (Hi-C)\n            Variações genéticas (genótipo)\n            Marcas epigenéticas (regulação química)\n            \n            O resultado é um mapa de referência que ajuda a entender como diferentes doenças mexem com o cérebro."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#como-organizar-essa-bagunça-de-dados",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#como-organizar-essa-bagunça-de-dados",
+    "title": "Jomaserver",
+    "section": "Como organizar essa bagunça de dados?",
+    "text": "Como organizar essa bagunça de dados?\n            Os pipelines de bioinformática geralmente seguem um caminho:\n            \n            Limpeza e normalização dos dados brutos.\n            Identificação de genes mais ou menos ativos.\n            Separação de sinais de tipos celulares (deconvolução).\n            Descoberta de regiões do DNA ligadas à expressão (QTLs).\n            Criação de modelos preditivos.\n            \n            É basicamente transformar toneladas de dados em hipóteses biológicas que podem ser testadas no laboratório."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#o-poder-do-single-cell",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#o-poder-do-single-cell",
+    "title": "Jomaserver",
+    "section": "O poder do single-cell",
+    "text": "O poder do single-cell\n            Em vez de olhar o cérebro como um bolo inteiro, dá pra cortar em fatias muito finas e analisar célula por célula.\n            Isso importa porque: - O cérebro tem dezenas de tipos celulares diferentes. - Algumas doenças afetam só um subconjunto bem específico.\n            No estudo, mais de 32 mil células foram analisadas, e foi possível identificar perfis como neurônios excitatórios (Ex1–Ex9), inibitórios (In1–In8), astrócitos, microglia e por aí vai.\n            Assim a gente consegue enxergar quem faz o quê no cérebro."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#deconvolução-traduzindo-o-bulk",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#deconvolução-traduzindo-o-bulk",
+    "title": "Jomaserver",
+    "section": "Deconvolução: traduzindo o “bulk”",
+    "text": "Deconvolução: traduzindo o “bulk”\n            Nem sempre dá pra analisar célula por célula. A saída é usar dados single-cell como referência para decompor os dados “bulk”.\n            Exemplo: - Certos neurônios (Ex3, Ex4) aumentam com a idade. - Oligodendrócitos e microglia diminuem. - 88% da variação da expressão gênica pode ser explicada só pela composição celular.\n            Ou seja: às vezes o que parece uma “mudança genética” é, na verdade, uma mudança na proporção dos tipos de células."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#esquizofrenia-como-exemplo",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#esquizofrenia-como-exemplo",
+    "title": "Jomaserver",
+    "section": "Esquizofrenia como exemplo",
+    "text": "Esquizofrenia como exemplo\n            O trabalho “Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)” analisou 142 regiões do genoma (loci GWAS) e conseguiu identificar 321 genes funcionais relacionados com esquizofrenia.\n            Entre eles: CHRNA2, CACNA1C e GRIN1.\n            O curioso é que 67% desses genes estavam longe das variantes (SNPs) encontradas no DNA.\n            Eles só apareceram porque a análise considerou o DNA em 3D e os mecanismos de regulação à distância.\n            \n            Sem bioinformática, isso passaria batido."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#modelos-preditivos",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#modelos-preditivos",
+    "title": "Jomaserver",
+    "section": "Modelos preditivos",
+    "text": "Modelos preditivos\n            Com todos esses dados, dá pra ir além da descrição e partir pra predição.\n            Exemplo: DSPN (Deep Structured Phenotype Network) - Integra genótipo, transcriptoma e QTLs. - Consegue prever expressão gênica e risco de doenças. - Já foi aplicado em esquizofrenia, autismo e bipolaridade.\n            A ideia é transformar mapas moleculares em ferramentas úteis para diagnóstico e até terapias."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#conclusões",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#conclusões",
+    "title": "Jomaserver",
+    "section": "Conclusões",
+    "text": "Conclusões\n            \n            A bioinformática conecta DNA, células e doenças.\n            Mostra que contexto celular e regulatório importa.\n            Ajuda a revelar alvos terapêuticos que antes eram invisíveis.\n            Dá base pra criar modelos que podem personalizar tratamentos.\n            \n            O futuro da neurociência computacional está justamente nessa mistura de Big Data + Biologia para decifrar a lógica molecular do cérebro."
+  },
+  {
+    "objectID": "posts/computacao/Bioinfo para neurociencia/index.html#referencias",
+    "href": "posts/computacao/Bioinfo para neurociencia/index.html#referencias",
+    "title": "Jomaserver",
+    "section": "Referencias",
+    "text": "Referencias\n            \n            Comprehensive functional genomic resource and integrative model for the human brain (D, Wang)\n            \n            \n            \n            Single-Cell RNA-Seq Technologies and Related Computational Data Analysis (G, Chen)"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "title": "Jomaserver",
+    "section": "Resuminho",
+    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "title": "Jomaserver",
+    "section": "Genomescope2",
+    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "title": "Jomaserver",
+    "section": "KMC",
+    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "title": "Jomaserver",
+    "section": "Resultados do KMC",
+    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "title": "Jomaserver",
+    "section": "GenomeScope2",
+    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
+  },
+  {
+    "objectID": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "href": "posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+  },
+  {
+    "objectID": "posts/computacao/Anotações Linux/index.html#introdução",
+    "href": "posts/computacao/Anotações Linux/index.html#introdução",
+    "title": "Jomaserver",
+    "section": "Introdução",
+    "text": "Introdução\n            Recentemente me foi passado uma serie de exercícios, para aumentar minha afinidade com o bash do linux. Nesses exercicios, tive que ter noções basicas de grep, ls, cd além de rodar executaveis .sh, para comandos como blastp, blastn. Afim de fazer alinhamentos e comparações de proximidade entre a sequencia observada com o banco de dados."
+  },
+  {
+    "objectID": "posts/computacao/Anotações Linux/index.html#nohup",
+    "href": "posts/computacao/Anotações Linux/index.html#nohup",
+    "title": "Jomaserver",
+    "section": "-nohup:",
+    "text": "-nohup:\n            Faz com que o executavel seja rodado pela rede local, caso tenha algum problema com a máquina o executavel ainda vai ser rodado e entregará resultados."
+  },
+  {
+    "objectID": "posts/computacao/Anotações Linux/index.html#sh",
+    "href": "posts/computacao/Anotações Linux/index.html#sh",
+    "title": "Jomaserver",
+    "section": ".sh:",
+    "text": ".sh:\n            Esse sh faz com que seja possível, outras pessoas executarem seu codigo, geralmente aqui no LBI (Laboratório de Bioinformática) as pessoas usam o RunMe. Facilitando a reprodução do seu código, o .sh no final demonstra que é um codígo de bash. A presença desse arquivo nos diretorios torna possivel, a reanalise dos dados."
+  },
+  {
+    "objectID": "posts/computacao/Anotações Linux/index.html#awk",
+    "href": "posts/computacao/Anotações Linux/index.html#awk",
+    "title": "Jomaserver",
+    "section": "awk",
+    "text": "awk\n            Awk foi o comando mais utilitario que eu conheci hoje ele funciona para listar dados, podendo ser representado pela preferencia do usuario, posso olhar só os querys com mais de 80% de semelhança advindos do resultado do meu blast. No awk você pode analisar cada coluna separadamente além de poder ordenar da maneira que você quiser. Além de remover duplicatas e poder contar os resultados."
+  },
+  {
+    "objectID": "posts/computacao/Anotações Linux/index.html#grep",
+    "href": "posts/computacao/Anotações Linux/index.html#grep",
+    "title": "Jomaserver",
+    "section": "grep",
+    "text": "grep\n            grep eu já conhecia, mas aprendi algumas funcionalidades novas, grep basicamente é um finder eu procuro no meu arquivo, podendo remover algo da lista, por exemplo tem uma proteína X que eu to interessado posso mapear aonde ela aparece na sequencia, e se eu usar grep -v posso retirar coisas dessa lista também."
+  },
+  {
+    "objectID": "posts/computacao/Anotações Linux/index.html#conclusão",
+    "href": "posts/computacao/Anotações Linux/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Então gente, esses comandos foram os que eu mais utilizei até o momento, sinto que tenho muita coisa pra aprender em noções de terminal. Mas to animado, sinto que já me familiarizei bastante nos meus 1 ano de uso do sistema operacional. E quando converso com pessoas que utilizam a muitos anos, vejo que é sempre possivel facilitar os processos tornando eles mais rapidos, tudo é uma questão de prática. Ao longo do meu projeto vou atualizando coisas que vou aprendendo e como a bioinformática ajuda nesses processos.\n            Obrigado gente!"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resuminho",
+    "title": "Jomaserver",
+    "section": "Resuminho",
+    "text": "Resuminho\n            Basicamente, rodei dois softwares hoje. Um para indentificar os fragmentos da minha sequencia (Hifiasm) Ele me devolve numeros de contig (quanto menor melhor) que é o numero de fragmentos soltos. O programa tenta unir sequencias sobrepostas, com isso tenho um numero que funciona como minha mediana esse numero é chamado de N-50. Basicamente é um valor numerico que separa o tamanho das minhas sequencias de DNA. Ele é inversamente proporcional ao meu numero de CONTIGS. Ou seja, quando meu numero de contigs é alto, meu numero N-50 será menor."
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2",
+    "title": "Jomaserver",
+    "section": "Genomescope2",
+    "text": "Genomescope2\n            O genomescope2 serve pra eu ter estimativas de tamanho do meu genoma e ploídias. Onde as frequências k-mer dentro das leituras de sequenciamento são analisadas para estimar eficientemente as principais características do genoma, como tamanho do genoma, heterozigosidade e repetitividade."
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#kmc",
+    "title": "Jomaserver",
+    "section": "KMC",
+    "text": "KMC\n            O KMC, é a primeira parte da ánalise necessaria para o trabalho do genomescope, esse software basicamente conta o numero de k-meres(regiões repetitivas do genoma). Bash\n            kmc -k21 -t10 -m64 -ci1 -cs1000000 @lista_fastqsANDROPOGON.txt reads tmp/"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados-do-kmc",
+    "title": "Jomaserver",
+    "section": "Resultados do KMC",
+    "text": "Resultados do KMC\n            \nStage 1: 100%\nStage 2: 100%\n1st stage: 640.204s\n2nd stage: 784.064s\nTotal     : 1424.27s\nTmp size  : 310806MB\n\nStats:\n    No. of k-mers below min. threshold :           0\n    No. of k-mers above max. threshold :           0\n    No. of unique k-mers               :  3943444853\n    No. of unique counted k-mers       :  3943444853\n    Total no. of k-mers                : 261304727485\n    Total no. of reads                 :      11954295\n    Total no. of super-k-mers          :  37576618091"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#genomescope2-1",
+    "title": "Jomaserver",
+    "section": "GenomeScope2",
+    "text": "GenomeScope2\n            Agora sim, vamos com esses dados prontos vamos rodar o genomescope2. Para termos histogramas e graficos pra termos um visual do tamanho do genoma e dessas regiões repetitivas.\n            genomescope.R -i reads.histo -o output -k 21"
+  },
+  {
+    "objectID": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "href": "posts/pibic/Hifiasm e Genomescope na montagem do genoma/doc1.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Sobre os gráficos, pensei em colocar no notebook, mas acredito que não seja possivel por causa das diretrizes de confiabilidade da EMBRAPA. Então, basicamente é isso, uma etapa longa e cheia de processos e arquivos intermediarios."
+  },
+  {
+    "objectID": "computacao.html#bem-vindo-à-categoria-computação",
+    "href": "computacao.html#bem-vindo-à-categoria-computação",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Computação",
+    "text": "Bem-vindo à categoria Computação\n            Talvez uma das categorias mais óbvias devido ao lugar que você está! Tenho aprendido um pouco de lógica computacional e tenho aplicado isso em diversas áreas que me interesso (Jogos, Trabalho, Graduação etc) Então, esse deve ser um bloco de posts diversificado, espero que goste dos conteúdos!"
+  },
+  {
+    "objectID": "estatistica.html#bem-vindo-à-categoria-estatística",
+    "href": "estatistica.html#bem-vindo-à-categoria-estatística",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Estatística",
+    "text": "Bem-vindo à categoria Estatística\n            \n            Outra coisa que está presente em todas as áreas da minha vida!! Os posts que estão nessa página, provavelmente estarão em outras páginas também. Mas fique a vontade para procurar algo mais específico!"
+  },
+  {
+    "objectID": "pibic.html#bem-vindo-à-categoria-pibic",
+    "href": "pibic.html#bem-vindo-à-categoria-pibic",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria PIBIC",
+    "text": "Bem-vindo à categoria PIBIC\n            \n            Você encontrá nessa página dados e avanços no meu projeto PIBIC 25/26. Meu pibic é montagem do genoma rascunho do capim-andropogon, espécie graminea muito utilizada em pastos. Então, basicamente espere conteúdos de genômica vegetal, uso de softwares e análises estatístiscas)."
+  },
+  {
+    "objectID": "genomic.html#bem-vindo-à-categoria-gênomica",
+    "href": "genomic.html#bem-vindo-à-categoria-gênomica",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Gênomica ",
+    "text": "Bem-vindo à categoria Gênomica \n            Cada vez me apaixonando mais pela gênomica (pode ser vicio em dopamina, toda vez que o software roda da maneira esperada). Acredito que a genômica é uma maneira de tentar entender como a vida funciona de maneira minunciosa. Analisando não só o que difere todo individuo mas também o que une todos os seres. DNA é a molécula da informação, e destrinchar como essa informação é com certeza, muito esplêndido."
+  },
+  {
+    "objectID": "neurociencia.html#bem-vindo-à-categoria-neurociência",
+    "href": "neurociencia.html#bem-vindo-à-categoria-neurociência",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Neurociência",
+    "text": "Bem-vindo à categoria Neurociência\n            \n            Participo de um projeto de extensão chamado NeuroTechXBsb, por isso é comum de eu estar lendo um artigo de neurociência ou participando de hackatons. Por isso, decidi criar essa categoria! Se seu interesse for apenas nessa área, recomendo que siga o link e acompanhe o conteúdo da NeuroTechX."
+  },
+  {
+    "objectID": "biologia-molecular.html#bem-vindo-à-categoria-biologia-molecular",
+    "href": "biologia-molecular.html#bem-vindo-à-categoria-biologia-molecular",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Biologia Molecular",
+    "text": "Bem-vindo à categoria Biologia Molecular\n            \n            Sou estudante de biotecnologia, então a biologia molecular é uma área bem explorada, me deparo com ela em diversas materias ao longo da minha graduação, então essa página geralmente vai ter avanços nos resultados do meu projeto e trabalhos que foram feitos ao longo da graduação e que eu achei relevante."
+  },
+  {
+    "objectID": "filosofia.html#bem-vindo-à-categoria-filosofia",
+    "href": "filosofia.html#bem-vindo-à-categoria-filosofia",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Filosofia ",
+    "text": "Bem-vindo à categoria Filosofia \n            \n            Sabe aquela conversa no bar, ou quando zera um jogo? Aquele assunto que pega e não sai da cabeça? É aqui que eu formalizo eles.\n            Esta categoria é o meu espaço para pegar essas ideias que surgem do nada, que me agarram, e transformá-las em algo mais sólido. Com pelo menos algum embasamento real… diferentes das vozes da minha cabeça\n            Se você se interessou por algo dessa página, adoraria conversar sobre com você!!!"
+  },
+  {
+    "objectID": "about.html#oi-eu-sou-o-jomas",
+    "href": "about.html#oi-eu-sou-o-jomas",
+    "title": "Jomaserver",
+    "section": "Oi, eu sou o Jomas ",
+    "text": "Oi, eu sou o Jomas \n            \n            Sou estudante de Biotecnologia na Universidade de Brasília, ao longo da minha tragetória, trabalhei com drosofílas como medidores de invasões biologicas, com um enfoque para Bioestatistica, analisando amplitude nicho e distribuição geografica por meio de dados populacionais coletados em reservas ecológicas.\n            \n            \n            \n            \n            \n            Por me interessar por essa área e unindo os conhecimentos em biologia molecular que é o enfoque maior do meu curso, me interessei por Bioinformática e genômica, comecei um projeto na EMBRAPA, afim de montar o genoma rascunho de uma éspecie de campim.\n            \n            Por isso criei esse blog, a ideia é que ele funcione tanto como um guia de estudos pessoal quanto como um lugar para compartilhar conhecimentos, desafios e aprendizados que vou adquirindo ao longo do caminho. Além de organizar meu próprio processo de aprendizado, também quero que este espaço sirva como referência e inspiração para quem se interessa pelos mesmos temas que eu."
+  },
+  {
     "objectID": "posts/pibic/BUSCO/index.html#o-que-é-o-busco",
     "href": "posts/pibic/BUSCO/index.html#o-que-é-o-busco",
     "title": "Jomaserver",
@@ -889,76 +595,6 @@
     "text": "Conclusões:\n            Percebemos que nossa montagem primária pós-purge sofreu uma queda significativa em regiões duplicadas, o esperado era algo próximo do total, já que nossa montagem é uma representação diploíde de um genoma tetraplóide, ou seja, todas as regiões genômicas estão duplicadas, o percentual de 73,9 não condiz com o resultado esperado. Portanto, decidimos continuar com a montagem primária apenas sem os junks identificados no purge e seguir também com as montagens hap1 e hap2. (sem junks)."
   },
   {
-    "objectID": "posts/Genômica/Merqury/index.html#section",
-    "href": "posts/Genômica/Merqury/index.html#section",
-    "title": "Jomaserver",
-    "section": "",
-    "text": "Dissecando os Gráficos: Arquitetura do Andropogon\n            O legal do Merqury é a análise visual. Avaliando os espectros de multiplicidade (Número de Cópias e Origem de Montagem), a estratégia do Hifiasm fica clara.\n            Primária vs Alelos (Hap1 e Hap2) Analisando a sobreposição da Primária com o Haplótipo 1, a completude vai para 93.30%. A Primária carrega o consenso majoritário (90.05%), e o Hap1 entra com 3.25% de informação exclusiva (pura heterozigose alelo-específica). Ao olhar a Primária com o Hap2, a completude sobe para 95.79%, indicando que o segundo haplótipo agregou um pouco mais de diversidade. Essa simetria mostra que o particionamento da heterozigose foi muito equilibrado bidirecionalmente.\n            O Teste de Redundância (Hap1 x Hap2) Quando cruzei apenas os haplótipos (sem a Primária), chegamos à completude máxima teórica de 98.66%. Porém, o gráfico de Origem da Montagem relevou uma enorme massa de regiões compartilhadas (sobreposição verde) no pico de múltiplas cópias (~180x). O que isso significa na prática? Que o Hifiasm teve que replicar quase todo o arcabouço estrutural conservado da planta dentro de cada haplótipo só para manter a contiguidade dos cromossomos."
-  },
-  {
-    "objectID": "posts/Genômica/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
-    "href": "posts/Genômica/Merqury/index.html#avaliacao-merqury-primaria-vs-hap2.spectra-asm.st",
-    "title": "Jomaserver",
-    "section": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st",
-    "text": "Avaliacao Merqury Primaria vs Hap2.spectra-asm.st"
-  },
-  {
-    "objectID": "posts/Genômica/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
-    "href": "posts/Genômica/Merqury/index.html#avaliacao_merqury_pri_vs_hap1_real.spectra-asm.st",
-    "title": "Jomaserver",
-    "section": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st",
-    "text": "Avaliacao_Merqury_Pri_vs_Hap1_REAL.spectra-asm.st"
-  },
-  {
-    "objectID": "posts/Genômica/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
-    "href": "posts/Genômica/Merqury/index.html#avaliacao_merqury_hap1_vs_hap2_real.spectra-asm.st",
-    "title": "Jomaserver",
-    "section": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st",
-    "text": "Avaliacao_Merqury_Hap1_vs_Hap2_REAL.spectra-asm.st"
-  },
-  {
-    "objectID": "posts/Genômica/Merqury/index.html#section-1",
-    "href": "posts/Genômica/Merqury/index.html#section-1",
-    "title": "Jomaserver",
-    "section": "",
-    "text": "Conclusão\n            Esse comportamento reduntante atesta e valida perfeitamente o papel central da nossa Montagem Primária. Ela atua como o molde que unifica e colapsa essa redundância em um genoma de referência coeso e limpo. Anatomicamente falando, o genoma gerado é sólido, representativo e totalmente apto para ancorar os processos de mapeamento de marcas moleculares e a etapa de anotação estrutural."
-  },
-  {
-    "objectID": "posts/Genômica/Inspector/index.html#disclaimer",
-    "href": "posts/Genômica/Inspector/index.html#disclaimer",
-    "title": "Jomaserver",
-    "section": "Disclaimer",
-    "text": "Disclaimer\n            Antes de passarmos a montagem do Andropogon gayanus para a proxima etapa, precisávamos garantir que a sequência base estivesse o mais polida possível. Por mais que o Hifiasm seja um montador excelente e que já tivéssemos limpado contaminantes e genomas de organelas, o genoma nuclear bruto ainda possui ruídos. É aqui que entra a nossa etapa de avaliação e correção estrutural com o Inspector. A teoria baseada em pesquisa nos mostra que ignorar esse polimento afeta diretamente a anotação lá na frente."
-  },
-  {
-    "objectID": "posts/Genômica/Inspector/index.html#introdução",
-    "href": "posts/Genômica/Inspector/index.html#introdução",
-    "title": "Jomaserver",
-    "section": "Introdução",
-    "text": "Introdução\n            O Inspector é uma ferramenta bioinformática projetada especificamente para identificar erros estruturais e de pequena escala em montagens genômicas. A lógica por trás dele é muito sólida: o software faz o alinhamento dos nossos reads brutos (PacBio HiFi) diretamente contra a montagem tratada.\n            Ao mapear as leituras originais de volta na sequência consenso, o Inspector consegue detectar divergências e avaliar a acurácia real da montagem. Se a montagem tomou uma decisão que não tem suporte nos reads originais, o algoritmo aponta a inconsistência e a classifica."
-  },
-  {
-    "objectID": "posts/Genômica/Inspector/index.html#anatomia-dos-erros-genômicos",
-    "href": "posts/Genômica/Inspector/index.html#anatomia-dos-erros-genômicos",
-    "title": "Jomaserver",
-    "section": "Anatomia dos Erros Genômicos",
-    "text": "Anatomia dos Erros Genômicos\n            O software classifica as inconsistências em duas categorias principais de tamanho.\n            Erros estruturais (&gt; 50 bp):\n            \n            Expansão: Trata-se da inserção de sequências na montagem que não possuem suporte nas leituras originais do sequenciador.\n            Colapso: É a omissão ou compressão de regiões genômicas na montagem (um erro comumente associado a regiões repetitivas).\n            Haplotype Switch: Consiste na alternância indevida entre alelos de diferentes haplótipos durante a formação da sequência.\n            Inversão: Ocorre quando um segmento é montado na orientação oposta à evidenciada pelos reads.\n            \n            Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: É a troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: São as pequenas deleções presentes na montagem em relação às leituras.\n            Small Expansion: Representam pequenas inserções indevidas na sequência montada."
-  },
-  {
-    "objectID": "posts/Genômica/Inspector/index.html#pipeline-no-terminal",
-    "href": "posts/Genômica/Inspector/index.html#pipeline-no-terminal",
-    "title": "Jomaserver",
-    "section": "Pipeline no Terminal",
-    "text": "Pipeline no Terminal\n            Rodando direto no meu ambiente Linux, a execução do Inspector foi dividida em três etapas vitais de auditoria e edição.\n            Fase 1: Inspeção e Mapeamento primario, fornecemos ao software o nosso arquivo fasta da montagem primária limpa e as leituras originais PacBio HiFi para o alinhamento:\n            \n            Fase 2: Correção Automática (Inspector correct) O Inspector não apenas levanta os problemas, ele também resolve. Com a função “correct”, utilizamos o output da análise anterior para que o software corrija as contigs que apresentaram erros. O resultado é um arquivo fasta com essas mudanças corrigidas:\n            \n            \n            Fase 3: Avaliação Pós-correção Como boas práticas exigem validação, pegamos o arquivo já corrigido gerado na fase 2 (“contig_corrected.fa”) e passamos pelo script do Inspector novamente. O objetivo é avaliar a montagem e recalcular os índices de qualidade (QV) posteriormente à correção dos erros:"
-  },
-  {
-    "objectID": "posts/Genômica/Inspector/index.html#conclusão",
-    "href": "posts/Genômica/Inspector/index.html#conclusão",
-    "title": "Jomaserver",
-    "section": "Conclusão",
-    "text": "Conclusão\n            Esse ciclo de detectar as falhas estruturais, corrigi-las matematicamente e auditar o resultado novamente é o que garante a robustez do nosso Andropogon gayanus. Foram exatamente esses arquivos corrigidos (pri_corrigida.fa, hap1_corrigido.fa, hap2_corrigido.fa) que serviram de entrada para a avaliação definitiva no Merqury. Ao resolver os erros de expansão e colapso, garantimos que nossa montagem reflita o organismo biológico real e evitamos a propagação de artefatos pelas próximas fases do projeto."
-  },
-  {
     "objectID": "posts/computacao/Merqury/index.html#section",
     "href": "posts/computacao/Merqury/index.html#section",
     "title": "Jomaserver",
@@ -994,95 +630,60 @@
     "text": "Conclusão\n            Esse comportamento reduntante atesta e valida perfeitamente o papel central da nossa Montagem Primária. Ela atua como o molde que unifica e colapsa essa redundância em um genoma de referência coeso e limpo. Anatomicamente falando, o genoma gerado é sólido, representativo e totalmente apto para ancorar os processos de mapeamento de marcas moleculares e a etapa de anotação estrutural."
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#erros-estruturais-50-bp",
-    "href": "posts/computacao/Inspector/index.html#erros-estruturais-50-bp",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#o-que-é-a-extensão-abnt-para-quarto",
     "title": "Jomaserver",
-    "section": "Erros estruturais (≥ 50 bp):",
-    "text": "Erros estruturais (≥ 50 bp):\n            \n            Expansão: Inserção de sequências na montagem que não possuem suporte nas leituras originais.\n            Colapso: Omissão ou compressão de regiões genômicas (comumente repetitivas) na montagem.\n            Haplotype Switch: Alternância indevida entre alelos de diferentes haplótipos durante a montagem.\n            Inversão: Segmento montado na orientação oposta à evidenciada pelos reads."
+    "section": "O que é a Extensão ABNT para Quarto?",
+    "text": "O que é a Extensão ABNT para Quarto?\n            Imagine uma ferramenta que faz toda a formatação chata do seu trabalho automaticamente, enquanto você foca só em escrever. Pois é, essa extensão faz exatamente isso! Ela é como um “assistente pessoal” para quem precisa seguir as normas da ABNT.\n            Ela vem com:\n            \n            Um template LaTeX que já deixa tudo no jeito: margens certinhas, fontes adequadas, títulos e seções formatados.\n            Um estilo de citação (CSL) que cuida das referências bibliográficas, seguindo direitinho as regras da ABNT.\n            Um exemplo prático para você ver como funciona e já começar a usar sem enrolação.\n            \n            Ou seja, é praticamente um “ctrl+c, ctrl+v” da formatação ABNT. 😉"
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#erros-de-pequena-escala-50-bp",
-    "href": "posts/computacao/Inspector/index.html#erros-de-pequena-escala-50-bp",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#por-que-você-vai-adorar-essa-extensão",
     "title": "Jomaserver",
-    "section": "Erros de pequena escala (< 50 bp):",
-    "text": "Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: Troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: Pequenas deleções na montagem em relação às leituras.\n            Small Expansion: Pequenas inserções indevidas na sequência montada."
+    "section": "Por que Você Vai Adorar Essa Extensão?",
+    "text": "Por que Você Vai Adorar Essa Extensão?\n            Vou te dar alguns motivos para você ficar animado(a) com essa extensão:\n            \n            Economiza Tempo:\n            \n            Chega de perder horas ajustando margens e fontes. Com essa extensão, você clica em “renderizar” e voilà: seu documento está pronto!\n            \n            Padronização Garantida:\n            \n            Sem mais preocupação com erros de formatação. A extensão cuida de tudo para você, seguindo as normas ABNT à risca.\n            \n            Fácil de Usar:\n            \n            Não precisa ser expert em LaTeX ou Quarto. Basta seguir uns passinhos simples e pronto!\n            \n            Personalizável:\n            \n            Se você quiser fazer ajustes no template, pode personalizar à vontade. É só abrir o arquivo e mudar o que precisar."
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#disclaimer",
-    "href": "posts/computacao/Inspector/index.html#disclaimer",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#como-usar-a-extensão-passo-a-passo",
     "title": "Jomaserver",
-    "section": "Disclaimer",
-    "text": "Disclaimer\n            Antes de passarmos a montagem do Andropogon gayanus para a proxima etapa, precisávamos garantir que a sequência base estivesse o mais polida possível. Por mais que o Hifiasm seja um montador excelente e que já tivéssemos limpado contaminantes e genomas de organelas, o genoma nuclear bruto ainda possui ruídos. É aqui que entra a nossa etapa de avaliação e correção estrutural com o Inspector. A teoria baseada em pesquisa nos mostra que ignorar esse polimento afeta diretamente a anotação lá na frente."
+    "section": "Como Usar a Extensão? (Passo a Passo)",
+    "text": "Como Usar a Extensão? (Passo a Passo)\n            Vou te explicar direitinho como começar a usar essa extensão. É tão fácil que você vai se perguntar por que não fez isso antes!\n            \n            Passo 1: Baixar a Extensão\n            \n            Clone o Repositório:\n            Abra o terminal e digite:\n            bash\n            Copy\n            git clone https://github.com/juauzz/extensionABNT.git\n            Copie para o Seu Projeto:\n            \n            No seu projeto Quarto, crie uma pasta chamada _extensions (se ainda não tiver).\n            Copie a pasta extensionABNT para dentro de _extensions.\n            \n            A estrutura do seu projeto vai ficar assim:\n            Copy\n            /meu-projeto-quarto\n    /_extensions\n        /extensionABNT\n            /examples\n                - example.qmd\n            /templates\n                - abnt-templates.tex\n            - abnt.csl\n            - _extension.yml\n            - README.md\n    - meu-documento.qmd\n            \n            \n            \n            Passo 2: Configurar o Arquivo\n            No seu arquivo .qmd, adicione a extensão ao formato PDF:\n            yaml\n            Copy\n            ---\ntitle: \"Meu Documento ABNT\"\nauthor: \"Seu Nome\"\nformat:\n  pdf:\n    extensions: [extensionABNT]\n---\n            \n            \n            Passo 3: Renderizar o Documento\n            Agora é só renderizar o documento. No terminal, digite:\n            bash\n            Copy\n            quarto render meu-documento.qmd --to pdf\n            E pronto! Seu documento vai sair formatadinho, seguindo todas as normas da ABNT. 😎"
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#introdução",
-    "href": "posts/computacao/Inspector/index.html#introdução",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#exemplo-prático",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#exemplo-prático",
     "title": "Jomaserver",
-    "section": "Introdução",
-    "text": "Introdução\n            O Inspector é uma ferramenta bioinformática projetada especificamente para identificar erros estruturais e de pequena escala em montagens genômicas. A lógica por trás dele é muito sólida: o software faz o alinhamento dos nossos reads brutos (PacBio HiFi) diretamente contra a montagem tratada.\n            Ao mapear as leituras originais de volta na sequência consenso, o Inspector consegue detectar divergências e avaliar a acurácia real da montagem. Se a montagem tomou uma decisão que não tem suporte nos reads originais, o algoritmo aponta a inconsistência e a classifica."
+    "section": "Exemplo Prático",
+    "text": "Exemplo Prático\n            Se você é do tipo que gosta de ver para crer, na pasta examples tem um arquivo example.qmd que já está pronto para usar. Para renderizá-lo, é só rodar:\n            bash\n            Copy\n            quarto render examples/example.qmd --to pdf\n            Depois é só abrir o PDF e ver como ficou. Spoiler: vai ficar show de bola! 😉"
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#anatomia-dos-erros-genômicos",
-    "href": "posts/computacao/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#quer-personalizar-sem-problema",
     "title": "Jomaserver",
-    "section": "Anatomia dos Erros Genômicos",
-    "text": "Anatomia dos Erros Genômicos\n            O software classifica as inconsistências em duas categorias principais de tamanho.\n            Erros estruturais (&gt; 50 bp):\n            \n            Expansão: Trata-se da inserção de sequências na montagem que não possuem suporte nas leituras originais do sequenciador.\n            Colapso: É a omissão ou compressão de regiões genômicas na montagem (um erro comumente associado a regiões repetitivas).\n            Haplotype Switch: Consiste na alternância indevida entre alelos de diferentes haplótipos durante a formação da sequência.\n            Inversão: Ocorre quando um segmento é montado na orientação oposta à evidenciada pelos reads.\n            \n            Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: É a troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: São as pequenas deleções presentes na montagem em relação às leituras.\n            Small Expansion: Representam pequenas inserções indevidas na sequência montada."
+    "section": "Quer Personalizar? Sem Problema!",
+    "text": "Quer Personalizar? Sem Problema!\n            Se você quiser fazer ajustes no template ou no estilo de citação, é super fácil:\n            \n            Template LaTeX: O arquivo templates/abnt-templates.tex pode ser editado para mudar margens, fontes, formatação de títulos, etc.\n            Estilo de Citação: O arquivo abnt.csl define o estilo das referências. Se precisar de algo diferente, é só trocar por outro arquivo CSL."
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#pipeline-no-terminal",
-    "href": "posts/computacao/Inspector/index.html#pipeline-no-terminal",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#contribuições-são-bem-vindas",
     "title": "Jomaserver",
-    "section": "Pipeline no Terminal",
-    "text": "Pipeline no Terminal\n            Rodando direto no meu ambiente Linux, a execução do Inspector foi dividida em três etapas vitais de auditoria e edição.\n            Fase 1: Inspeção e Mapeamento primario, fornecemos ao software o nosso arquivo fasta da montagem primária limpa e as leituras originais PacBio HiFi para o alinhamento:\n            \n            Fase 2: Correção Automática (Inspector correct) O Inspector não apenas levanta os problemas, ele também resolve. Com a função “correct”, utilizamos o output da análise anterior para que o software corrija as contigs que apresentaram erros. O resultado é um arquivo fasta com essas mudanças corrigidas:\n            \n            \n            Fase 3: Avaliação Pós-correção Como boas práticas exigem validação, pegamos o arquivo já corrigido gerado na fase 2 (“contig_corrected.fa”) e passamos pelo script do Inspector novamente. O objetivo é avaliar a montagem e recalcular os índices de qualidade (QV) posteriormente à correção dos erros:"
+    "section": "Contribuições São Bem-Vindas!",
+    "text": "Contribuições São Bem-Vindas!\n            Se você gostou da extensão e quer ajudar a melhorá-la, fique à vontade para contribuir! Pode ser reportando um bug, sugerindo uma melhoria ou até enviando um código novo. É só abrir uma issue ou enviar um pull request. Todo mundo ganha quando a gente colabora, né?"
   },
   {
-    "objectID": "posts/computacao/Inspector/index.html#conclusão",
-    "href": "posts/computacao/Inspector/index.html#conclusão",
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#licença",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#licença",
+    "title": "Jomaserver",
+    "section": "Licença",
+    "text": "Licença\n            Essa extensão é open-source e está sob a MIT License. Isso significa que você pode usar, modificar e compartilhar à vontade. Só não esquece de dar os créditos, hein? 😉"
+  },
+  {
+    "objectID": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#conclusão",
+    "href": "posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html#conclusão",
     "title": "Jomaserver",
     "section": "Conclusão",
-    "text": "Conclusão\n            Esse ciclo de detectar as falhas estruturais, corrigi-las matematicamente e auditar o resultado novamente é o que garante a robustez do nosso Andropogon gayanus. Foram exatamente esses arquivos corrigidos (pri_corrigida.fa, hap1_corrigido.fa, hap2_corrigido.fa) que serviram de entrada para a avaliação definitiva no Merqury. Ao resolver os erros de expansão e colapso, garantimos que nossa montagem reflita o organismo biológico real e evitamos a propagação de artefatos pelas próximas fases do projeto."
-  },
-  {
-    "objectID": "posts/Genômica/Miniprot/index.html#contextualização",
-    "href": "posts/Genômica/Miniprot/index.html#contextualização",
-    "title": "Jomaserver",
-    "section": "Contextualização",
-    "text": "Contextualização\n            A precisão da predição gênica preditiva (ab initio) depende da qualidade das evidências biológicas fornecidas aos softwares. Porém, como devem imaginar não existem de dados de transcritos (RNA-seq) de A. gayanus, então resolvi adotar uma estratégia focada em homologia\n            Usei o proteoma de uma espécie parente próxima, o Andropogon gerardii (hexaploide), para ancorar essas evidências. Para realizar este mapeamento, a ferramenta utilizada foi Miniprot, desenhado para alinhar estruturalmente proteínas contra genomas.\n            Esse software tem à capacidade de lidar nativamente com a ocorrência de íntrons e de ignorar as regiões não codificantes com base em modelos de k-mers."
-  },
-  {
-    "objectID": "posts/Genômica/Miniprot/index.html#preparação-e-execução",
-    "href": "posts/Genômica/Miniprot/index.html#preparação-e-execução",
-    "title": "Jomaserver",
-    "section": "Preparação e Execução",
-    "text": "Preparação e Execução\n            O arquivo alvo foi a montagem primária submetida ao soft-masking.\n            Como evidência de homologia, utilizamos as sequências proteicas do genoma do A. gerardii, construídas e validadas a partir de dados de RNA-seq publicadas pelo JGI.\n            Estrategicamente, escolhemos o arquivo da isoforma principal de cada gene (primaryTranscriptOnly).\n            Esse controle evita que o mapeamento simultâneo de múltiplas isoformas alternativas de um único gene gere uma redundância matemática desnecessária.\n            Essa redundância poderia enviesar o treinamento do modelo preditor da próxima etapa."
-  },
-  {
-    "objectID": "posts/Genômica/Miniprot/index.html#pipeline-no-terminal",
-    "href": "posts/Genômica/Miniprot/index.html#pipeline-no-terminal",
-    "title": "Jomaserver",
-    "section": "Pipeline no Terminal",
-    "text": "Pipeline no Terminal\n            Rodando no servidor, o comando do Miniprot foi disparado para mapear o proteoma contra a montagem:\n            nohup miniprot -t 16 -gff pri_corrigida.fa.masked \\\n  AgerardiHAP1_783_v1.1.protein_primaryTranscriptOnly.fa \\\n  &gt; evidencias_Agerardii_miniprot.gff 2&gt; miniprot.log &"
-  },
-  {
-    "objectID": "posts/Genômica/Miniprot/index.html#resultados-e-poliploidia",
-    "href": "posts/Genômica/Miniprot/index.html#resultados-e-poliploidia",
-    "title": "Jomaserver",
-    "section": "Resultados e Poliploidia",
-    "text": "Resultados e Poliploidia\n            O sucesso e a robustez do mapeamento foram avaliados quantificando a proporção do proteoma de entrada que obteve sucesso na ancoragem homóloga contra o capim-andropogon.\n            Os dados extraídos revelam que, a partir das 89.426 isoformas únicas fornecidas (A. gerardii), o Miniprot construiu 197.414 modelos de mapeamento de mRNA estruturados no genoma-alvo.\n            A proporção matemática de saída versus entrada (~2,2 vezes) evidencia a biologia de A. gayanus por ser tetraploide.\n            O arquivo proteico utilizado (Haplótipo 1 do A. gerardii) constitui uma referência representativa colapsada, enquanto a montagem de A. gayanus preserva a natureza estrutural tetraploide.\n            A obtenção de mais de 197 mil ocorrências demonstra que, em média, o algoritmo detectou a retenção de dois a três parálogos ou alelos subgenômicos distribuídos pelos cromossomos da planta para cada gene ancestral pesquisado."
-  },
-  {
-    "objectID": "posts/Genômica/Miniprot/index.html#conservação-evolutiva",
-    "href": "posts/Genômica/Miniprot/index.html#conservação-evolutiva",
-    "title": "Jomaserver",
-    "section": "Conservação Evolutiva",
-    "text": "Conservação Evolutiva\n            Além da quantidade alta de alinhamentos, métricas de identidade interna extraídas do GFF demonstraram altos índices de conversão.\n            \n            Como podemos ver na distribuição acima, a identidade dos alinhamentos a média gira em torno de 92% de identidade.\n            Isso indica que os splice sites (junções de éxon/intron) estão altamente preservados ao longo da família Andropogoneae. A obtenção destas coordenadas serve como base para guiar a predição definitiva por ferramentas ab initio e modelagem estatística"
-  },
-  {
-    "objectID": "posts/Genômica/Miniprot/index.html#número-de-cópias-por-gene",
-    "href": "posts/Genômica/Miniprot/index.html#número-de-cópias-por-gene",
-    "title": "Jomaserver",
-    "section": "Número de cópias por gene",
-    "text": "Número de cópias por gene"
+    "text": "Conclusão\n            E aí, curtiu? A Extensão ABNT para Quarto foi feita para tirar um peso das suas costas na hora de formatar trabalhos acadêmicos. Agora você pode focar no que realmente importa: o conteúdo do seu trabalho.\n            Se você testar e gostar, me conta nos comentários! E se tiver alguma dúvida ou sugestão, é só chamar. Vamos juntos fazer essa extensão ainda melhor!\n            \n            \n            Link do Repositório:\n            GitHub - Extensão ABNT para Quarto"
   },
   {
     "objectID": "posts/computacao/Miniprot/index.html#contextualização",
@@ -1125,5 +726,229 @@
     "title": "Jomaserver",
     "section": "Número de cópias por gene",
     "text": "Número de cópias por gene"
+  },
+  {
+    "objectID": "posts/computacao/TEMA CSS/index.html#por-que-usar-css-para-personalizar-slides",
+    "href": "posts/computacao/TEMA CSS/index.html#por-que-usar-css-para-personalizar-slides",
+    "title": "Jomaserver",
+    "section": "Por que usar CSS para personalizar slides?",
+    "text": "Por que usar CSS para personalizar slides?\n            O Quarto permite a criação de apresentações usando Reveal.js, um framework poderoso para slides em HTML. O diferencial é que ele permite estilizar os slides com CSS, dando liberdade para personalizar fontes, cores, espaçamentos e muito mais. Isso significa que podemos criar apresentações únicas sem depender dos templates padrões."
+  },
+  {
+    "objectID": "posts/computacao/TEMA CSS/index.html#como-criei-meu-tema-css",
+    "href": "posts/computacao/TEMA CSS/index.html#como-criei-meu-tema-css",
+    "title": "Jomaserver",
+    "section": "Como criei meu tema CSS",
+    "text": "Como criei meu tema CSS\n            Para modificar a aparência dos slides, criei um arquivo chamado custom.css e referenciei no YAML do meu arquivo .qmd:\n            format:\n  revealjs:\n    theme: custom.css\n            Dentro do custom.css, adicionei algumas customizações essenciais:\n            /* Borda ao redor de toda a área do slide */\n.reveal {\n  border: 5px solid #333;  /* Borda externa ao redor do slide */\n  padding: 20px;  /* Espaçamento interno para a borda não ficar colada */\n  margin: 0 auto;  /* Centraliza os slides na tela */\n  box-sizing: border-box;  /* Inclui a borda no cálculo do tamanho total */\n}\n\n/* Ajuste para o slide e conteúdo */\n.reveal section {\n  font-size: 0.9em; /* Fonte pequena */\n  padding: 30px;\n  background-color: transparent;\n  color: #ddd;\n  border: none;  /* Remove qualquer borda extra do conteúdo */\n  margin-top: 20px; /* Margem superior reduzida */\n  margin-left: 10px; /* Adicionando margem à esquerda */\n}\n\n/* Adicionando borda no slide (caixa de conteúdo) */\n.reveal section {\n  border: 5px solid #333;  /* Borda fina em cada slide */\n  margin: 10px;\n  padding: 20px;\n}\n\n/* Ajuste para o título (###) */\n.reveal h3 {\n  font-size: 1.2em;\n  text-align: left;\n  padding: 20px;\n  background-color: #444;\n  color: white;\n  border-bottom: 3px solid #fff;\n  margin-top: 0;\n  margin-bottom: 20px;\n}\n            Com essas configurações, consegui um visual mais limpo e moderno para os meus slides. Claro, é possível ir muito além, adicionando imagens de fundo e até interações avançadas. Mas confesso que é bem mais dificil do que parece."
+  },
+  {
+    "objectID": "posts/computacao/TEMA CSS/index.html#conclusão",
+    "href": "posts/computacao/TEMA CSS/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Criar um tema CSS personalizado para slides no Quarto foi uma experiência interessante e me permitiu deixar minhas apresentações mais alinhadas ao meu estilo. Se você também usa o Quarto para apresentações, recomendo experimentar a personalização via CSS. É simples e faz toda a diferença!"
+  },
+  {
+    "objectID": "posts/computacao/Site NeuroTech/index.html#processo-de-criação",
+    "href": "posts/computacao/Site NeuroTech/index.html#processo-de-criação",
+    "title": "Jomaserver",
+    "section": "Processo de criação",
+    "text": "Processo de criação\n            Basicamente, precisei estrutura um site institucional para meu projeto novo de extensão, pensei muito em como poderia fazer esse processo e escolhi fazer pelo QUARTO website, visando, facilitar o processo de manutenção para outros membros do projeto, posteriormente."
+  },
+  {
+    "objectID": "posts/computacao/Site NeuroTech/index.html#por-que-quarto",
+    "href": "posts/computacao/Site NeuroTech/index.html#por-que-quarto",
+    "title": "Jomaserver",
+    "section": "Por que QUARTO?",
+    "text": "Por que QUARTO?\n            Então, escolhi usar porque ele é muito legal em facilitar a compreensão de processos HTML, porque ele transforma um .qmd em html, esse arquivo .qmd é bem simples de mexer por exemplo:\n            \n            Esse é um arquivo .qmd que basicamente só precisa de um cabeçalho. E o resto parece bastante um editor de texto normal, claro que com algumas regrinhas a mais porém, simples e tranquilas de aprender."
+  },
+  {
+    "objectID": "posts/computacao/Site NeuroTech/index.html#estrutura-do-site",
+    "href": "posts/computacao/Site NeuroTech/index.html#estrutura-do-site",
+    "title": "Jomaserver",
+    "section": "Estrutura do site",
+    "text": "Estrutura do site\n            Agora para detalhes um poucos mais técnicos, estruturei o site, com um arquivo .yml que é como se fosse a raiz de tudo mostrando os caminhos e acessos que nosso site vai ter.\n            Exemplo de arquivo .yml:\n            \n            Além desse arquivo, tem um arquivo .qmd para cada um dos acessos, ou seja das paginas que vão estar no nosso menu. Também adicionei um .css externo que isso aí é um pouquinho mais dificil e exige um conhecimento de front-end. MAASSSS, isso é só um detalhe, tive que seguir fontes e cores que demandam a empresa."
+  },
+  {
+    "objectID": "posts/computacao/Site NeuroTech/index.html#conclusão",
+    "href": "posts/computacao/Site NeuroTech/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Foi tranquilo a construção e imagino que seja tranquilo para a manutenção futura também. Vão lá dar uma olhada no site e lembre que recomendações são sempre bem-vindas.\n            Site NeuroTechBsb"
+  },
+  {
+    "objectID": "posts/filosofia/Chants of Sennaar/index.html#chants-of-sennaar",
+    "href": "posts/filosofia/Chants of Sennaar/index.html#chants-of-sennaar",
+    "title": "Jomaserver",
+    "section": "Chants of Sennaar",
+    "text": "Chants of Sennaar\n            O jogo nasce do mito da Torre de Babel: a humanidade, antes unida, é fragmentada pela diversidade de línguas. Em Chants of Sennaar, isso não é só pano de fundo: é o próprio motor da história. O jogador é um viajante anônimo que percorre uma torre, onde cada andar é habitado por um povo diferente, com cultura, estética, arquitetura e língua própria.\n            A jogabilidade é um espelho da temática:\n            Você observa pictogramas e símbolos, tenta decifrar contextos e significados. Tudo é construído por inferência, tentativa e erro, associação visual e contexto social. O jogo não coloca o jogador como herói bélico ou político, mas como mediador linguístico. O poder não vem da espada, mas da palavra. (Uma proposta bem diferente em jogos de puzzle)\n            A torre funciona em vários níveis: Histórico: Cada andar pode ser visto como um estágio cultural de sociedades com papeis e pensamentos diferentes. Político: Cada povo é fechado em si, e a linguagem funciona como barreira. Filosófico: Múltiplas visões de mundo coexistindo sem diálogo."
+  },
+  {
+    "objectID": "posts/filosofia/Chants of Sennaar/index.html#filosofia-por-trás",
+    "href": "posts/filosofia/Chants of Sennaar/index.html#filosofia-por-trás",
+    "title": "Jomaserver",
+    "section": "Filosofia por trás",
+    "text": "Filosofia por trás\n            Jogar Chants of Sennaar foi, pra mim, quase como cair num espiral de filosofia da linguagem, lugar que eu até que to um pouco acostumado. (Lógica computacional, o filme A chegada, minha amiga antropologa Theodora Santana). Não é só sobre decifrar símbolos bonitinhos em paredes, é sobre entender como a linguagem estrutura a vida em sociedade. Vou te contar como eu vi isso na prática, e depois que eu estudei alguns reviews desse jogo, separei alguns filosofos que falam um pouco sobre a filosofia da linguagem que foi aplicada nesse jogo.\n            \n            Wittgenstein\n            Em Chants of Sennaar, não existe um dicionário mágico que traduz tudo. Você aprende na marra: observando como as palavras são usadas em conversações específicas. Aí que entra Wittgenstein: “O significado de uma palavra é o seu uso na linguagem.” No jogo, você só entende que aquele símbolo significa “porta” quando alguém aponta pra porta e usa o termo. É puro jogo de linguagem regras sociais que só fazem sentido quando você entra no rolê.\n            Review do jogador tefinha gamer:\n             Sim tefinha, eu concordo!\n            Sapir-Whorf:\n            A cada andar da torre eu pensava: Essa galera vive num mundo completamente diferente só por causa da língua. E não é exagero: as crenças, os rituais, até a rigidez social de cada grupo parecem refletir diretamente na gramática e nos símbolos deles. Nesse ponto entra a hipótese Sapir-Whorf: a ideia de que a língua molda a forma como você percebe o mundo.\n            \n            De fato, é incrível os devs pensaram em toda uma lógica linguistica, embora as comunicações não se aprofundem tanto, a ponto de tratar coisas mais complexas e definições mais minunciosas. No que o jogo se propõe é de fato uma arquitutura morfólogica incrível!!!\n            Bakhtin\n            O mais louco é perceber que você nunca traduz só uma palavrinha isolada. Quando eu descobria um termo, ele vinha carregado com toda a visão de mundo daquela comunidade. É bem Bakhtin: as palavras são sempre vozes coletivas, nunca neutras. Eu não estava só montando um dicionário, estava traduzindo cosmovisões inteiras. (Isso é bizarro quando estamos na sociedade militar)"
+  },
+  {
+    "objectID": "posts/filosofia/Chants of Sennaar/index.html#conclusões",
+    "href": "posts/filosofia/Chants of Sennaar/index.html#conclusões",
+    "title": "Jomaserver",
+    "section": "Conclusões",
+    "text": "Conclusões\n            No fim das contas, Chants of Sennaar não foi só um puzzle de linguagens. Foi quase um curso intensivo de filosofia disfarçado de videogame. A cada novo símbolo decifrado, eu sentia que não estava só aprendendo palavras eu estava aprendendo também como aquela sociedade ficticia pensa e como isso é um reflexo da cultura e ações.\n            Teve também aquela sensação meio Bakhtin: nenhuma palavra que eu traduzia era neutra. Elas vinham carregadas de história, de valores, de vozes de um povo inteiro. E quando eu conseguia conectar dois grupos que antes nem se olhavam, era quase um ato político: traduzir virou resistência, virou ponte num mundo fragmentado.\n            E talvez o mais forte foi perceber que, no jogo, a verdadeira missão não era ser herói ou vilão. Era ser aquele que abre espaço pra fala, pra escuta, pra troca. No fundo, era pura racionalidade comunicativa: sem diálogo, não tem cooperação; sem cooperação, não tem futuro.\n            No fim, o jogo me deixou com essa certeza:\n            Aprender a língua do outro é, no fundo, um ato de amor. É dizer: “eu quero te entender do jeito que você é”.\n            E isso, num mundo cada vez mais polarizado e barulhento, é quase revolucionário."
+  },
+  {
+    "objectID": "posts/Genômica/Repeat Masker/index.html#repeat-masker",
+    "href": "posts/Genômica/Repeat Masker/index.html#repeat-masker",
+    "title": "Jomaserver",
+    "section": "Repeat Masker",
+    "text": "Repeat Masker\n            Primeiramente, peguei a última etapa da montagem e rodei um repeat masker nela, usando a biblioteca de repetições (Advindas da etapa do mitohifi). Basicamente, ele transforma as regiões repetitivas em letras minusculas destacando essas regiões.\n            A importancia disso é a facilitação em etapas preditivas."
+  },
+  {
+    "objectID": "posts/Genômica/Repeat Masker/index.html#miniprot",
+    "href": "posts/Genômica/Repeat Masker/index.html#miniprot",
+    "title": "Jomaserver",
+    "section": "Miniprot",
+    "text": "Miniprot\n            O miniprot serve para fazer mapeamentos de sequencias proteícas usando um arquivo de referencias. No meu caso, utilizarei um dado de RNASeq de A. gerardii contra meu fasta. Se o resultado sair como o esperado, teremos proteínas validadas na nossa montagem. Claro que tudo dependerá do resultado da run, quanto mais proteínas forem alinhadas melhor, já que, teremos uma base mais solida e evidente de A. gayanus"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#o-que-é-o-busco",
+    "href": "posts/Genômica/BUSCO/index.html#o-que-é-o-busco",
+    "title": "Jomaserver",
+    "section": "O que é o BUSCO:",
+    "text": "O que é o BUSCO:\n            BUSCO é um software que utiliza de bancos de dados contendo genes comuns do seu organismo de interesse de montagem com a família taxonomica que ele se encontra ou ordem etc. No nosso caso utilziamos o banco de dados : embryophyta_odb10. Pensamos em utilizar poales.odb porém BUSCO encontra-se fora do ar no momento, então tivemos que utilizar um banco que estava previamente instalado no nosso servidor."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-prímaria-sem-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-prímaria-sem-purge",
+    "title": "Jomaserver",
+    "section": "Montagem prímaria sem purge:",
+    "text": "Montagem prímaria sem purge:\n            Results:\n            C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%\n            1604 Complete BUSCOs (C) (of which 15 contain internal stop codons)\n            36 Complete and single-copy BUSCOs (S)\n            1568 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            5 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-primaria-com-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-primaria-com-purge",
+    "title": "Jomaserver",
+    "section": "Montagem primaria com purge:",
+    "text": "Montagem primaria com purge:\n            Results:\n            C:97.1%[S:23.2%,D:73.9%],F:0.5%,M:2.4%,n:1614,E:1.8%\n            1568 Complete BUSCOs (C) (of which 28 contain internal stop codons)\n            375 Complete and single-copy BUSCOs (S)\n            1193 Complete and duplicated BUSCOs (D)\n            8 Fragmented BUSCOs (F)\n            38 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Aqui podemos ver a primeira problemática, notem que a região duplicada pós-purge sofreu com uma diminuição notória nas regiões duplicadas. E como sabemos nossa montagem é uma representão 2n de um genoma 4n ou seja o esperado era um número ~100%, ou seja por mais que o arquivo tenha ficado compativel no tamanho o purge retirou regiões que não eram para terem sido retiradas. Portanto, adaptando essa ideia decidimos continuar com nossa montagem pré-purge porém a mesma estava com um número muito alto de contigs (fragmentos de sequencias) ~1800 contigs. Pra diminuir isso, rodei o purge com uma nova estrátegia, no caso utilizar somente do mecanismo de identificação de JUNK, já que grande parte dos contigs são fragmentos pequenos. Ele reconheceu e cortou esses contigs então decidi continuar com essa montagem que passa pelo purge mas não de regiões duplicadas e sim de JUNKS. O resultado foi o esperado, e o BUSCO mostrou um gráfico identico ao pré-purge, porém não temos mais esse número de contigs na nossa montagem."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap1-com-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap1-com-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap1 com purge:",
+    "text": "Montagem Hap1 com purge:\n            Results:\n            C:98.6%[S:20.0%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%\n            1592 Complete BUSCOs (C) (of which 16 contain internal stop codons)\n            323 Complete and single-copy BUSCOs (S)\n            1269 Complete and duplicated BUSCOs (D)\n            6 Fragmented BUSCOs (F)\n            16 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap1-sem-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap1-sem-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap1 sem purge:",
+    "text": "Montagem Hap1 sem purge:\n            Results:\n            C:98.6%[S:20.1%,D:78.6%],F:0.4%,M:1.0%,n:1614,E:1.0%\n            1592 Complete BUSCOs (C) (of which 16 contain internal stop codons)\n            324 Complete and single-copy BUSCOs (S)\n            1268 Complete and duplicated BUSCOs (D)\n            6 Fragmented BUSCOs (F)\n            16 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Podemos notar que a diferença foi minima, porém nossa montagem estava bem menor e escolhemos seguir com a pré-purge, mantive a estrategia para diminuir contigs e manter a quantidade das regiões duplicadas, foi um sucesso e escolhemos essa montagem para continuar."
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap2-sem-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap2-sem-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap2 sem purge:",
+    "text": "Montagem Hap2 sem purge:\n            Results:\n            C:99.1%[S:19.8%,D:79.2%],F:0.3%,M:0.6%,n:1614,E:1.6%\n            1599 Complete BUSCOs (C) (of which 25 contain internal stop codons)\n            320 Complete and single-copy BUSCOs (S)\n            1279 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            10 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#montagem-hap2-com-purge",
+    "href": "posts/Genômica/BUSCO/index.html#montagem-hap2-com-purge",
+    "title": "Jomaserver",
+    "section": "Montagem Hap2 com purge:",
+    "text": "Montagem Hap2 com purge:\n            Results:\n            C:99.4%[S:2.2%,D:97.1%],F:0.3%,M:0.3%,n:1614,E:0.9%\n            1604 Complete BUSCOs (C) (of which 15 contain internal stop codons)\n            36 Complete and single-copy BUSCOs (S)\n            1568 Complete and duplicated BUSCOs (D)\n            5 Fragmented BUSCOs (F)\n            5 Missing BUSCOs (M)\n            1614 Total BUSCO groups searched\n            Notem que a qualidade foi a mesma, essa montagem está execelente, baixo numero de contigs, alta região duplicada, essa montagem advem do HIFIASM diretamente, e não passou por nem um tipo de melhora na qualidade de montagem. Seguimos com ela!"
+  },
+  {
+    "objectID": "posts/Genômica/BUSCO/index.html#conclusões",
+    "href": "posts/Genômica/BUSCO/index.html#conclusões",
+    "title": "Jomaserver",
+    "section": "Conclusões:",
+    "text": "Conclusões:\n            Percebemos que nossa montagem primária pós-purge sofreu uma queda significativa em regiões duplicadas, o esperado era algo próximo do total, já que nossa montagem é uma representação diploíde de um genoma tetraplóide, ou seja, todas as regiões genômicas estão duplicadas, o percentual de 73,9 não condiz com o resultado esperado. Portanto, decidimos continuar com a montagem primária apenas sem os junks identificados no purge e seguir também com as montagens hap1 e hap2. (sem junks)."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#disclaimer",
+    "href": "posts/Genômica/Inspector/index.html#disclaimer",
+    "title": "Jomaserver",
+    "section": "Disclaimer",
+    "text": "Disclaimer\n            Antes de passarmos a montagem do Andropogon gayanus para a proxima etapa, precisávamos garantir que a sequência base estivesse o mais polida possível. Por mais que o Hifiasm seja um montador excelente e que já tivéssemos limpado contaminantes e genomas de organelas, o genoma nuclear bruto ainda possui ruídos. É aqui que entra a nossa etapa de avaliação e correção estrutural com o Inspector. A teoria baseada em pesquisa nos mostra que ignorar esse polimento afeta diretamente a anotação lá na frente."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#introdução",
+    "href": "posts/Genômica/Inspector/index.html#introdução",
+    "title": "Jomaserver",
+    "section": "Introdução",
+    "text": "Introdução\n            O Inspector é uma ferramenta bioinformática projetada especificamente para identificar erros estruturais e de pequena escala em montagens genômicas. A lógica por trás dele é muito sólida: o software faz o alinhamento dos nossos reads brutos (PacBio HiFi) diretamente contra a montagem tratada.\n            Ao mapear as leituras originais de volta na sequência consenso, o Inspector consegue detectar divergências e avaliar a acurácia real da montagem. Se a montagem tomou uma decisão que não tem suporte nos reads originais, o algoritmo aponta a inconsistência e a classifica."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "href": "posts/Genômica/Inspector/index.html#anatomia-dos-erros-genômicos",
+    "title": "Jomaserver",
+    "section": "Anatomia dos Erros Genômicos",
+    "text": "Anatomia dos Erros Genômicos\n            O software classifica as inconsistências em duas categorias principais de tamanho.\n            Erros estruturais (&gt; 50 bp):\n            \n            Expansão: Trata-se da inserção de sequências na montagem que não possuem suporte nas leituras originais do sequenciador.\n            Colapso: É a omissão ou compressão de regiões genômicas na montagem (um erro comumente associado a regiões repetitivas).\n            Haplotype Switch: Consiste na alternância indevida entre alelos de diferentes haplótipos durante a formação da sequência.\n            Inversão: Ocorre quando um segmento é montado na orientação oposta à evidenciada pelos reads.\n            \n            Erros de pequena escala (&lt; 50 bp):\n            \n            Base Substitution: É a troca incorreta de um nucleotídeo (mismatch).\n            Small Collapse: São as pequenas deleções presentes na montagem em relação às leituras.\n            Small Expansion: Representam pequenas inserções indevidas na sequência montada."
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Inspector/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando direto no meu ambiente Linux, a execução do Inspector foi dividida em três etapas vitais de auditoria e edição.\n            Fase 1: Inspeção e Mapeamento primario, fornecemos ao software o nosso arquivo fasta da montagem primária limpa e as leituras originais PacBio HiFi para o alinhamento:\n            \n            Fase 2: Correção Automática (Inspector correct) O Inspector não apenas levanta os problemas, ele também resolve. Com a função “correct”, utilizamos o output da análise anterior para que o software corrija as contigs que apresentaram erros. O resultado é um arquivo fasta com essas mudanças corrigidas:\n            \n            \n            Fase 3: Avaliação Pós-correção Como boas práticas exigem validação, pegamos o arquivo já corrigido gerado na fase 2 (“contig_corrected.fa”) e passamos pelo script do Inspector novamente. O objetivo é avaliar a montagem e recalcular os índices de qualidade (QV) posteriormente à correção dos erros:"
+  },
+  {
+    "objectID": "posts/Genômica/Inspector/index.html#conclusão",
+    "href": "posts/Genômica/Inspector/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Esse ciclo de detectar as falhas estruturais, corrigi-las matematicamente e auditar o resultado novamente é o que garante a robustez do nosso Andropogon gayanus. Foram exatamente esses arquivos corrigidos (pri_corrigida.fa, hap1_corrigido.fa, hap2_corrigido.fa) que serviram de entrada para a avaliação definitiva no Merqury. Ao resolver os erros de expansão e colapso, garantimos que nossa montagem reflita o organismo biológico real e evitamos a propagação de artefatos pelas próximas fases do projeto."
+  },
+  {
+    "objectID": "posts/linux/Anotações Linux/index.html#introdução",
+    "href": "posts/linux/Anotações Linux/index.html#introdução",
+    "title": "Jomaserver",
+    "section": "Introdução",
+    "text": "Introdução\n            Recentemente me foi passado uma serie de exercícios, para aumentar minha afinidade com o bash do linux. Nesses exercicios, tive que ter noções basicas de grep, ls, cd além de rodar executaveis .sh, para comandos como blastp, blastn. Afim de fazer alinhamentos e comparações de proximidade entre a sequencia observada com o banco de dados."
+  },
+  {
+    "objectID": "posts/linux/Anotações Linux/index.html#nohup",
+    "href": "posts/linux/Anotações Linux/index.html#nohup",
+    "title": "Jomaserver",
+    "section": "-nohup:",
+    "text": "-nohup:\n            Faz com que o executavel seja rodado pela rede local, caso tenha algum problema com a máquina o executavel ainda vai ser rodado e entregará resultados."
+  },
+  {
+    "objectID": "posts/linux/Anotações Linux/index.html#sh",
+    "href": "posts/linux/Anotações Linux/index.html#sh",
+    "title": "Jomaserver",
+    "section": ".sh:",
+    "text": ".sh:\n            Esse sh faz com que seja possível, outras pessoas executarem seu codigo, geralmente aqui no LBI (Laboratório de Bioinformática) as pessoas usam o RunMe. Facilitando a reprodução do seu código, o .sh no final demonstra que é um codígo de bash. A presença desse arquivo nos diretorios torna possivel, a reanalise dos dados."
+  },
+  {
+    "objectID": "posts/linux/Anotações Linux/index.html#awk",
+    "href": "posts/linux/Anotações Linux/index.html#awk",
+    "title": "Jomaserver",
+    "section": "awk",
+    "text": "awk\n            Awk foi o comando mais utilitario que eu conheci hoje ele funciona para listar dados, podendo ser representado pela preferencia do usuario, posso olhar só os querys com mais de 80% de semelhança advindos do resultado do meu blast. No awk você pode analisar cada coluna separadamente além de poder ordenar da maneira que você quiser. Além de remover duplicatas e poder contar os resultados."
+  },
+  {
+    "objectID": "posts/linux/Anotações Linux/index.html#grep",
+    "href": "posts/linux/Anotações Linux/index.html#grep",
+    "title": "Jomaserver",
+    "section": "grep",
+    "text": "grep\n            grep eu já conhecia, mas aprendi algumas funcionalidades novas, grep basicamente é um finder eu procuro no meu arquivo, podendo remover algo da lista, por exemplo tem uma proteína X que eu to interessado posso mapear aonde ela aparece na sequencia, e se eu usar grep -v posso retirar coisas dessa lista também."
+  },
+  {
+    "objectID": "posts/linux/Anotações Linux/index.html#conclusão",
+    "href": "posts/linux/Anotações Linux/index.html#conclusão",
+    "title": "Jomaserver",
+    "section": "Conclusão",
+    "text": "Conclusão\n            Então gente, esses comandos foram os que eu mais utilizei até o momento, sinto que tenho muita coisa pra aprender em noções de terminal. Mas to animado, sinto que já me familiarizei bastante nos meus 1 ano de uso do sistema operacional. E quando converso com pessoas que utilizam a muitos anos, vejo que é sempre possivel facilitar os processos tornando eles mais rapidos, tudo é uma questão de prática. Ao longo do meu projeto vou atualizando coisas que vou aprendendo e como a bioinformática ajuda nesses processos.\n            Obrigado gente!"
+  },
+  {
+    "objectID": "posts/linux/Minhas primeiras experiencias com Linux/index.html#explorando-o-linux-primeiras-impressões",
+    "href": "posts/linux/Minhas primeiras experiencias com Linux/index.html#explorando-o-linux-primeiras-impressões",
+    "title": "Jomaserver",
+    "section": "Explorando o Linux: Primeiras Impressões",
+    "text": "Explorando o Linux: Primeiras Impressões\n            Recentemente, comecei a usar Linux e escolhi o Ubuntu como minha primeira distribuição. Foi uma mudança empolgante! Desde a instalação até a configuração inicial, fiquei impressionado com a simplicidade e a flexibilidade do sistema. A interface é limpa, responsiva e, para quem vem do Windows, a adaptação foi bem tranquila.\n            \n            O Poder do Terminal: Instalação Rápida de Ferramentas\n            Algo que me chamou muito a atenção foi a praticidade de instalar pacotes e programas diretamente pelo terminal. Com poucos comandos, eu conseguia instalar e configurar o que precisava de maneira rápida e eficiente.\n            Aqui estão algumas ferramentas que explorei:\n            \n            Docker 🐳: Facilita a criação e gerenciamento de containers, essencial para desenvolvimento e testes.\n            Conda 🐍: Um gerenciador de pacotes e ambientes que ajudou muito na organização dos meus projetos de bioinformática.\n            Git 🔧: Indispensável para controle de versão e gerenciamento dos meus repositórios.\n            \n            A instalação foi bem simples:\n            sudo apt update && sudo apt upgrade -y\nsudo apt install docker.io git\n            E para o Conda:\n            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\nbash Miniconda3-latest-Linux-x86_64.sh\n            \n            \n            Fluxo de Trabalho\n            Outro ponto que me agradou bastante foi a possibilidade de personalizar o ambiente de acordo com as minhas necessidades. Comecei a usar o terminal Kitty (tem um post no blog que relata melhor minha experiencia até o momento com o terminal), que oferece uma interface mais rápida e personalizável. Além disso, pude ajustar algumas configurações no .bashrc para tornar minha experiência ainda melhor.\n            post Kitty: Terminal Kitty e suas possibilidades\n            \n            \n            Conclusão\n            Explorar o Ubuntu tem sido uma experiência cheia de aprendizados. Cada novo comando e nova ferramenta que descubro torna o sistema ainda legal e adaptável às minhas necessidades. O que mais me surpreende é a sensação de controle e liberdade que o Linux proporciona. Saber que posso modificar praticamente qualquer aspecto do meu ambiente de trabalho deixa ainda mais empolgante."
   }
 ]
