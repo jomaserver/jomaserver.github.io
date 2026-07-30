@@ -950,5 +950,173 @@
     "title": "Jomaserver",
     "section": "Explorando o Linux: Primeiras Impressões",
     "text": "Explorando o Linux: Primeiras Impressões\n            Recentemente, comecei a usar Linux e escolhi o Ubuntu como minha primeira distribuição. Foi uma mudança empolgante! Desde a instalação até a configuração inicial, fiquei impressionado com a simplicidade e a flexibilidade do sistema. A interface é limpa, responsiva e, para quem vem do Windows, a adaptação foi bem tranquila.\n            \n            O Poder do Terminal: Instalação Rápida de Ferramentas\n            Algo que me chamou muito a atenção foi a praticidade de instalar pacotes e programas diretamente pelo terminal. Com poucos comandos, eu conseguia instalar e configurar o que precisava de maneira rápida e eficiente.\n            Aqui estão algumas ferramentas que explorei:\n            \n            Docker 🐳: Facilita a criação e gerenciamento de containers, essencial para desenvolvimento e testes.\n            Conda 🐍: Um gerenciador de pacotes e ambientes que ajudou muito na organização dos meus projetos de bioinformática.\n            Git 🔧: Indispensável para controle de versão e gerenciamento dos meus repositórios.\n            \n            A instalação foi bem simples:\n            sudo apt update && sudo apt upgrade -y\nsudo apt install docker.io git\n            E para o Conda:\n            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\nbash Miniconda3-latest-Linux-x86_64.sh\n            \n            \n            Fluxo de Trabalho\n            Outro ponto que me agradou bastante foi a possibilidade de personalizar o ambiente de acordo com as minhas necessidades. Comecei a usar o terminal Kitty (tem um post no blog que relata melhor minha experiencia até o momento com o terminal), que oferece uma interface mais rápida e personalizável. Além disso, pude ajustar algumas configurações no .bashrc para tornar minha experiência ainda melhor.\n            post Kitty: Terminal Kitty e suas possibilidades\n            \n            \n            Conclusão\n            Explorar o Ubuntu tem sido uma experiência cheia de aprendizados. Cada novo comando e nova ferramenta que descubro torna o sistema ainda legal e adaptável às minhas necessidades. O que mais me surpreende é a sensação de controle e liberdade que o Linux proporciona. Saber que posso modificar praticamente qualquer aspecto do meu ambiente de trabalho deixa ainda mais empolgante."
+  },
+  {
+    "objectID": "posts/Genômica/Annevo/index.html#preparação-e-execução",
+    "href": "posts/Genômica/Annevo/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            A execução do ANNEVO foi alimentada com o mesmo arquivo fasta da montagem primária submetido ao soft-masking.\n            Utilizei o modelo treinado para Magnoliopsida (angiospermas), configurado tanto no carregamento do arquivo do modelo (-m) quanto na flag de definição de linhagem (-l).\n            Para garantir um tempo de execução viável e otimizar o uso do servidor, aloquei 16 threads e configurei o processamento em lotes de 32 sequências."
+  },
+  {
+    "objectID": "posts/Genômica/Annevo/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Annevo/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            O comando disparado no servidor foi o seguinte:\n            python annotation.py \\\n  -g /st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/andropogon.primary.repeatmasked.fa \\\n  -m saved_model/ANNEVO_Magnoliopsida.pt \\\n  -l Magnoliopsida \\\n  -o ../annevo_andropogon_primary.gff3 \\\n  --batch_size 32 \\\n  -t 16 \\\n  --show_log"
+  },
+  {
+    "objectID": "posts/Genômica/Annevo/index.html#resultados",
+    "href": "posts/Genômica/Annevo/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            A flag --show_log facilitou o monitoramento do progresso preditivo diretamente no terminal sem precisar de arquivos externos de log.\n            Ao final da execução, o software gerou o arquivo annevo_andropogon_primary.gff3.\n            Com o proteoma ancorado via Miniprot e as três predições ab initio (Tiberius, Helixer e ANNEVO) finalizadas, temos os insumos estruturais prontos para a modelagem estatística combinada."
+  },
+  {
+    "objectID": "posts/Genômica/Annevo/index.html#contextualização",
+    "href": "posts/Genômica/Annevo/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Para complementar e dar ainda mais robustez às nossas predições ab initio, adicionei o ANNEVO à pipeline.\n            Assim como o Tiberius e o Helixer, ele é uma ferramenta baseada em Deep Learning que utiliza modelos pré-treinados para realizar a identificação das regiões codificantes.\n            Ter uma terceira camada de predição rodando em paralelo nos dá uma base comparativa muito mais confiável para a futura etapa de consenso no EvidenceModeler."
+  },
+  {
+    "objectID": "posts/Genômica/Helixer/index.html#preparação-e-execução",
+    "href": "posts/Genômica/Helixer/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            Acessei a máquina pardal do laboratório via SSH, que possui o hardware gráfico necessário.\n            Para evitar conflitos de dependências, instanciei um container Docker mapeando o diretório do nosso projeto para dentro do container (/my_data).\n            O primeiro passo interno foi rodar o script de fetch para baixar os modelos treinados nativos.\n            Em seguida, executei o software definindo a linhagem evolutiva como land_plant (plantas terrestres)."
+  },
+  {
+    "objectID": "posts/Genômica/Helixer/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Helixer/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Os comandos executados na máquina pardal foram:\n            ssh pardal\n\n# Iniciando o container com suporte a GPU\nsudo docker run --gpus all -it --rm \\\n  -v /st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels:/my_data \\\n  gglyptodon/helixer-docker:latest\n            Dentro do container:\n            # Baixando modelos \nfetch_helixer_models.py\n\n# Rodando a predicao genica\nHelixer.py \\\n  --lineage land_plant \\\n  --fasta-path /my_data/tiberius/andropogon.primary.repeatmasked.fa \\\n  --gff-output-path /my_data/helixer/helixer.andropogon.gff"
+  },
+  {
+    "objectID": "posts/Genômica/Helixer/index.html#resultados",
+    "href": "posts/Genômica/Helixer/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            O uso das GPUs acelerou drasticamente o tempo de inferência do modelo sobre as sequências mascaradas.\n            O Helixer calculou as coordenadas dos genes preditos e nos devolveu o arquivo final helixer.andropogon.gff.\n            Com isso, já temos duas linhas independentes de evidências ab initio geradas."
+  },
+  {
+    "objectID": "posts/Genômica/Helixer/index.html#contextualização",
+    "href": "posts/Genômica/Helixer/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Outro software de predição ab initio de última geração que decidimos incluir na pipeline do capim-andropogon foi o Helixer.\n            Essa ferramenta é extremamente pesada computacionalmente, mas altamente precisa por utilizar modelos complexos de redes neurais.\n            Para dar conta do processamento, a estratégia foi rodar o Helixer otimizado para GPU."
+  },
+  {
+    "objectID": "posts/Genômica/Tiberius/index.html#contextualização",
+    "href": "posts/Genômica/Tiberius/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Com o genoma mascarado e as evidências homólogas ancoradas, iniciamos a predição gênica ab initio.\n            Diferente do mapeamento por homologia que detalhei no post sobre o Miniprot, as ferramentas ab initio utilizam Deep Learning para identificar as assinaturas intrínsecas de genes diretamente na sequência de DNA.\n            O primeiro preditor baseado em redes neurais que rodamos foi o Tiberius."
+  },
+  {
+    "objectID": "posts/Genômica/Tiberius/index.html#preparação-e-execução",
+    "href": "posts/Genômica/Tiberius/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            Como a anotação genômica exige muito processamento, rodei esse processo ativando o ambiente virtual específico do software direto no servidor.\n            O arquivo de entrada foi a nossa montagem primária que passou pelo soft-masking (andropogon.primary.repeatmasked.fa).\n            Um ponto crucial aqui foi utilizar o parâmetro --model_cfg monocotyledonae. Isso ajusta o modelo estatístico especificamente para monocotiledôneas, o que é essencial já que estamos trabalhando com uma gramínea."
+  },
+  {
+    "objectID": "posts/Genômica/Tiberius/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Tiberius/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando no servidor, os comandos para ativar o ambiente e disparar o Tiberius foram:\n            source /lbi/acgt/bioinfo/GENE_FINDING/Tiberius/v2.0.6/Tiberius/tiberius_env/bin/activate\n\npython3 /lbi/acgt/bioinfo/GENE_FINDING/Tiberius/v2.0.6/Tiberius/tiberius.py \\\n  --singularity \\\n  --genome andropogon.primary.repeatmasked.fa \\\n  --out tiberius.andropogon.primary.gff \\\n  --model_cfg monocotyledonae \\\n  --batch_size 4"
+  },
+  {
+    "objectID": "posts/Genômica/Tiberius/index.html#resultados",
+    "href": "posts/Genômica/Tiberius/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Acompanhando os logs da run, o software leu as 160 sequências do genoma e as dividiu de forma otimizada em 21 grupos.\n            Ele realiza as predições iniciais em blocos (chunks) de tamanho 200070 e corrige os erros iterativamente buscando mismatches.\n            O output gerou o arquivo de anotação tiberius.andropogon.primary.gff. Obter essas evidências será fundamental para as próximas etapas de consenso."
+  },
+  {
+    "objectID": "posts/computacao/Annevo/index.html#contextualização",
+    "href": "posts/computacao/Annevo/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Para complementar e dar ainda mais robustez às nossas predições ab initio, adicionei o ANNEVO à pipeline.\n            Assim como o Tiberius e o Helixer, ele é uma ferramenta baseada em Deep Learning que utiliza modelos pré-treinados para realizar a identificação das regiões codificantes.\n            Ter uma terceira camada de predição rodando em paralelo nos dá uma base comparativa muito mais confiável para a futura etapa de consenso no EvidenceModeler."
+  },
+  {
+    "objectID": "posts/computacao/Annevo/index.html#preparação-e-execução",
+    "href": "posts/computacao/Annevo/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            A execução do ANNEVO foi alimentada com o mesmo arquivo fasta da montagem primária submetido ao soft-masking.\n            Utilizei o modelo treinado para Magnoliopsida (angiospermas), configurado tanto no carregamento do arquivo do modelo (-m) quanto na flag de definição de linhagem (-l).\n            Para garantir um tempo de execução viável e otimizar o uso do servidor, aloquei 16 threads e configurei o processamento em lotes de 32 sequências."
+  },
+  {
+    "objectID": "posts/computacao/Annevo/index.html#pipeline-no-terminal",
+    "href": "posts/computacao/Annevo/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            O comando disparado no servidor foi o seguinte:\n            python annotation.py \\\n  -g /st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/andropogon.primary.repeatmasked.fa \\\n  -m saved_model/ANNEVO_Magnoliopsida.pt \\\n  -l Magnoliopsida \\\n  -o ../annevo_andropogon_primary.gff3 \\\n  --batch_size 32 \\\n  -t 16 \\\n  --show_log"
+  },
+  {
+    "objectID": "posts/computacao/Annevo/index.html#resultados",
+    "href": "posts/computacao/Annevo/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            A flag --show_log facilitou o monitoramento do progresso preditivo diretamente no terminal sem precisar de arquivos externos de log.\n            Ao final da execução, o software gerou o arquivo annevo_andropogon_primary.gff3.\n            Com o proteoma ancorado via Miniprot e as três predições ab initio (Tiberius, Helixer e ANNEVO) finalizadas, temos os insumos estruturais prontos para a modelagem estatística combinada."
+  },
+  {
+    "objectID": "posts/computacao/Helixer/index.html#contextualização",
+    "href": "posts/computacao/Helixer/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Outro software de predição ab initio de última geração que decidimos incluir na pipeline do capim-andropogon foi o Helixer.\n            Essa ferramenta é extremamente pesada computacionalmente, mas altamente precisa por utilizar modelos complexos de redes neurais.\n            Para dar conta do processamento, a estratégia foi rodar o Helixer otimizado para GPU."
+  },
+  {
+    "objectID": "posts/computacao/Helixer/index.html#preparação-e-execução",
+    "href": "posts/computacao/Helixer/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            Acessei a máquina pardal do laboratório via SSH, que possui o hardware gráfico necessário.\n            Para evitar conflitos de dependências, instanciei um container Docker mapeando o diretório do nosso projeto para dentro do container (/my_data).\n            O primeiro passo interno foi rodar o script de fetch para baixar os modelos treinados nativos.\n            Em seguida, executei o software definindo a linhagem evolutiva como land_plant (plantas terrestres)."
+  },
+  {
+    "objectID": "posts/computacao/Helixer/index.html#pipeline-no-terminal",
+    "href": "posts/computacao/Helixer/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Os comandos executados na máquina pardal foram:\n            ssh pardal\n\n# Iniciando o container com suporte a GPU\nsudo docker run --gpus all -it --rm \\\n  -v /st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels:/my_data \\\n  gglyptodon/helixer-docker:latest\n            Dentro do container:\n            # Baixando modelos \nfetch_helixer_models.py\n\n# Rodando a predicao genica\nHelixer.py \\\n  --lineage land_plant \\\n  --fasta-path /my_data/tiberius/andropogon.primary.repeatmasked.fa \\\n  --gff-output-path /my_data/helixer/helixer.andropogon.gff"
+  },
+  {
+    "objectID": "posts/computacao/Helixer/index.html#resultados",
+    "href": "posts/computacao/Helixer/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            O uso das GPUs acelerou drasticamente o tempo de inferência do modelo sobre as sequências mascaradas.\n            O Helixer calculou as coordenadas dos genes preditos e nos devolveu o arquivo final helixer.andropogon.gff.\n            Com isso, já temos duas linhas independentes de evidências ab initio geradas."
+  },
+  {
+    "objectID": "posts/computacao/Tiberius/index.html#contextualização",
+    "href": "posts/computacao/Tiberius/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Com o genoma mascarado e as evidências homólogas ancoradas, iniciamos a predição gênica ab initio.\n            Diferente do mapeamento por homologia que detalhei no post sobre o Miniprot, as ferramentas ab initio utilizam Deep Learning para identificar as assinaturas intrínsecas de genes diretamente na sequência de DNA.\n            O primeiro preditor baseado em redes neurais que rodamos foi o Tiberius."
+  },
+  {
+    "objectID": "posts/computacao/Tiberius/index.html#preparação-e-execução",
+    "href": "posts/computacao/Tiberius/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            Como a anotação genômica exige muito processamento, rodei esse processo ativando o ambiente virtual específico do software direto no servidor.\n            O arquivo de entrada foi a nossa montagem primária que passou pelo soft-masking (andropogon.primary.repeatmasked.fa).\n            Um ponto crucial aqui foi utilizar o parâmetro --model_cfg monocotyledonae. Isso ajusta o modelo estatístico especificamente para monocotiledôneas, o que é essencial já que estamos trabalhando com uma gramínea."
+  },
+  {
+    "objectID": "posts/computacao/Tiberius/index.html#pipeline-no-terminal",
+    "href": "posts/computacao/Tiberius/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando no servidor, os comandos para ativar o ambiente e disparar o Tiberius foram:\n            source /lbi/acgt/bioinfo/GENE_FINDING/Tiberius/v2.0.6/Tiberius/tiberius_env/bin/activate\n\npython3 /lbi/acgt/bioinfo/GENE_FINDING/Tiberius/v2.0.6/Tiberius/tiberius.py \\\n  --singularity \\\n  --genome andropogon.primary.repeatmasked.fa \\\n  --out tiberius.andropogon.primary.gff \\\n  --model_cfg monocotyledonae \\\n  --batch_size 4"
+  },
+  {
+    "objectID": "posts/computacao/Tiberius/index.html#resultados",
+    "href": "posts/computacao/Tiberius/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Acompanhando os logs da run, o software leu as 160 sequências do genoma e as dividiu de forma otimizada em 21 grupos.\n            Ele realiza as predições iniciais em blocos (chunks) de tamanho 200070 e corrige os erros iterativamente buscando mismatches.\n            O output gerou o arquivo de anotação tiberius.andropogon.primary.gff. Obter essas evidências será fundamental para as próximas etapas de consenso."
   }
 ]

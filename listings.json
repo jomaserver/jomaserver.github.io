@@ -82,6 +82,9 @@
   {
     "listing": "/computacao.html",
     "items": [
+      "/posts/computacao/Annevo/index.html",
+      "/posts/computacao/Helixer/index.html",
+      "/posts/computacao/Tiberius/index.html",
       "/posts/computacao/Miniprot/index.html",
       "/posts/computacao/Merqury/index.html",
       "/posts/computacao/Inspector/index.html",
@@ -116,6 +119,9 @@
   {
     "listing": "/genomic.html",
     "items": [
+      "/posts/Genômica/Annevo/index.html",
+      "/posts/Genômica/Helixer/index.html",
+      "/posts/Genômica/Tiberius/index.html",
       "/posts/Genômica/Miniprot/index.html",
       "/posts/Genômica/Repeat Masker/index.html",
       "/posts/Genômica/Merqury/index.html",
@@ -216,6 +222,30 @@
   },
   {
     "listing": "/posts/linux/Minhas primeiras experiencias com Linux/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Genômica/Annevo/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Genômica/Helixer/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Genômica/Tiberius/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/Annevo/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/Helixer/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/Tiberius/index.html",
     "items": []
   }
 ]
