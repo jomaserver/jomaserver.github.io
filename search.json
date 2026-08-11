@@ -1118,5 +1118,40 @@
     "title": "Jomaserver",
     "section": "Resultados",
     "text": "Resultados\n            Acompanhando os logs da run, o software leu as 160 sequências do genoma e as dividiu de forma otimizada em 21 grupos.\n            Ele realiza as predições iniciais em blocos (chunks) de tamanho 200070 e corrige os erros iterativamente buscando mismatches.\n            O output gerou o arquivo de anotação tiberius.andropogon.primary.gff. Obter essas evidências será fundamental para as próximas etapas de consenso."
+  },
+  {
+    "objectID": "posts/Genômica/Braker/index.html#contextualização",
+    "href": "posts/Genômica/Braker/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Braker é uma ferramenta de predição gênicâ, que utiliza dados de transcriptoma da referência próxima, no nosso caso a especie hexaploide (A. gerardii)\n            Braker3 é uma ferramenta estatística que utiliza da modelagem HMM (Modelo oculto de mmarkov) para identificação de regiões codantes."
+  },
+  {
+    "objectID": "posts/Genômica/Braker/index.html#braker4",
+    "href": "posts/Genômica/Braker/index.html#braker4",
+    "title": "Jomaserver",
+    "section": "Braker4",
+    "text": "Braker4\n            Recentemente, a equipe desenvolvedora do software, lançou uma versão otimizada do braker, feito com snakemade.\n            Porém por conflitos no ambiente conda, tive que roda a versão anterior “Braker3”"
+  },
+  {
+    "objectID": "posts/Genômica/Braker/index.html#preparação-e-execução",
+    "href": "posts/Genômica/Braker/index.html#preparação-e-execução",
+    "title": "Jomaserver",
+    "section": "Preparação e Execução",
+    "text": "Preparação e Execução\n            Primeiramente, precisamos separar o arquivo fasta com as regiões de elementos transponiveis. (Softmaskedd)"
+  },
+  {
+    "objectID": "posts/Genômica/Braker/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Braker/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Rodando no servidor, os comandos para ativar o ambiente e disparar o Braker3 foram:\n            \nc3 #ativando o ambiente\nconda activate Braker3 \n            \n\npython3 /lbi/acgt/bioinfo/GENE_FINDING/Tiberius/v2.0.6/Tiberius/tiberius.py \\\n  --singularity \\\n  --genome andropogon.primary.repeatmasked.fa \\\n  --out tiberius.andropogon.primary.gff \\\n  --model_cfg monocotyledonae \\\n  --batch_size 4"
+  },
+  {
+    "objectID": "posts/Genômica/Braker/index.html#resultados",
+    "href": "posts/Genômica/Braker/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Os resultados ajudaram a alimentar o software EVM (Evidence modeler) que utilizará os arquivos .gff e .gff3 para embasar a modelagem."
   }
 ]

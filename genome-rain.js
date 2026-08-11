@@ -68,11 +68,7 @@
   const lines = [
       '$ source ~/.bashrc && ./awaken.sh --user jomaserver',
       '[ INFO ] Somos o próprio universo tentando compreender a si mesmo.',
-      '[INFO] Somos um arranjo único de uma memória que é coletiva.',
-      '[ OK ] Conformações estruturais adaptadas.',
-      '[ OK ] Avaliando completude dos dados',
-      '[Jomaserver] Compilação autorizada.',
-      '> bem-vindo de volta, Jomas.'
+      '> bem-vindo de volta.'
     ];
     let li = 0, ci = 0;
     function typeStep() {
