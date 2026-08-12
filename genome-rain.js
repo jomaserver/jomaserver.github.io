@@ -67,7 +67,7 @@
 
   const lines = [
       '$ source ~/.bashrc && ./awaken.sh --user jomaserver',
-      '[ INFO ] Somos o próprio universo tentando compreender a si mesmo.',
+      '[ return ] Solve et Coagula',
       '> bem-vindo de volta.'
     ];
     let li = 0, ci = 0;
