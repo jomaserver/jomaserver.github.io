@@ -507,8 +507,8 @@
     "objectID": "genomic.html#bem-vindo-à-categoria-gênomica",
     "href": "genomic.html#bem-vindo-à-categoria-gênomica",
     "title": "Jomaserver",
-    "section": "Bem-vindo à categoria Gênomica ",
-    "text": "Bem-vindo à categoria Gênomica \n            Cada vez me apaixonando mais pela gênomica (pode ser vicio em dopamina, toda vez que o software roda da maneira esperada). Acredito que a genômica é uma maneira de tentar entender como a vida funciona de maneira minunciosa. Analisando não só o que difere todo individuo mas também o que une todos os seres. DNA é a molécula da informação, e destrinchar como essa informação é com certeza, muito esplêndido."
+    "section": "Bem-vindo à categoria Gênomica",
+    "text": "Bem-vindo à categoria Gênomica\n            \n            Acredito que a genômica é uma maneira de tentar entender como a vida funciona de maneira minunciosa. Analisando não só o que difere todo individuo mas também o que une todos os seres.\n            “A beleza da dupla hélice é que você explica uma coisa, e isso explica absolutamente tudo.”"
   },
   {
     "objectID": "neurociencia.html#bem-vindo-à-categoria-neurociência",
@@ -1153,5 +1153,68 @@
     "title": "Jomaserver",
     "section": "Resultados",
     "text": "Resultados\n            Os resultados ajudaram a alimentar o software EVM (Evidence modeler) que utilizará os arquivos .gff e .gff3 para embasar a modelagem."
+  },
+  {
+    "objectID": "posts/computacao/Braker3/index.html#contextualização",
+    "href": "posts/computacao/Braker3/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Com as predições ab initio geradas pelo Tiberius em mãos, o próximo passo da anotação foi incorporar evidências biológicas reais usando o pipeline do BRAKER.\n            Diferente de preditores baseados unicamente em redes neurais, o BRAKER automatiza o treinamento de modelos estatísticos clássicos (como GeneMark e Augustus) integrando alinhamentos de sequências externas. Como não temos dados de RNA-seq do nosso Andropogon, rodamos a ferramenta no modo EP (Evolutionary-based Protein).\n            Nesse modo, utilizamos o proteoma de uma espécie parente (A. gerardii) como evidência. O programa alinha essas proteínas no nosso genoma para gerar dicas (hints) precisas das regiões codificantes e treinar os algoritmos."
+  },
+  {
+    "objectID": "posts/computacao/Braker3/index.html#o-problema-com-o-genemark-e-o-prothint",
+    "href": "posts/computacao/Braker3/index.html#o-problema-com-o-genemark-e-o-prothint",
+    "title": "Jomaserver",
+    "section": "O problema com o GeneMark e o ProtHint",
+    "text": "O problema com o GeneMark e o ProtHint\n            Rodar o BRAKER não foi trivial. Ao contrário de pipelines modernos resolvidos com um simples conda install, ele depende de softwares de terceiros com licenciamento rigoroso e configurações manuais chatas.\n            O primeiro grande gargalo foi o GeneMark-EP+. O BRAKER depende dele no modo de proteínas, mas por restrições de licença acadêmica, ele não é distribuído nos repositórios globais do Conda. O script quebrou logo de cara acusando falta do $GENEMARK_PATH.\n            A solução foi ir ao site da Georgia Tech, fazer o cadastro institucional e baixar o pacote gmes_linux_64 e a chave de licença de 64 bits manualmente. O processo ainda esbarrou em um bug bizarro no servidor, onde o gunzip se recusava a extrair o arquivo da licença (gm_key_64.gz), achando que já estava compactado. A saída foi usar um zcat para forçar a leitura e jogar a chave oculta diretamente no diretório raiz do usuário (~/.gm_key).\n            Resolvido o GeneMark, o pipeline travou de novo. Dessa vez faltava o ProtHint, responsável pelo alinhamento rápido das proteínas. Tentar resolver pelo terminal (conda install -c bioconda prothint) falhou acusando incompatibilidade de canais. A solução mais limpa e direta foi clonar o repositório oficial do ProtHint pelo GitHub diretamente para a pasta da análise.\n            Com os dois softwares “em mãos”, bastou exportar os caminhos absolutos deles dentro do script. E claro, corrigir um erro clássico de caminho de diretório (Braker3 vs Braker) que fez a run falhar no último segundo por não encontrar o Fasta de proteínas."
+  },
+  {
+    "objectID": "posts/computacao/Braker3/index.html#pipeline-no-terminal",
+    "href": "posts/computacao/Braker3/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Para isolar o processo e evitar dores de cabeça com os caminhos do ambiente compartilhado, construí o runMeBraker3.sh exportando os binários baixados localmente antes de invocar o Perl.\n            O uso da flag --softmasking foi crucial aqui, aproveitando o genoma que mascaramos nas etapas anteriores.\n            \n# Exportando os caminhos das dependências resolvidas manualmente\nexport GENEMARK_PATH=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/gmes_linux_64_4\nexport PROTHINT_PATH=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/ProtHint/bin\n            braker.pl \\\n  --species=Agayanus \\\n  --genome=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/andropogon.primary.repeatmasked.fa \\\n  --prot_seq=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/AgerardiHAP1_783_v1.1.protein_primaryTranscriptOnly.fa \\\n  --softmasking \\\n  --threads=10 \\\n  --gff3 \\\n  --nocleanup\n            Com o ambiente pronto, limpei os arquivos das tentativas falhas (*.log anterior) e disparei a execução em background:\n              rm -rf braker/ braker3.log\nnohup sh runMeBraker3.sh &gt; braker3.log 2&gt;&1 &"
+  },
+  {
+    "objectID": "posts/computacao/Braker3/index.html#resultados",
+    "href": "posts/computacao/Braker3/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Monitorando o braker3.log, o pipeline passou limpo por todas as verificações. O GeneMark validou a licença acadêmica com sucesso, o ProtHint iniciou o alinhamento das sequências estruturais e o Augustus começou a ser nutrido com os parâmetros de treinamento.\n            O output final gera um arquivo de anotação GFF3 super denso. Obter essas predições ancoradas em proteínas é o que precisávamos para cruzar com as predições ab initio do Tiberius e alimentar o EvidenceModeler para a construção dos modelos gênicos de consenso."
+  },
+  {
+    "objectID": "posts/Genômica/Braker3/index.html#contextualização",
+    "href": "posts/Genômica/Braker3/index.html#contextualização",
+    "title": "Jomaserver",
+    "section": "Contextualização",
+    "text": "Contextualização\n            Com as predições ab initio geradas pelo Tiberius em mãos, o próximo passo da anotação foi incorporar evidências biológicas reais usando o pipeline do BRAKER.\n            Diferente de preditores baseados unicamente em redes neurais, o BRAKER automatiza o treinamento de modelos estatísticos clássicos (como GeneMark e Augustus) integrando alinhamentos de sequências externas. Como não temos dados de RNA-seq do nosso Andropogon, rodamos a ferramenta no modo EP (Evolutionary-based Protein).\n            Nesse modo, utilizamos o proteoma de uma espécie parente (A. gerardii) como evidência. O programa alinha essas proteínas no nosso genoma para gerar dicas (hints) precisas das regiões codificantes e treinar os algoritmos."
+  },
+  {
+    "objectID": "posts/Genômica/Braker3/index.html#o-problema-com-o-genemark-e-o-prothint",
+    "href": "posts/Genômica/Braker3/index.html#o-problema-com-o-genemark-e-o-prothint",
+    "title": "Jomaserver",
+    "section": "O problema com o GeneMark e o ProtHint",
+    "text": "O problema com o GeneMark e o ProtHint\n            Rodar o BRAKER não foi trivial. Ao contrário de pipelines modernos resolvidos com um simples conda install, ele depende de softwares de terceiros com licenciamento rigoroso e configurações manuais chatas.\n            O primeiro grande gargalo foi o GeneMark-EP+. O BRAKER depende dele no modo de proteínas, mas por restrições de licença acadêmica, ele não é distribuído nos repositórios globais do Conda. O script quebrou logo de cara acusando falta do $GENEMARK_PATH.\n            A solução foi ir ao site da Georgia Tech, fazer o cadastro institucional e baixar o pacote gmes_linux_64 e a chave de licença de 64 bits manualmente. O processo ainda esbarrou em um bug bizarro no servidor, onde o gunzip se recusava a extrair o arquivo da licença (gm_key_64.gz), achando que já estava compactado. A saída foi usar um zcat para forçar a leitura e jogar a chave oculta diretamente no diretório raiz do usuário (~/.gm_key).\n            Resolvido o GeneMark, o pipeline travou de novo. Dessa vez faltava o ProtHint, responsável pelo alinhamento rápido das proteínas. Tentar resolver pelo terminal (conda install -c bioconda prothint) falhou acusando incompatibilidade de canais. A solução mais limpa e direta foi clonar o repositório oficial do ProtHint pelo GitHub diretamente para a pasta da análise.\n            Com os dois softwares “em mãos”, bastou exportar os caminhos absolutos deles dentro do script. E claro, corrigir um erro clássico de caminho de diretório (Braker3 vs Braker) que fez a run falhar no último segundo por não encontrar o Fasta de proteínas."
+  },
+  {
+    "objectID": "posts/Genômica/Braker3/index.html#pipeline-no-terminal",
+    "href": "posts/Genômica/Braker3/index.html#pipeline-no-terminal",
+    "title": "Jomaserver",
+    "section": "Pipeline no Terminal",
+    "text": "Pipeline no Terminal\n            Para isolar o processo e evitar dores de cabeça com os caminhos do ambiente compartilhado, construí o runMeBraker3.sh exportando os binários baixados localmente antes de invocar o Perl.\n            O uso da flag --softmasking foi crucial aqui, aproveitando o genoma que mascaramos nas etapas anteriores.\n            \n# Exportando os caminhos das dependências resolvidas manualmente\nexport GENEMARK_PATH=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/gmes_linux_64_4\nexport PROTHINT_PATH=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/ProtHint/bin\n            braker.pl \\\n  --species=Agayanus \\\n  --genome=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/andropogon.primary.repeatmasked.fa \\\n  --prot_seq=/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/AgerardiHAP1_783_v1.1.protein_primaryTranscriptOnly.fa \\\n  --softmasking \\\n  --threads=10 \\\n  --gff3 \\\n  --nocleanup\n            Com o ambiente pronto, limpei os arquivos das tentativas falhas (*.log anterior) e disparei a execução em background:\n              rm -rf braker/ braker3.log\nnohup sh runMeBraker3.sh &gt; braker3.log 2&gt;&1 &"
+  },
+  {
+    "objectID": "posts/Genômica/Braker3/index.html#resultados",
+    "href": "posts/Genômica/Braker3/index.html#resultados",
+    "title": "Jomaserver",
+    "section": "Resultados",
+    "text": "Resultados\n            Monitorando o braker3.log, o pipeline passou limpo por todas as verificações. O GeneMark validou a licença acadêmica com sucesso, o ProtHint iniciou o alinhamento das sequências estruturais e o Augustus começou a ser nutrido com os parâmetros de treinamento.\n            O output final gera um arquivo de anotação GFF3 super denso. Obter essas predições ancoradas em proteínas é o que precisávamos para cruzar com as predições ab initio do Tiberius e alimentar o EvidenceModeler para a construção dos modelos gênicos de consenso."
+  },
+  {
+    "objectID": "shell.html#bem-vindo-à-categoria-shell",
+    "href": "shell.html#bem-vindo-à-categoria-shell",
+    "title": "Jomaserver",
+    "section": "Bem-vindo à categoria Shell",
+    "text": "Bem-vindo à categoria Shell\n            Esta é a nova casa para os conteúdos de Computação e Linux! Aqui você encontrará minhas anotações sobre lógica computacional, guias de terminal, scripts e aplicações em diversas áreas que me interesso (Jogos, Trabalho etc). É um bloco de posts bem diversificado. Espero que goste dos conteúdos!"
   }
 ]

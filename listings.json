@@ -82,6 +82,7 @@
   {
     "listing": "/computacao.html",
     "items": [
+      "/posts/computacao/Braker3/index.html",
       "/posts/computacao/Annevo/index.html",
       "/posts/computacao/Helixer/index.html",
       "/posts/computacao/Tiberius/index.html",
@@ -119,7 +120,7 @@
   {
     "listing": "/genomic.html",
     "items": [
-      "/posts/Genômica/Braker/index.html",
+      "/posts/Genômica/Braker3/index.html",
       "/posts/Genômica/Annevo/index.html",
       "/posts/Genômica/Helixer/index.html",
       "/posts/Genômica/Tiberius/index.html",
@@ -252,5 +253,40 @@
   {
     "listing": "/posts/Genômica/Braker/index.html",
     "items": []
+  },
+  {
+    "listing": "/posts/computacao/Braker3/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/Genômica/Braker3/index.html",
+    "items": []
+  },
+  {
+    "listing": "/shell.html",
+    "items": [
+      "/posts/computacao/Braker3/index.html",
+      "/posts/computacao/Annevo/index.html",
+      "/posts/computacao/Helixer/index.html",
+      "/posts/computacao/Tiberius/index.html",
+      "/posts/computacao/Miniprot/index.html",
+      "/posts/computacao/Merqury/index.html",
+      "/posts/computacao/Inspector/index.html",
+      "/posts/computacao/BlobToolsKit/index.html",
+      "/posts/computacao/Grafo de String e desafios na montagem/index.html",
+      "/posts/computacao/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+      "/posts/linux/Hifiasm e Genomescope na montagem do genoma/doc1.html",
+      "/posts/computacao/Anotações Linux/index.html",
+      "/posts/linux/Anotações Linux/index.html",
+      "/posts/computacao/Bioinfo para neurociencia/index.html",
+      "/posts/computacao/HiFiAdapterFilt and GenomeScope2/index.html",
+      "/posts/computacao/Site NeuroTech/index.html",
+      "/posts/computacao/THErmodynamicS Calculator/index.html",
+      "/posts/computacao/Guia de estudo LaTex/index.html",
+      "/posts/computacao/Extens__o para gerar PDF com normas ABNT/index.html",
+      "/posts/computacao/TEMA CSS/index.html",
+      "/posts/linux/Minhas primeiras experiencias com Linux/index.html",
+      "/posts/computacao/Kitty/index.html"
+    ]
   }
 ]
