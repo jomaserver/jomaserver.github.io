@@ -120,6 +120,7 @@
   {
     "listing": "/genomic.html",
     "items": [
+      "/posts/Genômica/EVM/index.html",
       "/posts/Genômica/Braker3/index.html",
       "/posts/Genômica/Annevo/index.html",
       "/posts/Genômica/Helixer/index.html",
@@ -265,6 +266,7 @@
   {
     "listing": "/shell.html",
     "items": [
+      "/posts/computacao/EVM/index.html",
       "/posts/computacao/Braker3/index.html",
       "/posts/computacao/Annevo/index.html",
       "/posts/computacao/Helixer/index.html",
@@ -288,5 +290,13 @@
       "/posts/linux/Minhas primeiras experiencias com Linux/index.html",
       "/posts/computacao/Kitty/index.html"
     ]
+  },
+  {
+    "listing": "/posts/Genômica/EVM/index.html",
+    "items": []
+  },
+  {
+    "listing": "/posts/computacao/EVM/index.html",
+    "items": []
   }
 ]
