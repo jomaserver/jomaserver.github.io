@@ -256,10 +256,10 @@
     <div class="container">
         <div class="termbar">
             <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-            <span class="path">jomas@server:~/jomaserver_blog$</span>
+            <span class="path">jomas@server:~/jomaserver$</span>
         </div>
         <header>
-            <span>Jomaserver Blog</span>
+            <span>Jomaserver</span>
         </header>
         <div class="small">
             <nav>
@@ -274,89 +274,92 @@
             <p><img src="images/clipboard-3317060957.png" class="img-fluid"></p>
             <section id="contextualização" class="level2">
             <h2 data-anchor-id="contextualização">Contextualização</h2>
-            <p>Para consolidar as diversas camadas de predição geradas nas etapas anteriores, utilizamos o EvidenceModeler (EVM)[cite: 3]. Esta ferramenta é fundamental na anotação de genomas complexos, pois atua como um juiz: ele combina as predições puramente matemáticas (<em>ab initio</em>) geradas pelo Tiberius, Helixer e ANNEVO com os modelos baseados em evidências evolutivas e estruturais mapeados pelo Miniprot e BRAKER3[cite: 3]. O objetivo é construir um único modelo de consenso gênico altamente confiável para cada <em>locus</em>, resolvendo sobreposições e contradições entre os diferentes softwares[cite: 3].</p>
+            <p>O próximo passo foi juntar todas as predições que geramos antes. Para isso, usei o EvidenceModeler (EVM). Ele funciona meio que como um juiz na anotação de genomas complexos: pega as predições <em>ab initio</em> (matemáticas) do Tiberius, Helixer e ANNEVO e junta com as evidências de homologia do Miniprot e do BRAKER3. A ideia aqui é criar um consenso final de genes pra cada <em>locus</em>, resolvendo as sobreposições e as brigas entre as saídas dos diferentes softwares.</p>
             <hr>
             </section>
             <section id="o-sistema-de-pesos" class="level2">
             <h2 data-anchor-id="o-sistema-de-pesos">O Sistema de Pesos</h2>
-            <p>O EVM funciona por meio de um sistema de pesos (<em>weights</em>), onde o usuário define o nível de confiança de cada classe de evidência[cite: 3]. Adotamos uma lógica baseada em análises prévias do grupo de pesquisa para genomas de forrageiras[cite: 3].</p>
-            <p>Avaliamos as características de cada preditor e atribuímos os seguintes pesos no arquivo de configuração <code>weights.txt</code>[cite: 3]:</p>
+            <p>A lógica do EVM baseia-se em pesos (<em>weights</em>). A gente precisa dizer pra ele em quem confiamos mais. Usei como base algumas análises anteriores do nosso grupo com genomas de forrageiras e fechei o arquivo <code>weights.txt</code> assim:</p>
             <ul>
-            <li><strong>Tiberius:</strong> por possuir um modelo estatístico otimizado especificamente para monocotiledôneas, recebeu peso 3 dentro da classe <code>ABINITIO_PREDICTION</code>[cite: 3].</li>
-            <li><strong>Helixer e Miniprot:</strong> receberam peso 1 em suas respectivas classes (<code>ABINITIO_PREDICTION</code> e <code>PROTEIN</code>)[cite: 3].</li>
-            <li><strong>ANNEVO, Augustus e GeneMark.hmm3:</strong> receberam peso 4[cite: 3]. Vale ressaltar que o ANNEVO foi mantido na classe de predições <em>ab initio</em>, enquanto os modelos clássicos do Augustus e GeneMark (derivados do pipeline do BRAKER) foram enquadrados como <code>OTHER_PREDICTION</code>[cite: 3].</li>
+            <li><strong>Tiberius:</strong> peso 3 (<code>ABINITIO_PREDICTION</code>), já que o modelo estatístico dele é bem otimizado pra monocotiledôneas.</li>
+            <li><strong>Helixer e Miniprot:</strong> peso 1 nas categorias <code>ABINITIO_PREDICTION</code> e <code>PROTEIN</code>, respectivamente.</li>
+            <li><strong>ANNEVO, Augustus e GeneMark.hmm3:</strong> peso 4. O detalhe é que o ANNEVO entrou como predição <em>ab initio</em>, enquanto os modelos do Augustus e GeneMark (que vieram do pipeline do BRAKER) ficaram na classe <code>OTHER_PREDICTION</code>.</li>
             </ul>
             <hr>
             </section>
             <section id="desafios-e-erros-de-execução" class="level2">
             <h2 data-anchor-id="desafios-e-erros-de-execução">Desafios e Erros de Execução</h2>
-            <p>Ao tentar implementar o pipeline do EVM, esbarramos em algumas particularidades rigorosas do software, que exigiram sucessivos ajustes e testes de <em>troubleshooting</em> diretamente no terminal[cite: 3].</p>
-            <p>O primeiro obstáculo foi um erro generalizado de <code>command not found</code> ao tentar acionar os scripts em Perl nativos do programa[cite: 3]. Como o EVM foi instalado via ambiente Conda, seus binários ficam ocultos em subdiretórios específicos[cite: 3]. Para resolver o problema de forma definitiva e garantir que o script pudesse ser executado sem depender de atalhos instáveis de terminal, implementamos a busca dinâmica pelo caminho absoluto do executável na raiz do script[cite: 3].</p>
-            <p>Outro detalhe crítico do EVM é sua intolerância a caminhos relativos[cite: 3]. O programa interrompeu a execução acusando o erro <code>weights file weights.txt must be specified by the full path</code>[cite: 3]. Para sanar isso de forma limpa, estruturamos o código para capturar os diretórios absolutos e repassá-los para todos os arquivos e saídas manipulados na sessão[cite: 3].</p>
-            <p>Após corrigir os diretórios, o pipeline avançou, mas quebrou novamente na etapa de escrita dos comandos (<code>write_EVM_commands.pl</code>), informando que o arquivo <code>partitions_list.out</code> não existia[cite: 3]. Analisando os logs detalhadamente, percebemos que o passo anterior, responsável pelo particionamento do genoma (<code>partition_EVM_inputs.pl</code>), havia falhado de forma silenciosa e impresso apenas o menu de ajuda no log[cite: 3]. A causa foi a ausência do parâmetro obrigatório <code>--partition_dir</code>[cite: 3]. Após declararmos explicitamente o diretório de destino das partições temporárias, o processo fluiu como o esperado[cite: 3].</p>
+            <p>Rodar o EVM não foi direto ao ponto. O programa é bem chato com algumas configurações e tive que bater um pouco de cabeça no terminal.</p>
+            <p>Primeiro, os scripts em Perl não rodavam nem a pau (dando erro de <code>command not found</code>). Como instalei o EVM pelo Conda, os binários ficam escondidos nuns subdiretórios específicos. Pra não ficar dependendo de atalhos de ambiente que costumam quebrar, acabei fixando o caminho absoluto do executável direto no script.</p>
+            <p>Outra dor de cabeça foi que o EVM odeia caminhos relativos. Ele travou logo no início reclamando do arquivo de pesos (<code>weights file weights.txt must be specified by the full path</code>). A saída foi mapear o diretório absoluto de absolutamente todos os inputs e outputs da sessão.</p>
+            <p>Depois disso, achei que ia rodar liso, mas o pipeline quebrou no <code>write_EVM_commands.pl</code> dizendo que não achava o <code>partitions_list.out</code>. Fui olhar os logs e vi que o passo anterior, que faz o particionamento do genoma (<code>partition_EVM_inputs.pl</code>), tinha falhado calado, só cuspindo o menu de ajuda. O motivo? Faltou passar a flag obrigatória <code>--partition_dir</code>. Coloquei a pasta de destino das partições temporárias e aí sim a coisa andou.</p>
             <hr>
             </section>
             <section id="estratégia-de-execução-e-pipeline-no-terminal" class="level2">
             <h2 data-anchor-id="estratégia-de-execução-e-pipeline-no-terminal">Estratégia de Execução e Pipeline no Terminal</h2>
-            <p>Para viabilizar a análise de um genoma na escala de <em>Giga base pairs</em> (Gb), o EVM quebra o FASTA de entrada em centenas de partições menores[cite: 3]. Configuramos fragmentos de 100 kb (<code>--segmentSize 100000</code>) com uma margem de sobreposição de 10 kb (<code>--overlapSize 10000</code>) para evitar que genes localizados nas bordas fossem truncados[cite: 3].</p>
-            <p>Isso significa que a execução consome pouquíssima memória RAM, pois carrega apenas um pequeno bloco por vez[cite: 3]. Embora houvesse a possibilidade de acelerar drasticamente o processamento distribuindo a carga em múltiplas threads, optamos por manter a execução sequencial original[cite: 3]. Como o tempo de máquina não era um fator limitante e a precisão do consenso final permanece matematicamente inalterada, o processamento ocorreu de forma iterativa e segura[cite: 3].</p>
-            <p>Abaixo está o script final em Bash consolidado após as correções, executado em background utilizando <code>nohup</code>[cite: 3]. A primeira parte estabelece as variáveis de ambiente e prepara os dados de entrada[cite: 3]:</p>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># caminho absoluto do EVM </span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">EVM_HOME</span><span class="op">=</span><span class="st">"/conda/acgt/anaconda3/envs/EvidenceModeler/bin/EvmUtils"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># inputs</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="va">GENOME</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/andropogon.primary.repeatmasked.fa"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="va">TIBERIUS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/tiberius.andropogon.primary.gff"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="va">HELIXER</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/helixer/helixer.andropogon.gff"</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="va">ANNEVO</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Annevo/annevo_andropogon_primary.gff3"</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="va">BRAKER</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/braker/braker.gff3"</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="va">MINIPROT</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Miniprot/evidencias_Agerardii_miniprot.gff"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># outputs</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="va">PREDICTIONS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/ab_initio_predictions.gff3"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="va">WEIGHTS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/weights.txt"</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="va">PARTITIONS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/partitions_list.out"</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="va">COMMANDS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/evm_commands.list"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="va">PARTITION_DIR</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/partitions_dir"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># unificando as predicoes ab initio em um unico arquivo</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="va">$TIBERIUS</span> <span class="va">$HELIXER</span> <span class="va">$ANNEVO</span> <span class="va">$BRAKER</span> <span class="op">&gt;</span> <span class="va">$PREDICTIONS</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># pesos</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&lt;&lt;EOF&gt;</span> <span class="va">$WEIGHTS</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="st">ABINITIO_PREDICTION helixer 1</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="st">ABINITIO_PREDICTION tiberius 3</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="st">PROTEIN miniprot 1</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="st">ABINITIO_PREDICTION annevo 4</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="st">OTHER_PREDICTION augustus 4</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="st">OTHER_PREDICTION GeneMark.hmm3 4</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <p>Com as variáveis definidas e os arquivos unificados, a segunda parte do script processa a divisão do genoma e a execução dos módulos principais do EvidenceModeler:</p>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># particionando o genoma mascarado e as evidencias</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/partition_EVM_inputs.pl</span> <span class="dt">\</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partition_dir</span> <span class="va">$PARTITION_DIR</span> <span class="dt">\</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--genome</span> <span class="va">$GENOME</span> <span class="dt">\</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--gene_predictions</span> <span class="va">$PREDICTIONS</span> <span class="dt">\</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--protein_alignments</span> <span class="va">$MINIPROT</span> <span class="dt">\</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">--segmentSize</span> 100000 <span class="dt">\</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--overlapSize</span> 10000 <span class="dt">\</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partition_listing</span> <span class="va">$PARTITIONS</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># escrevendo a lista de comandos baseada nas particoes</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/write_EVM_commands.pl</span> <span class="dt">\</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--genome</span> <span class="va">$GENOME</span> <span class="dt">\</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--weights</span> <span class="va">$WEIGHTS</span> <span class="dt">\</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--gene_predictions</span> <span class="va">$PREDICTIONS</span> <span class="dt">\</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--protein_alignments</span> <span class="va">$MINIPROT</span> <span class="dt">\</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">--output_file_name</span> evm.out <span class="dt">\</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partitions</span> <span class="va">$PARTITIONS</span> <span class="op">&gt;</span> <span class="va">$COMMANDS</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># executando os processos de modelagem sequencialmente</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/execute_EVM_commands.pl</span> <span class="va">$COMMANDS</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># combinando as particoes em um arquivo de saida final consolidado</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/recombine_EVM_partial_outputs.pl</span> <span class="dt">\</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partitions</span> <span class="va">$PARTITIONS</span> <span class="dt">\</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--output_file_name</span> evm.out</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+            <p>Como estamos lidando com um genoma na casa dos Gigabases (Gb), o EVM precisa quebrar o FASTA em pedaços. Configurei blocos de 100 kb (<code>--segmentSize 100000</code>) com 10 kb de sobreposição (<code>--overlapSize 10000</code>) pra não cortar nenhum gene no meio.</p>
+            <p>Essa estratégia é ótima porque quase não gasta RAM, já que ele carrega um bloco por vez na memória. Dava até pra paralelizar isso em várias threads pra ir mais rápido, mas deixei rodando sequencial mesmo. Como tempo de máquina não era um problema pra essa etapa e o resultado matemático não muda, preferi ir pelo caminho mais seguro e iterativo.</p>
+            <p>Abaixo está o script Bash final consolidado, que deixei rodando em background com <code>nohup</code>. Ele estabelece as variáveis, arruma os inputs e em seguida faz o particionamento e roda os módulos do EVM:</p>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># caminho absoluto do EVM </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">EVM_HOME</span><span class="op">=</span><span class="st">"/conda/acgt/anaconda3/envs/EvidenceModeler/bin/EvmUtils"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># inputs</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="va">GENOME</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/andropogon.primary.repeatmasked.fa"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="va">TIBERIUS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/tiberius/tiberius.andropogon.primary.gff"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="va">HELIXER</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/helixer/helixer.andropogon.gff"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="va">ANNEVO</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Annevo/annevo_andropogon_primary.gff3"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="va">BRAKER</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Braker/Transcrito_Agerardii/braker/braker.gff3"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="va">MINIPROT</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/Miniprot/evidencias_Agerardii_miniprot.gff"</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># outputs</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="va">PREDICTIONS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/ab_initio_predictions.gff3"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="va">WEIGHTS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/weights.txt"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="va">PARTITIONS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/partitions_list.out"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="va">COMMANDS</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/evm_commands.list"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="va">PARTITION_DIR</span><span class="op">=</span><span class="st">"/st100/acgt/projetos/genfor/andropogon/jm/analysis/genemodels/EVM/partitions_dir"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># unificando as predicoes ab initio em um unico arquivo</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="va">$TIBERIUS</span> <span class="va">$HELIXER</span> <span class="va">$ANNEVO</span> <span class="va">$BRAKER</span> <span class="op">&gt;</span> <span class="va">$PREDICTIONS</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># pesos</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> <span class="op">&lt;&lt;EOF&gt;</span> <span class="va">$WEIGHTS</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="st">ABINITIO_PREDICTION helixer 1</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="st">ABINITIO_PREDICTION tiberius 3</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="st">PROTEIN miniprot 1</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="st">ABINITIO_PREDICTION annevo 4</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">OTHER_PREDICTION augustus 4</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="st">OTHER_PREDICTION GeneMark.hmm3 4</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="op">EOF</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+            <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># particionando o genoma mascarado e as evidencias</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/partition_EVM_inputs.pl</span> <span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partition_dir</span> <span class="va">$PARTITION_DIR</span> <span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--genome</span> <span class="va">$GENOME</span> <span class="dt">\</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--gene_predictions</span> <span class="va">$PREDICTIONS</span> <span class="dt">\</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--protein_alignments</span> <span class="va">$MINIPROT</span> <span class="dt">\</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">--segmentSize</span> 100000 <span class="dt">\</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--overlapSize</span> 10000 <span class="dt">\</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partition_listing</span> <span class="va">$PARTITIONS</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># escrevendo a lista de comandos baseada nas particoes</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/write_EVM_commands.pl</span> <span class="dt">\</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">--genome</span> <span class="va">$GENOME</span> <span class="dt">\</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">--weights</span> <span class="va">$WEIGHTS</span> <span class="dt">\</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">--gene_predictions</span> <span class="va">$PREDICTIONS</span> <span class="dt">\</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">--protein_alignments</span> <span class="va">$MINIPROT</span> <span class="dt">\</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">--output_file_name</span> evm.out <span class="dt">\</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partitions</span> <span class="va">$PARTITIONS</span> <span class="op">&gt;</span> <span class="va">$COMMANDS</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="co"># executando os processos de modelagem sequencialmente</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/execute_EVM_commands.pl</span> <span class="va">$COMMANDS</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># combinando as particoes em um arquivo de saida final consolidado</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="va">$EVM_HOME</span><span class="ex">/recombine_EVM_partial_outputs.pl</span> <span class="dt">\</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>  <span class="at">--partitions</span> <span class="va">$PARTITIONS</span> <span class="dt">\</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">--output_file_name</span> evm.out</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
             <hr>
             </section>
             <section id="resultados" class="level2">
             <h2 data-anchor-id="resultados">Resultados</h2>
-            <p>Ao final do processamento, o script gera o arquivo <code>evm.out</code>, que consolida o esforço integrado de todos os modelos algorítmicos empregados no projeto[cite: 3]. A anotação extraída desta etapa representa o mapa estrutural final do genoma de referência primário de <em>Andropogon gayanus</em>[cite: 3].</p>
+            <p>No final, o script cospe o <code>evm.out</code>, que junta todo esse esforço dos preditores num arquivo só. O que sai daí já é o mapa estrutural consolidado do genoma de referência primário do <em>Andropogon gayanus</em>.</p>
             
             
             
@@ -364,7 +367,7 @@
         </section>
         <footer class="box-footer">SYSTEM_LOG::ROOT/Consenso de predição gênica com EvidenceModeler (EVM).md</footer>
     </div>
-    <footer class="site">Jomaserver Blog by <a href="https://jomaserver.github.io/posts.html">João Marcelo</a></footer>
+    <footer class="site">Jomaserver by <a href="https://jomaserver.github.io/posts.html">João Marcelo</a></footer>
     
     
     
