@@ -1215,7 +1215,7 @@
     "href": "shell.html#bem-vindo-à-categoria-shell",
     "title": "Jomaserver",
     "section": "Bem-vindo à categoria Shell",
-    "text": "Bem-vindo à categoria Shell\n            Esta é a nova casa para os conteúdos de Computação e Linux! Aqui você encontrará minhas anotações sobre lógica computacional, guias de terminal, scripts e aplicações em diversas áreas que me interesso (Jogos, Trabalho etc). É um bloco de posts bem diversificado. Espero que goste dos conteúdos!"
+    "text": "Bem-vindo à categoria Shell\n            Obviamente tudo que eu faço é em shell, então acredito que essa categoria vai ter posts de categorias variadas.\n            Estou esperando juntar mais material para abrir outras categorias."
   },
   {
     "objectID": "posts/Genômica/EVM/index.html#contextualização",
@@ -1286,5 +1286,54 @@
     "title": "Jomaserver",
     "section": "Resultados",
     "text": "Resultados\n            No final, o script cospe o evm.out, que junta todo esse esforço dos preditores num arquivo só. O que sai daí já é o mapa estrutural consolidado do genoma de referência primário do Andropogon gayanus."
+  },
+  {
+    "objectID": "posts/Genômica/Conclusão/index.html#montagem-genômica-vegetal-da-espécie-forrageira-andropogon-gayanus",
+    "href": "posts/Genômica/Conclusão/index.html#montagem-genômica-vegetal-da-espécie-forrageira-andropogon-gayanus",
+    "title": "Jomaserver",
+    "section": "Montagem genômica vegetal da espécie forrageira Andropogon gayanus",
+    "text": "Montagem genômica vegetal da espécie forrageira Andropogon gayanus\n            É com imenso prazer, que declaro o meu projeto em gênomica finalizado.\n            As últimas semanas, o trabalho envolvia predição gênica ab initio com uma serie de softwares (ANNEVO, Tiberius e Helixer) que utilizavam apenas as informações presentes nas sequências núcleotídicas, e softwares com referencia externa (Miniprot e BRAKER3[AUGUSTUS E GENEMARK]).\n            Como descrito nas últimas postagens do blog:\n            BRAKER3 ANNEVO TIBERIUS HELIXER MINIPROT\n            Depois, rodei o Evidence Modeler para consolidar as informações advindas desses softwares de predição, atribuindo pesos, e uma outra modelagem estatística que valide a anotação funcional das proteínas de Andropogon gayanus\n            EvidenceModeler"
+  },
+  {
+    "objectID": "posts/Genômica/Conclusão/index.html#as-últimas-semanas-o-trabalho-envolvia-predição-gênica-ab-initio-com-uma-serie-de-softwares-annevo-tiberius-e-helixer-que-utilizavam-apenas-as-informações-presentes-nas-sequências-núcleotídicas-e-softwares-com-referencia-externa-miniprot-e-braker3augustus-e-genemark.-como-descrito-nas-últimas-postagens-do-blog.-braker3-annevo-tiberius-helixer-miniprot-depois-rodei-o-evidence-modeler-para-consolidar-as-informações-advindas-desses-softwares-de-predição-atribuindo-pesos-e-uma-outra-modelagem-estatística-que-valide-a-anotação-funcional-das-proteínas-de-andropogon-gayanus--",
+    "href": "posts/Genômica/Conclusão/index.html#as-últimas-semanas-o-trabalho-envolvia-predição-gênica-ab-initio-com-uma-serie-de-softwares-annevo-tiberius-e-helixer-que-utilizavam-apenas-as-informações-presentes-nas-sequências-núcleotídicas-e-softwares-com-referencia-externa-miniprot-e-braker3augustus-e-genemark.-como-descrito-nas-últimas-postagens-do-blog.-braker3-annevo-tiberius-helixer-miniprot-depois-rodei-o-evidence-modeler-para-consolidar-as-informações-advindas-desses-softwares-de-predição-atribuindo-pesos-e-uma-outra-modelagem-estatística-que-valide-a-anotação-funcional-das-proteínas-de-andropogon-gayanus--",
+    "title": "Jomaserver",
+    "section": "As últimas semanas, o trabalho envolvia predição gênica ab initio com uma serie de softwares (ANNEVO, Tiberius e Helixer) que utilizavam apenas as informações presentes nas sequências núcleotídicas, e softwares com referencia externa (Miniprot e BRAKER3[AUGUSTUS E GENEMARK]). Como descrito nas últimas postagens do blog. BRAKER3 ANNEVO TIBERIUS HELIXER MINIPROT Depois, rodei o Evidence Modeler para consolidar as informações advindas desses softwares de predição, atribuindo pesos, e uma outra modelagem estatística que valide a anotação funcional das proteínas de Andropogon gayanus —-",
+    "text": "As últimas semanas, o trabalho envolvia predição gênica ab initio com uma serie de softwares (ANNEVO, Tiberius e Helixer) que utilizavam apenas as informações presentes nas sequências núcleotídicas, e softwares com referencia externa (Miniprot e BRAKER3[AUGUSTUS E GENEMARK]). Como descrito nas últimas postagens do blog. BRAKER3 ANNEVO TIBERIUS HELIXER MINIPROT Depois, rodei o Evidence Modeler para consolidar as informações advindas desses softwares de predição, atribuindo pesos, e uma outra modelagem estatística que valide a anotação funcional das proteínas de Andropogon gayanus —-"
+  },
+  {
+    "objectID": "posts/Genômica/Conclusão/index.html#anotação-funcional-de-proteínas",
+    "href": "posts/Genômica/Conclusão/index.html#anotação-funcional-de-proteínas",
+    "title": "Jomaserver",
+    "section": "Anotação funcional de proteínas",
+    "text": "Anotação funcional de proteínas\n            Com o resultado do EVM em mãos, rodei um script no ambiente conda EvidenceModeler, que gera um arquivo .gff apenas com o consenso apresentado pelo EVM, posteriomente esse arquivo foi transformado em um .fasta apenas com as proteínas descritas.\n            Esse arquivo fasta foi emparelhado com um banco de dados generalista (NR) do NCBI, afim de encontrar IDs de proteínas no genoma de A. gayanus.\n            Em paralelo, estava rodando o InterProScan, que busca por dominios gênicos (proteínas com funcionalidades similares).\n            O output da run do Diamond, foi input de um script .py que acessava o NCBI e buscava pela API descritas no output do diamond, afim, de atribuir as funcionalidades gênicas em uma coluna do .gff3.\n            \n            Posteriomente, consolidando o resultado desses softwares no arquivo .gff3 do EVM e finalizando essa etapa predição gênica.\n             (tabela_genes_andropogon_final.tsv, identificando o gene, as coordenadas e atribuindo função biologica)"
+  },
+  {
+    "objectID": "posts/Genômica/Conclusão/index.html#finalizando",
+    "href": "posts/Genômica/Conclusão/index.html#finalizando",
+    "title": "Jomaserver",
+    "section": "Finalizando",
+    "text": "Finalizando\n            Com isso, finalizo meu manuscrito “Montagem e anotação do genoma de capim-andropogon (Andropogon gayanus) como base para o desenvolvimento de ferramentas de apoio ao melhoramento genético” e meu projeto de pesquisa.\n            \n            Manual &lt;- link do manual.\n            Novamente, agradeço ao ilustre orientador, Dr. Marco Pessoa, que confiou na minha capacidade, e abriu inumeras portas para o desenvolvimento da pesquisa. Grande pesquisador e amigo!\n            Agradeço também ao Dr. Roberto Togawa, que me recebeu tão bem no LBI, e que me ajudou a evoluir minha capidade em shell, ao longo desse último ano.\n            Aos meus queridos amigos, que me ouvem por horas falar sobre um assunto deveras complexo.\n            Obrigado pela paciência de sempre rapaziada!"
+  },
+  {
+    "objectID": "posts/Genômica/Conclusão/index.html#braker3-annevo-tiberius-helixer-miniprot-depois-rodei-o-evidence-modeler-para-consolidar-as-informações-advindas-desses-softwares-de-predição-atribuindo-pesos-e-uma-outra-modelagem-estatística-que-valide-a-anotação-funcional-das-proteínas-de-andropogon-gayanus--",
+    "href": "posts/Genômica/Conclusão/index.html#braker3-annevo-tiberius-helixer-miniprot-depois-rodei-o-evidence-modeler-para-consolidar-as-informações-advindas-desses-softwares-de-predição-atribuindo-pesos-e-uma-outra-modelagem-estatística-que-valide-a-anotação-funcional-das-proteínas-de-andropogon-gayanus--",
+    "title": "Jomaserver",
+    "section": "BRAKER3 ANNEVO TIBERIUS HELIXER MINIPROT Depois, rodei o Evidence Modeler para consolidar as informações advindas desses softwares de predição, atribuindo pesos, e uma outra modelagem estatística que valide a anotação funcional das proteínas de Andropogon gayanus —-",
+    "text": "BRAKER3 ANNEVO TIBERIUS HELIXER MINIPROT Depois, rodei o Evidence Modeler para consolidar as informações advindas desses softwares de predição, atribuindo pesos, e uma outra modelagem estatística que valide a anotação funcional das proteínas de Andropogon gayanus —-"
+  },
+  {
+    "objectID": "posts/computacao/Conclusão/index.html#montagem-genômica-vegetal-da-espécie-forrageira-andropogon-gayanus",
+    "href": "posts/computacao/Conclusão/index.html#montagem-genômica-vegetal-da-espécie-forrageira-andropogon-gayanus",
+    "title": "Jomaserver",
+    "section": "Montagem genômica vegetal da espécie forrageira Andropogon gayanus",
+    "text": "Montagem genômica vegetal da espécie forrageira Andropogon gayanus\n            É com imenso prazer, que declaro o meu projeto em gênomica finalizado.\n            As últimas semanas, o trabalho envolvia predição gênica ab initio com uma serie de softwares (ANNEVO, Tiberius e Helixer) que utilizavam apenas as informações presentes nas sequências núcleotídicas, e softwares com referencia externa (Miniprot e BRAKER3[AUGUSTUS E GENEMARK]).\n            Como descrito nas últimas postagens do blog:\n            BRAKER3 ANNEVO TIBERIUS HELIXER MINIPROT\n            Depois, rodei o Evidence Modeler para consolidar as informações advindas desses softwares de predição, atribuindo pesos, e uma outra modelagem estatística que valide a anotação funcional das proteínas de Andropogon gayanus\n            EvidenceModeler"
+  },
+  {
+    "objectID": "posts/computacao/Conclusão/index.html#finalizando",
+    "href": "posts/computacao/Conclusão/index.html#finalizando",
+    "title": "Jomaserver",
+    "section": "Finalizando",
+    "text": "Finalizando\n            Com isso, finalizo meu manuscrito “Montagem e anotação do genoma de capim-andropogon (Andropogon gayanus) como base para o desenvolvimento de ferramentas de apoio ao melhoramento genético” e meu projeto de pesquisa.\n            \n            Manual &lt;- link do manual.\n            Novamente, agradeço ao ilustre orientador, Dr. Marco Pessoa, que confiou na minha capacidade, e abriu inumeras portas para o desenvolvimento da pesquisa. Grande pesquisador e amigo!\n            Agradeço também ao Dr. Roberto Togawa, que me recebeu tão bem no LBI, e que me ajudou a evoluir minha capidade em shell, ao longo desse último ano.\n            Aos meus queridos amigos, que me ouvem por horas falar sobre um assunto deveras complexo.\n            Obrigado pela paciência de sempre rapaziada!"
   }
 ]

@@ -230,7 +230,7 @@
   </url>
   <url>
     <loc>/shell.html</loc>
-    <lastmod>2026-08-12T16:45:24.259Z</lastmod>
+    <lastmod>2026-08-25T20:30:35.538Z</lastmod>
   </url>
   <url>
     <loc>/posts/Genômica/EVM/index.html</loc>
@@ -239,5 +239,13 @@
   <url>
     <loc>/posts/computacao/EVM/index.html</loc>
     <lastmod>2026-08-14T22:46:30.555Z</lastmod>
+  </url>
+  <url>
+    <loc>/posts/Genômica/Conclusão/index.html</loc>
+    <lastmod>2026-08-25T20:27:52.459Z</lastmod>
+  </url>
+  <url>
+    <loc>/posts/computacao/Conclusão/index.html</loc>
+    <lastmod>2026-08-25T20:27:52.459Z</lastmod>
   </url>
 </urlset>
