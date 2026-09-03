@@ -1312,8 +1312,8 @@
     "objectID": "posts/Genômica/Conclusão/index.html#finalizando",
     "href": "posts/Genômica/Conclusão/index.html#finalizando",
     "title": "Jomaserver",
-    "section": "Finalizando",
-    "text": "Finalizando\n            Com isso, finalizo meu manuscrito “Montagem e anotação do genoma de capim-andropogon (Andropogon gayanus) como base para o desenvolvimento de ferramentas de apoio ao melhoramento genético” e meu projeto de pesquisa.\n            \n            Manual &lt;- link do manual.\n            Novamente, agradeço ao ilustre orientador, Dr. Marco Pessoa, que confiou na minha capacidade, e abriu inumeras portas para o desenvolvimento da pesquisa. Grande pesquisador e amigo!\n            Agradeço também ao Dr. Roberto Togawa, que me recebeu tão bem no LBI, e que me ajudou a evoluir minha capidade em shell, ao longo desse último ano.\n            Aos meus queridos amigos, que me ouvem por horas falar sobre um assunto deveras complexo.\n            Obrigado pela paciência de sempre rapaziada!"
+    "section": "Finalizando:",
+    "text": "Finalizando:\n            Com isso, finalizo meu manuscrito “Montagem e anotação do genoma de capim-andropogon (Andropogon gayanus) como base para o desenvolvimento de ferramentas de apoio ao melhoramento genético” e meu projeto de pesquisa.\n            \n            Manual &lt;- link do manual."
   },
   {
     "objectID": "posts/Genômica/Conclusão/index.html#braker3-annevo-tiberius-helixer-miniprot-depois-rodei-o-evidence-modeler-para-consolidar-as-informações-advindas-desses-softwares-de-predição-atribuindo-pesos-e-uma-outra-modelagem-estatística-que-valide-a-anotação-funcional-das-proteínas-de-andropogon-gayanus--",
@@ -1335,5 +1335,12 @@
     "title": "Jomaserver",
     "section": "Finalizando",
     "text": "Finalizando\n            Com isso, finalizo meu manuscrito “Montagem e anotação do genoma de capim-andropogon (Andropogon gayanus) como base para o desenvolvimento de ferramentas de apoio ao melhoramento genético” e meu projeto de pesquisa.\n            \n            Manual &lt;- link do manual.\n            Novamente, agradeço ao ilustre orientador, Dr. Marco Pessoa, que confiou na minha capacidade, e abriu inumeras portas para o desenvolvimento da pesquisa. Grande pesquisador e amigo!\n            Agradeço também ao Dr. Roberto Togawa, que me recebeu tão bem no LBI, e que me ajudou a evoluir minha capidade em shell, ao longo desse último ano.\n            Aos meus queridos amigos, que me ouvem por horas falar sobre um assunto deveras complexo.\n            Obrigado pela paciência de sempre rapaziada!"
+  },
+  {
+    "objectID": "posts/Genômica/Conclusão/index.html#agredecimentos",
+    "href": "posts/Genômica/Conclusão/index.html#agredecimentos",
+    "title": "Jomaserver",
+    "section": "Agredecimentos:",
+    "text": "Agredecimentos:\n            Novamente, agradeço ao ilustre orientador, Dr. Marco Pessoa, que confiou na minha capacidade, e abriu inumeras portas para o desenvolvimento da pesquisa. Grande pesquisador e amigo!\n            Agradeço também ao Dr. Roberto Togawa, que me recebeu tão bem no LBI, e que me ajudou a evoluir minha capidade em shell, ao longo desse último ano.\n            Aos meus queridos amigos, que me ouvem por horas falar sobre um assunto deveras complexo.\n            Obrigado pela paciência de sempre rapaziada!"
   }
 ]
